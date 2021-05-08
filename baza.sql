@@ -50,7 +50,7 @@ CREATE TABLE stanowiska(
 
 CREATE TABLE adresy(
     adres_id NUMBER(5) PRIMARY KEY,
-    kod_poczt NUMBER(5) NOT NULL,
+    kod_poczt VARCHAR2(6) NOT NULL,
     miasto VARCHAR2(45)NOT NULL,
     wojewodztwo VARCHAR2(45) NOT NULL,
     ulica VARCHAR2(45)NOT NULL,
