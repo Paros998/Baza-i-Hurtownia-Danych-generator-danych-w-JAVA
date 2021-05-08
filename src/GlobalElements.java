@@ -90,7 +90,8 @@ public abstract class GlobalElements {
         // Choroby
         protected String[] chorobyNazwy = { "Zapalenie miesnia sercowego", "Zapalenie osierdzia",
                         "Choroba niedkrwienna serca", "Dlawica piersiowa", "Astma", "Cukrzyca", "Nowotwor trzustki",
-                        "Nowotwor tchawicy", "Grypa", "Kamica nerkowa", "Wrzody", "Osteoporoza", "Kamica zolciowa" };
+                        "Nowotwor tchawicy", "Grypa", "Kamica nerkowa", "Wrzody", "Osteoporoza", "Kamica zolciowa",
+                        "Alergia" };
         protected String[] chorobyOpisy = {
                         "Oprocz bolu w klatce piersiowej pojawia się goraczka, zmeczenie i problemy z oddychaniem",
                         "Ostry, staly, czasami bardzo intensywny bol serca, ktory promieniuje do barkow i szyi",
@@ -104,9 +105,39 @@ public abstract class GlobalElements {
                         "Najczestszym objawem tej choroby jest kolka nerwowa – silny, ostry bol w okolicy ledzwiowej, promieniujacy ku dolowi w kierunku pecherza, cewki i zewnetrznej powierzchni uda",
                         "Silne dolegliwosci bolowe, wynikajace z draznienia owrzodzenia przez przyjmowane pokarmy oraz sok zoladkowy (zazwyczaj kwasny lub nadkwasny)",
                         "Osteoporoza jest nazywana cichym zlodziejem kosci, poniewaz objawia sie rozrzedzeniem tkanki kostnej",
-                        "Tepy bol w prawym podzebrzu, wzdecia brzucha i rozne objawy dyspeptyczne" };
-        protected int iloscChorób = 13;
-        //
+                        "Tepy bol w prawym podzebrzu, wzdecia brzucha i rozne objawy dyspeptyczne",
+                        "Katar, lzawienie oczu, podraznienie skory i gardla" };
+        protected int iloscChorób = 14;
+        // Stanowiska
+        protected String[] stanowiskaNazwy = { "Recepcjonista", "Ksiegowy", "Konserwator", "Operator RTG/TMG",
+                        "Pielegniarz", "Lekarz pediatra", "Chirurg urazowy", "Denstysta", "Dermatolog",
+                        "Lekarz Pierwszego Kontaktu", "Onkolog", "Immunolog", "Ginekolog", "Okulista", "Laborant",
+                        "Neurolog", "Urolog", "Alergolog", "Kardiolog" };
+        protected int[] stanowiskaPlace = { 3600, 4900, 2500, 3400, 4300, 8500, 6000, 4500, 5400, 5000, 6050, 5700,
+                        4500, 5500, 4040, 6300, 5000, 3900, 6100 };
+        protected int iloscStanowisk = 19;
+        // Zabiegi
+        protected String[] zabiegiNazwy = { "abdominoplastyka", "adenotomia", "adenomektomia", "adrenalektomia",
+                        "amputacja", "angioplastyka", "antromastoidektomia", "appendektomia", "artroskopia",
+                        "astragalektomia", "bronchotomia", "cholecystektomia", "cystogastrostomia",
+                        "dekortykacja pluca", "diwertikulotomia", "fundoplastyka", "gastrektomia", "hemikorporektomia",
+                        "heminefrektomia", "hemisferektomia", "hepatektomia", "hipofizektomia", "histerektomia",
+                        "irydektomia", "kalozotomia", "kolektomia", "kraniektomia", "laminektomia", "laryngektomia",
+                        "laryngofisura", "ligacja jajowodu", "litotrypsja", "lobektomia", "lobotomia", "mastektomia",
+                        "metastazektomia", "mukosektomia", "naciecie krocza", "nefrektomia", "nefrotomia", "obrzezanie",
+                        "ooforektomia", "operacja Bassiniego", "operacja Billrotha", "operacja Brickera",
+                        "operacja Drapanasa", "operacja Girarda", "operacja Halstedta", "operacja Hartmanna",
+                        "operacja Jurasza", "operacja Lichtensteina", "operacja Milesa", "operacja Mogga",
+                        "operacja Norwooda", "operacja Nussa", "operacja Puestowa", "operacja Rutkowa",
+                        "operacja Rydygiera", "operacja Shouldice'a", "operacja Strassmana",
+                        "operacja Traverso-Longmire'a", "operacja Warrena", "operacja Whipple’a",
+                        "operacje korekty plci", "orbitotomia", "orchidektomia", "owarektomia", "owariektomia",
+                        "papilotomia", "paracenteza", "pankreatoduodenektomia", "penektomia", "perikardiektomia",
+                        "plastyka Heinekego-Mikulicza", "prostatektomia", "rynotomia", "segmentektomia",
+                        "sfinkterotomia", "splenektomia", "trachelektomia", "tyreoidektomia", "ureterosigmoidostomia",
+                        "uwuloplastyka", "uwulopalatofaryngoplastyka", "waginektomia", "wagotomia", "wazektomia",
+                        "wulwektomia", "wyluszczenie konczyny", "zabieg Bentalla", "zabieg Crile’a", "zabieg Halsteda",
+                        "zabieg Pateya", "zabieg Urbana" };
         protected File file;
         protected FileWriter writer;
         protected Random generator;

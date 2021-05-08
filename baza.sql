@@ -40,7 +40,7 @@ CREATE TABLE specjalnosci (
 
 CREATE TABLE stanowiska(
     stanowisko_id NUMBER(5) PRIMARY KEY,
-    nazwa VARCHAR2(50)NOT NULL,
+    nazwa VARCHAR2(150)NOT NULL,
     pensja NUMBER(6,2)NOT NULL,
     specjalnosc_id NUMBER(5),
     uprawnienie_id NUMBER(5)NOT NULL,
@@ -154,7 +154,6 @@ CREATE TABLE pozycje_recept (
 
 CREATE TABLE recepty (
     recepta_id NUMBER(5) PRIMARY KEY,
-    data_wystawienia DATE NOT NULL,
     pozycje_recept_id NUMBER(5) NOT NULL,
     CONSTRAINT fk_pozycje_recept FOREIGN KEY(pozycje_recept_id) REFERENCES pozycje_recept(pozycje_recept_id),
     pracownik_id NUMBER(5) NOT NULL,
@@ -169,8 +168,7 @@ CREATE TABLE recepty (
 
 CREATE TABLE zabiegi (
     zabieg_id NUMBER(5) PRIMARY KEY,
-    nazwa VARCHAR2(20) NOT NULL,
-    opis VARCHAR2(50),
+    nazwa VARCHAR2(200) NOT NULL,
     cena_netto NUMBER(5, 2),
     pracownik_id NUMBER(5) NOT NULL,
     CONSTRAINT fk_pracownik_zabiegi FOREIGN KEY(pracownik_id) REFERENCES pracownicy(pracownik_id)
