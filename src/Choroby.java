@@ -17,7 +17,7 @@ public class Choroby extends GlobalElements {
     private int[] losujDatePoczatku() {
         int rok, miesiac, dzien;
 
-        rok = 1992 + generator.nextInt(52);
+        rok = 1992 + generator.nextInt(LocalDate.now().getYear() - 1992);
         miesiac = 1 + generator.nextInt(12);
         dzien = 1 + generator.nextInt(28);
 
@@ -33,22 +33,21 @@ public class Choroby extends GlobalElements {
 
     private void losujDateKonca(int[] data) {
         int rok = 0, miesiac = 0, dzien = 0;
-        int opcja = 1 + generator.nextInt(3);
+        int opcja = 1 + generator.nextInt(2);
 
         switch (opcja) {
             case 1:
                 while (rok < data[0])
                     rok = 1992 + generator.nextInt(52);
+                miesiac = 1 + generator.nextInt(12);
+                dzien = 1 + generator.nextInt(28);
             break;
 
             case 2:
                 while (miesiac < data[1])
                     miesiac = 1 + generator.nextInt(12);
-            break;
-
-            case 3:
-                while (dzien < data[2])
-                    dzien = 1 + generator.nextInt(28);
+                dzien = 1 + generator.nextInt(28);
+                rok = data[0];
             break;
         }
 
@@ -73,7 +72,7 @@ public class Choroby extends GlobalElements {
 
             losujDateKonca(losujDatePoczatku());
 
-            peselId = generator.nextInt(karty.pesele.length);
+            peselId = 1 + generator.nextInt(karty.pesele.length);
 
             writer.write(id + "," + nazwa + "," + opis + "," + 
             pocztekData + "," + koniecData + "," + peselId + '\n');

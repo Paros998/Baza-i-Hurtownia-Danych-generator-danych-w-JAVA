@@ -39,7 +39,7 @@ public class Karty extends GlobalElements {
         int[] peselTab = new int[11];
 
         for (int i = 0; i < liczbaRekordow; i++) {
-            rok = 1970 + generator.nextInt(LocalDate.now().getYear());
+            rok = 1970 + generator.nextInt(52);
             miesiac = 1 + generator.nextInt(12);
             dzien = 1 + generator.nextInt(28);
             data = LocalDate.of(rok, miesiac, dzien).toString();
