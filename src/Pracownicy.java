@@ -12,6 +12,10 @@ public class Pracownicy extends GlobalElements {
     public int[] wylosowaneId;
     public int[] uzyteKontakty;
     public int[] uzyteAdresy;
+    public int[] pracownicyZabiegowi;
+    public int[] pracownicyBadawczy;
+    public int[] lekarzeZwykli;
+    public int iloscpracownicyZabiegowi, iloscpracownicyBadawczy, ilosclekarzeZwykli;
 
     public Pracownicy(int liczbaRekordow, Placówki placówki, Adresy adresy, Kontakty kontakty, Stanowiska stanowiska,
             Specjalnosci specjalnosci, Uprawnienia uprawnienia) throws IOException {
@@ -21,6 +25,7 @@ public class Pracownicy extends GlobalElements {
         wylosowaneId = new int[liczbaRekordow];
         uzyteKontakty = new int[liczbaRekordow];
         uzyteAdresy = new int[liczbaRekordow];
+        iloscpracownicyZabiegowi = iloscpracownicyBadawczy = ilosclekarzeZwykli = 0;
         if (file.exists())
             file.delete();
         file.createNewFile();
@@ -93,6 +98,18 @@ public class Pracownicy extends GlobalElements {
             stanowisko = generator.nextInt(stanowiska.wylosowaneStanowiska.length);
             if (stanowiska.wylosowaneStanowiska[stanowisko] > 4)
                 specjalnosc = generator.nextInt(specjalnosci.wylosowaneSpecjalnosci.length);
+            // Wpisywanie do tablic id lekarzy z odpowiednimi uprawnieniami
+            if (stanowiska.uprawnieniaStanowisk[stanowisko] >= 2 && stanowiska.uprawnieniaStanowisk[stanowisko] <= 8) {
+                lekarzeZwykli[ilosclekarzeZwykli] = id;
+                ilosclekarzeZwykli++;
+            } else if (stanowiska.uprawnieniaStanowisk[stanowisko] == 9) {
+                pracownicyBadawczy[iloscpracownicyBadawczy] = id;
+                iloscpracownicyBadawczy++;
+            } else if (stanowiska.uprawnieniaStanowisk[stanowisko] == 10) {
+                pracownicyZabiegowi[iloscpracownicyZabiegowi] = id;
+                iloscpracownicyZabiegowi++;
+            }
+
             // Ustawianie pensji
             pensja = stanowiskaPlace[stanowiska.wylosowaneStanowiska[stanowisko]];
             if (specjalnosc > 0) {

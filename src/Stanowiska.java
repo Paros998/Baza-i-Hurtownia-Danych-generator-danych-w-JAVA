@@ -10,6 +10,7 @@ public class Stanowiska extends GlobalElements {
     private String nazwa;
     private float pensja;
     public int[] wylosowaneStanowiska;
+    public int[] uprawnieniaStanowisk;
 
     public Stanowiska(int liczbaRekordow, Uprawnienia up) throws IOException {
 
@@ -17,7 +18,7 @@ public class Stanowiska extends GlobalElements {
         generator = new Random();
         file = new File("stanowiska.csv");
         wylosowaneStanowiska = new int[liczbaRekordow];
-
+        uprawnieniaStanowisk = new int[liczbaRekordow];
         if (file.exists())
             file.delete();
         file.createNewFile();
@@ -39,18 +40,20 @@ public class Stanowiska extends GlobalElements {
                     j = generator.nextInt(up.wylosowaneId.length);
                 }
                 uprawnienie_id = j;
-
+                uprawnieniaStanowisk[i] = up.wylosowaneId[j];
             } else if (indeks >= 2 && indeks <= 4) {
                 j = generator.nextInt(up.wylosowaneId.length);
                 while (up.wylosowaneId[j] != 2) {
                     j = generator.nextInt(up.wylosowaneId.length);
                 }
                 uprawnienie_id = j;
+                uprawnieniaStanowisk[i] = up.wylosowaneId[j];
             } else {
                 j = generator.nextInt(up.wylosowaneId.length);
                 while (up.wylosowaneId[j] <= 2)
                     j = generator.nextInt(up.wylosowaneId.length);
                 uprawnienie_id = j;
+                uprawnieniaStanowisk[i] = up.wylosowaneId[j];
             }
 
             writer.write(id + "," + nazwa + "," + pensja + "," + uprawnienie_id + '\n');
