@@ -25,7 +25,11 @@ public class Pracownicy extends GlobalElements {
         wylosowaneId = new int[liczbaRekordow];
         uzyteKontakty = new int[liczbaRekordow];
         uzyteAdresy = new int[liczbaRekordow];
+        pracownicyZabiegowi = new int[liczbaRekordow];
+        pracownicyBadawczy = new int[liczbaRekordow];
+        lekarzeZwykli = new int[liczbaRekordow];
         iloscpracownicyZabiegowi = iloscpracownicyBadawczy = ilosclekarzeZwykli = 0;
+        login = haslo = "";
         if (file.exists())
             file.delete();
         file.createNewFile();
@@ -57,9 +61,12 @@ public class Pracownicy extends GlobalElements {
                     if (x == 0) {
                         login += (char) generator.nextInt(9) + 48;
                     } else if (x == 1) {
-                        login += (char) generator.nextInt(25) + 65;
+                        char c = (char) (generator.nextInt(25) + 65);
+                        login += c;
+
                     } else {
-                        login += (char) generator.nextInt(25) + 97;
+                        char c = (char) (generator.nextInt(25) + 97);
+                        login += c;
                     }
                 }
                 for (int z = 1; z <= chars; z++) {
@@ -67,9 +74,12 @@ public class Pracownicy extends GlobalElements {
                     if (x == 0) {
                         haslo += (char) generator.nextInt(9) + 48;
                     } else if (x == 1) {
-                        haslo += (char) generator.nextInt(25) + 65;
+                        char c = (char) (generator.nextInt(25) + 65);
+                        haslo += c;
+
                     } else {
-                        haslo += (char) generator.nextInt(25) + 97;
+                        char c = (char) (generator.nextInt(25) + 97);
+                        haslo += c;
                     }
                 }
             }
