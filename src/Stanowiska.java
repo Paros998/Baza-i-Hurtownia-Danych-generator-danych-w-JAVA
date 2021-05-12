@@ -39,6 +39,7 @@ public class Stanowiska extends GlobalElements {
                     j = generator.nextInt(up.wylosowaneId.length);
                 }
                 uprawnienie_id = j;
+
             } else if (indeks >= 2 && indeks <= 4) {
                 j = generator.nextInt(up.wylosowaneId.length);
                 while (up.wylosowaneId[j] != 2) {
