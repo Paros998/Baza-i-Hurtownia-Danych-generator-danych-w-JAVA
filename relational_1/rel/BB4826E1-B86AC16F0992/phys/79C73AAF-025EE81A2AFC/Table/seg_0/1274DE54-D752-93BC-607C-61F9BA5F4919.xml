@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="SPECJALNOSCI" directorySegmentName="seg_0" id="1274DE54-D752-93BC-607C-61F9BA5F4919">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:53 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<schemaObject>FEF02F8E-60BE-9AB9-86B3-746E288FD571</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>05D6890E-D9D7-DFED-F684-B9CF26D74430</segment>
+<tableSpace>3D1B42D8-66A8-B787-B3FB-472BE75A67B9</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DODATEK_PENSJA" id="3950A6A7-D3FB-4DC0-039B-9456CE375DC0">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:53 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NAZWA" id="3A97895E-E41B-4C53-FA0A-6CD2DD7B5415">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:53 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STOPIEN" id="BB94D5A0-E3AA-7454-F3C5-85523AD27D41">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:53 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SPECJALNOSC_ID" id="D8A0753C-0FF5-C967-3CDE-EE82ED7EFE05">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:53 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SPECJALNOSCI_PK" id="209731FD-0D23-A37A-301E-7431081916E9">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:53 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<schemaObject>FEF02F8E-60BE-9AB9-86B3-746E288FD571</schemaObject>
+<segment>FEA0FA2A-EF87-3CCD-E066-4877504D107A</segment>
+<tableSpace>3D1B42D8-66A8-B787-B3FB-472BE75A67B9</tableSpace>
+<indexSegment>FEA0FA2A-EF87-3CCD-E066-4877504D107A</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

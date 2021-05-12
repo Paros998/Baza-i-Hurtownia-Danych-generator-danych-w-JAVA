@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="10DA1BC2-C4CD-0366-F802-EC27832C0957" containerWithKeyObject="9D0168C7-2235-E05B-E2E2-9B2FA0F20167" localFKIndex="BB3615E2-2A0B-3BF2-1C81-8A7C09181592" name="FK_PLAC_KONT">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>POTAS</sourceObjSchema>
+<sourceObjName>FK_PLAC_KONT</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:41 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<referredTableLongName>POTAS.KONTAKTY</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6B3B019B-9682-2553-4061-49DD03FDEB86</referredTableID>
+<keyObject>F213BE9A-D5F3-0780-D7CD-CE549FC3AE0B</keyObject>
+<referredKeyID>F213BE9A-D5F3-0780-D7CD-CE549FC3AE0B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>KONTAKT_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

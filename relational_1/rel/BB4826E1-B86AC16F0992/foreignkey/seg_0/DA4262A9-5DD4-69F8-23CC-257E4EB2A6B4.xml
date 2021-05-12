@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DA4262A9-5DD4-69F8-23CC-257E4EB2A6B4" containerWithKeyObject="2873DF11-5234-12D6-BCA5-9C604B05B6BA" localFKIndex="36BD2389-460A-5F1B-01D4-D7072DC03974" name="FK_RECEPTA_CHOROBA_RECEPTY">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>POTAS</sourceObjSchema>
+<sourceObjName>FK_RECEPTA_CHOROBA_RECEPTY</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:49 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<referredTableLongName>POTAS.CHOROBY</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2CB3F818-0AD3-8844-9D93-F07DED904765</referredTableID>
+<keyObject>FA1401AF-B3DB-99E9-1735-6B7B59A34F0D</keyObject>
+<referredKeyID>FA1401AF-B3DB-99E9-1735-6B7B59A34F0D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CHOROBY_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

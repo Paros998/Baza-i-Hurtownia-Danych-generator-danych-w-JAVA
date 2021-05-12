@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4158C5CD-27B6-1D6F-92E3-28B7D96D9626" containerWithKeyObject="2CB3F818-0AD3-8844-9D93-F07DED904765" localFKIndex="DF2DD29F-A658-CCED-A4A8-6D613DDB0F8F" name="FK_CH_KART">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>POTAS</sourceObjSchema>
+<sourceObjName>FK_CH_KART</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:07 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<referredTableLongName>POTAS.KARTY</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5A511822-271E-E63D-7146-9494C5BE3DB7</referredTableID>
+<keyObject>D2A3C2B8-C51A-BE03-890D-C08586A56CAB</keyObject>
+<referredKeyID>D2A3C2B8-C51A-BE03-890D-C08586A56CAB</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PESEL_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

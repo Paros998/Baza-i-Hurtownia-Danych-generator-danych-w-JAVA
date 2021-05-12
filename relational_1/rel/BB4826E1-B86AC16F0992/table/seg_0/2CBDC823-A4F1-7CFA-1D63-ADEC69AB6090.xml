@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2CBDC823-A4F1-7CFA-1D63-ADEC69AB6090" schemaObject="FEF02F8E-60BE-9AB9-86B3-746E288FD571" name="ODDZIALY_NFZ">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>POTAS</sourceObjSchema>
+<sourceObjName>ODDZIALY_NFZ</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:29 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ODDZIAL_NFZ_ID" id="1E82313E-648C-DEAE-5C78-235246487A85">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>ODDZIALY_NFZ</sourceObjSchema>
+<sourceObjName>ODDZIAL_NFZ_ID</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:29 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAZWA" id="0BF08EF8-B4EE-E529-2BC0-4B61C8F0BD1D">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>ODDZIALY_NFZ</sourceObjSchema>
+<sourceObjName>NAZWA</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:29 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="KOD_FUNDUSZU" id="C85F8DE9-8551-7238-8B56-026E15250102">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>ODDZIALY_NFZ</sourceObjSchema>
+<sourceObjName>KOD_FUNDUSZU</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:29 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="117BFB75-101D-D013-61B2-75C84EA92B1C" schemaObject="FEF02F8E-60BE-9AB9-86B3-746E288FD571" name="ODDZIALY_NFZ_PK">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>POTAS</sourceObjSchema>
+<sourceObjName>SYS_C0026232</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:29 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1E82313E-648C-DEAE-5C78-235246487A85"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

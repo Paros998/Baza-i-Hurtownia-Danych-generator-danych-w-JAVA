@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1274DE54-D752-93BC-607C-61F9BA5F4919" schemaObject="FEF02F8E-60BE-9AB9-86B3-746E288FD571" name="SPECJALNOSCI">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>POTAS</sourceObjSchema>
+<sourceObjName>SPECJALNOSCI</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:53 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SPECJALNOSC_ID" id="D8A0753C-0FF5-C967-3CDE-EE82ED7EFE05">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>SPECJALNOSCI</sourceObjSchema>
+<sourceObjName>SPECJALNOSC_ID</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:53 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAZWA" id="3A97895E-E41B-4C53-FA0A-6CD2DD7B5415">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>SPECJALNOSCI</sourceObjSchema>
+<sourceObjName>NAZWA</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:53 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STOPIEN" id="BB94D5A0-E3AA-7454-F3C5-85523AD27D41">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>SPECJALNOSCI</sourceObjSchema>
+<sourceObjName>STOPIEN</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:53 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<constraintName>CHK_STOPIEN</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="0 &lt;= stopien AND stopien &lt;= 2"/>
+<implementationDef dbType="Oracle Database 12cR2" definition="0 &lt;= stopien AND stopien &lt;= 2"/>
+</checkConstraint>
+<ownDataTypeParameters>,1,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DODATEK_PENSJA" id="3950A6A7-D3FB-4DC0-039B-9456CE375DC0">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>SPECJALNOSCI</sourceObjSchema>
+<sourceObjName>DODATEK_PENSJA</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:53 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="209731FD-0D23-A37A-301E-7431081916E9" schemaObject="FEF02F8E-60BE-9AB9-86B3-746E288FD571" name="SPECJALNOSCI_PK">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>POTAS</sourceObjSchema>
+<sourceObjName>SYS_C0026171</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:53 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8A0753C-0FF5-C967-3CDE-EE82ED7EFE05"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F0D78055-C388-94C7-6C0C-92FC84F88EB5" schemaObject="FEF02F8E-60BE-9AB9-86B3-746E288FD571" name="STATUSY_WIZYT">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>POTAS</sourceObjSchema>
+<sourceObjName>STATUSY_WIZYT</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 13:04:30 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="STATUSY_WIZYT_ID" id="01EED227-1904-9524-E3E0-E98F9499729B">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>STATUSY_WIZYT</sourceObjSchema>
+<sourceObjName>STATUSY_WIZYT_ID</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 13:04:31 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="865AE5B0-C04F-F11D-3371-3244664F64E6" referredColumn="223B939E-87B1-15C6-A9DE-460D14DC2823"/>
+</associations>
+</Column>
+<Column name="STATUS" id="B3C4361E-1307-4275-17A2-4247136837C2">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>STATUSY_WIZYT</sourceObjSchema>
+<sourceObjName>STATUS</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 13:04:31 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OPIS" id="1399686A-4404-62D8-3F9B-E496D829B72B">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>STATUSY_WIZYT</sourceObjSchema>
+<sourceObjName>OPIS</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 13:04:31 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="244FB866-5FF8-B2A1-F646-306DC85324EF" schemaObject="FEF02F8E-60BE-9AB9-86B3-746E288FD571" name="STATUSY_WIZYT_PK">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>POTAS</sourceObjSchema>
+<sourceObjName>SYS_C0026371</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 13:04:31 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01EED227-1904-9524-E3E0-E98F9499729B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="56A2B766-5F73-D15E-A99A-C756F64E1CC8" name="FK_WIZ_SW">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 13:04:31 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01EED227-1904-9524-E3E0-E98F9499729B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4BFE49A4-8BBB-29F0-3D33-4A6DBA43E201" containerWithKeyObject="C65705EA-C40D-776C-2A44-1013E2D9ACB2" localFKIndex="2560CE3B-7B6A-F70F-6B59-E21920B357FE" name="FK_GAB_PLAC">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>POTAS</sourceObjSchema>
+<sourceObjName>FK_GAB_PLAC</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:13 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<referredTableLongName>POTAS.PLACOWKI</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9D0168C7-2235-E05B-E2E2-9B2FA0F20167</referredTableID>
+<keyObject>67C363A5-09A1-A0B8-BE35-4FFBFF35FD7A</keyObject>
+<referredKeyID>67C363A5-09A1-A0B8-BE35-4FFBFF35FD7A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PLACOWKA_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

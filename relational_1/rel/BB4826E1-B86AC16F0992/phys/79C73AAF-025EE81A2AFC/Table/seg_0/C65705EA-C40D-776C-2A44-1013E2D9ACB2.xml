@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="GABINETY" directorySegmentName="seg_0" id="C65705EA-C40D-776C-2A44-1013E2D9ACB2">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:12 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<schemaObject>FEF02F8E-60BE-9AB9-86B3-746E288FD571</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>05D6890E-D9D7-DFED-F684-B9CF26D74430</segment>
+<tableSpace>3D1B42D8-66A8-B787-B3FB-472BE75A67B9</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="GABINET_ID" id="2C3DBC02-20A4-5056-539F-1ADC49502C2C">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:12 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRACOWNIK_ID" id="3883575D-165D-FC03-D5F7-3B2D0ADB1B6E">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:12 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OZNACZENIE" id="494C1495-9698-7478-0783-CFB3A22DE583">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:12 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PLACOWKA_ID" id="A2BD014C-5947-A63E-1009-B0E9732CAA5E">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:12 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="KONTAKT_ID" id="BA08F889-E239-6E4B-EB3E-489F3B034EBA">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:12 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_GAB_KONT" id="1F487866-AE3A-B668-6691-DC92A0873E7A">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:13 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_GAB_PLAC" id="2560CE3B-7B6A-F70F-6B59-E21920B357FE">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:13 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_GAB_PRAC" id="F1310C27-22B7-55FA-CD51-AADD7357E45C">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:13 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="GABINETY_PK" id="7AD3E1AF-0DC9-6051-164A-C15BFF37A585">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:13 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<schemaObject>FEF02F8E-60BE-9AB9-86B3-746E288FD571</schemaObject>
+<segment>FEA0FA2A-EF87-3CCD-E066-4877504D107A</segment>
+<tableSpace>3D1B42D8-66A8-B787-B3FB-472BE75A67B9</tableSpace>
+<indexSegment>FEA0FA2A-EF87-3CCD-E066-4877504D107A</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

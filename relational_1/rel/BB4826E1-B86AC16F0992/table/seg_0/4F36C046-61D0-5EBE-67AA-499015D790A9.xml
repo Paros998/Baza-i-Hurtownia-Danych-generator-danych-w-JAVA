@@ -1,0 +1,187 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4F36C046-61D0-5EBE-67AA-499015D790A9" schemaObject="FEF02F8E-60BE-9AB9-86B3-746E288FD571" name="PACJENCI">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>POTAS</sourceObjSchema>
+<sourceObjName>PACJENCI</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:35 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PACJENT_ID" id="EE7B1D93-39ED-DC3D-2201-DFF3423FC905">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>PACJENCI</sourceObjSchema>
+<sourceObjName>PACJENT_ID</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:35 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IMIE" id="CB0B1932-96CE-AA99-D786-4E3A2476968A">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>PACJENCI</sourceObjSchema>
+<sourceObjName>IMIE</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:35 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45 BYTE</dataTypeSize>
+<ownDataTypeParameters>45 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAZWISKO" id="5A7B3FE0-41D2-7FAD-238D-98790D7386AA">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>PACJENCI</sourceObjSchema>
+<sourceObjName>NAZWISKO</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:35 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45 BYTE</dataTypeSize>
+<ownDataTypeParameters>45 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOGIN" id="046EB6E9-D544-C660-A2F0-95BD2980C456">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>PACJENCI</sourceObjSchema>
+<sourceObjName>LOGIN</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:35 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45 BYTE</dataTypeSize>
+<ownDataTypeParameters>45 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HASLO" id="D0503B9C-6A9D-E730-6B4D-2E820E8EAF49">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>PACJENCI</sourceObjSchema>
+<sourceObjName>HASLO</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:35 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45 BYTE</dataTypeSize>
+<ownDataTypeParameters>45 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PESEL_ID" id="C8BA40A6-BFD0-27C5-F2BD-8E985C1EE4EC">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>PACJENCI</sourceObjSchema>
+<sourceObjName>PESEL_ID</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:35 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="69F08BE6-1115-D6DA-D0A1-65F6BE657E23" referredColumn="58867BD5-4641-9DC5-B105-12881458E15A"/>
+</associations>
+</Column>
+<Column name="KONTAKT_ID" id="8EDD276B-37E9-4F25-DA2D-6CAADDA7CD42">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>PACJENCI</sourceObjSchema>
+<sourceObjName>KONTAKT_ID</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:35 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EC29896A-BE7F-64CB-DAF3-FD55E7FB532D" referredColumn="FBD249C0-71E6-4C68-945C-6B8DAA741DFA"/>
+</associations>
+</Column>
+<Column name="ADRES_ID" id="F13C3CF4-4985-6EC7-FFDD-0E3581A783A4">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>PACJENCI</sourceObjSchema>
+<sourceObjName>ADRES_ID</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:35 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="41AB5439-43AC-51AF-42D4-13E3BC638468" referredColumn="D388FDA6-E3A7-F2DA-E076-8C896464C5CD"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="31781EE1-25EE-8159-9C73-2B96BC739CAD" schemaObject="FEF02F8E-60BE-9AB9-86B3-746E288FD571" name="PACJENCI_PK">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>POTAS</sourceObjSchema>
+<sourceObjName>SYS_C0026222</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:35 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE7B1D93-39ED-DC3D-2201-DFF3423FC905"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E814106C-A283-E2BE-37CC-0488A57824BC" name="FK_PAC_ADR">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:36 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F13C3CF4-4985-6EC7-FFDD-0E3581A783A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C8F3267A-4E2C-621F-42BF-232E1BCE739E" name="FK_PAC_KART">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:36 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8BA40A6-BFD0-27C5-F2BD-8E985C1EE4EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="680B4FC8-0A7D-6242-C2F6-E59C37F89FFA" name="FK_PAC_KONT">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:36 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8EDD276B-37E9-4F25-DA2D-6CAADDA7CD42"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

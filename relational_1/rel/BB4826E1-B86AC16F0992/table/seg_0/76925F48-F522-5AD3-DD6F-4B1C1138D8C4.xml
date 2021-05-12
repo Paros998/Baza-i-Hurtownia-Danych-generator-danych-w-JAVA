@@ -1,0 +1,231 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="76925F48-F522-5AD3-DD6F-4B1C1138D8C4" schemaObject="FEF02F8E-60BE-9AB9-86B3-746E288FD571" name="PRACOWNICY">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>POTAS</sourceObjSchema>
+<sourceObjName>PRACOWNICY</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:47 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PRACOWNIK_ID" id="F0A6CA7A-869F-A24B-4774-5E6677D18EE3">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>PRACOWNICY</sourceObjSchema>
+<sourceObjName>PRACOWNIK_ID</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:47 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IMIE" id="DB7EBF64-CC00-7CEC-00AB-23B49BA16AD8">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>PRACOWNICY</sourceObjSchema>
+<sourceObjName>IMIE</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:47 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45 BYTE</dataTypeSize>
+<ownDataTypeParameters>45 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAZWISKO" id="BA227959-0FA0-8297-5896-394EBA1DF87D">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>PRACOWNICY</sourceObjSchema>
+<sourceObjName>NAZWISKO</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:47 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45 BYTE</dataTypeSize>
+<ownDataTypeParameters>45 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOGIN" id="1A062994-4E5A-9A19-CF65-F4A9690A3F4D">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>PRACOWNICY</sourceObjSchema>
+<sourceObjName>LOGIN</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:47 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45 BYTE</dataTypeSize>
+<ownDataTypeParameters>45 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HASLO" id="763A3E5D-94EE-2381-3A47-6C59E5BC5261">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>PRACOWNICY</sourceObjSchema>
+<sourceObjName>HASLO</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:47 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45 BYTE</dataTypeSize>
+<ownDataTypeParameters>45 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PENSJA" id="6AA4CB87-5DB6-7721-E256-9A3576B56161">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>PRACOWNICY</sourceObjSchema>
+<sourceObjName>PENSJA</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:47 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADRES_ID" id="D83E7B22-221F-0073-979B-0FF63270458F">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>PRACOWNICY</sourceObjSchema>
+<sourceObjName>ADRES_ID</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:47 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F1D5809E-BDBD-05B0-0CC9-661B05E2CF6C" referredColumn="D388FDA6-E3A7-F2DA-E076-8C896464C5CD"/>
+</associations>
+</Column>
+<Column name="KONTAKT_ID" id="733392C0-F2C5-1811-7510-60630E1F1CD0">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>PRACOWNICY</sourceObjSchema>
+<sourceObjName>KONTAKT_ID</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:47 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1DFF35C4-9A09-0B21-A922-9BA750054F70" referredColumn="FBD249C0-71E6-4C68-945C-6B8DAA741DFA"/>
+</associations>
+</Column>
+<Column name="STANOWISKO_ID" id="7223B128-758F-B067-07AB-DFA3C3FF8865">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>PRACOWNICY</sourceObjSchema>
+<sourceObjName>STANOWISKO_ID</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:47 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="53F333B2-3459-BE45-8802-1E8942D9B1DB" referredColumn="E55BAD91-69A6-D32C-78F5-8054269E3CDD"/>
+</associations>
+</Column>
+<Column name="SPECJALNOSC_ID" id="9AF1DB58-08FD-D0E7-9FC4-2B43C5FE72DB">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>PRACOWNICY</sourceObjSchema>
+<sourceObjName>SPECJALNOSC_ID</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:47 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="939C544A-01DC-60BE-6DEC-A5D0992B6DF2" referredColumn="D8A0753C-0FF5-C967-3CDE-EE82ED7EFE05"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C4FA7A5C-2F20-956E-1EF0-6D628807E41E" schemaObject="FEF02F8E-60BE-9AB9-86B3-746E288FD571" name="PRACOWNICY_PK">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>POTAS</sourceObjSchema>
+<sourceObjName>SYS_C0026204</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:47 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F0A6CA7A-869F-A24B-4774-5E6677D18EE3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B9FD7C52-F05A-0821-77A1-672B60612644" name="FK_PRAC_ADR">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:47 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D83E7B22-221F-0073-979B-0FF63270458F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F6894B73-1C3E-24D2-762F-D07D9198D768" name="FK_PRAC_KONT">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:47 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="733392C0-F2C5-1811-7510-60630E1F1CD0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="40BC6885-D43B-6C6A-FE4E-1BFE7BC56B8E" name="FK_PRAC_SPEC">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:47 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9AF1DB58-08FD-D0E7-9FC4-2B43C5FE72DB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="08CCD0CB-FFC2-5DE0-8724-C88499240D77" name="FK_PRAC_STAN">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:47 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7223B128-758F-B067-07AB-DFA3C3FF8865"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

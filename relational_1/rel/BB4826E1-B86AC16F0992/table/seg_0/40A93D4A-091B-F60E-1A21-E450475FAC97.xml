@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="40A93D4A-091B-F60E-1A21-E450475FAC97" schemaObject="FEF02F8E-60BE-9AB9-86B3-746E288FD571" name="STANOWISKA">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>POTAS</sourceObjSchema>
+<sourceObjName>STANOWISKA</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:54 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="STANOWISKO_ID" id="E55BAD91-69A6-D32C-78F5-8054269E3CDD">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>STANOWISKA</sourceObjSchema>
+<sourceObjName>STANOWISKO_ID</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:54 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAZWA" id="7D3D2175-592C-5863-093A-2656B19D6ECE">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>STANOWISKA</sourceObjSchema>
+<sourceObjName>NAZWA</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:54 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 BYTE</dataTypeSize>
+<ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PENSJA" id="A1FD92B7-BCAF-5D2E-B29B-011E50B427A2">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>STANOWISKA</sourceObjSchema>
+<sourceObjName>PENSJA</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:54 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UPRAWNIENIE_ID" id="508A32AF-49C6-8ED5-3EA8-4771D2D74B38">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>STANOWISKA</sourceObjSchema>
+<sourceObjName>UPRAWNIENIE_ID</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:54 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6244AAAB-38CF-1E24-47B5-60EF9BB9737D" referredColumn="693281D6-C6AA-FFDD-A42F-FA5B18477205"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EC228F0D-DD54-7D57-7D25-8EFFD1FF1FD7" schemaObject="FEF02F8E-60BE-9AB9-86B3-746E288FD571" name="STANOWISKA_PK">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>POTAS</sourceObjSchema>
+<sourceObjName>SYS_C0026175</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:54 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E55BAD91-69A6-D32C-78F5-8054269E3CDD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8C4A3001-F43A-2AE7-9D93-32F85AF85B96" name="FK_STA_UPR">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 12:40:54 UTC</createdTime>
+<ownerDesignName>relational_1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="508A32AF-49C6-8ED5-3EA8-4771D2D74B38"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
