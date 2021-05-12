@@ -4,20 +4,20 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.Random;
 
-public class Pracownicy extends GlobalElements {
+public class Pacjenci extends GlobalElements {
     private int id;
-    private String imie, nazwisko, login, haslo;
-    private double pensja;
-    private int adres, kontakt, stanowisko, specjalnosc;
+    private String imie, nazwisko, login, haslo, pesel;
+    private int adres, kontakt;
     public int[] wylosowaneId;
     public int[] uzyteKontakty;
     public int[] uzyteAdresy;
+    public String[] uzytePesele;
 
-    public Pracownicy(int liczbaRekordow, Placówki placówki, Adresy adresy, Kontakty kontakty, Stanowiska stanowiska,
-            Specjalnosci specjalnosci, Uprawnienia uprawnienia) throws IOException {
+    public Pacjenci(int liczbaRekordow, Adresy adresy, Kontakty kontakty, Karty karty, Placówki placówki,
+            Pracownicy pracownicy) throws IOException {
         id = 1;
         generator = new Random();
-        file = new File("pracownicy.csv");
+        file = new File("pacjenci.csv");
         wylosowaneId = new int[liczbaRekordow];
         uzyteKontakty = new int[liczbaRekordow];
         uzyteAdresy = new int[liczbaRekordow];
@@ -68,44 +68,47 @@ public class Pracownicy extends GlobalElements {
                     }
                 }
             }
-            // losowanie adresu uwzględniając już użyte w placówkach
+            // losowanie adresu uwzględniając już użyte w placówkach i pracownikach
             indeks = generator.nextInt(adresy.wylosowaneId.length);
             for (int j = 0; j < i; j++) {
-                if (uzyteAdresy[j] == indeks || placówki.uzyteAdresy[j] == indeks) {
+                if (uzyteAdresy[j] == indeks || placówki.uzyteAdresy[j] == indeks
+                        || pracownicy.uzyteAdresy[j] == indeks) {
                     indeks = generator.nextInt(adresy.wylosowaneId.length);
                     j = 0;
                 }
             }
             uzyteAdresy[i] = indeks;
             adres = uzyteAdresy[i];
-            // losowanie kontaktu uwzględniając już użyte w placówkach
+            // losowanie kontaktu uwzględniając już użyte w placówkach i pracownikach
             indeks = generator.nextInt(kontakty.wylosowaneId.length);
 
             for (int j = 0; j < i; j++) {
-                if (uzyteKontakty[j] == indeks || placówki.uzyteKontakty[j] == indeks) {
+                if (uzyteKontakty[j] == indeks || placówki.uzyteKontakty[j] == indeks
+                        || pracownicy.uzyteKontakty[j] == indeks) {
                     indeks = generator.nextInt(kontakty.wylosowaneId.length);
                     j = 0;
                 }
             }
             uzyteKontakty[i] = indeks;
             kontakt = uzyteKontakty[i];
-            // losowanie stanowiska
-            stanowisko = generator.nextInt(stanowiska.wylosowaneStanowiska.length);
-            if (stanowiska.wylosowaneStanowiska[stanowisko] > 4)
-                specjalnosc = generator.nextInt(specjalnosci.wylosowaneSpecjalnosci.length);
-            // Ustawianie pensji
-            pensja = stanowiskaPlace[stanowiska.wylosowaneStanowiska[stanowisko]];
-            if (specjalnosc > 0) {
-                pensja += specjalnosci.wylosowaneDodatki[specjalnosc];
-                writer.write(id + "," + imie + "," + nazwisko + "," + login + "," + haslo + "," + pensja + "," + adres
-                        + "," + kontakt + "," + stanowisko + "," + specjalnosc + '\n');
-            } else
-                writer.write(id + "," + imie + "," + nazwisko + "," + login + "," + haslo + "," + pensja + "," + adres
-                        + "," + kontakt + "," + stanowisko + "," + '\n');
+            // losowanie peseluID
+            indeks = generator.nextInt(karty.pesele.length);
+            if (i == 0) {
+                pesel = karty.pesele[indeks];
+            } else {
+                for (int j = 0; j < i; j++) {
+                    if (uzytePesele[j] == karty.pesele[indeks]) {
+                        indeks = generator.nextInt(karty.pesele.length);
+                        j = 0;
+                    }
+                }
+                pesel = karty.pesele[indeks];
+            }
+            writer.write(id + "," + imie + "," + nazwisko + "," + login + "," + haslo + "," + pesel + "," + adres + ","
+                    + kontakt + '\n');
 
             id++;
             login = haslo = "";
-            specjalnosc = -1;
         }
         writer.close();
     }

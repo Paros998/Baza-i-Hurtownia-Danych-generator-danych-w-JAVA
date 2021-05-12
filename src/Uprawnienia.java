@@ -24,11 +24,11 @@ public class Uprawnienia extends GlobalElements {
         FileWriter writer = new FileWriter(file, StandardCharsets.UTF_8, true);
 
         for (int i = 0; i < liczbaRekordow; i++) {
-            int indeks = generator.nextInt(UprawnieniaOznaczenia.length);
-            wylosowaneId[i] = indeks;
+            int nrUprawnienia = generator.nextInt(UprawnieniaOznaczenia.length);
+            wylosowaneId[i] = nrUprawnienia;
 
-            oznaczenie = UprawnieniaOznaczenia[indeks];
-            opis = UprawnieniaOpisy[indeks];
+            oznaczenie = UprawnieniaOznaczenia[nrUprawnienia];
+            opis = UprawnieniaOpisy[nrUprawnienia];
 
             writer.write(id + "," + oznaczenie + "," + opis + '\n');
 
