@@ -109,11 +109,11 @@ public abstract class GlobalElements {
                         "Katar, lzawienie oczu, podraznienie skory i gardla" };
         protected int iloscChorób = 14;
         // Stanowiska
-        protected String[] stanowiskaNazwy = { "Recepcjonista", "Ksiegowy", "Konserwator", "Operator RTG/TMG",
+        protected String[] stanowiskaNazwy = { "Recepcjonista", "Konserwator", "Ksiegowy", "Operator RTG/TMG",
                         "Pielegniarz", "Lekarz pediatra", "Chirurg urazowy", "Denstysta", "Dermatolog",
                         "Lekarz Pierwszego Kontaktu", "Onkolog", "Immunolog", "Ginekolog", "Okulista", "Laborant",
                         "Neurolog", "Urolog", "Alergolog", "Kardiolog" };
-        protected int[] stanowiskaPlace = { 3600, 4900, 2500, 3400, 4300, 8500, 6000, 4500, 5400, 5000, 6050, 5700,
+        protected int[] stanowiskaPlace = { 3600, 2700, 4900, 3400, 4300, 8500, 6000, 4500, 5400, 5000, 6050, 5700,
                         4500, 5500, 4040, 6300, 5000, 3900, 6100 };
         protected int iloscStanowisk = 19;
         // Zabiegi
@@ -138,6 +138,38 @@ public abstract class GlobalElements {
                         "uwuloplastyka", "uwulopalatofaryngoplastyka", "waginektomia", "wagotomia", "wazektomia",
                         "wulwektomia", "wyluszczenie konczyny", "zabieg Bentalla", "zabieg Crile’a", "zabieg Halsteda",
                         "zabieg Pateya", "zabieg Urbana" };
+        // OdzialyNFZ
+        protected String[] oddzialy_nfz_nazwa = { "Podlaski Oddzial Narodowego Funduszu Zdrowia w Bialymstoku",
+                        "Kujawsko-Pomorski Oddzial Narodowego Funduszu Zdrowia w Bydgoszczy",
+                        "Pomorski Oddzial Narodowego Funduszu Zdrowia w Gdansku",
+                        "Slaski Oddzial Narodowego Funduszu Zdrowia w Katowicach",
+                        "Swietokrzyski Oddzial Narodowego Funduszu Zdrowia w Kielcach",
+                        "Malopolski Oddzial Narodowego Funduszu Zdrowia w Krakowie",
+                        "Lubelski Oddzial Narodowego Funduszu Zdrowia w Lublinie",
+                        "Lodzki Oddzial Narodowego Funduszu Zdrowia w Lodzi",
+                        "Warminsko-Mazurski Oddzial Narodowego Funduszu Zdrowia w Olsztynie",
+                        "Opolski Oddzial Narodowego Funduszu Zdrowia w Opolu",
+                        "Wielkopolski Oddzial Narodowego Funduszu Zdrowia w Poznaniu",
+                        "Podkarpacki Oddzial Narodowego Funduszu Zdrowia w Rzeszowie",
+                        "Zachodniopomorski Oddzial Narodowego Funduszu Zdrowia w Szczecinie",
+                        "Mazowiecki Oddzial Narodowego Funduszu Zdrowia w Warszawie",
+                        "Dolnoslaski Oddzial Narodowego Funduszu Zdrowia we Wroclawiu",
+                        "Lubuski Oddzial Narodowego Funduszu Zdrowia w Zielonej Gorze" };
+        protected int[] oddzialy_nfz_kod = { 10, 2, 11, 12, 13, 6, 3, 5, 14, 8, 15, 9, 16, 7, 1, 4 };
+        protected int iloscOddziałówNFZ = 16;
+        // StatusyWizyt
+        protected String[] statusyWizyt = { "Oczekujaca", "Zakonczona", "Odwolana" };
+        // Ulgi
+        protected String[] ulgiTyp = { "Wiekowa50+", "Wiekowa70+", "Wiekowa80+", "Niepelnosprawnosciowa" };
+        protected int[] procentUlgi = { 50, 70, 80, 90 };
+        // Pozycje recept
+        protected String[] lekNazwa = { "Abaktal", "Batrafen", "Cachexan", "Decilosal", "Efferalgan Codeine", "Fastum",
+                        "Gynoxin Uno", "Halidor", "Ibuprom Max", "Jovesto", "Keppra", "Lakcid", "Malidum" };
+        protected double[] cenyLeków = { 32.16, 42.80, 137.09, 75.56, 15.49, 25.99, 33.68, 44.99, 14.88, 36.27, 114.25,
+                        17.49, 63.60 };
+        protected int iloscLekow = 13;
+        // Kontakty
+        protected String[] emaile = { "gmail.com", "op.pl", "wp.pl", "yahoo.com", "interia.eu" };
         protected File file;
         protected FileWriter writer;
         protected Random generator;

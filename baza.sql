@@ -42,9 +42,7 @@ CREATE TABLE stanowiska(
     stanowisko_id NUMBER(5) PRIMARY KEY,
     nazwa VARCHAR2(150)NOT NULL,
     pensja NUMBER(6,2)NOT NULL,
-    specjalnosc_id NUMBER(5),
     uprawnienie_id NUMBER(5)NOT NULL,
-    CONSTRAINT fk_sta_spe FOREIGN KEY (specjalnosc_id) REFERENCES specjalnosci(specjalnosc_id),
     CONSTRAINT fk_sta_upr FOREIGN KEY (uprawnienie_id) REFERENCES uprawnienia(uprawnienie_id)
 );
 
@@ -95,12 +93,15 @@ CREATE TABLE pracownicy(
     nazwisko VARCHAR2(45) NOT NULL,
     login VARCHAR2(45),
     haslo VARCHAR2(45),
+    pensja NUMBER(6,2) NOT NULL,
     adres_id NUMBER(5) NOT NULL,
     kontakt_id NUMBER(5) NOT NULL,
     stanowisko_id NUMBER(5) NOT NULL,
+    specjalnosc_id NUMBER(5),
     CONSTRAINT fk_prac_adr FOREIGN KEY (adres_id) REFERENCES adresy(adres_id),
     CONSTRAINT fk_prac_kont FOREIGN KEY (kontakt_id) REFERENCES kontakty(kontakt_id),
-    CONSTRAINT fk_prac_stan FOREIGN KEY (stanowisko_id) REFERENCES stanowiska(stanowisko_id)
+    CONSTRAINT fk_prac_stan FOREIGN KEY (stanowisko_id) REFERENCES stanowiska(stanowisko_id),
+    CONSTRAINT fk_prac_spec FOREIGN KEY (specjalnosc_id) REFERENCES specjalnosci(specjalnosc_id)
 );
 
 CREATE TABLE gabinety(
@@ -127,51 +128,38 @@ CREATE TABLE pacjenci(
     CONSTRAINT fk_pac_kont FOREIGN KEY (kontakt_id) REFERENCES kontakty(kontakt_id),
     CONSTRAINT fk_pac_adr FOREIGN KEY (adres_id) REFERENCES adresy(adres_id)
 );
-CREATE TABLE statusy_wizyt (
-    statusy_wizyt_id NUMBER(5) PRIMARY KEY,
-    status VARCHAR2(10) NOT NULL,
-    opis VARCHAR2(50)
-);
 
 CREATE TABLE ulgi (
     ulgi_id NUMBER(5) PRIMARY KEY,
     typ_ulgi VARCHAR(45) NOT NULL,
-    wartosc_ulgi NUMBER(3, 2)
+    procent_ulgi NUMBER(3)
 );
 
 CREATE TABLE oddzialy_nfz (
     oddzial_nfz_id NUMBER(5) PRIMARY KEY,
-    nazwa VARCHAR2(45) NOT NULL,
-    kod_funduszu VARCHAR2(45) NOT NULL
-);
-
-CREATE TABLE pozycje_recept (
-    pozycje_recept_id NUMBER(5) PRIMARY KEY,
-    nazwa VARCHAR2(45) NOT NULL,
-    ilosc NUMBER(6),
-    odplatnosc NUMBER(4)
+    nazwa VARCHAR2(100) NOT NULL,
+    kod_funduszu VARCHAR2(3) NOT NULL
 );
 
 CREATE TABLE recepty (
     recepta_id NUMBER(5) PRIMARY KEY,
-    pozycje_recept_id NUMBER(5) NOT NULL,
-    CONSTRAINT fk_pozycje_recept FOREIGN KEY(pozycje_recept_id) REFERENCES pozycje_recept(pozycje_recept_id),
     pracownik_id NUMBER(5) NOT NULL,
     CONSTRAINT fk_pracownik_recepty FOREIGN KEY(pracownik_id) REFERENCES pracownicy(pracownik_id),
     oddzial_nfz_id NUMBER(5) NOT NULL,
     CONSTRAINT fk_oddzial_nfz_recepty FOREIGN KEY(oddzial_nfz_id) REFERENCES oddzialy_nfz(oddzial_nfz_id),
     recepta_choroba_id NUMBER(5) NOT NULL,
     CONSTRAINT fk_recepta_choroba_recepty FOREIGN KEY(recepta_choroba_id) REFERENCES choroby(choroby_id),
-    ulga_id NUMBER(5) NOT NULL,
+    ulga_id NUMBER(5) ,
     CONSTRAINT fk_ulga_recepty FOREIGN KEY(ulga_id) REFERENCES ulgi(ulgi_id)
 );
 
-CREATE TABLE zabiegi (
-    zabieg_id NUMBER(5) PRIMARY KEY,
-    nazwa VARCHAR2(200) NOT NULL,
-    cena_netto NUMBER(5, 2),
-    pracownik_id NUMBER(5) NOT NULL,
-    CONSTRAINT fk_pracownik_zabiegi FOREIGN KEY(pracownik_id) REFERENCES pracownicy(pracownik_id)
+CREATE TABLE pozycje_recept (
+    pozycje_recept_id NUMBER(5) PRIMARY KEY,
+    recepta_id NUMBER(5) NOT NULL,
+    nazwa VARCHAR2(100) NOT NULL,
+    ilosc NUMBER(6) NOT NULL,
+    odplatnosc NUMBER(4) NOT NULL,
+    CONSTRAINT fk_pozycje_recept FOREIGN KEY(recepta_id) REFERENCES recepty(recepta_id)
 );
 
 CREATE TABLE wizyty(
@@ -181,17 +169,30 @@ CREATE TABLE wizyty(
     godzina_poczatek TIMESTAMP WITH LOCAL TIME ZONE NOT NULL,
     godzina_koniec TIMESTAMP WITH LOCAL TIME ZONE,
     pacjent_id NUMBER(5) NOT NULL,
-    statusy_wizyt_id NUMBER(5) NOT NULL,
-    zabieg_id NUMBER(5) NOT NULL,
     prac_spec NUMBER(5) NOT NULL,
     prac_uma NUMBER(5) NOT NULL,
     recepta_id NUMBER(5) NOT NULL,
     gabinet_id NUMBER(5) NOT NULL,
     CONSTRAINT fk_wiz_pac FOREIGN KEY (pacjent_id) REFERENCES pacjenci(pacjent_id),
-    CONSTRAINT fk_wiz_sw FOREIGN KEY (statusy_wizyt_id) REFERENCES statusy_wizyt(statusy_wizyt_id),
-    CONSTRAINT fk_wiz_zab FOREIGN KEY (zabieg_id) REFERENCES zabiegi(zabieg_id),
     CONSTRAINT fk_wiz_prac FOREIGN KEY (prac_spec) REFERENCES pracownicy(pracownik_id),
     CONSTRAINT fk_wiz_prac2 FOREIGN KEY (prac_uma) REFERENCES pracownicy(pracownik_id),
     CONSTRAINT fk_wiz_rec FOREIGN KEY (recepta_id) REFERENCES recepty(recepta_id),
     CONSTRAINT fk_wiz_gab FOREIGN KEY (gabinet_id) REFERENCES gabinety(gabinet_id)
+);
+
+CREATE TABLE zabiegi (
+    zabieg_id NUMBER(5) PRIMARY KEY,
+    nazwa VARCHAR2(200) NOT NULL,
+    cena_netto NUMBER(5, 2),
+    pracownik_id NUMBER(5) NOT NULL,
+    wizyta_id NUMBER(5) NOT NULL,
+    CONSTRAINT fk_wiz_zab FOREIGN KEY (wizyta_id) REFERENCES wizyty(wizyta_id),
+    CONSTRAINT fk_pracownik_zabiegi FOREIGN KEY(pracownik_id) REFERENCES pracownicy(pracownik_id)
+);
+
+CREATE TABLE statusy_wizyt (
+    statusy_wizyt_id NUMBER(5) PRIMARY KEY,
+    status VARCHAR2(10) NOT NULL,
+    opis VARCHAR2(50),
+    CONSTRAINT fk_wiz_sw FOREIGN KEY (statusy_wizyt_id) REFERENCES wizyty(wizyta_id)
 );

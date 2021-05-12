@@ -10,26 +10,29 @@ public class Specjalnosci extends GlobalElements {
     private String nazwa;
     private int stopien;
     private int dodatek;
-    
+    public int[] wylosowaneSpecjalnosci;
+
     public Specjalnosci(int liczbaRekordow) throws IOException {
         id = 1;
         generator = new Random();
         file = new File("specjalnosci.csv");
-        
-        if(file.exists())
+        wylosowaneSpecjalnosci = new int[liczbaRekordow];
+
+        if (file.exists())
             file.delete();
         file.createNewFile();
 
         FileWriter writer = new FileWriter(file, StandardCharsets.UTF_8, true);
 
-        for(int i = 0; i < liczbaRekordow; i++) {
+        for (int i = 0; i < liczbaRekordow; i++) {
             int indeks = generator.nextInt(SpecjalnosciNazwy.length);
+            wylosowaneSpecjalnosci[i] = indeks;
 
             nazwa = SpecjalnosciNazwy[indeks];
             stopien = 1 + generator.nextInt(2);
             dodatek = stopien == 1 ? 300 : 600;
 
-            writer.write(id + "," + nazwa + "," + stopien + "," + dodatek +'\n');
+            writer.write(id + "," + nazwa + "," + stopien + "," + dodatek + '\n');
 
             id++;
         }
