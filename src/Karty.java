@@ -12,6 +12,9 @@ public class Karty extends GlobalElements {
     private String data;
     private String grupaKrwi;
 
+    public String[] pesele;
+    public int[] wiekPacjentow;
+
     private void dostosujPesel(int[] peselTab) {
         pesel = Arrays.toString(peselTab)
             .replace("[", "")
@@ -23,6 +26,8 @@ public class Karty extends GlobalElements {
     public Karty(int liczbaRekordow) throws IOException {
         generator = new Random();
         file = new File("karty.csv");
+        pesele = new String[liczbaRekordow];
+        wiekPacjentow = new int[liczbaRekordow];
 
         if (file.exists())
             file.delete();
@@ -34,7 +39,7 @@ public class Karty extends GlobalElements {
         int[] peselTab = new int[11];
 
         for (int i = 0; i < liczbaRekordow; i++) {
-            rok = 1970 + generator.nextInt(52);
+            rok = 1970 + generator.nextInt(LocalDate.now().getYear());
             miesiac = 1 + generator.nextInt(12);
             dzien = 1 + generator.nextInt(28);
             data = LocalDate.of(rok, miesiac, dzien).toString();
@@ -42,6 +47,9 @@ public class Karty extends GlobalElements {
             for(int j = 0; j < peselTab.length; j++)
                 peselTab[j] = generator.nextInt(9);
             dostosujPesel(peselTab);
+
+            pesele[i] = pesel;
+            wiekPacjentow[i] = LocalDate.now().getYear() - rok;
 
             grupaKrwi = kartyGrupyKrwi[generator.nextInt(kartyGrupyKrwi.length)];
 
