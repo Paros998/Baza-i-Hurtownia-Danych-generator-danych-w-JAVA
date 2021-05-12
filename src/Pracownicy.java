@@ -4,19 +4,17 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.Random;
 
-public class Uprawnienia extends GlobalElements {
-
+public class Pracownicy extends GlobalElements {
     private int id;
-    private String oznaczenie;
-    private String opis;
+
     public int[] wylosowaneId;
 
-    public Uprawnienia(int liczbaRekordow) throws IOException {
+    public Pracownicy(int liczbaRekordow, Placówki placówki, Adresy adresy, Kontakty kontakty, Stanowiska stanowiska,
+            Specjalnosci specjalnosci, Uprawnienia uprawnienia) throws IOException {
         id = 1;
         generator = new Random();
-        file = new File("uprawnienia.csv");
+        file = new File("adresy.csv");
         wylosowaneId = new int[liczbaRekordow];
-
         if (file.exists())
             file.delete();
         file.createNewFile();
@@ -24,17 +22,12 @@ public class Uprawnienia extends GlobalElements {
         FileWriter writer = new FileWriter(file, StandardCharsets.UTF_8, true);
 
         for (int i = 0; i < liczbaRekordow; i++) {
-            int indeks = generator.nextInt(UprawnieniaOznaczenia.length);
-            wylosowaneId[i] = indeks;
+            wylosowaneId[i] = id;
 
-            oznaczenie = UprawnieniaOznaczenia[indeks];
-            opis = UprawnieniaOpisy[indeks];
-
-            writer.write(id + "," + oznaczenie + "," + opis + '\n');
+            writer.write(id + "," + '\n');
 
             id++;
         }
-
         writer.close();
     }
 }

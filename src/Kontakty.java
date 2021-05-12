@@ -8,12 +8,13 @@ public class Kontakty extends GlobalElements {
     private int id;
     private String telefon;
     private String email;
+    public int[] wylosowaneId;
 
     public Kontakty(int liczbaRekordow) throws IOException {
         id = 1;
         generator = new Random();
         file = new File("kontakty.csv");
-
+        wylosowaneId = new int[liczbaRekordow];
         if (file.exists())
             file.delete();
         file.createNewFile();
@@ -36,7 +37,7 @@ public class Kontakty extends GlobalElements {
                 }
             }
             email += "@" + emaile[generator.nextInt(5)];
-
+            wylosowaneId[i] = id;
             writer.write(id + "," + telefon + "," + email + '\n');
             id++;
         }
