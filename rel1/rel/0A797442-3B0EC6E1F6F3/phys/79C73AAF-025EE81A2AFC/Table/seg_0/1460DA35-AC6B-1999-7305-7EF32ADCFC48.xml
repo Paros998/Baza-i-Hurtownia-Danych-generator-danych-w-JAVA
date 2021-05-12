@@ -1,0 +1,38 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="ULGI" directorySegmentName="seg_0" id="1460DA35-AC6B-1999-7305-7EF32ADCFC48">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:50 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<schemaObject>609A5188-E8BA-7550-5DAA-C1D81F092BFD</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ULGI_ID" id="35999B4D-608F-C24A-B3FD-D6E6F230EA8D">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:50 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROCENT_ULGI" id="80C33968-0B0F-0ED8-4F5D-89B3AB5E5CA6">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:50 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TYP_ULGI" id="F98851FF-563A-4E4A-2DB6-9A6ABC2B6E00">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:50 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ULGI_PK" id="AAC52FEE-1388-C197-8BE5-31BAA23FFD79">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:50 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<schemaObject>609A5188-E8BA-7550-5DAA-C1D81F092BFD</schemaObject>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

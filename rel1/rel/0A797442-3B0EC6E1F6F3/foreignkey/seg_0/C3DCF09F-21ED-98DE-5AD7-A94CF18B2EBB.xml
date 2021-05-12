@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C3DCF09F-21ED-98DE-5AD7-A94CF18B2EBB" containerWithKeyObject="F51CD2A2-404E-5ED9-EADE-5235B7D041E2" localFKIndex="D56D9777-621C-306F-3CA3-626CC01AB4DB" name="FK_WIZ_ZAB">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>POTAS</sourceObjSchema>
+<sourceObjName>FK_WIZ_ZAB</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:19:00 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<referredTableLongName>POTAS.WIZYTY</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>78657532-0DFC-5E1A-0BD5-9657C7481911</referredTableID>
+<keyObject>480DC378-D8C5-11A2-B90F-0E2AED765A4F</keyObject>
+<referredKeyID>480DC378-D8C5-11A2-B90F-0E2AED765A4F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>WIZYTA_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

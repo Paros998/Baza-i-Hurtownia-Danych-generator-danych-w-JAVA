@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="067AB55E-B080-F88F-2146-23558DC5337F" containerWithKeyObject="78657532-0DFC-5E1A-0BD5-9657C7481911" localFKIndex="9AFBB0F3-709A-9F5F-E787-0A226C6F6803" name="FK_WIZ_PRAC2">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>POTAS</sourceObjSchema>
+<sourceObjName>FK_WIZ_PRAC2</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:54 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<referredTableLongName>POTAS.PRACOWNICY</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5F45AAEF-8E46-9951-52FE-A586441E16C3</referredTableID>
+<keyObject>F161930D-71FF-DD62-6A4A-4110547C8723</keyObject>
+<referredKeyID>F161930D-71FF-DD62-6A4A-4110547C8723</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PRACOWNIK_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

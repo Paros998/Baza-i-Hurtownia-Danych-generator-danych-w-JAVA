@@ -1,0 +1,38 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="ODDZIALY_NFZ" directorySegmentName="seg_0" id="02178C59-9B4D-6735-7BBC-E881901FC631">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:50 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<schemaObject>609A5188-E8BA-7550-5DAA-C1D81F092BFD</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="KOD_FUNDUSZU" id="120E58BE-1773-71CD-8FF4-F967A2E9ECBA">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:50 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NAZWA" id="1C861513-7712-F733-8945-C60E5E9CB83E">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:50 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ODDZIAL_NFZ_ID" id="C38F1F8A-5F24-D0E9-1DFF-7154D9F1F0C2">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:50 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ODDZIALY_NFZ_PK" id="D66AD559-619D-0F21-1E15-2DB53719A903">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:50 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<schemaObject>609A5188-E8BA-7550-5DAA-C1D81F092BFD</schemaObject>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="229D3711-2B1C-E87C-6356-C55DD95BAE4E" containerWithKeyObject="5F45AAEF-8E46-9951-52FE-A586441E16C3" localFKIndex="7C483A89-D0C4-A8CA-2F66-4E58C2BDF8FD" name="FK_PRAC_STAN">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>POTAS</sourceObjSchema>
+<sourceObjName>FK_PRAC_STAN</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:16:22 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<importedID>53F333B2-3459-BE45-8802-1E8942D9B1DB</importedID>
+<referredTableLongName>POTAS.STANOWISKA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A821DD8E-3BA8-B741-DEEA-42767E652390</referredTableID>
+<keyObject>D32E42A4-13DB-28C0-905F-DDAB4538BC89</keyObject>
+<referredKeyID>D32E42A4-13DB-28C0-905F-DDAB4538BC89</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>STANOWISKO_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

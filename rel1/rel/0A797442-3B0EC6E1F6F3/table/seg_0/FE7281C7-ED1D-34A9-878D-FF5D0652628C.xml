@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FE7281C7-ED1D-34A9-878D-FF5D0652628C" schemaObject="609A5188-E8BA-7550-5DAA-C1D81F092BFD" name="UPRAWNIENIA">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>POTAS</sourceObjSchema>
+<sourceObjName>UPRAWNIENIA</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:16:22 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<importedID>CEA26B20-E28F-FEA7-0880-869A0BDD2FC3</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="UPRAWNIENIE_ID" id="AEB64F05-CD9B-0F02-324B-00B7F703A58E">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>UPRAWNIENIA</sourceObjSchema>
+<sourceObjName>UPRAWNIENIE_ID</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:16:22 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<importedID>693281D6-C6AA-FFDD-A42F-FA5B18477205</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OZNACZENIE" id="8B5F1D8C-29CA-2C87-46CC-728BD013E0FB">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>UPRAWNIENIA</sourceObjSchema>
+<sourceObjName>OZNACZENIE</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:16:22 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<importedID>1BEFDE17-92A9-6ED7-900E-6476E7A243B6</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OPIS" id="88CAB640-BA13-6234-C2FD-F0B6EB01625E">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>UPRAWNIENIA</sourceObjSchema>
+<sourceObjName>OPIS</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:16:22 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<importedID>DD3E9525-5AFF-3AA9-4DED-47218E94130D</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AD769E5E-3B56-864A-8ACF-4016D1037D31" schemaObject="609A5188-E8BA-7550-5DAA-C1D81F092BFD" name="UPRAWNIENIA_PK">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>POTAS</sourceObjSchema>
+<sourceObjName>SYS_C0026167</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:16:22 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<importedID>22B82EA0-E319-7035-3EC4-D25C4769C39E</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AEB64F05-CD9B-0F02-324B-00B7F703A58E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

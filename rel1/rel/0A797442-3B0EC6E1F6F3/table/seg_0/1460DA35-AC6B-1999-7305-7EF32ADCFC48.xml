@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1460DA35-AC6B-1999-7305-7EF32ADCFC48" schemaObject="609A5188-E8BA-7550-5DAA-C1D81F092BFD" name="ULGI">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>POTAS</sourceObjSchema>
+<sourceObjName>ULGI</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:16:22 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<importedID>6FEC5003-07BD-78E6-367E-B44408A7362C</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ULGI_ID" id="35999B4D-608F-C24A-B3FD-D6E6F230EA8D">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>ULGI</sourceObjSchema>
+<sourceObjName>ULGI_ID</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:16:22 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<importedID>53BCF0DA-D0C7-97E7-3077-97B527F4BC0B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TYP_ULGI" id="F98851FF-563A-4E4A-2DB6-9A6ABC2B6E00">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>ULGI</sourceObjSchema>
+<sourceObjName>TYP_ULGI</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:16:22 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<importedID>E5486438-D7B1-1A04-8BE6-EAA891D0313B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45 BYTE</dataTypeSize>
+<ownDataTypeParameters>45 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROCENT_ULGI" id="80C33968-0B0F-0ED8-4F5D-89B3AB5E5CA6">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>ULGI</sourceObjSchema>
+<sourceObjName>PROCENT_ULGI</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:16:22 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<importedID>F8C3A522-786A-D12C-DD01-A6DFF290C1ED</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AAC52FEE-1388-C197-8BE5-31BAA23FFD79" schemaObject="609A5188-E8BA-7550-5DAA-C1D81F092BFD" name="ULGI_PK">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>POTAS</sourceObjSchema>
+<sourceObjName>SYS_C0026229</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:16:22 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<importedID>762A83AA-B34C-6341-ED67-BE1CC0EBA6CF</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="35999B4D-608F-C24A-B3FD-D6E6F230EA8D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

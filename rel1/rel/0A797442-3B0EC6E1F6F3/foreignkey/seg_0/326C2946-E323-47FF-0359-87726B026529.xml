@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="326C2946-E323-47FF-0359-87726B026529" containerWithKeyObject="6AC7A9DB-16EB-9054-1866-A9522068403E" localFKIndex="D7321972-84A9-41AD-419B-979D75E04C6F" name="FK_ULGA_RECEPTY">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>POTAS</sourceObjSchema>
+<sourceObjName>FK_ULGA_RECEPTY</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:16:22 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<importedID>7906241F-7A82-473D-1DCA-718487D6F256</importedID>
+<referredTableLongName>POTAS.ULGI</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1460DA35-AC6B-1999-7305-7EF32ADCFC48</referredTableID>
+<keyObject>AAC52FEE-1388-C197-8BE5-31BAA23FFD79</keyObject>
+<referredKeyID>AAC52FEE-1388-C197-8BE5-31BAA23FFD79</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ULGI_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

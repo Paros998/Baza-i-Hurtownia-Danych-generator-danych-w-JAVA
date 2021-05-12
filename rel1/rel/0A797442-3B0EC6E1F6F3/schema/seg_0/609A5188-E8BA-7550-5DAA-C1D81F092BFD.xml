@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="POTAS" directorySegmentName="seg_0" id="609A5188-E8BA-7550-5DAA-C1D81F092BFD">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:16:22 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<importedID>FEF02F8E-60BE-9AB9-86B3-746E288FD571</importedID>
+</SchemaObject>

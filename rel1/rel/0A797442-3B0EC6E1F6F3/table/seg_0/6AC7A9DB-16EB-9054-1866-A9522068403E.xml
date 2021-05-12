@@ -1,0 +1,159 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6AC7A9DB-16EB-9054-1866-A9522068403E" schemaObject="609A5188-E8BA-7550-5DAA-C1D81F092BFD" name="RECEPTY">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>POTAS</sourceObjSchema>
+<sourceObjName>RECEPTY</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:16:22 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<importedID>2873DF11-5234-12D6-BCA5-9C604B05B6BA</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RECEPTA_ID" id="2DCAB7B3-431F-4F31-4419-1EDE5D322E83">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>RECEPTY</sourceObjSchema>
+<sourceObjName>RECEPTA_ID</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:16:22 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRACOWNIK_ID" id="ED600D6F-BD92-05E0-FB8F-C741B5CCCED5">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>RECEPTY</sourceObjSchema>
+<sourceObjName>PRACOWNIK_ID</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:16:22 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="82E3533E-DE75-2939-6358-6BDD90A8C742" referredColumn="87B1DFE3-DD6C-6191-8FEC-8A43AA7553A2"/>
+</associations>
+</Column>
+<Column name="ODDZIAL_NFZ_ID" id="778876EB-E158-BFBF-746D-89BA4E36A99E">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>RECEPTY</sourceObjSchema>
+<sourceObjName>ODDZIAL_NFZ_ID</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:16:22 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="41FBEC7E-C22C-DB9A-DEA6-1A759C1A6F71" referredColumn="C38F1F8A-5F24-D0E9-1DFF-7154D9F1F0C2"/>
+</associations>
+</Column>
+<Column name="RECEPTA_CHOROBA_ID" id="23C30CC9-9000-D441-0146-2358FDECA4D2">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>RECEPTY</sourceObjSchema>
+<sourceObjName>RECEPTA_CHOROBA_ID</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:16:22 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E8DAE835-C128-AFCB-CDE4-ADCE98B39479" referredColumn="2B3FCBE3-F1E9-2B40-7AA6-7EB798AE29BB"/>
+</associations>
+</Column>
+<Column name="ULGA_ID" id="8A0BD4D7-85DB-CD47-99AD-94B1458D1457">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>RECEPTY</sourceObjSchema>
+<sourceObjName>ULGA_ID</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:16:22 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="326C2946-E323-47FF-0359-87726B026529" referredColumn="35999B4D-608F-C24A-B3FD-D6E6F230EA8D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="46F83D6F-3B7F-FAD4-506D-82388D30DCFC" schemaObject="609A5188-E8BA-7550-5DAA-C1D81F092BFD" name="RECEPTY_PK">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>POTAS</sourceObjSchema>
+<sourceObjName>SYS_C0026236</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:16:22 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2DCAB7B3-431F-4F31-4419-1EDE5D322E83"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D01A34C2-167C-4B97-4C8D-69EE2F2E151F" name="FK_PRACOWNIK_RECEPTY">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:16:22 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED600D6F-BD92-05E0-FB8F-C741B5CCCED5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D7321972-84A9-41AD-419B-979D75E04C6F" name="FK_ULGA_RECEPTY">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:16:22 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A0BD4D7-85DB-CD47-99AD-94B1458D1457"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1A82AE54-BC2A-F687-461E-ECF4B1A05F90" name="FK_ODDZIAL_NFZ_RECEPTY">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:16:22 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="778876EB-E158-BFBF-746D-89BA4E36A99E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="03BAD869-46B1-E654-E7D8-B6D1F1218084" name="FK_RECEPTA_CHOROBA_RECEPTY">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:16:22 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="23C30CC9-9000-D441-0146-2358FDECA4D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

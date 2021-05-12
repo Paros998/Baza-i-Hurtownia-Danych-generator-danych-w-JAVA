@@ -1,0 +1,38 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="KONTAKTY" directorySegmentName="seg_0" id="40C995BE-8C62-A72C-29AE-D1B7D3441AFB">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:50 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<schemaObject>609A5188-E8BA-7550-5DAA-C1D81F092BFD</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="TELEFON" id="2003F58C-C811-5953-73DE-CED1DC845D90">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:50 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="KONTAKT_ID" id="361178F5-892B-0E63-2CC8-1BABC501BD1E">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:50 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMAIL" id="DEBFBA2B-EE5D-8642-2242-319939CF5239">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:50 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="KONTAKTY_PK" id="9A5EC3C3-E602-F743-5929-34F990A5EFE3">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:50 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<schemaObject>609A5188-E8BA-7550-5DAA-C1D81F092BFD</schemaObject>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

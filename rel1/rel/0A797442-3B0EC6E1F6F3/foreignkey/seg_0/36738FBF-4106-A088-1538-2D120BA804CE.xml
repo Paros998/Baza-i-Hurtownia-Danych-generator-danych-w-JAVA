@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="36738FBF-4106-A088-1538-2D120BA804CE" containerWithKeyObject="827EC654-FCE8-AD87-FD84-5B9CE5E66C85" localFKIndex="57E97E45-B1BA-86B9-894B-26040C07F44F" name="FK_PAC_ADR">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>POTAS</sourceObjSchema>
+<sourceObjName>FK_PAC_ADR</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:16:22 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<importedID>41AB5439-43AC-51AF-42D4-13E3BC638468</importedID>
+<referredTableLongName>POTAS.ADRESY</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>25509575-9629-7C2D-8EDB-D9106081F1C6</referredTableID>
+<keyObject>2F1B9698-2DB7-7A55-042B-FBC4C9FD9014</keyObject>
+<referredKeyID>2F1B9698-2DB7-7A55-042B-FBC4C9FD9014</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ADRES_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

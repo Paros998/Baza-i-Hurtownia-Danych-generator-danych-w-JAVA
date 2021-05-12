@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F51CD2A2-404E-5ED9-EADE-5235B7D041E2" schemaObject="609A5188-E8BA-7550-5DAA-C1D81F092BFD" name="ZABIEGI">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>POTAS</sourceObjSchema>
+<sourceObjName>ZABIEGI</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:19:00 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ZABIEG_ID" id="8C5E1674-FDC1-A0F6-5B55-2265F0957E40">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>ZABIEGI</sourceObjSchema>
+<sourceObjName>ZABIEG_ID</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:19:00 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAZWA" id="F2E19EBD-632A-20E0-DFFE-A555C4B05C45">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>ZABIEGI</sourceObjSchema>
+<sourceObjName>NAZWA</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:19:00 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CENA_NETTO" id="EA9C1D7E-6D18-CC57-11B5-84924C1AE59E">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>ZABIEGI</sourceObjSchema>
+<sourceObjName>CENA_NETTO</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:19:00 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRACOWNIK_ID" id="93F428CD-65DE-8D86-603F-7D1DD048F986">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>ZABIEGI</sourceObjSchema>
+<sourceObjName>PRACOWNIK_ID</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:19:00 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F1BF3E5C-FE6D-A9C9-1BD3-0CA4F3859D3C" referredColumn="87B1DFE3-DD6C-6191-8FEC-8A43AA7553A2"/>
+</associations>
+</Column>
+<Column name="WIZYTA_ID" id="466E8A2C-75D2-7E8D-11CE-00884791CF8D">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>ZABIEGI</sourceObjSchema>
+<sourceObjName>WIZYTA_ID</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:19:00 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C3DCF09F-21ED-98DE-5AD7-A94CF18B2EBB" referredColumn="6EA87B50-5852-B12A-9EE6-5D9DA9BF38B0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="95179633-3F02-26C1-DF0B-E0FD320899C6" schemaObject="609A5188-E8BA-7550-5DAA-C1D81F092BFD" name="ZABIEGI_PK">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>POTAS</sourceObjSchema>
+<sourceObjName>SYS_C0026470</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:19:00 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8C5E1674-FDC1-A0F6-5B55-2265F0957E40"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="87B8B559-D0E8-E16D-03F6-2E7AD1EFD168" name="FK_PRACOWNIK_ZABIEGI">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:19:00 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="93F428CD-65DE-8D86-603F-7D1DD048F986"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D56D9777-621C-306F-3CA3-626CC01AB4DB" name="FK_WIZ_ZAB">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:19:00 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="466E8A2C-75D2-7E8D-11CE-00884791CF8D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,243 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="78657532-0DFC-5E1A-0BD5-9657C7481911" schemaObject="609A5188-E8BA-7550-5DAA-C1D81F092BFD" name="WIZYTY">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>POTAS</sourceObjSchema>
+<sourceObjName>WIZYTY</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:54 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="WIZYTA_ID" id="6EA87B50-5852-B12A-9EE6-5D9DA9BF38B0">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>WIZYTY</sourceObjSchema>
+<sourceObjName>WIZYTA_ID</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:54 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OPLATA" id="CDF3B0E3-DA7B-1132-6B8E-A3E6B2E75932">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>WIZYTY</sourceObjSchema>
+<sourceObjName>OPLATA</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:54 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATA_WIZYTY" id="FEF59C61-E843-363F-AC09-2201B298939D">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>WIZYTY</sourceObjSchema>
+<sourceObjName>DATA_WIZYTY</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:54 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GODZINA_POCZATEK" id="AD19BFBD-EE1D-81AA-ED6A-4FF112761D71">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>WIZYTY</sourceObjSchema>
+<sourceObjName>GODZINA_POCZATEK</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:54 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GODZINA_KONIEC" id="E03FCB0F-0932-9D4A-E948-4AA9D73AC0F2">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>WIZYTY</sourceObjSchema>
+<sourceObjName>GODZINA_KONIEC</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:54 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PACJENT_ID" id="1330CF88-BCE5-A5F8-952E-B4F8E63BB1FD">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>WIZYTY</sourceObjSchema>
+<sourceObjName>PACJENT_ID</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:54 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4D2BD5FA-778A-6E4B-5547-4F0C27A0D9AA" referredColumn="8ADB5122-8288-0E2F-692A-51A27D8DDF7A"/>
+</associations>
+</Column>
+<Column name="PRAC_SPEC" id="5CB3F7D3-579F-AF13-35CC-3141D41E5BCE">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>WIZYTY</sourceObjSchema>
+<sourceObjName>PRAC_SPEC</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:54 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="33EB496E-0AD6-DEAC-1EE9-87DE6A5BF3DA" referredColumn="87B1DFE3-DD6C-6191-8FEC-8A43AA7553A2"/>
+</associations>
+</Column>
+<Column name="PRAC_UMA" id="4B4D12CC-B005-2FDD-5DB5-C21745CC62DC">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>WIZYTY</sourceObjSchema>
+<sourceObjName>PRAC_UMA</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:54 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="067AB55E-B080-F88F-2146-23558DC5337F" referredColumn="87B1DFE3-DD6C-6191-8FEC-8A43AA7553A2"/>
+</associations>
+</Column>
+<Column name="RECEPTA_ID" id="8AF796B2-5A79-C27B-C9DC-EE1128FB43E3">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>WIZYTY</sourceObjSchema>
+<sourceObjName>RECEPTA_ID</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:54 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="29B6B5D1-E61F-84E7-BEC6-FADE15A02DC6" referredColumn="2DCAB7B3-431F-4F31-4419-1EDE5D322E83"/>
+</associations>
+</Column>
+<Column name="GABINET_ID" id="1E99FF94-5CBE-2CC7-7CE5-603CC72311EE">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>WIZYTY</sourceObjSchema>
+<sourceObjName>GABINET_ID</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:54 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B457F155-DBFE-4321-4D50-74C6DEB2396F" referredColumn="708D1339-CAAA-7709-C729-C906912185DE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="480DC378-D8C5-11A2-B90F-0E2AED765A4F" schemaObject="609A5188-E8BA-7550-5DAA-C1D81F092BFD" name="WIZYTY_PK">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>POTAS</sourceObjSchema>
+<sourceObjName>SYS_C0026461</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:54 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6EA87B50-5852-B12A-9EE6-5D9DA9BF38B0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1A03BCB8-FECE-D05C-79D8-5569DFCBFDA0" name="FK_WIZ_GAB">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:54 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1E99FF94-5CBE-2CC7-7CE5-603CC72311EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C77280F9-3D52-4A90-240A-538546227076" name="FK_WIZ_PAC">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:54 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1330CF88-BCE5-A5F8-952E-B4F8E63BB1FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CB1DD478-9CD1-AABC-5B70-F2E5D7F9D0B3" name="FK_WIZ_PRAC">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:54 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5CB3F7D3-579F-AF13-35CC-3141D41E5BCE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9AFBB0F3-709A-9F5F-E787-0A226C6F6803" name="FK_WIZ_PRAC2">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:54 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B4D12CC-B005-2FDD-5DB5-C21745CC62DC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D15B9EF3-60A9-2323-E34E-EBC1115965A3" name="FK_WIZ_REC">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:54 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8AF796B2-5A79-C27B-C9DC-EE1128FB43E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

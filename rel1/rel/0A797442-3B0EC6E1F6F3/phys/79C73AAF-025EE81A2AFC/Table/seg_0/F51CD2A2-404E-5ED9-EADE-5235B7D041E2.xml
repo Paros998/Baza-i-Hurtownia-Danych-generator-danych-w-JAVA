@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="ZABIEGI" directorySegmentName="seg_0" id="F51CD2A2-404E-5ED9-EADE-5235B7D041E2">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:19:00 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<schemaObject>609A5188-E8BA-7550-5DAA-C1D81F092BFD</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>B59319C2-F656-5F54-51BB-A4859325A4FC</segment>
+<tableSpace>CC963A1A-5038-622B-A009-861C985BCE55</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="WIZYTA_ID" id="466E8A2C-75D2-7E8D-11CE-00884791CF8D">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:19:00 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ZABIEG_ID" id="8C5E1674-FDC1-A0F6-5B55-2265F0957E40">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:19:00 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRACOWNIK_ID" id="93F428CD-65DE-8D86-603F-7D1DD048F986">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:19:00 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CENA_NETTO" id="EA9C1D7E-6D18-CC57-11B5-84924C1AE59E">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:19:00 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NAZWA" id="F2E19EBD-632A-20E0-DFFE-A555C4B05C45">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:19:00 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_PRACOWNIK_ZABIEGI" id="87B8B559-D0E8-E16D-03F6-2E7AD1EFD168">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:19:00 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_WIZ_ZAB" id="D56D9777-621C-306F-3CA3-626CC01AB4DB">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:19:00 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ZABIEGI_PK" id="95179633-3F02-26C1-DF0B-E0FD320899C6">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:19:00 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<schemaObject>609A5188-E8BA-7550-5DAA-C1D81F092BFD</schemaObject>
+<segment>6300194B-AA98-2A40-1662-302CF6AB44EA</segment>
+<tableSpace>CC963A1A-5038-622B-A009-861C985BCE55</tableSpace>
+<indexSegment>6300194B-AA98-2A40-1662-302CF6AB44EA</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

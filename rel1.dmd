@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="rel1" id="EB9F5784-FE70-F48A-86B4-AB9F35D5FD71" version="3.5">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:09:07 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>EB9F5784-FE70-F48A-86B4-AB9F35D5FD71</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="A9C81453-59C8-E218-1CB2-1EF735F526A8">
+<designStoragePath>E:\</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="15B27E48-89F2-70BC-9AA1-203F91E6BF9B">
+<designStoragePath>E:\</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="AEED7346-0960-A841-F8E4-1F4407513054">
+<designStoragePath>C:\Users\part4\Desktop\Projekt Bazy Danych 2\generator\relational_1</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

@@ -1,0 +1,38 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="KARTY" directorySegmentName="seg_0" id="2BC78903-3C0F-6F89-4CE0-DF51033EF9CF">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:50 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<schemaObject>609A5188-E8BA-7550-5DAA-C1D81F092BFD</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="GRUPA_KRWI" id="7A0ED18A-23EB-3711-0C7C-E2DAF9FE9BB4">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:50 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATA_UR" id="D4F933F8-CE16-26AE-A0DA-4310C39FB6DD">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:50 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PESEL_ID" id="F28C3D7B-A87D-101A-2DEB-DE281BDDA3AE">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:50 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="KARTY_PK" id="D842F1EE-661A-6C76-922B-87142C58EC0B">
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:18:50 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<schemaObject>609A5188-E8BA-7550-5DAA-C1D81F092BFD</schemaObject>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

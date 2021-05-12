@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8D2CC2CD-0825-AF4B-9806-2378E8A65B2A" containerWithKeyObject="A821DD8E-3BA8-B741-DEEA-42767E652390" localFKIndex="E187560E-3636-13B8-4A12-91CBC3DAB9E3" name="FK_STA_UPR">
+<sourceConnName>Potas</sourceConnName>
+<sourceObjSchema>POTAS</sourceObjSchema>
+<sourceObjName>FK_STA_UPR</sourceObjName>
+<createdBy>part4</createdBy>
+<createdTime>2021-05-12 14:16:22 UTC</createdTime>
+<ownerDesignName>rel1</ownerDesignName>
+<importedID>6244AAAB-38CF-1E24-47B5-60EF9BB9737D</importedID>
+<referredTableLongName>POTAS.UPRAWNIENIA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FE7281C7-ED1D-34A9-878D-FF5D0652628C</referredTableID>
+<keyObject>AD769E5E-3B56-864A-8ACF-4016D1037D31</keyObject>
+<referredKeyID>AD769E5E-3B56-864A-8ACF-4016D1037D31</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>UPRAWNIENIE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
