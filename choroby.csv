@@ -1,10 +1,100 @@
-1,Choroba niedkrwienna serca,Powoduje zamostkowy bol serca, czesto promieniujacy do zuchwy i konczyn gornych,1993-01-20,2011-11-08,5
-2,Kamica zolciowa,Tepy bol w prawym podzebrzu, wzdecia brzucha i rozne objawy dyspeptyczne,1998-11-13,2042-05-28,8
-3,Zapalenie osierdzia,Ostry, staly, czasami bardzo intensywny bol serca, ktory promieniuje do barkow i szyi,2008-02-11,2017-01-01,1
-4,Kamica nerkowa,Najczestszym objawem tej choroby jest kolka nerwowa – silny, ostry bol w okolicy ledzwiowej, promieniujacy ku dolowi w kierunku pecherza, cewki i zewnetrznej powierzchni uda,2013-09-17,2013-10-09,8
-5,Alergia,Katar, lzawienie oczu, podraznienie skory i gardla,2003-09-26,2003-12-19,6
-6,Nowotwor trzustki,Bol brzucha, nudnosci, brak apetytu, utrata masy ciala i chudniecie,1992-10-26,2038-03-10,1
-7,Astma,Objawy ataku astmy to głownie niepokoj, swiszczacy oddech, kaszel i dusznosci,2011-06-24,2021-02-06,7
-8,Zapalenie miesnia sercowego,Oprocz bolu w klatce piersiowej pojawia się goraczka, zmeczenie i problemy z oddychaniem,2002-06-19,2011-02-23,6
-9,Osteoporoza,Osteoporoza jest nazywana cichym zlodziejem kosci, poniewaz objawia sie rozrzedzeniem tkanki kostnej,2018-09-05,2018-10-03,2
-10,Nowotwor trzustki,Bol brzucha, nudnosci, brak apetytu, utrata masy ciala i chudniecie,2003-03-20,2003-06-20,2
+1,Choroba niedkrwienna serca,Powoduje zamostkowy bol serca, czesto promieniujacy do zuchwy i konczyn gornych,2018-03-17,2030-09-28,65
+2,Grypa,Grypie towarzyszy na ogoł wysoka temperatura (nawet powyżej 39 stopni), bole miesni i kosci, natomiast nie zawsze wystepuje katar,2012-11-09,2032-09-03,85
+3,Choroba niedkrwienna serca,Powoduje zamostkowy bol serca, czesto promieniujacy do zuchwy i konczyn gornych,2010-02-28,2010-02-24,16
+4,Choroba niedkrwienna serca,Powoduje zamostkowy bol serca, czesto promieniujacy do zuchwy i konczyn gornych,1994-02-15,1994-10-05,76
+5,Wrzody,Silne dolegliwosci bolowe, wynikajace z draznienia owrzodzenia przez przyjmowane pokarmy oraz sok zoladkowy (zazwyczaj kwasny lub nadkwasny),2001-02-09,2022-10-03,29
+6,Osteoporoza,Osteoporoza jest nazywana cichym zlodziejem kosci, poniewaz objawia sie rozrzedzeniem tkanki kostnej,1992-09-08,1992-11-01,5
+7,Zapalenie osierdzia,Ostry, staly, czasami bardzo intensywny bol serca, ktory promieniuje do barkow i szyi,2004-06-10,2004-08-08,49
+8,Choroba niedkrwienna serca,Powoduje zamostkowy bol serca, czesto promieniujacy do zuchwy i konczyn gornych,2013-01-21,2013-04-02,89
+9,Wrzody,Silne dolegliwosci bolowe, wynikajace z draznienia owrzodzenia przez przyjmowane pokarmy oraz sok zoladkowy (zazwyczaj kwasny lub nadkwasny),2014-09-15,2025-11-15,65
+10,Cukrzyca,Choroba polega na zaburzeniu gospodarki weglowodanowej spowodowanej niedoborem insuliny w organizmie,2002-01-04,2014-05-17,6
+11,Nowotwor tchawicy,Zaburzenia glosu, poczatkowo o zmianie barwy, oslabienia, braku dzwiecznosci, meczliwosci i okresowej chrypki,1995-07-05,2021-04-25,99
+12,Astma,Objawy ataku astmy to głownie niepokoj, swiszczacy oddech, kaszel i dusznosci,1995-08-17,1995-09-27,63
+13,Zapalenie miesnia sercowego,Oprocz bolu w klatce piersiowej pojawia się goraczka, zmeczenie i problemy z oddychaniem,1993-03-01,1993-07-22,54
+14,Choroba niedkrwienna serca,Powoduje zamostkowy bol serca, czesto promieniujacy do zuchwy i konczyn gornych,1993-10-13,2012-06-15,42
+15,Zapalenie miesnia sercowego,Oprocz bolu w klatce piersiowej pojawia się goraczka, zmeczenie i problemy z oddychaniem,2003-12-21,2008-02-25,33
+16,Astma,Objawy ataku astmy to głownie niepokoj, swiszczacy oddech, kaszel i dusznosci,1999-04-14,2033-11-15,54
+17,Cukrzyca,Choroba polega na zaburzeniu gospodarki weglowodanowej spowodowanej niedoborem insuliny w organizmie,2000-08-16,2039-12-20,66
+18,Dlawica piersiowa,Objawia sie napadowymi bolami w okolicy serca lub mostka,czesto wystepuje po wysilku fizycznym,2008-07-12,2008-07-16,2
+19,Wrzody,Silne dolegliwosci bolowe, wynikajace z draznienia owrzodzenia przez przyjmowane pokarmy oraz sok zoladkowy (zazwyczaj kwasny lub nadkwasny),1996-10-07,1996-11-21,36
+20,Zapalenie miesnia sercowego,Oprocz bolu w klatce piersiowej pojawia się goraczka, zmeczenie i problemy z oddychaniem,2010-06-09,2010-12-03,81
+21,Zapalenie miesnia sercowego,Oprocz bolu w klatce piersiowej pojawia się goraczka, zmeczenie i problemy z oddychaniem,1993-03-09,2034-10-12,4
+22,Kamica zolciowa,Tepy bol w prawym podzebrzu, wzdecia brzucha i rozne objawy dyspeptyczne,2007-03-02,2007-05-26,92
+23,Nowotwor trzustki,Bol brzucha, nudnosci, brak apetytu, utrata masy ciala i chudniecie,2020-04-05,2033-01-18,38
+24,Wrzody,Silne dolegliwosci bolowe, wynikajace z draznienia owrzodzenia przez przyjmowane pokarmy oraz sok zoladkowy (zazwyczaj kwasny lub nadkwasny),2019-03-19,2039-08-03,23
+25,Kamica zolciowa,Tepy bol w prawym podzebrzu, wzdecia brzucha i rozne objawy dyspeptyczne,1992-09-06,1992-11-08,81
+26,Zapalenie miesnia sercowego,Oprocz bolu w klatce piersiowej pojawia się goraczka, zmeczenie i problemy z oddychaniem,2018-04-11,2040-10-07,58
+27,Nowotwor trzustki,Bol brzucha, nudnosci, brak apetytu, utrata masy ciala i chudniecie,2008-03-17,2023-09-20,69
+28,Grypa,Grypie towarzyszy na ogoł wysoka temperatura (nawet powyżej 39 stopni), bole miesni i kosci, natomiast nie zawsze wystepuje katar,2012-11-25,2012-12-16,90
+29,Nowotwor trzustki,Bol brzucha, nudnosci, brak apetytu, utrata masy ciala i chudniecie,1992-06-11,2021-11-06,77
+30,Alergia,Katar, lzawienie oczu, podraznienie skory i gardla,2010-03-28,2043-10-10,85
+31,Astma,Objawy ataku astmy to głownie niepokoj, swiszczacy oddech, kaszel i dusznosci,2007-03-03,2019-06-09,27
+32,Zapalenie osierdzia,Ostry, staly, czasami bardzo intensywny bol serca, ktory promieniuje do barkow i szyi,1994-11-23,1994-12-27,64
+33,Choroba niedkrwienna serca,Powoduje zamostkowy bol serca, czesto promieniujacy do zuchwy i konczyn gornych,2016-11-27,2016-12-23,43
+34,Osteoporoza,Osteoporoza jest nazywana cichym zlodziejem kosci, poniewaz objawia sie rozrzedzeniem tkanki kostnej,1998-07-20,2015-10-02,96
+35,Wrzody,Silne dolegliwosci bolowe, wynikajace z draznienia owrzodzenia przez przyjmowane pokarmy oraz sok zoladkowy (zazwyczaj kwasny lub nadkwasny),2005-12-17,2043-02-05,67
+36,Zapalenie osierdzia,Ostry, staly, czasami bardzo intensywny bol serca, ktory promieniuje do barkow i szyi,2011-06-23,2020-04-26,65
+37,Kamica zolciowa,Tepy bol w prawym podzebrzu, wzdecia brzucha i rozne objawy dyspeptyczne,2012-05-05,2022-09-01,57
+38,Choroba niedkrwienna serca,Powoduje zamostkowy bol serca, czesto promieniujacy do zuchwy i konczyn gornych,2001-01-07,2033-10-05,80
+39,Nowotwor trzustki,Bol brzucha, nudnosci, brak apetytu, utrata masy ciala i chudniecie,2001-07-15,2001-08-02,14
+40,Astma,Objawy ataku astmy to głownie niepokoj, swiszczacy oddech, kaszel i dusznosci,1993-04-01,1993-11-21,69
+41,Nowotwor trzustki,Bol brzucha, nudnosci, brak apetytu, utrata masy ciala i chudniecie,2015-07-16,2015-08-20,83
+42,Astma,Objawy ataku astmy to głownie niepokoj, swiszczacy oddech, kaszel i dusznosci,2006-10-18,2040-03-01,97
+43,Alergia,Katar, lzawienie oczu, podraznienie skory i gardla,2018-05-13,2019-06-26,90
+44,Nowotwor tchawicy,Zaburzenia glosu, poczatkowo o zmianie barwy, oslabienia, braku dzwiecznosci, meczliwosci i okresowej chrypki,1996-10-27,1996-12-09,58
+45,Cukrzyca,Choroba polega na zaburzeniu gospodarki weglowodanowej spowodowanej niedoborem insuliny w organizmie,1996-06-20,2027-02-07,85
+46,Alergia,Katar, lzawienie oczu, podraznienie skory i gardla,1999-10-26,2022-02-12,86
+47,Nowotwor trzustki,Bol brzucha, nudnosci, brak apetytu, utrata masy ciala i chudniecie,2015-01-23,2015-11-15,55
+48,Nowotwor tchawicy,Zaburzenia glosu, poczatkowo o zmianie barwy, oslabienia, braku dzwiecznosci, meczliwosci i okresowej chrypki,2014-09-04,2014-09-14,93
+49,Wrzody,Silne dolegliwosci bolowe, wynikajace z draznienia owrzodzenia przez przyjmowane pokarmy oraz sok zoladkowy (zazwyczaj kwasny lub nadkwasny),2009-02-12,2033-03-08,62
+50,Dlawica piersiowa,Objawia sie napadowymi bolami w okolicy serca lub mostka,czesto wystepuje po wysilku fizycznym,2002-03-09,2002-01-12,40
+51,Kamica zolciowa,Tepy bol w prawym podzebrzu, wzdecia brzucha i rozne objawy dyspeptyczne,1994-04-08,1994-05-21,16
+52,Wrzody,Silne dolegliwosci bolowe, wynikajace z draznienia owrzodzenia przez przyjmowane pokarmy oraz sok zoladkowy (zazwyczaj kwasny lub nadkwasny),1996-11-17,2005-10-21,52
+53,Nowotwor trzustki,Bol brzucha, nudnosci, brak apetytu, utrata masy ciala i chudniecie,2010-10-22,2036-01-14,90
+54,Choroba niedkrwienna serca,Powoduje zamostkowy bol serca, czesto promieniujacy do zuchwy i konczyn gornych,2014-02-19,2022-08-04,13
+55,Kamica zolciowa,Tepy bol w prawym podzebrzu, wzdecia brzucha i rozne objawy dyspeptyczne,2017-01-26,2020-02-26,73
+56,Zapalenie miesnia sercowego,Oprocz bolu w klatce piersiowej pojawia się goraczka, zmeczenie i problemy z oddychaniem,2009-02-03,2040-05-10,7
+57,Nowotwor tchawicy,Zaburzenia glosu, poczatkowo o zmianie barwy, oslabienia, braku dzwiecznosci, meczliwosci i okresowej chrypki,2004-09-18,2042-07-04,75
+58,Osteoporoza,Osteoporoza jest nazywana cichym zlodziejem kosci, poniewaz objawia sie rozrzedzeniem tkanki kostnej,2013-07-17,2013-11-14,9
+59,Zapalenie miesnia sercowego,Oprocz bolu w klatce piersiowej pojawia się goraczka, zmeczenie i problemy z oddychaniem,2013-08-06,2043-01-08,11
+60,Choroba niedkrwienna serca,Powoduje zamostkowy bol serca, czesto promieniujacy do zuchwy i konczyn gornych,1996-07-14,1996-07-06,80
+61,Grypa,Grypie towarzyszy na ogoł wysoka temperatura (nawet powyżej 39 stopni), bole miesni i kosci, natomiast nie zawsze wystepuje katar,2003-12-21,2006-02-10,61
+62,Kamica nerkowa,Najczestszym objawem tej choroby jest kolka nerwowa – silny, ostry bol w okolicy ledzwiowej, promieniujacy ku dolowi w kierunku pecherza, cewki i zewnetrznej powierzchni uda,2011-07-26,2011-07-18,3
+63,Astma,Objawy ataku astmy to głownie niepokoj, swiszczacy oddech, kaszel i dusznosci,2009-11-10,2017-05-13,40
+64,Zapalenie miesnia sercowego,Oprocz bolu w klatce piersiowej pojawia się goraczka, zmeczenie i problemy z oddychaniem,1993-08-28,2003-01-10,52
+65,Astma,Objawy ataku astmy to głownie niepokoj, swiszczacy oddech, kaszel i dusznosci,2014-12-11,2014-12-18,55
+66,Nowotwor tchawicy,Zaburzenia glosu, poczatkowo o zmianie barwy, oslabienia, braku dzwiecznosci, meczliwosci i okresowej chrypki,1994-07-11,1994-10-01,10
+67,Alergia,Katar, lzawienie oczu, podraznienie skory i gardla,2012-03-26,2026-06-27,83
+68,Kamica nerkowa,Najczestszym objawem tej choroby jest kolka nerwowa – silny, ostry bol w okolicy ledzwiowej, promieniujacy ku dolowi w kierunku pecherza, cewki i zewnetrznej powierzchni uda,2005-09-20,2021-02-28,14
+69,Kamica nerkowa,Najczestszym objawem tej choroby jest kolka nerwowa – silny, ostry bol w okolicy ledzwiowej, promieniujacy ku dolowi w kierunku pecherza, cewki i zewnetrznej powierzchni uda,1998-01-22,1998-11-18,85
+70,Osteoporoza,Osteoporoza jest nazywana cichym zlodziejem kosci, poniewaz objawia sie rozrzedzeniem tkanki kostnej,2016-01-06,2016-02-15,60
+71,Astma,Objawy ataku astmy to głownie niepokoj, swiszczacy oddech, kaszel i dusznosci,2007-04-13,2007-06-06,43
+72,Alergia,Katar, lzawienie oczu, podraznienie skory i gardla,2018-07-02,2028-10-09,74
+73,Alergia,Katar, lzawienie oczu, podraznienie skory i gardla,2003-09-10,2003-12-07,91
+74,Dlawica piersiowa,Objawia sie napadowymi bolami w okolicy serca lub mostka,czesto wystepuje po wysilku fizycznym,1997-08-07,1997-11-02,6
+75,Dlawica piersiowa,Objawia sie napadowymi bolami w okolicy serca lub mostka,czesto wystepuje po wysilku fizycznym,2018-11-08,2035-05-26,92
+76,Kamica nerkowa,Najczestszym objawem tej choroby jest kolka nerwowa – silny, ostry bol w okolicy ledzwiowej, promieniujacy ku dolowi w kierunku pecherza, cewki i zewnetrznej powierzchni uda,2020-12-17,2020-12-17,53
+77,Zapalenie osierdzia,Ostry, staly, czasami bardzo intensywny bol serca, ktory promieniuje do barkow i szyi,2020-07-20,2042-05-27,76
+78,Zapalenie osierdzia,Ostry, staly, czasami bardzo intensywny bol serca, ktory promieniuje do barkow i szyi,2013-12-22,2034-11-24,35
+79,Choroba niedkrwienna serca,Powoduje zamostkowy bol serca, czesto promieniujacy do zuchwy i konczyn gornych,2007-12-25,2007-12-27,71
+80,Nowotwor trzustki,Bol brzucha, nudnosci, brak apetytu, utrata masy ciala i chudniecie,2009-07-26,2039-11-19,79
+81,Alergia,Katar, lzawienie oczu, podraznienie skory i gardla,2000-01-12,2000-11-14,89
+82,Zapalenie osierdzia,Ostry, staly, czasami bardzo intensywny bol serca, ktory promieniuje do barkow i szyi,2004-04-22,2042-08-20,56
+83,Osteoporoza,Osteoporoza jest nazywana cichym zlodziejem kosci, poniewaz objawia sie rozrzedzeniem tkanki kostnej,1997-04-06,2030-10-04,17
+84,Zapalenie osierdzia,Ostry, staly, czasami bardzo intensywny bol serca, ktory promieniuje do barkow i szyi,1995-01-23,1995-12-03,90
+85,Alergia,Katar, lzawienie oczu, podraznienie skory i gardla,1993-04-25,2030-12-17,70
+86,Alergia,Katar, lzawienie oczu, podraznienie skory i gardla,2018-08-06,2034-11-07,61
+87,Kamica zolciowa,Tepy bol w prawym podzebrzu, wzdecia brzucha i rozne objawy dyspeptyczne,2013-09-28,2013-12-21,56
+88,Osteoporoza,Osteoporoza jest nazywana cichym zlodziejem kosci, poniewaz objawia sie rozrzedzeniem tkanki kostnej,2000-07-13,2000-08-22,39
+89,Wrzody,Silne dolegliwosci bolowe, wynikajace z draznienia owrzodzenia przez przyjmowane pokarmy oraz sok zoladkowy (zazwyczaj kwasny lub nadkwasny),2015-11-11,2015-11-13,89
+90,Grypa,Grypie towarzyszy na ogoł wysoka temperatura (nawet powyżej 39 stopni), bole miesni i kosci, natomiast nie zawsze wystepuje katar,1993-08-16,1993-10-14,23
+91,Choroba niedkrwienna serca,Powoduje zamostkowy bol serca, czesto promieniujacy do zuchwy i konczyn gornych,2013-09-21,2021-05-23,10
+92,Nowotwor tchawicy,Zaburzenia glosu, poczatkowo o zmianie barwy, oslabienia, braku dzwiecznosci, meczliwosci i okresowej chrypki,1997-09-01,2021-10-05,21
+93,Cukrzyca,Choroba polega na zaburzeniu gospodarki weglowodanowej spowodowanej niedoborem insuliny w organizmie,2000-01-27,2000-08-03,58
+94,Zapalenie osierdzia,Ostry, staly, czasami bardzo intensywny bol serca, ktory promieniuje do barkow i szyi,2018-10-07,2038-10-20,35
+95,Cukrzyca,Choroba polega na zaburzeniu gospodarki weglowodanowej spowodowanej niedoborem insuliny w organizmie,1998-09-27,1998-09-15,35
+96,Kamica nerkowa,Najczestszym objawem tej choroby jest kolka nerwowa – silny, ostry bol w okolicy ledzwiowej, promieniujacy ku dolowi w kierunku pecherza, cewki i zewnetrznej powierzchni uda,1993-05-17,1993-10-17,14
+97,Zapalenie miesnia sercowego,Oprocz bolu w klatce piersiowej pojawia się goraczka, zmeczenie i problemy z oddychaniem,2006-09-06,2024-12-13,97
+98,Cukrzyca,Choroba polega na zaburzeniu gospodarki weglowodanowej spowodowanej niedoborem insuliny w organizmie,2002-10-06,2002-10-05,87
+99,Grypa,Grypie towarzyszy na ogoł wysoka temperatura (nawet powyżej 39 stopni), bole miesni i kosci, natomiast nie zawsze wystepuje katar,2005-12-05,2005-12-05,81
+100,Alergia,Katar, lzawienie oczu, podraznienie skory i gardla,1996-01-01,1996-05-11,52

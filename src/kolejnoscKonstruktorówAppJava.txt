@@ -1,3 +1,5 @@
+Ulgi
+OddziałyNFZ
 Adresy
 Kontakty
 Specjalności
@@ -5,7 +7,12 @@ Uprawnienia
 Stanowiska
 Karty
 Choroby
-
 Placówki
 Pracownicy
 Pacjenci
+Gabinety
+Wizyty
+Recepty
+PozycjeRecept
+StatusyWizyt
+Zabiegi

@@ -15,6 +15,7 @@ public class Kontakty extends GlobalElements {
         generator = new Random();
         file = new File("kontakty.csv");
         wylosowaneId = new int[liczbaRekordow];
+        telefon = email = "";
         if (file.exists())
             file.delete();
         file.createNewFile();
@@ -31,15 +32,19 @@ public class Kontakty extends GlobalElements {
                 if (x == 0) {
                     email += (char) generator.nextInt(9) + 48;
                 } else if (x == 1) {
-                    email += (char) generator.nextInt(25) + 65;
+                    char c = (char) (generator.nextInt(25) + 65);
+                    email += c;
+
                 } else {
-                    email += (char) generator.nextInt(25) + 97;
+                    char c = (char) (generator.nextInt(25) + 97);
+                    email += c;
                 }
             }
             email += "@" + emaile[generator.nextInt(5)];
             wylosowaneId[i] = id;
             writer.write(id + "," + telefon + "," + email + '\n');
             id++;
+            telefon = email = "";
         }
         writer.close();
     }

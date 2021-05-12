@@ -21,6 +21,8 @@ public class Pacjenci extends GlobalElements {
         wylosowaneId = new int[liczbaRekordow];
         uzyteKontakty = new int[liczbaRekordow];
         uzyteAdresy = new int[liczbaRekordow];
+        uzytePesele = new String[liczbaRekordow];
+        login = haslo = "";
         if (file.exists())
             file.delete();
         file.createNewFile();
