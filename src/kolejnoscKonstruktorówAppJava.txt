@@ -1,0 +1,11 @@
+Adresy
+Kontakty
+Specjalności
+Uprawnienia
+Stanowiska
+Karty
+Choroby
+
+Placówki
+Pracownicy
+Pacjenci

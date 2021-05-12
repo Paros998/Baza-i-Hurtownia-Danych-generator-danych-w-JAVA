@@ -11,12 +11,14 @@ public class Specjalnosci extends GlobalElements {
     private int stopien;
     private int dodatek;
     public int[] wylosowaneSpecjalnosci;
+    public int[] wylosowaneDodatki;
 
     public Specjalnosci(int liczbaRekordow) throws IOException {
         id = 1;
         generator = new Random();
         file = new File("specjalnosci.csv");
         wylosowaneSpecjalnosci = new int[liczbaRekordow];
+        wylosowaneDodatki = new int[liczbaRekordow];
 
         if (file.exists())
             file.delete();
@@ -31,6 +33,7 @@ public class Specjalnosci extends GlobalElements {
             nazwa = SpecjalnosciNazwy[indeks];
             stopien = 1 + generator.nextInt(2);
             dodatek = stopien == 1 ? 300 : 600;
+            wylosowaneDodatki[i] = dodatek;
 
             writer.write(id + "," + nazwa + "," + stopien + "," + dodatek + '\n');
 

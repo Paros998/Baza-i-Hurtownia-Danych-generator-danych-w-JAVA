@@ -121,7 +121,7 @@ CREATE TABLE pacjenci(
     nazwisko VARCHAR2(45) NOT NULL,
     login VARCHAR2(45),
     haslo VARCHAR2(45),
-    pesel_id NUMBER(5) NOT NULL,
+    pesel_id NUMBER(11) NOT NULL,
     kontakt_id NUMBER(5) NOT NULL,
     adres_id NUMBER(5) NOT NULL,
     CONSTRAINT fk_pac_kart FOREIGN KEY (pesel_id) REFERENCES karty(pesel_id),
