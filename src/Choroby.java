@@ -13,6 +13,7 @@ public class Choroby extends GlobalElements {
     private String pocztekData;
     private String koniecData;
     private int peselId;
+    public int[] idPacjentow;
     
     private int[] losujDatePoczatku() {
         int rok, miesiac, dzien;
@@ -58,6 +59,7 @@ public class Choroby extends GlobalElements {
         id = 1;
         generator = new Random();
         file = new File("choroby.csv");
+        idPacjentow = new int[karty.pesele.length];
 
         if (file.exists())
             file.delete();
@@ -72,7 +74,7 @@ public class Choroby extends GlobalElements {
 
             losujDateKonca(losujDatePoczatku());
 
-            peselId = 1 + generator.nextInt(karty.pesele.length);
+            idPacjentow[i] = peselId = 1 + generator.nextInt(karty.pesele.length);
 
             writer.write(id + "," + nazwa + "," + opis + "," + 
             pocztekData + "," + koniecData + "," + peselId + '\n');

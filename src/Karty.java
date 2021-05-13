@@ -19,7 +19,11 @@ public class Karty extends GlobalElements {
     public int[] wiekPacjentow;
 
     private void dostosujPesel(int[] peselTab) {
-        pesel = Arrays.toString(peselTab).replace("[", "").replace("]", "").replace(",", "").replace(" ", "");
+        pesel = Arrays.toString(peselTab)
+        .replace("[", "")
+        .replace("]", "")
+        .replace(",", "")
+        .replace(" ", "");
     }
 
     public Karty(int liczbaRekordow) throws IOException {
@@ -30,6 +34,7 @@ public class Karty extends GlobalElements {
         lata = new int[liczbaRekordow];
         miesiace = new int[liczbaRekordow];
         dni = new int[liczbaRekordow];
+        
         if (file.exists())
             file.delete();
         file.createNewFile();
