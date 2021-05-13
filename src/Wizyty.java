@@ -57,7 +57,7 @@ public class Wizyty extends GlobalElements {
             indeks = generator.nextInt(pracownicy.iloscRecepcji);
             pracownik_umawiajacy = pracownicy.recepcja[indeks];
             // Losowanie daty uwzględniając urodzenie
-            rok = 1970 + generator.nextInt(54);
+            rok = 2000 + generator.nextInt(24);
             miesiac = 1 + generator.nextInt(12);
             dzien = 1 + generator.nextInt(28);
             while (rok <= karty.lata[indeks] && miesiac <= karty.miesiace[indeks] && dzien < karty.dni[indeks]) {
@@ -97,7 +97,7 @@ public class Wizyty extends GlobalElements {
 
     private void losujPonownie(Karty karty, int i) {
         // Losowanie daty uwzględniając urodzenie
-        rok = 1970 + generator.nextInt(54);
+        rok = 2000 + generator.nextInt(24);
         miesiac = 1 + generator.nextInt(12);
         dzien = 1 + generator.nextInt(28);
         while (rok <= karty.lata[indeks] && miesiac <= karty.miesiace[indeks] && dzien < karty.dni[indeks]) {

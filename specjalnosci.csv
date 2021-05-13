@@ -1,100 +1,100 @@
-1,Kardiologia dziecięca,1,300
-2,Neuropatologia,2,600
-3,Neurologia dziecięca,1,300
-4,Położnictwo i ginekologia,2,600
-5,Kardiochirurgia,2,600
-6,Endokrynologia ginekologiczna i rozrodczość,1,300
-7,Transfuzjologia kliniczna,1,300
-8,Neonatologia,1,300
-9,Otorynolaryngologia dziecięca,2,600
-10,Seksuologia,2,600
-11,Toksykologia kliniczna,1,300
-12,Endokrynologia ginekologiczna i rozrodczość,1,300
-13,Chirurgia onkologiczna,2,600
-14,Położnictwo i ginekologia,1,300
-15,Chirurgia plastyczna,1,300
-16,Nefrologia dziecięca,2,600
-17,Położnictwo i ginekologia,2,600
-18,Zdrowie publiczne,2,600
-19,Diabetologia,2,600
-20,Rehabilitacja medyczna,2,600
-21,Endokrynologia i diabetologia dziecięca,2,600
-22,Ginekologia onkologiczna,2,600
-23,Pediatria metaboliczna,1,300
-24,Medycyna sądowa,1,300
+1,Dermatologia i wenerologia,1,300
+2,Gastroenterologia dziecięca,1,300
+3,Medycyna ratunkowa,1,300
+4,Pediatria,2,600
+5,Onkologia kliniczna,2,600
+6,Hematologia,1,300
+7,Ginekologia onkologiczna,1,300
+8,Urologia dziecięca,2,600
+9,Hematologia,2,600
+10,Neonatologia,1,300
+11,Chirurgia plastyczna,2,600
+12,Ginekologia onkologiczna,1,300
+13,Immunologia kliniczna,1,300
+14,Urologia dziecięca,1,300
+15,Neurochirurgia,1,300
+16,Rehabilitacja medyczna,2,600
+17,Medycyna sądowa,1,300
+18,Położnictwo i ginekologia,2,600
+19,Ortodoncja,2,600
+20,Alergologia,1,300
+21,Choroby płuc,2,600
+22,Audiologia i foniatria,2,600
+23,Perinatologia,1,300
+24,Stomatologia dziecięca,1,300
 25,Choroby zakaźne,1,300
-26,Neuropatologia,2,600
-27,Medycyna sportowa,2,600
-28,Medycyna pracy,2,600
-29,Psychiatria dzieci i młodzieży,1,300
-30,Seksuologia,2,600
-31,Psychiatria dzieci i młodzieży,1,300
-32,Immunologia kliniczna,1,300
+26,Chirurgia ogólna,2,600
+27,Nefrologia,2,600
+28,Angiologia,2,600
+29,Chirurgia stomatologiczna,2,600
+30,Mikrobiologia lekarska,1,300
+31,Gastroenterologia,2,600
+32,Endokrynologia,1,300
 33,Medycyna ratunkowa,1,300
-34,Medycyna ratunkowa,1,300
-35,Choroby wewnętrzne,2,600
-36,Choroby zakaźne,1,300
-37,Chirurgia naczyniowa,2,600
-38,Urologia dziecięca,1,300
-39,Nefrologia,1,300
-40,Farmakologia kliniczna,1,300
-41,Psychiatria dzieci i młodzieży,1,300
-42,Neurologia dziecięca,2,600
-43,Neurologia dziecięca,2,600
-44,Kardiologia dziecięca,2,600
-45,Periodontologia,1,300
-46,Ginekologia onkologiczna,2,600
-47,Radioterapia onkologiczna,2,600
-48,Położnictwo i ginekologia,2,600
-49,Onkologia i hematologia dziecięca,2,600
-50,Gastroenterologia dziecięca,1,300
-51,Onkologia kliniczna,2,600
-52,Okulistyka,1,300
-53,Medycyna pracy,1,300
-54,Choroby wewnętrzne,2,600
-55,Endokrynologia ginekologiczna i rozrodczość,1,300
-56,Transfuzjologia kliniczna,2,600
-57,Transfuzjologia kliniczna,1,300
-58,Medycyna paliatywna,2,600
-59,Medycyna paliatywna,1,300
-60,Urologia,2,600
-61,Stomatologia zachowawcza z endodoncją,1,300
-62,Chirurgia ogólna,1,300
+34,Farmakologia kliniczna,2,600
+35,Medycyna lotnicza,1,300
+36,Medycyna lotnicza,1,300
+37,Chirurgia onkologiczna,2,600
+38,Ortopedia i traumatologia narządu ruchu,2,600
+39,Rehabilitacja medyczna,2,600
+40,Neurologia dziecięca,1,300
+41,Protetyka stomatologiczna,1,300
+42,Transplantologia kliniczna,1,300
+43,Medycyna sądowa,2,600
+44,Chirurgia naczyniowa,1,300
+45,Reumatologia,2,600
+46,Urologia dziecięca,2,600
+47,Neonatologia,2,600
+48,Choroby wewnętrzne,2,600
+49,Ginekologia onkologiczna,1,300
+50,Transfuzjologia kliniczna,1,300
+51,Alergologia,1,300
+52,Balneologia i medycyna fizykalna,2,600
+53,Kardiologia dziecięca,2,600
+54,Psychiatria,2,600
+55,Diabetologia,2,600
+56,Zdrowie publiczne,2,600
+57,Kardiologia,2,600
+58,Chirurgia onkologiczna,1,300
+59,Angiologia,2,600
+60,Perinatologia,2,600
+61,Anestezjologia i intensywna terapia,2,600
+62,Medycyna ratunkowa,1,300
 63,Dermatologia i wenerologia,1,300
-64,Pediatria metaboliczna,2,600
-65,Balneologia i medycyna fizykalna,2,600
-66,Chirurgia szczękowo-twarzowa,1,300
-67,Transfuzjologia kliniczna,1,300
-68,Chirurgia szczękowo-twarzowa,1,300
-69,Toksykologia kliniczna,2,600
-70,Patomorfologia,1,300
-71,Perinatologia,1,300
-72,Położnictwo i ginekologia,1,300
-73,Choroby płuc dzieci,2,600
-74,Chirurgia szczękowo-twarzowa,1,300
-75,Ortodoncja,1,300
-76,Endokrynologia,1,300
-77,Neurologia,1,300
-78,Medycyna lotnicza,1,300
-79,Protetyka stomatologiczna,2,600
-80,Ortodoncja,2,600
-81,Balneologia i medycyna fizykalna,1,300
-82,Transplantologia kliniczna,2,600
-83,Okulistyka,2,600
-84,Medycyna sportowa,1,300
-85,Chirurgia klatki piersiowej,2,600
-86,Onkologia kliniczna,2,600
-87,Medycyna sądowa,1,300
-88,Pediatria,2,600
-89,Chirurgia klatki piersiowej,2,600
-90,Choroby zakaźne,2,600
-91,Balneologia i medycyna fizykalna,2,600
-92,Radioterapia onkologiczna,1,300
-93,Chirurgia szczękowo-twarzowa,2,600
-94,Ortopedia i traumatologia narządu ruchu,2,600
-95,Ginekologia onkologiczna,2,600
-96,Rehabilitacja medyczna,2,600
-97,Protetyka stomatologiczna,2,600
-98,Otorynolaryngologia,2,600
-99,Chirurgia onkologiczna,1,300
-100,Medycyna sportowa,1,300
+64,Reumatologia,1,300
+65,Chirurgia stomatologiczna,1,300
+66,Medycyna sądowa,2,600
+67,Chirurgia plastyczna,1,300
+68,Neurologia,2,600
+69,Onkologia i hematologia dziecięca,1,300
+70,Położnictwo i ginekologia,2,600
+71,Alergologia,2,600
+72,Hematologia,1,300
+73,Choroby wewnętrzne,1,300
+74,Patomorfologia,2,600
+75,Diagnostyka laboratoryjna,1,300
+76,Kardiochirurgia,1,300
+77,Medycyna lotnicza,1,300
+78,Urologia,1,300
+79,Gastroenterologia dziecięca,2,600
+80,Pediatria,2,600
+81,Zdrowie publiczne,1,300
+82,Neuropatologia,1,300
+83,Endokrynologia,1,300
+84,Medycyna sądowa,2,600
+85,Nefrologia dziecięca,1,300
+86,Neuropatologia,1,300
+87,Kardiochirurgia,2,600
+88,Ortodoncja,1,300
+89,Chirurgia plastyczna,2,600
+90,Genetyka kliniczna,2,600
+91,Reumatologia,2,600
+92,Genetyka kliniczna,2,600
+93,Choroby zakaźne,1,300
+94,Ortodoncja,1,300
+95,Medycyna lotnicza,2,600
+96,Epidemiologia,1,300
+97,Chirurgia plastyczna,1,300
+98,Medycyna morska i tropikalna,2,600
+99,Urologia,2,600
+100,Pediatria,1,300

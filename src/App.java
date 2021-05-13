@@ -12,6 +12,7 @@ public class App {
         Pacjenci pacjenci = new Pacjenci(100, adresy, kontakty, karty, placówki, pracownicy);
         Gabinety gabinety = new Gabinety(100, kontakty, placówki, pracownicy, pacjenci);
         Wizyty wizyty = new Wizyty(10000, karty, gabinety, pracownicy);
+        StatusyWizyt statusy = new StatusyWizyt(10000, wizyty);
 
     }
 }
