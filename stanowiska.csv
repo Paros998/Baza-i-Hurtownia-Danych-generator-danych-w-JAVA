@@ -1,100 +1,100 @@
-1,Immunolog,5700.0,49
-2,Ginekolog,4500.0,34
-3,Alergolog,3900.0,91
-4,Operator RTG/TMG,3400.0,9
-5,Urolog,5000.0,37
-6,Dermatolog,5400.0,91
-7,Pielegniarz,4300.0,16
-8,Konserwator,2700.0,74
-9,Okulista,5500.0,40
-10,Lekarz Pierwszego Kontaktu,5000.0,1
-11,Dermatolog,5400.0,78
-12,Pielegniarz,4300.0,16
-13,Laborant,4040.0,38
-14,Ksiegowy,4900.0,73
-15,Konserwator,2700.0,31
-16,Lekarz Pierwszego Kontaktu,5000.0,66
-17,Alergolog,3900.0,27
-18,Pielegniarz,4300.0,16
-19,Operator RTG/TMG,3400.0,2
-20,Lekarz pediatra,8500.0,51
-21,Ksiegowy,4900.0,82
-22,Pielegniarz,4300.0,46
-23,Okulista,5500.0,54
-24,Dermatolog,5400.0,7
-25,Immunolog,5700.0,72
-26,Chirurg urazowy,6000.0,97
-27,Recepcjonista,3600.0,71
-28,Neurolog,6300.0,58
-29,Dermatolog,5400.0,80
-30,Laborant,4040.0,84
-31,Lekarz pediatra,8500.0,42
-32,Onkolog,6050.0,52
-33,Okulista,5500.0,50
-34,Dermatolog,5400.0,81
-35,Kardiolog,6100.0,49
-36,Okulista,5500.0,80
-37,Onkolog,6050.0,81
-38,Neurolog,6300.0,80
-39,Lekarz Pierwszego Kontaktu,5000.0,61
-40,Recepcjonista,3600.0,92
-41,Kardiolog,6100.0,12
-42,Immunolog,5700.0,37
-43,Pielegniarz,4300.0,30
-44,Lekarz Pierwszego Kontaktu,5000.0,60
-45,Alergolog,3900.0,44
-46,Ksiegowy,4900.0,9
-47,Ginekolog,4500.0,20
-48,Okulista,5500.0,54
-49,Neurolog,6300.0,29
-50,Pielegniarz,4300.0,82
-51,Immunolog,5700.0,6
-52,Pielegniarz,4300.0,16
-53,Lekarz Pierwszego Kontaktu,5000.0,54
-54,Alergolog,3900.0,20
-55,Chirurg urazowy,6000.0,38
-56,Operator RTG/TMG,3400.0,16
-57,Ginekolog,4500.0,62
-58,Okulista,5500.0,20
-59,Neurolog,6300.0,18
-60,Konserwator,2700.0,70
-61,Ksiegowy,4900.0,76
-62,Immunolog,5700.0,77
-63,Lekarz Pierwszego Kontaktu,5000.0,77
-64,Lekarz pediatra,8500.0,72
-65,Recepcjonista,3600.0,71
-66,Urolog,5000.0,48
-67,Neurolog,6300.0,48
-68,Urolog,5000.0,52
-69,Alergolog,3900.0,33
-70,Kardiolog,6100.0,23
-71,Neurolog,6300.0,26
-72,Onkolog,6050.0,50
-73,Neurolog,6300.0,90
-74,Alergolog,3900.0,55
-75,Operator RTG/TMG,3400.0,73
-76,Onkolog,6050.0,61
-77,Urolog,5000.0,65
-78,Urolog,5000.0,10
-79,Recepcjonista,3600.0,47
-80,Dermatolog,5400.0,95
-81,Dermatolog,5400.0,85
-82,Laborant,4040.0,34
-83,Konserwator,2700.0,74
-84,Neurolog,6300.0,53
-85,Denstysta,4500.0,95
-86,Lekarz pediatra,8500.0,42
-87,Dermatolog,5400.0,78
-88,Konserwator,2700.0,74
-89,Laborant,4040.0,43
-90,Operator RTG/TMG,3400.0,83
-91,Recepcjonista,3600.0,8
-92,Immunolog,5700.0,0
-93,Kardiolog,6100.0,17
-94,Urolog,5000.0,33
-95,Recepcjonista,3600.0,36
-96,Laborant,4040.0,84
-97,Okulista,5500.0,67
-98,Chirurg urazowy,6000.0,54
-99,Dermatolog,5400.0,3
-100,Recepcjonista,3600.0,71
+1,Immunolog,5700.0,1
+2,Lekarz Pierwszego Kontaktu,5000.0,63
+3,Lekarz pediatra,8500.0,85
+4,Ksiegowy,4900.0,95
+5,Dermatolog,5400.0,1
+6,Denstysta,4500.0,45
+7,Alergolog,3900.0,40
+8,Dermatolog,5400.0,45
+9,Pielegniarz,4300.0,67
+10,Konserwator,2700.0,75
+11,Immunolog,5700.0,57
+12,Chirurg urazowy,6000.0,9
+13,Recepcjonista,3600.0,28
+14,Immunolog,5700.0,86
+15,Lekarz pediatra,8500.0,66
+16,Immunolog,5700.0,1
+17,Operator RTG/TMG,3400.0,4
+18,Onkolog,6050.0,12
+19,Immunolog,5700.0,27
+20,Neurolog,6300.0,8
+21,Urolog,5000.0,55
+22,Alergolog,3900.0,13
+23,Okulista,5500.0,57
+24,Ksiegowy,4900.0,4
+25,Lekarz pediatra,8500.0,22
+26,Lekarz pediatra,8500.0,44
+27,Alergolog,3900.0,26
+28,Alergolog,3900.0,34
+29,Immunolog,5700.0,1
+30,Lekarz pediatra,8500.0,91
+31,Konserwator,2700.0,18
+32,Denstysta,4500.0,30
+33,Lekarz Pierwszego Kontaktu,5000.0,47
+34,Onkolog,6050.0,22
+35,Chirurg urazowy,6000.0,46
+36,Ksiegowy,4900.0,90
+37,Pielegniarz,4300.0,49
+38,Neurolog,6300.0,57
+39,Alergolog,3900.0,97
+40,Urolog,5000.0,15
+41,Lekarz pediatra,8500.0,22
+42,Okulista,5500.0,27
+43,Operator RTG/TMG,3400.0,81
+44,Konserwator,2700.0,84
+45,Kardiolog,6100.0,74
+46,Neurolog,6300.0,60
+47,Kardiolog,6100.0,3
+48,Alergolog,3900.0,98
+49,Dermatolog,5400.0,93
+50,Ginekolog,4500.0,20
+51,Lekarz pediatra,8500.0,16
+52,Okulista,5500.0,65
+53,Dermatolog,5400.0,65
+54,Kardiolog,6100.0,66
+55,Kardiolog,6100.0,77
+56,Urolog,5000.0,86
+57,Lekarz pediatra,8500.0,60
+58,Konserwator,2700.0,56
+59,Recepcjonista,3600.0,2
+60,Laborant,4040.0,50
+61,Konserwator,2700.0,84
+62,Lekarz Pierwszego Kontaktu,5000.0,34
+63,Ksiegowy,4900.0,29
+64,Lekarz Pierwszego Kontaktu,5000.0,24
+65,Ksiegowy,4900.0,69
+66,Operator RTG/TMG,3400.0,90
+67,Onkolog,6050.0,76
+68,Lekarz pediatra,8500.0,48
+69,Neurolog,6300.0,98
+70,Ksiegowy,4900.0,78
+71,Ksiegowy,4900.0,90
+72,Operator RTG/TMG,3400.0,67
+73,Chirurg urazowy,6000.0,79
+74,Konserwator,2700.0,84
+75,Laborant,4040.0,6
+76,Pielegniarz,4300.0,29
+77,Alergolog,3900.0,83
+78,Neurolog,6300.0,60
+79,Okulista,5500.0,19
+80,Ksiegowy,4900.0,29
+81,Neurolog,6300.0,15
+82,Urolog,5000.0,80
+83,Chirurg urazowy,6000.0,65
+84,Urolog,5000.0,5
+85,Onkolog,6050.0,38
+86,Alergolog,3900.0,50
+87,Ginekolog,4500.0,59
+88,Ginekolog,4500.0,46
+89,Denstysta,4500.0,12
+90,Lekarz Pierwszego Kontaktu,5000.0,59
+91,Operator RTG/TMG,3400.0,81
+92,Dermatolog,5400.0,14
+93,Onkolog,6050.0,98
+94,Dermatolog,5400.0,47
+95,Chirurg urazowy,6000.0,63
+96,Kardiolog,6100.0,38
+97,Kardiolog,6100.0,14
+98,Laborant,4040.0,98
+99,Konserwator,2700.0,87
+100,Pielegniarz,4300.0,90

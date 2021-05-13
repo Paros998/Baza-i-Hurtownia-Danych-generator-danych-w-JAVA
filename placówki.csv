@@ -1,100 +1,100 @@
-1,Prodimed,104,137
-2,Unimed,119,23
-3,Optimed,160,10
-4,NZOZ Danea,56,289
-5,Klinika Kardiochirurgi,231,291
-6,Optimed,141,119
-7,Unimed,234,147
-8,Centrum Medyczno-Diagnostyczne,117,126
-9,Podimed,40,332
-10,Unimed,188,365
-11,Red-Med,172,369
-12,Podimed,55,389
-13,NZOZ Danea,245,116
-14,Podimed,147,16
-15,Adamed,120,226
-16,NZOZ Danea,257,67
-17,Medican,48,188
-18,Medican,114,242
-19,Voxel Centrum,93,243
-20,Centrum Medyczno-Diagnostyczne,92,376
-21,Klinika Kardiochirurgi,76,275
-22,Klinika Kardiochirurgi,50,215
-23,Optimed,140,178
-24,Adamed,108,65
-25,Podimed,236,5
-26,Unimed,289,205
-27,Adamed,261,123
-28,Red-Med,64,144
-29,Optimed,154,11
-30,Unimed,182,30
-31,Centrum Medyczno-Diagnostyczne,187,39
-32,Unimed,107,76
-33,Klinika Kardiochirurgi,190,105
-34,Medican,183,260
-35,Unimed,125,329
-36,Podimed,233,174
-37,Podimed,103,151
-38,Centrum Medyczno-Diagnostyczne,297,339
-39,Red-Med,162,351
-40,Red-Med,133,33
-41,Centrum Medyczno-Diagnostyczne,281,283
-42,Medican,159,95
-43,Unimed,123,13
-44,Adamed,223,154
-45,Prodimed,197,273
-46,Podimed,97,62
-47,Optimed,205,346
-48,Unimed,279,298
-49,Medican,126,331
-50,Unimed,94,322
-51,Prodimed,134,150
-52,Optimed,260,27
-53,Adamed,284,51
-54,Unimed,26,28
-55,Podimed,204,272
-56,Prodimed,52,237
-57,Optimed,286,183
-58,Voxel Centrum,63,209
-59,Prodimed,229,399
-60,Red-Med,45,197
-61,Centrum Medyczno-Diagnostyczne,9,216
-62,Medican,68,202
-63,Podimed,20,166
-64,Optimed,232,308
-65,NZOZ Danea,267,357
-66,Optimed,72,169
-67,Adamed,89,333
-68,Klinika Kardiochirurgi,95,44
-69,Prodimed,42,326
-70,Klinika Kardiochirurgi,138,232
-71,Prodimed,7,124
-72,Optimed,124,196
-73,Adamed,85,156
-74,Optimed,69,176
-75,Klinika Kardiochirurgi,217,47
-76,Prodimed,79,17
-77,Red-Med,27,223
-78,Medican,54,180
-79,NZOZ Danea,201,328
-80,Voxel Centrum,244,91
-81,Adamed,164,8
-82,Voxel Centrum,177,265
-83,Prodimed,161,337
-84,Unimed,175,56
-85,Adamed,88,314
-86,NZOZ Danea,137,323
-87,Prodimed,235,335
-88,Podimed,11,101
-89,Podimed,75,330
-90,Prodimed,249,79
-91,Voxel Centrum,185,19
-92,Red-Med,83,90
-93,Prodimed,290,364
-94,Podimed,19,204
-95,NZOZ Danea,73,284
-96,Red-Med,213,285
-97,Red-Med,86,338
-98,Podimed,166,277
-99,Podimed,272,171
-100,Unimed,251,233
+1,Prodimed,97,98
+2,Red-Med,5,125
+3,Optimed,191,320
+4,Centrum Medyczno-Diagnostyczne,121,335
+5,Voxel Centrum,11,95
+6,Prodimed,18,147
+7,Adamed,198,267
+8,Centrum Medyczno-Diagnostyczne,216,383
+9,Adamed,235,115
+10,Klinika Kardiochirurgi,251,216
+11,Medican,100,195
+12,Klinika Kardiochirurgi,48,329
+13,Medican,55,389
+14,Klinika Kardiochirurgi,163,157
+15,Medican,193,162
+16,Centrum Medyczno-Diagnostyczne,101,0
+17,NZOZ Danea,283,307
+18,Red-Med,157,260
+19,Voxel Centrum,10,317
+20,Voxel Centrum,268,186
+21,Podimed,99,390
+22,Optimed,200,370
+23,Unimed,186,169
+24,Voxel Centrum,9,344
+25,Unimed,107,348
+26,Voxel Centrum,52,71
+27,Klinika Kardiochirurgi,168,353
+28,Medican,238,306
+29,Voxel Centrum,223,61
+30,Klinika Kardiochirurgi,147,229
+31,NZOZ Danea,138,177
+32,Unimed,278,331
+33,Red-Med,22,299
+34,Medican,119,56
+35,Unimed,37,256
+36,Adamed,39,17
+37,Adamed,210,385
+38,Prodimed,64,271
+39,Voxel Centrum,92,332
+40,Voxel Centrum,155,163
+41,Adamed,211,185
+42,Centrum Medyczno-Diagnostyczne,262,34
+43,Prodimed,109,1
+44,Klinika Kardiochirurgi,8,152
+45,NZOZ Danea,122,149
+46,Podimed,77,113
+47,Adamed,281,119
+48,Red-Med,269,132
+49,Adamed,229,84
+50,Medican,151,64
+51,Red-Med,132,19
+52,Klinika Kardiochirurgi,213,357
+53,Klinika Kardiochirurgi,181,277
+54,Voxel Centrum,179,275
+55,Unimed,79,105
+56,Klinika Kardiochirurgi,88,311
+57,Centrum Medyczno-Diagnostyczne,164,373
+58,Red-Med,257,288
+59,Unimed,94,325
+60,Adamed,43,257
+61,Optimed,217,289
+62,Klinika Kardiochirurgi,240,350
+63,Voxel Centrum,41,315
+64,Optimed,60,358
+65,Red-Med,176,321
+66,Unimed,71,326
+67,Podimed,105,245
+68,Adamed,112,347
+69,Centrum Medyczno-Diagnostyczne,72,337
+70,Prodimed,36,249
+71,Optimed,264,170
+72,Podimed,297,79
+73,Medican,82,33
+74,NZOZ Danea,169,165
+75,Adamed,277,263
+76,Adamed,35,146
+77,Optimed,189,327
+78,Prodimed,115,210
+79,Voxel Centrum,276,59
+80,Podimed,194,106
+81,Unimed,290,174
+82,Prodimed,207,8
+83,Prodimed,196,197
+84,Klinika Kardiochirurgi,69,395
+85,Centrum Medyczno-Diagnostyczne,221,78
+86,Medican,230,360
+87,Klinika Kardiochirurgi,44,255
+88,Medican,63,2
+89,Adamed,265,25
+90,Prodimed,131,74
+91,Prodimed,209,209
+92,Klinika Kardiochirurgi,188,175
+93,Prodimed,128,99
+94,Klinika Kardiochirurgi,27,382
+95,Unimed,279,292
+96,Centrum Medyczno-Diagnostyczne,250,265
+97,Klinika Kardiochirurgi,117,154
+98,Voxel Centrum,108,196
+99,Red-Med,167,302
+100,Centrum Medyczno-Diagnostyczne,204,345

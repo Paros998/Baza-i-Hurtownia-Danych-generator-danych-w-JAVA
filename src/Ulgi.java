@@ -5,11 +5,11 @@ import java.nio.charset.StandardCharsets;
 import java.util.Random;
 
 public class Ulgi extends GlobalElements {
-    
+
     private int id;
     private String typUlgi;
     private int procent;
-
+    public int[] idUlg;
     public String[] typyUlg;
 
     public Ulgi(int liczbaRekordow) throws IOException {
@@ -17,7 +17,7 @@ public class Ulgi extends GlobalElements {
         generator = new Random();
         file = new File("ulgi.csv");
         typyUlg = new String[liczbaRekordow];
-
+        idUlg = new int[liczbaRekordow];
         if (file.exists())
             file.delete();
         file.createNewFile();
@@ -25,6 +25,7 @@ public class Ulgi extends GlobalElements {
         FileWriter writer = new FileWriter(file, StandardCharsets.UTF_8, true);
 
         for (int i = 0; i < liczbaRekordow; i++) {
+            idUlg[i] = id;
             int indeks = generator.nextInt(ulgiTyp.length);
             typyUlg[i] = typUlgi = ulgiTyp[indeks];
             procent = procentUlgi[indeks];
