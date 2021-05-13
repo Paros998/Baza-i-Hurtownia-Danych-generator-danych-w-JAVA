@@ -1,0 +1,2337 @@
+1,ligacja jajowodu,4500.0,80,2
+2,abdominoplastyka,3000.0,39,11
+3,obrzezanie,1000.0,74,15
+4,lobotomia,1000.0,77,20
+5,operacja Traverso-Longmire'a,3500.0,77,25
+6,ooforektomia,3000.0,39,28
+7,penektomia,500.0,39,29
+8,operacja Rydygiera,500.0,54,30
+9,hemisferektomia,2000.0,77,35
+10,operacja Drapanasa,1500.0,39,44
+11,owarektomia,500.0,99,45
+12,adenomektomia,4000.0,74,56
+13,rynotomia,1500.0,39,58
+14,uwuloplastyka,3000.0,80,62
+15,operacja Hartmanna,3500.0,39,64
+16,adenomektomia,2000.0,99,75
+17,kalozotomia,1500.0,39,76
+18,zabieg Halsteda,2000.0,99,80
+19,laryngofisura,2000.0,74,90
+20,wagotomia,3500.0,80,99
+21,obrzezanie,1500.0,54,101
+22,operacja Milesa,4500.0,80,111
+23,operacja Lichtensteina,3000.0,99,113
+24,trachelektomia,4500.0,39,119
+25,cholecystektomia,2500.0,54,121
+26,hepatektomia,1500.0,77,124
+27,obrzezanie,500.0,77,125
+28,angioplastyka,1500.0,99,128
+29,operacja Drapanasa,2000.0,77,133
+30,nefrektomia,3000.0,80,140
+31,cholecystektomia,4500.0,54,147
+32,wulwektomia,3500.0,54,148
+33,operacja Mogga,2500.0,77,149
+34,zabieg Urbana,1500.0,33,159
+35,wulwektomia,1000.0,39,179
+36,adenotomia,2000.0,39,185
+37,owarektomia,4000.0,77,187
+38,litotrypsja,4000.0,77,191
+39,operacja Brickera,4500.0,39,195
+40,operacja Rutkowa,2000.0,77,197
+41,operacja Girarda,4000.0,39,198
+42,operacja Girarda,4000.0,39,201
+43,operacja Bassiniego,1500.0,77,204
+44,fundoplastyka,3000.0,54,206
+45,operacja Hartmanna,2000.0,77,210
+46,operacja Warrena,2500.0,80,212
+47,kraniektomia,4000.0,74,213
+48,antromastoidektomia,1000.0,33,217
+49,hepatektomia,3000.0,39,219
+50,segmentektomia,3500.0,39,221
+51,penektomia,1000.0,77,223
+52,operacja Rydygiera,3500.0,77,230
+53,pankreatoduodenektomia,5000.0,99,231
+54,operacja Mogga,2500.0,54,239
+55,zabieg Pateya,1500.0,77,245
+56,wazektomia,3000.0,33,246
+57,operacja Billrotha,3500.0,77,249
+58,cholecystektomia,4500.0,39,250
+59,litotrypsja,2500.0,99,254
+60,papilotomia,3500.0,39,258
+61,operacja Jurasza,2000.0,39,260
+62,trachelektomia,2000.0,99,268
+63,zabieg Urbana,4500.0,99,280
+64,laminektomia,500.0,74,281
+65,mukosektomia,500.0,54,283
+66,perikardiektomia,4500.0,39,286
+67,operacja Rydygiera,2000.0,99,289
+68,antromastoidektomia,3000.0,39,293
+69,wazektomia,3000.0,99,297
+70,operacja Billrotha,2500.0,77,300
+71,zabieg Halsteda,4000.0,39,301
+72,operacja Drapanasa,2500.0,44,302
+73,operacja Milesa,500.0,99,304
+74,operacja Billrotha,3500.0,39,306
+75,wulwektomia,1500.0,39,310
+76,zabieg Crile’a,1500.0,74,312
+77,dekortykacja pluca,3500.0,54,318
+78,hipofizektomia,3500.0,80,320
+79,ooforektomia,5000.0,54,327
+80,owariektomia,1000.0,99,328
+81,bronchotomia,4500.0,74,329
+82,adrenalektomia,2500.0,77,333
+83,artroskopia,2500.0,77,334
+84,zabieg Bentalla,4000.0,77,335
+85,zabieg Crile’a,500.0,77,337
+86,trachelektomia,1500.0,99,338
+87,wulwektomia,3500.0,39,339
+88,gastrektomia,4500.0,99,354
+89,operacja Norwooda,3500.0,74,355
+90,fundoplastyka,1000.0,33,357
+91,zabieg Crile’a,2000.0,39,360
+92,operacja Brickera,4000.0,39,363
+93,bronchotomia,500.0,54,371
+94,operacja Warrena,3500.0,39,382
+95,kolektomia,500.0,54,384
+96,heminefrektomia,2000.0,99,387
+97,owariektomia,5000.0,99,397
+98,lobotomia,500.0,74,399
+99,owarektomia,500.0,54,401
+100,zabieg Halsteda,3500.0,39,402
+101,naciecie krocza,5000.0,77,407
+102,uwuloplastyka,500.0,39,418
+103,appendektomia,4500.0,77,421
+104,waginektomia,500.0,80,422
+105,ureterosigmoidostomia,2000.0,74,424
+106,operacja Girarda,3500.0,39,426
+107,paracenteza,3000.0,33,431
+108,metastazektomia,3000.0,77,432
+109,perikardiektomia,500.0,39,434
+110,operacja Rutkowa,3500.0,33,438
+111,operacja Mogga,1000.0,54,442
+112,bronchotomia,5000.0,99,446
+113,operacja Bassiniego,2500.0,33,455
+114,operacja Strassmana,2500.0,99,462
+115,cystogastrostomia,4000.0,99,463
+116,operacja Rydygiera,2500.0,99,465
+117,dekortykacja pluca,2000.0,77,471
+118,nefrektomia,2000.0,77,472
+119,wulwektomia,3500.0,80,475
+120,trachelektomia,500.0,77,482
+121,dekortykacja pluca,4500.0,39,488
+122,trachelektomia,3500.0,99,490
+123,operacja Drapanasa,4500.0,39,494
+124,nefrotomia,5000.0,74,499
+125,fundoplastyka,1000.0,33,502
+126,litotrypsja,4500.0,39,508
+127,operacja Strassmana,500.0,33,512
+128,operacja Nussa,4500.0,74,520
+129,trachelektomia,3500.0,54,521
+130,rynotomia,2000.0,99,522
+131,owarektomia,5000.0,99,523
+132,operacja Brickera,1500.0,39,530
+133,obrzezanie,3500.0,80,534
+134,operacja Puestowa,2500.0,39,535
+135,cholecystektomia,5000.0,77,539
+136,laminektomia,2000.0,99,540
+137,operacja Drapanasa,1000.0,80,549
+138,bronchotomia,2500.0,77,555
+139,laryngektomia,1500.0,39,559
+140,pankreatoduodenektomia,4000.0,44,562
+141,plastyka Heinekego-Mikulicza,1500.0,77,572
+142,uwuloplastyka,5000.0,39,577
+143,ureterosigmoidostomia,1000.0,39,588
+144,paracenteza,500.0,74,592
+145,operacja Nussa,4500.0,77,593
+146,operacja Traverso-Longmire'a,2500.0,33,595
+147,wagotomia,500.0,99,600
+148,operacja Strassmana,3000.0,33,601
+149,operacja Whipple’a,3000.0,77,609
+150,artroskopia,3000.0,39,612
+151,kraniektomia,3000.0,99,614
+152,naciecie krocza,3000.0,54,630
+153,hepatektomia,5000.0,99,631
+154,naciecie krocza,3500.0,99,634
+155,operacja Hartmanna,1000.0,77,635
+156,operacja Lichtensteina,1000.0,39,637
+157,pankreatoduodenektomia,1500.0,80,638
+158,amputacja,500.0,39,644
+159,operacja Drapanasa,2000.0,74,650
+160,rynotomia,500.0,54,655
+161,operacja Halstedta,2000.0,74,658
+162,uwulopalatofaryngoplastyka,3500.0,77,659
+163,dekortykacja pluca,2500.0,39,661
+164,laryngofisura,1500.0,39,663
+165,nefrektomia,500.0,74,664
+166,gastrektomia,5000.0,77,666
+167,mastektomia,5000.0,77,668
+168,laryngofisura,4500.0,77,673
+169,operacja Billrotha,1500.0,77,677
+170,hepatektomia,2500.0,99,679
+171,operacja Nussa,1000.0,77,681
+172,cystogastrostomia,1500.0,33,684
+173,lobektomia,5000.0,99,697
+174,fundoplastyka,5000.0,44,698
+175,cholecystektomia,4500.0,39,703
+176,nefrektomia,1000.0,54,706
+177,operacja Rydygiera,1000.0,74,723
+178,wyluszczenie konczyny,3000.0,77,725
+179,uwuloplastyka,4500.0,44,730
+180,operacja Milesa,4000.0,74,731
+181,segmentektomia,3000.0,54,741
+182,histerektomia,3000.0,77,743
+183,ureterosigmoidostomia,1000.0,99,753
+184,operacja Hartmanna,2000.0,77,758
+185,mukosektomia,4500.0,54,768
+186,operacja Bassiniego,1500.0,54,782
+187,zabieg Bentalla,4000.0,44,784
+188,zabieg Bentalla,1500.0,99,787
+189,papilotomia,3500.0,77,802
+190,wagotomia,1000.0,44,804
+191,rynotomia,3500.0,99,806
+192,uwulopalatofaryngoplastyka,1000.0,77,807
+193,operacja Mogga,1000.0,33,808
+194,fundoplastyka,2500.0,77,814
+195,plastyka Heinekego-Mikulicza,1500.0,44,820
+196,operacja Hartmanna,5000.0,39,828
+197,papilotomia,4500.0,99,829
+198,operacja Nussa,2000.0,39,836
+199,lobektomia,3000.0,77,844
+200,waginektomia,500.0,44,851
+201,laryngektomia,1000.0,39,857
+202,nefrektomia,5000.0,77,862
+203,wyluszczenie konczyny,5000.0,80,864
+204,rynotomia,4000.0,77,865
+205,wulwektomia,500.0,80,877
+206,operacja Strassmana,4000.0,77,888
+207,adenomektomia,5000.0,39,890
+208,orbitotomia,500.0,39,891
+209,heminefrektomia,500.0,39,897
+210,operacja Milesa,4500.0,54,900
+211,nefrotomia,1500.0,39,901
+212,pankreatoduodenektomia,4000.0,39,902
+213,zabieg Crile’a,3000.0,39,903
+214,operacja Shouldice'a,2500.0,74,905
+215,amputacja,2000.0,39,907
+216,adrenalektomia,1000.0,99,923
+217,plastyka Heinekego-Mikulicza,5000.0,77,925
+218,hipofizektomia,1000.0,80,929
+219,orchidektomia,4000.0,39,933
+220,operacja Girarda,5000.0,54,937
+221,operacja Norwooda,2500.0,39,942
+222,operacja Whipple’a,1000.0,77,954
+223,tyreoidektomia,4000.0,39,955
+224,heminefrektomia,4500.0,77,956
+225,zabieg Pateya,5000.0,77,965
+226,adenotomia,1000.0,99,971
+227,uwulopalatofaryngoplastyka,4500.0,77,975
+228,operacja Rutkowa,3000.0,77,977
+229,operacja Shouldice'a,2000.0,77,978
+230,antromastoidektomia,4000.0,77,979
+231,splenektomia,1500.0,77,995
+232,mastektomia,3500.0,99,996
+233,sfinkterotomia,3000.0,39,998
+234,orchidektomia,3500.0,39,1006
+235,kolektomia,3500.0,39,1007
+236,operacja Strassmana,3000.0,33,1011
+237,owariektomia,4000.0,99,1015
+238,operacje korekty plci,4500.0,39,1021
+239,lobektomia,5000.0,39,1028
+240,antromastoidektomia,2000.0,99,1030
+241,bronchotomia,4000.0,99,1043
+242,operacja Bassiniego,2500.0,77,1054
+243,zabieg Crile’a,2500.0,39,1057
+244,operacja Mogga,3000.0,99,1065
+245,operacja Milesa,500.0,39,1067
+246,hepatektomia,4500.0,77,1073
+247,metastazektomia,3500.0,80,1080
+248,wulwektomia,3500.0,74,1082
+249,histerektomia,1000.0,74,1090
+250,operacja Traverso-Longmire'a,1000.0,77,1093
+251,heminefrektomia,4000.0,99,1095
+252,antromastoidektomia,3000.0,80,1097
+253,operacja Rydygiera,1500.0,99,1098
+254,operacja Rutkowa,5000.0,99,1108
+255,operacja Lichtensteina,1000.0,99,1114
+256,metastazektomia,500.0,39,1118
+257,irydektomia,2000.0,77,1120
+258,nefrektomia,3500.0,80,1123
+259,laminektomia,2000.0,54,1125
+260,operacja Traverso-Longmire'a,1000.0,39,1126
+261,plastyka Heinekego-Mikulicza,2000.0,33,1138
+262,lobektomia,4500.0,77,1141
+263,mukosektomia,4500.0,33,1145
+264,metastazektomia,5000.0,39,1148
+265,operacja Milesa,1000.0,80,1149
+266,mastektomia,4500.0,99,1152
+267,cholecystektomia,4500.0,54,1155
+268,penektomia,5000.0,77,1157
+269,kalozotomia,4500.0,99,1160
+270,naciecie krocza,4500.0,74,1161
+271,astragalektomia,2000.0,33,1164
+272,abdominoplastyka,500.0,74,1166
+273,fundoplastyka,3000.0,54,1168
+274,orchidektomia,5000.0,77,1170
+275,fundoplastyka,1000.0,99,1174
+276,laminektomia,1000.0,99,1176
+277,operacja Billrotha,4000.0,39,1178
+278,fundoplastyka,4500.0,99,1187
+279,obrzezanie,2000.0,74,1192
+280,zabieg Bentalla,2000.0,74,1195
+281,operacja Rutkowa,5000.0,44,1196
+282,lobotomia,3000.0,77,1200
+283,amputacja,2500.0,54,1210
+284,operacja Puestowa,4500.0,39,1211
+285,tyreoidektomia,5000.0,80,1213
+286,zabieg Halsteda,3500.0,80,1215
+287,operacja Rydygiera,5000.0,77,1218
+288,heminefrektomia,2000.0,80,1221
+289,waginektomia,2500.0,54,1226
+290,papilotomia,2500.0,99,1231
+291,segmentektomia,500.0,74,1233
+292,hipofizektomia,500.0,74,1235
+293,pankreatoduodenektomia,2500.0,39,1241
+294,irydektomia,4500.0,39,1243
+295,papilotomia,2500.0,77,1245
+296,paracenteza,5000.0,39,1252
+297,operacja Whipple’a,500.0,39,1254
+298,appendektomia,500.0,80,1255
+299,perikardiektomia,3000.0,80,1266
+300,hipofizektomia,500.0,39,1268
+301,amputacja,3500.0,77,1270
+302,hemisferektomia,3500.0,77,1280
+303,angioplastyka,4000.0,99,1285
+304,lobektomia,500.0,39,1287
+305,gastrektomia,4000.0,74,1293
+306,prostatektomia,500.0,74,1294
+307,operacja Nussa,4500.0,39,1295
+308,operacja Puestowa,4500.0,74,1302
+309,nefrektomia,2000.0,33,1306
+310,operacja Rydygiera,5000.0,99,1309
+311,operacja Warrena,1500.0,77,1310
+312,ureterosigmoidostomia,4000.0,80,1312
+313,operacja Norwooda,3500.0,99,1318
+314,rynotomia,500.0,39,1328
+315,adenomektomia,1000.0,80,1335
+316,operacja Milesa,1000.0,77,1336
+317,perikardiektomia,500.0,99,1338
+318,operacja Shouldice'a,1000.0,74,1347
+319,mukosektomia,2000.0,99,1349
+320,hemikorporektomia,500.0,74,1350
+321,irydektomia,1000.0,80,1353
+322,operacje korekty plci,2500.0,80,1354
+323,amputacja,1000.0,39,1363
+324,wazektomia,1500.0,39,1366
+325,papilotomia,500.0,77,1372
+326,amputacja,500.0,74,1377
+327,plastyka Heinekego-Mikulicza,1000.0,39,1378
+328,zabieg Bentalla,2500.0,77,1384
+329,zabieg Halsteda,500.0,54,1388
+330,operacja Warrena,2500.0,77,1391
+331,laryngofisura,5000.0,39,1392
+332,laryngofisura,500.0,99,1396
+333,wyluszczenie konczyny,4000.0,99,1402
+334,prostatektomia,1000.0,77,1403
+335,operacja Norwooda,2500.0,33,1406
+336,nefrektomia,500.0,33,1424
+337,zabieg Halsteda,4000.0,44,1425
+338,fundoplastyka,2500.0,39,1433
+339,wulwektomia,2000.0,74,1434
+340,hemisferektomia,2500.0,77,1437
+341,fundoplastyka,1000.0,39,1439
+342,operacja Brickera,1500.0,99,1440
+343,wagotomia,3500.0,99,1441
+344,operacja Whipple’a,1500.0,99,1442
+345,angioplastyka,2000.0,39,1452
+346,orbitotomia,4000.0,54,1455
+347,nefrektomia,1000.0,80,1457
+348,zabieg Pateya,4000.0,39,1458
+349,papilotomia,500.0,99,1460
+350,cholecystektomia,2000.0,44,1461
+351,operacja Billrotha,2500.0,74,1466
+352,orchidektomia,2500.0,77,1475
+353,laryngektomia,1000.0,74,1476
+354,segmentektomia,500.0,77,1477
+355,operacja Rutkowa,3000.0,39,1482
+356,hemikorporektomia,500.0,77,1488
+357,zabieg Bentalla,4500.0,99,1490
+358,operacja Hartmanna,1000.0,77,1493
+359,zabieg Bentalla,5000.0,39,1498
+360,litotrypsja,4000.0,77,1507
+361,naciecie krocza,500.0,39,1512
+362,operacja Milesa,4000.0,99,1519
+363,wyluszczenie konczyny,2500.0,77,1526
+364,operacja Rutkowa,4500.0,33,1536
+365,operacja Shouldice'a,4500.0,54,1542
+366,obrzezanie,3500.0,99,1544
+367,operacja Warrena,2000.0,99,1545
+368,laminektomia,2500.0,77,1556
+369,cystogastrostomia,4500.0,74,1557
+370,operacja Shouldice'a,4500.0,77,1559
+371,operacja Jurasza,1000.0,99,1563
+372,metastazektomia,1000.0,44,1566
+373,wazektomia,4000.0,54,1576
+374,operacja Girarda,2500.0,39,1584
+375,mastektomia,2500.0,39,1587
+376,ligacja jajowodu,1000.0,39,1588
+377,wyluszczenie konczyny,3500.0,77,1589
+378,kalozotomia,1000.0,80,1590
+379,diwertikulotomia,2000.0,77,1592
+380,operacja Rutkowa,3500.0,77,1593
+381,nefrektomia,500.0,39,1595
+382,kraniektomia,500.0,39,1600
+383,heminefrektomia,5000.0,39,1603
+384,operacja Strassmana,3500.0,74,1605
+385,obrzezanie,5000.0,77,1609
+386,irydektomia,4000.0,74,1616
+387,dekortykacja pluca,1000.0,77,1617
+388,zabieg Halsteda,2000.0,39,1623
+389,operacja Girarda,1000.0,39,1628
+390,wazektomia,500.0,99,1632
+391,nefrektomia,500.0,99,1642
+392,angioplastyka,2500.0,77,1644
+393,cystogastrostomia,4000.0,99,1646
+394,artroskopia,3500.0,99,1647
+395,zabieg Bentalla,5000.0,77,1648
+396,operacja Billrotha,2000.0,74,1656
+397,splenektomia,4000.0,99,1660
+398,cholecystektomia,4500.0,39,1661
+399,astragalektomia,4500.0,39,1663
+400,diwertikulotomia,5000.0,39,1670
+401,antromastoidektomia,5000.0,74,1671
+402,operacja Whipple’a,1000.0,99,1673
+403,ureterosigmoidostomia,5000.0,99,1674
+404,irydektomia,4500.0,77,1677
+405,laryngofisura,4500.0,99,1678
+406,splenektomia,5000.0,74,1681
+407,nefrektomia,4000.0,39,1694
+408,operacja Whipple’a,4000.0,77,1695
+409,irydektomia,2500.0,77,1696
+410,hemisferektomia,500.0,77,1698
+411,artroskopia,3000.0,77,1702
+412,operacja Mogga,1000.0,99,1705
+413,operacja Whipple’a,1500.0,77,1706
+414,astragalektomia,2500.0,74,1713
+415,operacja Halstedta,3000.0,77,1720
+416,wyluszczenie konczyny,3000.0,74,1722
+417,litotrypsja,3000.0,77,1723
+418,ligacja jajowodu,4500.0,99,1727
+419,pankreatoduodenektomia,3000.0,39,1737
+420,operacja Strassmana,3500.0,80,1744
+421,pankreatoduodenektomia,4000.0,77,1748
+422,operacja Hartmanna,3500.0,54,1754
+423,nefrotomia,2500.0,99,1757
+424,segmentektomia,1500.0,39,1762
+425,zabieg Halsteda,4000.0,74,1777
+426,adrenalektomia,5000.0,77,1789
+427,operacja Hartmanna,2000.0,74,1795
+428,diwertikulotomia,1500.0,77,1797
+429,operacja Girarda,2500.0,74,1799
+430,hemisferektomia,5000.0,99,1802
+431,penektomia,3500.0,54,1808
+432,irydektomia,3500.0,39,1811
+433,astragalektomia,4000.0,77,1813
+434,owariektomia,4000.0,39,1815
+435,operacja Rutkowa,500.0,74,1821
+436,hemikorporektomia,3000.0,99,1822
+437,operacja Traverso-Longmire'a,2000.0,77,1836
+438,wyluszczenie konczyny,1500.0,74,1839
+439,adenomektomia,3500.0,99,1846
+440,operacja Bassiniego,2500.0,77,1848
+441,zabieg Halsteda,3500.0,39,1849
+442,zabieg Crile’a,3500.0,99,1856
+443,heminefrektomia,4500.0,99,1858
+444,splenektomia,4000.0,77,1866
+445,prostatektomia,5000.0,99,1867
+446,kalozotomia,1000.0,39,1872
+447,obrzezanie,3000.0,77,1875
+448,operacja Halstedta,1000.0,80,1877
+449,operacja Rutkowa,4500.0,77,1882
+450,ooforektomia,3000.0,77,1884
+451,operacja Drapanasa,500.0,99,1886
+452,operacja Jurasza,4500.0,54,1889
+453,owariektomia,4000.0,77,1893
+454,appendektomia,1500.0,74,1896
+455,nefrektomia,3000.0,77,1899
+456,operacja Shouldice'a,1000.0,39,1906
+457,naciecie krocza,1000.0,74,1907
+458,wyluszczenie konczyny,4000.0,39,1909
+459,lobektomia,3500.0,44,1912
+460,operacja Bassiniego,1000.0,39,1915
+461,cystogastrostomia,4500.0,77,1916
+462,uwuloplastyka,500.0,99,1924
+463,pankreatoduodenektomia,4500.0,80,1932
+464,operacja Shouldice'a,500.0,99,1934
+465,adrenalektomia,1000.0,77,1937
+466,ligacja jajowodu,2000.0,39,1941
+467,bronchotomia,3000.0,77,1942
+468,cholecystektomia,500.0,80,1943
+469,bronchotomia,2500.0,39,1944
+470,waginektomia,3500.0,77,1957
+471,operacja Girarda,2000.0,39,1959
+472,plastyka Heinekego-Mikulicza,5000.0,99,1960
+473,zabieg Pateya,3000.0,99,1961
+474,paracenteza,1500.0,99,1965
+475,angioplastyka,4000.0,99,1967
+476,abdominoplastyka,2000.0,99,1975
+477,operacja Halstedta,1500.0,54,1980
+478,lobektomia,500.0,77,1981
+479,nefrektomia,4000.0,99,1983
+480,uwulopalatofaryngoplastyka,2000.0,80,1989
+481,nefrektomia,3000.0,39,1990
+482,tyreoidektomia,4500.0,99,1994
+483,waginektomia,1000.0,74,1996
+484,perikardiektomia,4000.0,77,2004
+485,adenomektomia,2500.0,39,2008
+486,prostatektomia,500.0,39,2014
+487,wulwektomia,3000.0,39,2019
+488,operacja Drapanasa,1000.0,39,2029
+489,adenotomia,4500.0,77,2030
+490,owarektomia,1000.0,77,2041
+491,zabieg Bentalla,4000.0,74,2042
+492,tyreoidektomia,3000.0,74,2049
+493,operacja Warrena,500.0,54,2057
+494,ooforektomia,1500.0,74,2066
+495,splenektomia,5000.0,39,2069
+496,papilotomia,5000.0,80,2080
+497,mukosektomia,2000.0,99,2084
+498,adrenalektomia,3500.0,99,2087
+499,adenomektomia,4500.0,77,2089
+500,orbitotomia,5000.0,80,2092
+501,irydektomia,4500.0,77,2093
+502,operacja Billrotha,1000.0,80,2097
+503,operacja Nussa,4000.0,77,2112
+504,kraniektomia,3000.0,80,2113
+505,adenomektomia,1500.0,77,2119
+506,antromastoidektomia,1500.0,77,2125
+507,operacja Halstedta,1500.0,33,2128
+508,obrzezanie,1000.0,54,2129
+509,irydektomia,5000.0,80,2135
+510,orchidektomia,3000.0,74,2138
+511,operacja Halstedta,4500.0,54,2141
+512,owarektomia,3500.0,74,2142
+513,owarektomia,500.0,39,2143
+514,diwertikulotomia,2000.0,80,2145
+515,operacja Rydygiera,5000.0,99,2161
+516,naciecie krocza,2500.0,80,2162
+517,uwuloplastyka,3000.0,39,2164
+518,dekortykacja pluca,500.0,39,2179
+519,abdominoplastyka,2000.0,77,2185
+520,zabieg Bentalla,5000.0,39,2193
+521,wyluszczenie konczyny,500.0,39,2195
+522,antromastoidektomia,4000.0,74,2196
+523,trachelektomia,2000.0,44,2197
+524,segmentektomia,4000.0,77,2199
+525,astragalektomia,3000.0,99,2202
+526,owariektomia,2500.0,33,2209
+527,trachelektomia,2500.0,74,2210
+528,irydektomia,2500.0,44,2214
+529,owarektomia,1500.0,39,2217
+530,hemisferektomia,1500.0,39,2227
+531,abdominoplastyka,1500.0,77,2230
+532,kalozotomia,1500.0,77,2246
+533,operacja Jurasza,3500.0,80,2250
+534,papilotomia,2500.0,99,2253
+535,zabieg Pateya,3000.0,77,2255
+536,ligacja jajowodu,5000.0,74,2256
+537,operacja Shouldice'a,2000.0,77,2259
+538,artroskopia,3000.0,77,2272
+539,operacja Mogga,1500.0,80,2274
+540,lobektomia,500.0,54,2277
+541,zabieg Pateya,2000.0,99,2286
+542,cholecystektomia,2000.0,39,2290
+543,adrenalektomia,1000.0,39,2296
+544,penektomia,4500.0,77,2298
+545,splenektomia,4500.0,54,2305
+546,operacja Strassmana,1500.0,80,2306
+547,operacja Bassiniego,5000.0,74,2312
+548,operacja Puestowa,3500.0,77,2315
+549,ooforektomia,1500.0,77,2316
+550,paracenteza,3500.0,99,2318
+551,operacje korekty plci,3000.0,39,2322
+552,diwertikulotomia,3000.0,74,2324
+553,operacja Girarda,1000.0,54,2325
+554,operacja Shouldice'a,4000.0,74,2327
+555,zabieg Bentalla,1000.0,99,2332
+556,lobotomia,3000.0,39,2348
+557,bronchotomia,1500.0,33,2351
+558,naciecie krocza,1000.0,77,2354
+559,operacja Whipple’a,2000.0,77,2358
+560,lobotomia,1500.0,80,2359
+561,operacja Shouldice'a,3000.0,39,2387
+562,rynotomia,4500.0,80,2395
+563,operacja Norwooda,2500.0,99,2397
+564,kalozotomia,4500.0,80,2398
+565,obrzezanie,1000.0,74,2402
+566,appendektomia,1500.0,54,2408
+567,heminefrektomia,3000.0,99,2410
+568,wulwektomia,2500.0,99,2413
+569,mukosektomia,2000.0,39,2415
+570,orchidektomia,3000.0,80,2434
+571,trachelektomia,4000.0,39,2437
+572,orchidektomia,2000.0,39,2438
+573,owariektomia,4000.0,80,2440
+574,lobotomia,2500.0,99,2441
+575,dekortykacja pluca,3000.0,39,2443
+576,fundoplastyka,3500.0,80,2445
+577,nefrektomia,1500.0,77,2446
+578,wulwektomia,2000.0,99,2454
+579,cholecystektomia,2000.0,39,2456
+580,nefrotomia,1500.0,77,2461
+581,ooforektomia,1500.0,74,2475
+582,operacja Puestowa,2000.0,39,2481
+583,segmentektomia,500.0,54,2492
+584,trachelektomia,2000.0,74,2495
+585,cystogastrostomia,3500.0,77,2497
+586,hipofizektomia,1500.0,77,2502
+587,hemisferektomia,5000.0,80,2506
+588,segmentektomia,1500.0,74,2508
+589,paracenteza,1000.0,77,2511
+590,laryngofisura,1000.0,39,2521
+591,appendektomia,2000.0,39,2523
+592,kraniektomia,4500.0,74,2524
+593,perikardiektomia,1500.0,39,2528
+594,operacja Brickera,4000.0,39,2530
+595,owariektomia,2000.0,33,2542
+596,operacja Traverso-Longmire'a,3000.0,74,2543
+597,abdominoplastyka,2500.0,80,2547
+598,prostatektomia,2500.0,39,2550
+599,laryngofisura,2500.0,77,2553
+600,operacja Jurasza,4500.0,44,2555
+601,owarektomia,4000.0,77,2562
+602,ureterosigmoidostomia,3500.0,99,2571
+603,operacja Traverso-Longmire'a,5000.0,39,2574
+604,papilotomia,4500.0,39,2575
+605,owariektomia,4500.0,74,2576
+606,operacja Drapanasa,5000.0,33,2584
+607,operacja Strassmana,5000.0,54,2588
+608,paracenteza,2000.0,77,2592
+609,kraniektomia,4000.0,77,2598
+610,operacja Norwooda,1000.0,77,2602
+611,kolektomia,4500.0,77,2607
+612,naciecie krocza,3000.0,80,2610
+613,operacja Puestowa,1500.0,77,2615
+614,artroskopia,3000.0,99,2617
+615,splenektomia,5000.0,74,2619
+616,operacja Brickera,3000.0,77,2622
+617,orchidektomia,5000.0,39,2623
+618,hepatektomia,1500.0,39,2627
+619,litotrypsja,500.0,74,2630
+620,bronchotomia,3000.0,39,2631
+621,lobektomia,5000.0,39,2634
+622,papilotomia,1500.0,80,2635
+623,operacja Traverso-Longmire'a,5000.0,44,2636
+624,zabieg Crile’a,3500.0,77,2640
+625,fundoplastyka,1500.0,33,2646
+626,lobektomia,2500.0,54,2650
+627,operacja Brickera,3500.0,54,2654
+628,kolektomia,4000.0,77,2659
+629,histerektomia,4000.0,99,2661
+630,wulwektomia,5000.0,54,2665
+631,adrenalektomia,3000.0,74,2666
+632,operacja Mogga,4500.0,39,2668
+633,adenomektomia,2000.0,77,2678
+634,prostatektomia,3000.0,54,2680
+635,angioplastyka,3500.0,44,2704
+636,ureterosigmoidostomia,1000.0,77,2707
+637,histerektomia,5000.0,39,2708
+638,uwuloplastyka,4500.0,99,2716
+639,operacja Jurasza,4000.0,44,2719
+640,hemikorporektomia,2500.0,99,2722
+641,operacja Bassiniego,500.0,77,2728
+642,lobotomia,1500.0,39,2732
+643,operacja Traverso-Longmire'a,5000.0,99,2736
+644,diwertikulotomia,1000.0,54,2737
+645,zabieg Urbana,2000.0,77,2746
+646,operacja Drapanasa,2000.0,77,2753
+647,metastazektomia,4500.0,80,2756
+648,sfinkterotomia,2000.0,39,2766
+649,sfinkterotomia,1500.0,33,2771
+650,bronchotomia,5000.0,74,2781
+651,operacja Drapanasa,3000.0,74,2786
+652,dekortykacja pluca,4000.0,77,2791
+653,paracenteza,5000.0,99,2795
+654,owarektomia,5000.0,99,2797
+655,zabieg Bentalla,5000.0,54,2798
+656,segmentektomia,4000.0,39,2799
+657,angioplastyka,2500.0,80,2800
+658,wagotomia,3000.0,39,2801
+659,mastektomia,1000.0,54,2806
+660,histerektomia,3000.0,77,2811
+661,owarektomia,3000.0,54,2832
+662,zabieg Halsteda,3000.0,80,2836
+663,segmentektomia,3000.0,99,2838
+664,prostatektomia,5000.0,77,2843
+665,wagotomia,2500.0,54,2846
+666,adenomektomia,1000.0,99,2847
+667,splenektomia,4000.0,74,2858
+668,operacja Billrotha,1500.0,39,2865
+669,gastrektomia,3500.0,77,2870
+670,hemisferektomia,4000.0,33,2873
+671,operacja Rydygiera,2500.0,39,2877
+672,antromastoidektomia,500.0,99,2878
+673,trachelektomia,2000.0,77,2882
+674,operacja Strassmana,3500.0,99,2883
+675,nefrektomia,1500.0,39,2884
+676,wagotomia,1500.0,99,2890
+677,zabieg Halsteda,500.0,33,2891
+678,operacja Rutkowa,1500.0,77,2894
+679,metastazektomia,4500.0,99,2899
+680,lobotomia,5000.0,39,2907
+681,cholecystektomia,500.0,39,2914
+682,ureterosigmoidostomia,2500.0,77,2919
+683,sfinkterotomia,2000.0,80,2925
+684,astragalektomia,2000.0,77,2927
+685,hepatektomia,1000.0,99,2928
+686,owariektomia,3500.0,77,2929
+687,perikardiektomia,2500.0,99,2933
+688,ureterosigmoidostomia,4500.0,77,2935
+689,paracenteza,4500.0,99,2936
+690,zabieg Halsteda,2000.0,39,2940
+691,rynotomia,5000.0,54,2941
+692,orbitotomia,4000.0,77,2943
+693,naciecie krocza,2000.0,54,2948
+694,orchidektomia,2000.0,74,2949
+695,kolektomia,1000.0,77,2954
+696,tyreoidektomia,500.0,39,2958
+697,wulwektomia,5000.0,77,2960
+698,operacja Jurasza,5000.0,77,2963
+699,cholecystektomia,1000.0,54,2965
+700,zabieg Urbana,1500.0,39,2969
+701,angioplastyka,500.0,54,2975
+702,operacja Warrena,2500.0,77,2981
+703,operacja Lichtensteina,3000.0,99,2985
+704,kalozotomia,1000.0,44,2993
+705,zabieg Urbana,4000.0,54,2994
+706,astragalektomia,500.0,33,3000
+707,operacja Traverso-Longmire'a,1500.0,77,3003
+708,diwertikulotomia,1000.0,77,3005
+709,papilotomia,3000.0,77,3011
+710,operacja Girarda,1500.0,44,3013
+711,irydektomia,1500.0,74,3015
+712,operacja Shouldice'a,2500.0,99,3017
+713,cystogastrostomia,1000.0,54,3024
+714,dekortykacja pluca,3000.0,39,3026
+715,operacja Warrena,4000.0,39,3028
+716,operacja Mogga,4000.0,44,3031
+717,mastektomia,2500.0,33,3032
+718,diwertikulotomia,4000.0,74,3037
+719,operacje korekty plci,1000.0,77,3041
+720,pankreatoduodenektomia,4000.0,99,3046
+721,hepatektomia,4000.0,39,3047
+722,mastektomia,4000.0,39,3049
+723,heminefrektomia,3500.0,77,3057
+724,wulwektomia,4000.0,99,3063
+725,naciecie krocza,5000.0,99,3077
+726,ureterosigmoidostomia,2500.0,39,3085
+727,orbitotomia,4000.0,33,3090
+728,nefrektomia,4000.0,77,3093
+729,operacja Rutkowa,3500.0,74,3095
+730,lobektomia,4500.0,54,3097
+731,zabieg Urbana,3000.0,39,3102
+732,wagotomia,4500.0,44,3107
+733,lobektomia,4500.0,77,3111
+734,tyreoidektomia,1000.0,74,3112
+735,tyreoidektomia,4500.0,39,3117
+736,histerektomia,3500.0,99,3124
+737,operacja Hartmanna,1000.0,99,3125
+738,plastyka Heinekego-Mikulicza,500.0,77,3130
+739,kalozotomia,1500.0,39,3134
+740,amputacja,3500.0,80,3137
+741,perikardiektomia,3000.0,99,3142
+742,diwertikulotomia,4500.0,54,3143
+743,operacja Strassmana,3500.0,77,3144
+744,mastektomia,4000.0,99,3146
+745,plastyka Heinekego-Mikulicza,1000.0,39,3148
+746,artroskopia,2500.0,39,3149
+747,operacja Lichtensteina,3000.0,33,3157
+748,histerektomia,4500.0,77,3165
+749,operacja Puestowa,500.0,74,3172
+750,operacja Warrena,3500.0,44,3174
+751,penektomia,1000.0,74,3177
+752,irydektomia,500.0,33,3178
+753,trachelektomia,5000.0,39,3180
+754,operacja Lichtensteina,5000.0,99,3185
+755,wulwektomia,1000.0,39,3186
+756,hemisferektomia,1000.0,74,3190
+757,penektomia,4500.0,39,3195
+758,nefrotomia,4500.0,99,3198
+759,operacja Norwooda,4500.0,99,3208
+760,abdominoplastyka,4000.0,74,3213
+761,operacja Puestowa,2500.0,99,3214
+762,splenektomia,4500.0,77,3220
+763,heminefrektomia,1500.0,99,3225
+764,operacja Jurasza,4500.0,77,3226
+765,pankreatoduodenektomia,2500.0,74,3228
+766,artroskopia,2000.0,39,3239
+767,operacja Drapanasa,3500.0,74,3240
+768,wazektomia,500.0,99,3241
+769,plastyka Heinekego-Mikulicza,1500.0,39,3249
+770,amputacja,3500.0,77,3263
+771,pankreatoduodenektomia,1000.0,44,3265
+772,operacja Nussa,500.0,99,3268
+773,hemikorporektomia,4000.0,74,3287
+774,operacja Nussa,4000.0,39,3288
+775,laryngofisura,4000.0,54,3294
+776,operacja Puestowa,500.0,39,3295
+777,adrenalektomia,2500.0,44,3297
+778,owarektomia,5000.0,99,3300
+779,bronchotomia,500.0,39,3301
+780,trachelektomia,5000.0,99,3304
+781,kolektomia,1000.0,44,3307
+782,operacja Whipple’a,1000.0,74,3311
+783,cholecystektomia,2000.0,77,3314
+784,operacja Norwooda,3000.0,77,3318
+785,obrzezanie,500.0,77,3319
+786,operacja Bassiniego,5000.0,99,3321
+787,heminefrektomia,2500.0,39,3325
+788,pankreatoduodenektomia,5000.0,33,3328
+789,waginektomia,1000.0,39,3329
+790,cystogastrostomia,1500.0,39,3331
+791,abdominoplastyka,2000.0,54,3332
+792,orbitotomia,1000.0,77,3339
+793,lobotomia,1500.0,74,3343
+794,operacja Lichtensteina,1500.0,77,3344
+795,owarektomia,500.0,77,3346
+796,histerektomia,3000.0,54,3351
+797,lobotomia,5000.0,77,3353
+798,fundoplastyka,4500.0,77,3361
+799,operacja Halstedta,2500.0,77,3363
+800,wyluszczenie konczyny,4000.0,80,3368
+801,prostatektomia,1500.0,39,3370
+802,kraniektomia,4000.0,39,3373
+803,perikardiektomia,500.0,77,3383
+804,dekortykacja pluca,5000.0,77,3385
+805,adrenalektomia,4000.0,39,3390
+806,operacja Drapanasa,2000.0,39,3398
+807,appendektomia,1500.0,54,3399
+808,operacja Jurasza,1500.0,80,3403
+809,diwertikulotomia,3500.0,99,3409
+810,litotrypsja,3500.0,39,3419
+811,operacja Milesa,4000.0,33,3427
+812,operacja Traverso-Longmire'a,3500.0,39,3447
+813,histerektomia,2000.0,54,3451
+814,lobotomia,4000.0,39,3456
+815,uwuloplastyka,1000.0,77,3459
+816,zabieg Pateya,4000.0,77,3463
+817,hipofizektomia,2500.0,39,3470
+818,histerektomia,4500.0,99,3472
+819,splenektomia,3000.0,44,3475
+820,kraniektomia,2000.0,77,3480
+821,angioplastyka,4000.0,39,3485
+822,heminefrektomia,1000.0,77,3489
+823,fundoplastyka,500.0,44,3495
+824,perikardiektomia,3000.0,77,3497
+825,kraniektomia,4000.0,39,3498
+826,owarektomia,5000.0,77,3516
+827,mastektomia,2500.0,39,3521
+828,operacja Traverso-Longmire'a,2500.0,77,3523
+829,nefrotomia,2500.0,99,3524
+830,ureterosigmoidostomia,1500.0,39,3525
+831,papilotomia,4500.0,39,3527
+832,operacja Lichtensteina,4500.0,39,3529
+833,metastazektomia,500.0,39,3530
+834,plastyka Heinekego-Mikulicza,1500.0,39,3532
+835,operacja Traverso-Longmire'a,4000.0,44,3539
+836,hepatektomia,5000.0,77,3540
+837,lobektomia,4500.0,74,3545
+838,antromastoidektomia,2000.0,99,3546
+839,tyreoidektomia,4500.0,80,3547
+840,operacja Billrotha,2500.0,44,3550
+841,operacja Halstedta,4500.0,80,3552
+842,operacja Rutkowa,500.0,80,3554
+843,histerektomia,1500.0,99,3567
+844,fundoplastyka,2000.0,77,3568
+845,laryngektomia,2000.0,77,3569
+846,mukosektomia,3500.0,80,3577
+847,prostatektomia,500.0,77,3588
+848,operacja Shouldice'a,1000.0,80,3599
+849,operacja Whipple’a,3000.0,39,3601
+850,zabieg Crile’a,4500.0,80,3603
+851,operacja Norwooda,500.0,44,3610
+852,operacja Strassmana,4500.0,39,3611
+853,pankreatoduodenektomia,5000.0,39,3612
+854,zabieg Halsteda,4500.0,77,3615
+855,operacja Strassmana,3500.0,77,3616
+856,kolektomia,2000.0,77,3625
+857,adenomektomia,500.0,39,3639
+858,adrenalektomia,500.0,39,3641
+859,obrzezanie,5000.0,54,3645
+860,uwulopalatofaryngoplastyka,1500.0,33,3648
+861,rynotomia,1500.0,77,3652
+862,ooforektomia,2500.0,99,3657
+863,dekortykacja pluca,2000.0,77,3658
+864,heminefrektomia,1500.0,39,3660
+865,perikardiektomia,5000.0,77,3664
+866,operacja Strassmana,4000.0,77,3667
+867,laryngofisura,3000.0,44,3676
+868,lobotomia,5000.0,44,3683
+869,nefrotomia,4000.0,77,3705
+870,operacja Shouldice'a,4000.0,33,3706
+871,owarektomia,4500.0,99,3722
+872,adrenalektomia,3000.0,77,3724
+873,operacja Drapanasa,3500.0,99,3734
+874,operacje korekty plci,3000.0,77,3736
+875,ureterosigmoidostomia,1500.0,54,3739
+876,perikardiektomia,1500.0,77,3742
+877,heminefrektomia,3500.0,39,3746
+878,wazektomia,2000.0,77,3748
+879,operacja Brickera,5000.0,74,3753
+880,operacja Bassiniego,3000.0,39,3757
+881,rynotomia,4000.0,39,3758
+882,zabieg Halsteda,1000.0,54,3760
+883,laryngofisura,500.0,99,3762
+884,obrzezanie,4000.0,77,3763
+885,laryngofisura,2000.0,77,3769
+886,angioplastyka,3500.0,80,3770
+887,operacja Shouldice'a,1500.0,54,3776
+888,owariektomia,1000.0,99,3778
+889,astragalektomia,1000.0,39,3782
+890,metastazektomia,1000.0,77,3794
+891,orbitotomia,1000.0,80,3795
+892,operacja Hartmanna,4000.0,77,3796
+893,astragalektomia,3000.0,99,3798
+894,rynotomia,3000.0,44,3805
+895,lobektomia,2000.0,99,3808
+896,hemikorporektomia,500.0,77,3810
+897,orchidektomia,2000.0,39,3826
+898,sfinkterotomia,1000.0,39,3828
+899,operacja Bassiniego,1000.0,77,3829
+900,penektomia,500.0,80,3831
+901,segmentektomia,500.0,99,3832
+902,uwuloplastyka,4000.0,77,3836
+903,operacja Norwooda,2500.0,74,3839
+904,penektomia,3000.0,54,3840
+905,owarektomia,3500.0,39,3843
+906,artroskopia,4000.0,39,3844
+907,prostatektomia,4500.0,39,3847
+908,operacja Nussa,4000.0,77,3852
+909,zabieg Pateya,5000.0,39,3856
+910,orchidektomia,4000.0,39,3857
+911,nefrektomia,500.0,80,3858
+912,splenektomia,500.0,33,3862
+913,operacja Girarda,2000.0,39,3864
+914,paracenteza,500.0,80,3866
+915,prostatektomia,3500.0,77,3869
+916,amputacja,4500.0,77,3870
+917,histerektomia,500.0,77,3875
+918,zabieg Halsteda,5000.0,77,3877
+919,operacja Mogga,500.0,77,3890
+920,laminektomia,1000.0,74,3891
+921,nefrektomia,1000.0,54,3902
+922,plastyka Heinekego-Mikulicza,4000.0,99,3903
+923,diwertikulotomia,4500.0,39,3904
+924,laryngofisura,2500.0,39,3908
+925,angioplastyka,500.0,54,3912
+926,fundoplastyka,3500.0,77,3913
+927,zabieg Halsteda,2500.0,77,3917
+928,rynotomia,5000.0,99,3918
+929,orbitotomia,4500.0,39,3922
+930,astragalektomia,1000.0,99,3928
+931,prostatektomia,1000.0,80,3930
+932,cystogastrostomia,5000.0,54,3935
+933,orchidektomia,4500.0,39,3936
+934,zabieg Crile’a,3000.0,39,3944
+935,operacja Norwooda,5000.0,80,3950
+936,mastektomia,1000.0,99,3953
+937,cholecystektomia,1000.0,39,3958
+938,obrzezanie,4000.0,74,3964
+939,owariektomia,500.0,99,3967
+940,hemikorporektomia,500.0,77,3974
+941,perikardiektomia,1000.0,77,3992
+942,amputacja,2500.0,77,3993
+943,operacja Milesa,1500.0,77,4003
+944,operacja Whipple’a,5000.0,33,4010
+945,uwuloplastyka,4500.0,54,4011
+946,histerektomia,500.0,80,4012
+947,ligacja jajowodu,5000.0,77,4013
+948,wyluszczenie konczyny,4500.0,74,4015
+949,operacja Warrena,4000.0,33,4018
+950,operacja Milesa,1500.0,39,4023
+951,cystogastrostomia,3000.0,54,4030
+952,ureterosigmoidostomia,5000.0,39,4032
+953,owarektomia,2000.0,39,4035
+954,angioplastyka,4000.0,74,4044
+955,nefrektomia,2500.0,77,4051
+956,laminektomia,4500.0,80,4052
+957,laminektomia,2500.0,74,4060
+958,cystogastrostomia,2500.0,77,4061
+959,operacja Jurasza,500.0,77,4063
+960,amputacja,1000.0,39,4066
+961,wazektomia,500.0,77,4068
+962,operacja Norwooda,3500.0,80,4074
+963,sfinkterotomia,3500.0,99,4082
+964,trachelektomia,4000.0,33,4085
+965,nefrotomia,4500.0,77,4087
+966,operacja Drapanasa,5000.0,99,4095
+967,histerektomia,2500.0,99,4101
+968,bronchotomia,500.0,80,4109
+969,operacja Puestowa,4000.0,77,4110
+970,operacja Drapanasa,4000.0,54,4112
+971,lobotomia,1000.0,77,4116
+972,trachelektomia,2500.0,99,4118
+973,operacja Milesa,1000.0,54,4119
+974,zabieg Halsteda,1000.0,99,4120
+975,zabieg Urbana,2500.0,80,4122
+976,hemikorporektomia,4000.0,80,4131
+977,trachelektomia,2500.0,77,4135
+978,operacja Rutkowa,3500.0,80,4140
+979,segmentektomia,500.0,39,4148
+980,pankreatoduodenektomia,3500.0,77,4164
+981,abdominoplastyka,1500.0,33,4170
+982,laryngofisura,500.0,99,4173
+983,operacja Lichtensteina,4000.0,74,4183
+984,lobotomia,2500.0,77,4189
+985,dekortykacja pluca,3500.0,77,4190
+986,hemikorporektomia,4000.0,33,4192
+987,metastazektomia,3000.0,39,4193
+988,laminektomia,500.0,44,4195
+989,segmentektomia,4000.0,77,4200
+990,bronchotomia,2500.0,77,4203
+991,operacja Shouldice'a,5000.0,54,4207
+992,hemisferektomia,3000.0,77,4211
+993,hepatektomia,2000.0,33,4212
+994,zabieg Pateya,500.0,77,4214
+995,lobektomia,2000.0,44,4219
+996,histerektomia,500.0,99,4224
+997,amputacja,4000.0,99,4228
+998,laryngektomia,5000.0,39,4230
+999,penektomia,5000.0,77,4235
+1000,penektomia,4000.0,77,4251
+1001,fundoplastyka,2500.0,39,4256
+1002,operacja Jurasza,5000.0,33,4259
+1003,lobektomia,3000.0,77,4260
+1004,zabieg Crile’a,5000.0,44,4261
+1005,litotrypsja,4000.0,77,4270
+1006,naciecie krocza,1000.0,77,4271
+1007,cystogastrostomia,2000.0,33,4274
+1008,lobektomia,3500.0,39,4277
+1009,zabieg Halsteda,2500.0,74,4278
+1010,operacja Rutkowa,5000.0,99,4280
+1011,adenomektomia,5000.0,44,4282
+1012,wagotomia,2000.0,54,4286
+1013,artroskopia,3500.0,77,4290
+1014,perikardiektomia,3000.0,77,4293
+1015,papilotomia,3500.0,99,4294
+1016,wagotomia,4500.0,77,4300
+1017,operacja Strassmana,5000.0,99,4302
+1018,ureterosigmoidostomia,3000.0,77,4303
+1019,dekortykacja pluca,4000.0,54,4305
+1020,operacja Hartmanna,3000.0,99,4316
+1021,antromastoidektomia,2000.0,80,4317
+1022,wulwektomia,1500.0,77,4320
+1023,orbitotomia,3000.0,39,4322
+1024,prostatektomia,2500.0,39,4329
+1025,rynotomia,1000.0,99,4332
+1026,histerektomia,3500.0,74,4338
+1027,zabieg Halsteda,2000.0,77,4343
+1028,fundoplastyka,2000.0,54,4345
+1029,hipofizektomia,4500.0,99,4348
+1030,operacja Milesa,1500.0,77,4360
+1031,papilotomia,3000.0,39,4363
+1032,sfinkterotomia,3000.0,33,4365
+1033,pankreatoduodenektomia,500.0,99,4367
+1034,gastrektomia,4000.0,99,4371
+1035,zabieg Crile’a,3500.0,54,4375
+1036,operacja Traverso-Longmire'a,2000.0,77,4376
+1037,histerektomia,3500.0,77,4377
+1038,operacja Jurasza,4500.0,39,4381
+1039,kalozotomia,4500.0,77,4391
+1040,operacja Jurasza,3000.0,77,4403
+1041,penektomia,1000.0,74,4404
+1042,orbitotomia,2000.0,39,4405
+1043,wyluszczenie konczyny,1000.0,99,4409
+1044,operacja Halstedta,4500.0,54,4422
+1045,owariektomia,5000.0,99,4423
+1046,kolektomia,2500.0,80,4424
+1047,segmentektomia,500.0,54,4430
+1048,operacja Billrotha,2500.0,77,4436
+1049,metastazektomia,2500.0,99,4443
+1050,lobotomia,5000.0,99,4445
+1051,operacja Mogga,5000.0,39,4447
+1052,waginektomia,4000.0,74,4450
+1053,uwulopalatofaryngoplastyka,3000.0,80,4454
+1054,trachelektomia,2000.0,74,4464
+1055,orchidektomia,1500.0,77,4465
+1056,litotrypsja,3500.0,39,4466
+1057,sfinkterotomia,1000.0,77,4467
+1058,orchidektomia,3000.0,77,4468
+1059,abdominoplastyka,2000.0,44,4471
+1060,wyluszczenie konczyny,2000.0,77,4478
+1061,adrenalektomia,1500.0,99,4488
+1062,ureterosigmoidostomia,5000.0,44,4490
+1063,diwertikulotomia,1500.0,77,4491
+1064,wulwektomia,3500.0,77,4502
+1065,lobektomia,3000.0,77,4503
+1066,amputacja,4000.0,77,4507
+1067,pankreatoduodenektomia,2500.0,39,4514
+1068,kraniektomia,3000.0,39,4516
+1069,zabieg Crile’a,4500.0,54,4523
+1070,heminefrektomia,4000.0,74,4527
+1071,hemikorporektomia,5000.0,39,4541
+1072,operacja Warrena,1000.0,39,4543
+1073,zabieg Urbana,1500.0,74,4550
+1074,bronchotomia,3000.0,77,4551
+1075,orbitotomia,4000.0,77,4552
+1076,operacja Traverso-Longmire'a,5000.0,44,4556
+1077,plastyka Heinekego-Mikulicza,2000.0,80,4560
+1078,laryngektomia,500.0,33,4561
+1079,antromastoidektomia,1000.0,77,4569
+1080,pankreatoduodenektomia,2500.0,39,4572
+1081,adenotomia,3000.0,77,4583
+1082,bronchotomia,2500.0,39,4591
+1083,operacja Warrena,5000.0,74,4592
+1084,naciecie krocza,1000.0,77,4595
+1085,histerektomia,5000.0,99,4596
+1086,uwuloplastyka,3500.0,39,4600
+1087,operacja Strassmana,4500.0,44,4605
+1088,heminefrektomia,3500.0,99,4609
+1089,laminektomia,2000.0,39,4620
+1090,metastazektomia,4000.0,99,4621
+1091,wazektomia,4000.0,39,4622
+1092,astragalektomia,1000.0,33,4623
+1093,paracenteza,3000.0,39,4629
+1094,zabieg Urbana,3500.0,99,4641
+1095,operacja Halstedta,3500.0,77,4643
+1096,wulwektomia,1000.0,77,4646
+1097,perikardiektomia,2500.0,77,4648
+1098,operacja Rutkowa,1500.0,39,4656
+1099,abdominoplastyka,5000.0,99,4659
+1100,segmentektomia,2000.0,54,4663
+1101,laminektomia,4500.0,77,4665
+1102,amputacja,1000.0,80,4667
+1103,zabieg Crile’a,1000.0,99,4672
+1104,metastazektomia,2000.0,54,4678
+1105,zabieg Halsteda,1000.0,74,4682
+1106,adenotomia,4500.0,77,4692
+1107,hemisferektomia,3500.0,39,4693
+1108,adenotomia,2000.0,39,4699
+1109,operacja Strassmana,500.0,39,4703
+1110,hemisferektomia,2500.0,77,4706
+1111,operacja Drapanasa,500.0,39,4710
+1112,abdominoplastyka,5000.0,39,4712
+1113,operacja Norwooda,2000.0,99,4718
+1114,operacja Bassiniego,2000.0,99,4721
+1115,operacja Brickera,3000.0,99,4725
+1116,orchidektomia,500.0,77,4729
+1117,naciecie krocza,1000.0,39,4730
+1118,bronchotomia,2000.0,54,4734
+1119,penektomia,4500.0,77,4741
+1120,naciecie krocza,4000.0,44,4743
+1121,appendektomia,4000.0,33,4747
+1122,wyluszczenie konczyny,2000.0,74,4752
+1123,laminektomia,3500.0,39,4754
+1124,astragalektomia,3000.0,77,4761
+1125,fundoplastyka,2000.0,77,4765
+1126,abdominoplastyka,4500.0,77,4770
+1127,sfinkterotomia,4000.0,44,4772
+1128,operacja Jurasza,3000.0,77,4773
+1129,zabieg Bentalla,3000.0,74,4776
+1130,ligacja jajowodu,500.0,99,4778
+1131,kraniektomia,5000.0,80,4781
+1132,gastrektomia,4000.0,99,4782
+1133,zabieg Pateya,4500.0,39,4791
+1134,laryngofisura,3000.0,74,4793
+1135,appendektomia,3000.0,33,4797
+1136,kolektomia,1000.0,54,4800
+1137,orchidektomia,1000.0,77,4801
+1138,uwuloplastyka,4000.0,74,4805
+1139,ureterosigmoidostomia,2500.0,39,4807
+1140,uwuloplastyka,2000.0,33,4808
+1141,operacja Drapanasa,3000.0,99,4816
+1142,histerektomia,2000.0,99,4819
+1143,penektomia,3000.0,39,4820
+1144,operacja Norwooda,2000.0,33,4828
+1145,hemikorporektomia,1500.0,99,4830
+1146,plastyka Heinekego-Mikulicza,3500.0,77,4834
+1147,operacja Norwooda,500.0,99,4836
+1148,cystogastrostomia,1500.0,39,4839
+1149,nefrektomia,500.0,54,4844
+1150,nefrektomia,3000.0,44,4845
+1151,operacja Halstedta,2500.0,74,4847
+1152,orchidektomia,2500.0,77,4865
+1153,gastrektomia,1500.0,54,4876
+1154,irydektomia,3500.0,99,4884
+1155,zabieg Urbana,4000.0,39,4888
+1156,abdominoplastyka,3500.0,77,4892
+1157,operacja Norwooda,3500.0,74,4895
+1158,trachelektomia,2500.0,77,4897
+1159,operacja Hartmanna,500.0,39,4908
+1160,ureterosigmoidostomia,500.0,77,4915
+1161,trachelektomia,3500.0,44,4917
+1162,operacja Bassiniego,3000.0,80,4918
+1163,tyreoidektomia,2000.0,77,4928
+1164,fundoplastyka,4000.0,77,4934
+1165,operacja Halstedta,4500.0,39,4935
+1166,ureterosigmoidostomia,3500.0,99,4944
+1167,gastrektomia,1000.0,99,4947
+1168,fundoplastyka,2500.0,39,4952
+1169,angioplastyka,3000.0,39,4955
+1170,plastyka Heinekego-Mikulicza,2000.0,80,4957
+1171,mastektomia,500.0,99,4958
+1172,wulwektomia,5000.0,74,4963
+1173,operacja Warrena,4000.0,77,4964
+1174,operacja Nussa,5000.0,74,4981
+1175,splenektomia,1500.0,80,4993
+1176,paracenteza,500.0,77,4995
+1177,operacja Traverso-Longmire'a,3000.0,33,5013
+1178,operacja Strassmana,500.0,77,5014
+1179,perikardiektomia,3500.0,74,5020
+1180,litotrypsja,2500.0,39,5022
+1181,naciecie krocza,3500.0,39,5028
+1182,hemisferektomia,1000.0,99,5032
+1183,operacja Rydygiera,2000.0,77,5033
+1184,kraniektomia,2500.0,39,5038
+1185,operacja Shouldice'a,2500.0,77,5039
+1186,operacja Mogga,2000.0,39,5041
+1187,uwulopalatofaryngoplastyka,500.0,39,5043
+1188,operacja Shouldice'a,4000.0,77,5044
+1189,operacja Halstedta,4000.0,80,5045
+1190,mukosektomia,1000.0,77,5046
+1191,waginektomia,4500.0,77,5047
+1192,sfinkterotomia,2000.0,33,5050
+1193,kolektomia,500.0,54,5073
+1194,astragalektomia,1500.0,80,5077
+1195,perikardiektomia,4500.0,39,5078
+1196,zabieg Bentalla,1000.0,39,5079
+1197,orbitotomia,4500.0,77,5080
+1198,perikardiektomia,500.0,39,5087
+1199,fundoplastyka,1500.0,77,5089
+1200,operacja Billrotha,1000.0,99,5090
+1201,operacja Brickera,3500.0,99,5091
+1202,dekortykacja pluca,2500.0,77,5094
+1203,plastyka Heinekego-Mikulicza,3000.0,39,5097
+1204,paracenteza,4500.0,39,5105
+1205,adenotomia,5000.0,99,5106
+1206,abdominoplastyka,3000.0,80,5110
+1207,metastazektomia,4500.0,74,5113
+1208,operacja Drapanasa,4500.0,77,5116
+1209,operacja Shouldice'a,4500.0,54,5124
+1210,fundoplastyka,1500.0,39,5129
+1211,litotrypsja,4000.0,54,5130
+1212,mastektomia,4000.0,74,5133
+1213,tyreoidektomia,1000.0,77,5137
+1214,obrzezanie,500.0,77,5140
+1215,operacja Shouldice'a,500.0,33,5143
+1216,abdominoplastyka,3000.0,99,5148
+1217,operacja Warrena,3500.0,33,5151
+1218,uwulopalatofaryngoplastyka,4000.0,99,5152
+1219,waginektomia,4500.0,54,5153
+1220,lobektomia,4500.0,99,5155
+1221,zabieg Urbana,2500.0,80,5160
+1222,operacja Nussa,1000.0,74,5167
+1223,operacja Lichtensteina,2500.0,44,5174
+1224,histerektomia,4000.0,99,5178
+1225,operacja Whipple’a,1000.0,54,5179
+1226,rynotomia,2000.0,54,5181
+1227,operacja Girarda,500.0,39,5182
+1228,wazektomia,500.0,39,5185
+1229,waginektomia,1000.0,99,5187
+1230,cystogastrostomia,3500.0,39,5190
+1231,kolektomia,2000.0,77,5192
+1232,cholecystektomia,3500.0,77,5193
+1233,mukosektomia,4000.0,74,5196
+1234,operacja Norwooda,2000.0,80,5197
+1235,obrzezanie,2000.0,77,5199
+1236,hepatektomia,2000.0,77,5202
+1237,kraniektomia,4500.0,39,5207
+1238,operacja Hartmanna,500.0,77,5216
+1239,lobotomia,4500.0,80,5230
+1240,ooforektomia,1500.0,39,5242
+1241,irydektomia,5000.0,77,5248
+1242,paracenteza,3000.0,33,5253
+1243,operacja Norwooda,1500.0,74,5254
+1244,angioplastyka,4000.0,77,5255
+1245,laryngofisura,2000.0,74,5258
+1246,ooforektomia,4500.0,74,5259
+1247,artroskopia,1000.0,39,5260
+1248,operacje korekty plci,1500.0,77,5262
+1249,naciecie krocza,500.0,99,5264
+1250,astragalektomia,1500.0,39,5266
+1251,kraniektomia,4500.0,77,5279
+1252,waginektomia,1000.0,77,5284
+1253,hepatektomia,1500.0,39,5296
+1254,owarektomia,5000.0,80,5301
+1255,diwertikulotomia,5000.0,80,5304
+1256,operacja Hartmanna,1000.0,99,5307
+1257,cholecystektomia,2000.0,99,5313
+1258,histerektomia,2500.0,99,5314
+1259,hipofizektomia,1500.0,39,5317
+1260,perikardiektomia,1500.0,54,5322
+1261,operacja Puestowa,4500.0,77,5324
+1262,pankreatoduodenektomia,2000.0,77,5326
+1263,heminefrektomia,2000.0,54,5336
+1264,operacja Mogga,1000.0,39,5340
+1265,kolektomia,3500.0,80,5355
+1266,hemikorporektomia,1000.0,99,5357
+1267,ooforektomia,2500.0,39,5359
+1268,heminefrektomia,5000.0,77,5365
+1269,amputacja,4500.0,99,5369
+1270,orbitotomia,4500.0,39,5371
+1271,naciecie krocza,5000.0,39,5377
+1272,plastyka Heinekego-Mikulicza,5000.0,99,5381
+1273,zabieg Halsteda,5000.0,74,5382
+1274,operacja Norwooda,3000.0,39,5392
+1275,operacja Lichtensteina,3500.0,77,5403
+1276,ureterosigmoidostomia,4000.0,39,5409
+1277,metastazektomia,1500.0,74,5410
+1278,litotrypsja,3500.0,33,5416
+1279,ureterosigmoidostomia,3000.0,77,5428
+1280,wyluszczenie konczyny,2500.0,99,5433
+1281,ligacja jajowodu,1500.0,77,5435
+1282,operacja Girarda,2000.0,44,5443
+1283,adenomektomia,1000.0,80,5450
+1284,uwuloplastyka,3500.0,80,5454
+1285,papilotomia,4500.0,39,5458
+1286,heminefrektomia,1500.0,77,5463
+1287,operacja Shouldice'a,1500.0,77,5465
+1288,naciecie krocza,2500.0,99,5478
+1289,hemikorporektomia,500.0,74,5479
+1290,zabieg Pateya,3000.0,99,5481
+1291,kolektomia,2000.0,99,5482
+1292,heminefrektomia,3500.0,44,5483
+1293,hipofizektomia,4500.0,77,5484
+1294,kraniektomia,2500.0,77,5486
+1295,adenomektomia,1000.0,39,5488
+1296,papilotomia,500.0,77,5489
+1297,operacja Hartmanna,1500.0,80,5495
+1298,zabieg Urbana,4500.0,54,5496
+1299,mukosektomia,3500.0,99,5501
+1300,hipofizektomia,2500.0,99,5506
+1301,paracenteza,4500.0,74,5510
+1302,uwulopalatofaryngoplastyka,4500.0,54,5512
+1303,laryngektomia,3500.0,54,5513
+1304,owarektomia,2500.0,77,5528
+1305,laryngektomia,3000.0,77,5531
+1306,lobektomia,3000.0,54,5544
+1307,hepatektomia,4000.0,77,5545
+1308,irydektomia,4000.0,77,5546
+1309,appendektomia,3000.0,99,5547
+1310,fundoplastyka,5000.0,80,5550
+1311,segmentektomia,1000.0,77,5556
+1312,hemikorporektomia,4000.0,39,5561
+1313,operacja Warrena,4000.0,39,5566
+1314,operacja Nussa,5000.0,39,5569
+1315,ooforektomia,2000.0,99,5570
+1316,kalozotomia,2000.0,39,5574
+1317,trachelektomia,3500.0,77,5580
+1318,irydektomia,2000.0,44,5597
+1319,laryngektomia,2000.0,33,5609
+1320,prostatektomia,500.0,80,5610
+1321,cystogastrostomia,4500.0,77,5616
+1322,astragalektomia,2500.0,39,5620
+1323,pankreatoduodenektomia,500.0,77,5622
+1324,nefrektomia,4500.0,54,5623
+1325,operacja Lichtensteina,3500.0,99,5628
+1326,owarektomia,5000.0,44,5631
+1327,papilotomia,2000.0,77,5634
+1328,adenotomia,3500.0,99,5643
+1329,ureterosigmoidostomia,500.0,77,5649
+1330,hemikorporektomia,2000.0,54,5654
+1331,litotrypsja,4500.0,74,5664
+1332,appendektomia,3000.0,39,5668
+1333,laminektomia,4000.0,80,5676
+1334,penektomia,4000.0,99,5678
+1335,sfinkterotomia,500.0,99,5680
+1336,operacja Norwooda,500.0,39,5681
+1337,zabieg Bentalla,1500.0,39,5685
+1338,hepatektomia,500.0,77,5686
+1339,artroskopia,1500.0,74,5687
+1340,ooforektomia,2000.0,77,5689
+1341,operacja Whipple’a,500.0,99,5691
+1342,uwulopalatofaryngoplastyka,3500.0,74,5693
+1343,cystogastrostomia,3500.0,77,5701
+1344,mukosektomia,500.0,44,5704
+1345,cystogastrostomia,1500.0,54,5707
+1346,metastazektomia,500.0,99,5712
+1347,astragalektomia,5000.0,77,5714
+1348,perikardiektomia,4500.0,77,5719
+1349,operacja Brickera,2000.0,39,5725
+1350,laryngektomia,5000.0,77,5733
+1351,antromastoidektomia,4500.0,77,5745
+1352,ureterosigmoidostomia,1000.0,39,5748
+1353,operacja Puestowa,2500.0,33,5751
+1354,operacja Rutkowa,1500.0,80,5752
+1355,hemisferektomia,3000.0,77,5766
+1356,nefrektomia,3000.0,80,5768
+1357,wazektomia,1500.0,54,5774
+1358,zabieg Urbana,1000.0,99,5778
+1359,perikardiektomia,3500.0,39,5779
+1360,laminektomia,500.0,54,5780
+1361,pankreatoduodenektomia,4500.0,80,5785
+1362,penektomia,1000.0,80,5786
+1363,operacja Norwooda,4000.0,33,5789
+1364,waginektomia,2000.0,77,5790
+1365,operacja Traverso-Longmire'a,2000.0,77,5791
+1366,prostatektomia,500.0,77,5793
+1367,operacja Rutkowa,5000.0,99,5795
+1368,abdominoplastyka,3000.0,39,5802
+1369,operacja Mogga,3000.0,99,5809
+1370,cholecystektomia,3500.0,44,5811
+1371,operacja Shouldice'a,2500.0,80,5817
+1372,astragalektomia,2000.0,39,5818
+1373,wazektomia,4000.0,99,5820
+1374,operacja Shouldice'a,1500.0,54,5823
+1375,wulwektomia,3500.0,77,5828
+1376,histerektomia,3500.0,99,5840
+1377,rynotomia,3500.0,74,5842
+1378,paracenteza,4000.0,39,5856
+1379,wazektomia,500.0,39,5857
+1380,irydektomia,4500.0,80,5867
+1381,metastazektomia,500.0,54,5868
+1382,mukosektomia,4500.0,77,5869
+1383,operacja Jurasza,2500.0,80,5871
+1384,orbitotomia,5000.0,99,5877
+1385,operacja Milesa,3500.0,77,5879
+1386,operacja Billrotha,5000.0,44,5880
+1387,ligacja jajowodu,5000.0,54,5881
+1388,wyluszczenie konczyny,1000.0,54,5883
+1389,nefrektomia,4000.0,54,5899
+1390,fundoplastyka,5000.0,99,5900
+1391,operacja Girarda,4000.0,39,5908
+1392,antromastoidektomia,1500.0,77,5914
+1393,trachelektomia,5000.0,44,5932
+1394,operacja Whipple’a,1000.0,74,5934
+1395,tyreoidektomia,1000.0,74,5937
+1396,irydektomia,1000.0,33,5938
+1397,zabieg Bentalla,5000.0,99,5949
+1398,wyluszczenie konczyny,1500.0,39,5959
+1399,hepatektomia,3500.0,44,5960
+1400,operacja Rydygiera,3500.0,54,5968
+1401,diwertikulotomia,1500.0,77,5970
+1402,wagotomia,500.0,77,5979
+1403,operacja Mogga,1500.0,39,5983
+1404,rynotomia,3000.0,54,5986
+1405,tyreoidektomia,1000.0,33,5991
+1406,adrenalektomia,1000.0,77,5993
+1407,kalozotomia,3500.0,99,5996
+1408,fundoplastyka,4500.0,44,5997
+1409,artroskopia,500.0,77,6006
+1410,adenotomia,5000.0,74,6011
+1411,ligacja jajowodu,500.0,77,6019
+1412,naciecie krocza,1000.0,77,6027
+1413,uwuloplastyka,4500.0,80,6040
+1414,mukosektomia,4500.0,39,6046
+1415,laryngektomia,1000.0,80,6048
+1416,appendektomia,1000.0,39,6051
+1417,splenektomia,2500.0,77,6065
+1418,zabieg Crile’a,1000.0,99,6068
+1419,metastazektomia,2000.0,99,6074
+1420,laryngektomia,1500.0,54,6086
+1421,zabieg Crile’a,3500.0,77,6087
+1422,operacja Whipple’a,5000.0,39,6088
+1423,perikardiektomia,2500.0,99,6089
+1424,astragalektomia,3000.0,54,6090
+1425,nefrotomia,4500.0,77,6098
+1426,operacja Mogga,500.0,99,6100
+1427,operacja Lichtensteina,1000.0,54,6101
+1428,segmentektomia,2500.0,77,6102
+1429,prostatektomia,1500.0,74,6103
+1430,operacja Whipple’a,3000.0,74,6109
+1431,antromastoidektomia,4500.0,39,6113
+1432,cystogastrostomia,2500.0,74,6114
+1433,kolektomia,2500.0,80,6118
+1434,operacja Whipple’a,500.0,54,6123
+1435,waginektomia,1500.0,39,6133
+1436,uwuloplastyka,3000.0,54,6138
+1437,histerektomia,1000.0,77,6141
+1438,kalozotomia,2500.0,44,6148
+1439,prostatektomia,1000.0,39,6149
+1440,dekortykacja pluca,4000.0,80,6152
+1441,heminefrektomia,1500.0,77,6159
+1442,zabieg Halsteda,5000.0,77,6164
+1443,irydektomia,4000.0,77,6169
+1444,orbitotomia,1500.0,77,6177
+1445,ooforektomia,2000.0,80,6185
+1446,operacja Lichtensteina,3500.0,77,6188
+1447,heminefrektomia,2000.0,80,6198
+1448,operacja Traverso-Longmire'a,3000.0,33,6201
+1449,naciecie krocza,1000.0,99,6202
+1450,adenomektomia,3000.0,77,6203
+1451,trachelektomia,2500.0,77,6205
+1452,hipofizektomia,4500.0,39,6206
+1453,operacja Whipple’a,2500.0,99,6213
+1454,wazektomia,2000.0,80,6233
+1455,tyreoidektomia,500.0,54,6242
+1456,operacja Shouldice'a,4500.0,54,6245
+1457,operacja Rutkowa,2500.0,39,6249
+1458,hemisferektomia,2500.0,80,6250
+1459,bronchotomia,4500.0,99,6252
+1460,adenotomia,1500.0,99,6255
+1461,operacja Lichtensteina,4000.0,77,6257
+1462,zabieg Crile’a,4500.0,44,6260
+1463,litotrypsja,4000.0,74,6266
+1464,diwertikulotomia,1000.0,80,6271
+1465,operacja Norwooda,500.0,77,6272
+1466,cystogastrostomia,4500.0,77,6273
+1467,operacja Whipple’a,2000.0,39,6277
+1468,trachelektomia,4500.0,80,6300
+1469,irydektomia,2500.0,33,6302
+1470,paracenteza,3500.0,99,6307
+1471,angioplastyka,2000.0,80,6314
+1472,amputacja,4000.0,77,6323
+1473,sfinkterotomia,4000.0,74,6325
+1474,uwulopalatofaryngoplastyka,1500.0,54,6328
+1475,antromastoidektomia,4500.0,39,6332
+1476,dekortykacja pluca,2500.0,77,6333
+1477,cystogastrostomia,4500.0,39,6336
+1478,cholecystektomia,1500.0,77,6345
+1479,cholecystektomia,2000.0,77,6350
+1480,zabieg Pateya,500.0,39,6353
+1481,ooforektomia,4000.0,74,6355
+1482,operacja Milesa,4000.0,77,6369
+1483,mastektomia,4000.0,39,6372
+1484,trachelektomia,2500.0,39,6373
+1485,lobotomia,5000.0,77,6376
+1486,operacja Norwooda,2000.0,99,6377
+1487,pankreatoduodenektomia,2500.0,99,6388
+1488,owariektomia,1500.0,54,6392
+1489,cystogastrostomia,2000.0,99,6398
+1490,laminektomia,5000.0,54,6403
+1491,kolektomia,2000.0,74,6405
+1492,naciecie krocza,4500.0,99,6409
+1493,sfinkterotomia,3000.0,39,6411
+1494,wyluszczenie konczyny,3500.0,77,6421
+1495,fundoplastyka,2500.0,39,6426
+1496,waginektomia,1500.0,54,6429
+1497,diwertikulotomia,1000.0,77,6432
+1498,operacja Nussa,3500.0,74,6433
+1499,rynotomia,1500.0,39,6435
+1500,pankreatoduodenektomia,1000.0,39,6437
+1501,laminektomia,5000.0,54,6440
+1502,hemikorporektomia,5000.0,80,6441
+1503,operacja Girarda,2500.0,39,6446
+1504,bronchotomia,2000.0,99,6451
+1505,ooforektomia,4500.0,74,6452
+1506,papilotomia,3500.0,77,6455
+1507,zabieg Halsteda,3000.0,77,6465
+1508,operacja Rutkowa,1000.0,99,6470
+1509,heminefrektomia,4500.0,39,6472
+1510,wazektomia,2000.0,80,6473
+1511,nefrektomia,1500.0,80,6477
+1512,dekortykacja pluca,2500.0,39,6482
+1513,nefrotomia,4500.0,39,6484
+1514,hipofizektomia,4000.0,77,6486
+1515,ureterosigmoidostomia,2500.0,44,6487
+1516,uwuloplastyka,1000.0,77,6488
+1517,operacja Rydygiera,500.0,77,6502
+1518,gastrektomia,5000.0,77,6506
+1519,operacja Strassmana,2000.0,33,6507
+1520,operacja Rydygiera,2000.0,54,6508
+1521,orchidektomia,3500.0,77,6510
+1522,antromastoidektomia,2500.0,77,6512
+1523,operacja Rydygiera,4500.0,54,6516
+1524,waginektomia,5000.0,54,6519
+1525,artroskopia,2000.0,33,6521
+1526,rynotomia,2000.0,33,6523
+1527,adrenalektomia,500.0,77,6528
+1528,operacja Brickera,2500.0,99,6530
+1529,antromastoidektomia,3500.0,54,6531
+1530,zabieg Pateya,2500.0,99,6532
+1531,uwulopalatofaryngoplastyka,5000.0,74,6542
+1532,hipofizektomia,500.0,44,6544
+1533,segmentektomia,1000.0,77,6549
+1534,ligacja jajowodu,3500.0,39,6556
+1535,antromastoidektomia,4500.0,99,6560
+1536,mastektomia,1500.0,74,6567
+1537,zabieg Bentalla,3000.0,44,6570
+1538,segmentektomia,2500.0,39,6599
+1539,zabieg Pateya,1500.0,54,6617
+1540,adenotomia,4500.0,77,6623
+1541,operacja Warrena,5000.0,77,6628
+1542,metastazektomia,2000.0,77,6629
+1543,hemikorporektomia,2500.0,99,6630
+1544,ooforektomia,2500.0,54,6637
+1545,kalozotomia,2500.0,77,6645
+1546,diwertikulotomia,2000.0,77,6646
+1547,fundoplastyka,4500.0,74,6652
+1548,penektomia,3500.0,77,6654
+1549,operacja Shouldice'a,4500.0,39,6656
+1550,waginektomia,5000.0,39,6662
+1551,operacja Mogga,2500.0,39,6673
+1552,adenomektomia,4500.0,99,6688
+1553,laryngofisura,3500.0,39,6690
+1554,penektomia,4000.0,77,6695
+1555,splenektomia,500.0,99,6697
+1556,obrzezanie,5000.0,77,6699
+1557,histerektomia,5000.0,77,6707
+1558,splenektomia,1500.0,77,6708
+1559,uwuloplastyka,4500.0,54,6713
+1560,operacja Nussa,2500.0,74,6718
+1561,diwertikulotomia,2000.0,33,6719
+1562,operacja Lichtensteina,3500.0,33,6721
+1563,operacja Mogga,4000.0,77,6724
+1564,owariektomia,1500.0,99,6726
+1565,owarektomia,3500.0,77,6733
+1566,kalozotomia,3500.0,74,6737
+1567,operacja Rutkowa,500.0,99,6739
+1568,owarektomia,1500.0,77,6746
+1569,operacja Halstedta,1000.0,39,6753
+1570,rynotomia,2000.0,77,6767
+1571,sfinkterotomia,4500.0,54,6770
+1572,heminefrektomia,2500.0,99,6775
+1573,nefrotomia,5000.0,39,6777
+1574,dekortykacja pluca,3500.0,54,6780
+1575,segmentektomia,3500.0,39,6785
+1576,operacja Halstedta,4500.0,80,6787
+1577,hepatektomia,5000.0,77,6789
+1578,hemikorporektomia,1000.0,77,6793
+1579,kolektomia,3500.0,77,6794
+1580,operacja Bassiniego,2500.0,33,6796
+1581,zabieg Bentalla,2000.0,80,6800
+1582,tyreoidektomia,2500.0,99,6807
+1583,ligacja jajowodu,5000.0,77,6808
+1584,prostatektomia,3500.0,77,6809
+1585,laryngofisura,4000.0,77,6812
+1586,fundoplastyka,4000.0,39,6813
+1587,papilotomia,2500.0,77,6815
+1588,operacja Puestowa,2000.0,54,6816
+1589,kraniektomia,5000.0,39,6824
+1590,operacja Puestowa,500.0,39,6828
+1591,operacja Nussa,1500.0,39,6829
+1592,appendektomia,3000.0,77,6835
+1593,adenomektomia,4500.0,99,6839
+1594,operacje korekty plci,1500.0,39,6849
+1595,metastazektomia,4000.0,33,6851
+1596,laryngektomia,4500.0,39,6852
+1597,plastyka Heinekego-Mikulicza,4000.0,39,6864
+1598,operacja Mogga,1500.0,33,6866
+1599,mastektomia,5000.0,77,6883
+1600,operacja Nussa,4500.0,80,6885
+1601,wulwektomia,3000.0,77,6890
+1602,angioplastyka,2500.0,44,6892
+1603,nefrektomia,3000.0,99,6894
+1604,plastyka Heinekego-Mikulicza,3000.0,33,6905
+1605,laminektomia,4500.0,77,6906
+1606,lobotomia,1000.0,99,6907
+1607,operacja Lichtensteina,2000.0,77,6909
+1608,owariektomia,3500.0,77,6910
+1609,operacja Lichtensteina,1500.0,77,6921
+1610,operacja Nussa,3500.0,39,6922
+1611,operacja Jurasza,4500.0,74,6927
+1612,orchidektomia,4000.0,77,6928
+1613,cholecystektomia,4000.0,80,6931
+1614,wyluszczenie konczyny,2500.0,39,6943
+1615,operacja Jurasza,4000.0,99,6948
+1616,operacja Strassmana,4500.0,77,6951
+1617,plastyka Heinekego-Mikulicza,3000.0,80,6953
+1618,orchidektomia,2500.0,80,6954
+1619,waginektomia,2500.0,74,6960
+1620,operacja Shouldice'a,4500.0,33,6962
+1621,hepatektomia,1500.0,77,6965
+1622,uwuloplastyka,3500.0,39,6969
+1623,kalozotomia,4000.0,99,6975
+1624,orchidektomia,3000.0,54,6991
+1625,operacja Brickera,1500.0,39,6993
+1626,cholecystektomia,4500.0,77,6995
+1627,wyluszczenie konczyny,1500.0,44,6998
+1628,lobektomia,3000.0,39,7000
+1629,segmentektomia,5000.0,39,7002
+1630,hepatektomia,2000.0,99,7003
+1631,prostatektomia,1000.0,77,7010
+1632,sfinkterotomia,1000.0,44,7011
+1633,irydektomia,4500.0,77,7025
+1634,antromastoidektomia,4000.0,74,7033
+1635,segmentektomia,5000.0,74,7036
+1636,angioplastyka,3500.0,77,7039
+1637,plastyka Heinekego-Mikulicza,1000.0,74,7049
+1638,operacja Shouldice'a,1000.0,39,7055
+1639,operacja Puestowa,3500.0,77,7057
+1640,hipofizektomia,1500.0,77,7058
+1641,lobotomia,2000.0,39,7059
+1642,wagotomia,1500.0,77,7062
+1643,sfinkterotomia,4000.0,99,7068
+1644,fundoplastyka,2500.0,54,7071
+1645,papilotomia,500.0,77,7072
+1646,paracenteza,4500.0,77,7074
+1647,owarektomia,4000.0,54,7078
+1648,operacja Rutkowa,1500.0,74,7082
+1649,angioplastyka,4000.0,39,7083
+1650,operacja Jurasza,3500.0,77,7084
+1651,operacja Billrotha,1000.0,80,7089
+1652,fundoplastyka,4000.0,99,7103
+1653,operacja Lichtensteina,500.0,44,7105
+1654,operacja Warrena,1000.0,99,7106
+1655,ooforektomia,500.0,54,7112
+1656,lobektomia,5000.0,80,7120
+1657,pankreatoduodenektomia,4000.0,99,7123
+1658,lobektomia,4000.0,39,7124
+1659,kolektomia,3000.0,39,7126
+1660,operacja Rutkowa,1000.0,77,7131
+1661,litotrypsja,1500.0,33,7140
+1662,owariektomia,2000.0,80,7148
+1663,splenektomia,5000.0,77,7149
+1664,nefrotomia,4500.0,74,7153
+1665,hemisferektomia,3000.0,77,7155
+1666,operacja Mogga,5000.0,39,7160
+1667,operacja Jurasza,500.0,39,7163
+1668,operacja Brickera,1500.0,80,7170
+1669,rynotomia,2000.0,77,7174
+1670,hemisferektomia,4000.0,33,7177
+1671,operacja Warrena,1000.0,33,7178
+1672,ooforektomia,3500.0,77,7181
+1673,operacja Strassmana,4500.0,77,7182
+1674,papilotomia,4000.0,99,7183
+1675,nefrotomia,500.0,39,7184
+1676,ureterosigmoidostomia,2500.0,74,7187
+1677,operacja Norwooda,3500.0,74,7188
+1678,zabieg Urbana,1000.0,77,7192
+1679,operacja Halstedta,5000.0,39,7196
+1680,hemikorporektomia,2000.0,39,7204
+1681,nefrektomia,5000.0,77,7215
+1682,operacja Shouldice'a,500.0,39,7220
+1683,lobektomia,2000.0,54,7232
+1684,pankreatoduodenektomia,3000.0,80,7233
+1685,uwuloplastyka,4000.0,80,7236
+1686,operacja Warrena,4000.0,77,7238
+1687,segmentektomia,4500.0,39,7246
+1688,segmentektomia,2500.0,39,7247
+1689,wagotomia,500.0,39,7259
+1690,zabieg Urbana,2000.0,39,7266
+1691,lobektomia,500.0,74,7267
+1692,orbitotomia,1000.0,54,7276
+1693,bronchotomia,4000.0,39,7277
+1694,kalozotomia,3000.0,77,7279
+1695,diwertikulotomia,3500.0,39,7285
+1696,operacja Nussa,4500.0,39,7287
+1697,diwertikulotomia,4500.0,99,7293
+1698,operacja Mogga,3000.0,39,7294
+1699,zabieg Bentalla,500.0,80,7296
+1700,mukosektomia,500.0,80,7298
+1701,sfinkterotomia,2500.0,74,7310
+1702,ligacja jajowodu,500.0,77,7315
+1703,paracenteza,5000.0,77,7316
+1704,trachelektomia,500.0,44,7318
+1705,operacja Jurasza,1500.0,99,7322
+1706,nefrotomia,1500.0,39,7323
+1707,adenotomia,3000.0,44,7324
+1708,laryngofisura,5000.0,99,7327
+1709,irydektomia,4000.0,77,7329
+1710,hepatektomia,5000.0,39,7331
+1711,hipofizektomia,4500.0,77,7336
+1712,kraniektomia,3500.0,80,7342
+1713,orbitotomia,3000.0,77,7350
+1714,obrzezanie,4500.0,99,7351
+1715,kraniektomia,4500.0,99,7354
+1716,amputacja,2500.0,39,7360
+1717,operacja Hartmanna,1000.0,74,7367
+1718,litotrypsja,5000.0,77,7368
+1719,ligacja jajowodu,1500.0,54,7370
+1720,mastektomia,2000.0,54,7381
+1721,adrenalektomia,3000.0,80,7383
+1722,operacja Bassiniego,2000.0,44,7394
+1723,operacja Drapanasa,1500.0,99,7412
+1724,bronchotomia,1500.0,99,7413
+1725,irydektomia,5000.0,44,7415
+1726,operacja Brickera,4500.0,77,7417
+1727,nefrektomia,1000.0,39,7424
+1728,operacja Traverso-Longmire'a,4000.0,80,7425
+1729,operacja Bassiniego,500.0,39,7426
+1730,adenotomia,3000.0,77,7446
+1731,kolektomia,4500.0,80,7447
+1732,adenomektomia,3000.0,39,7452
+1733,wulwektomia,4000.0,99,7453
+1734,perikardiektomia,2500.0,39,7464
+1735,zabieg Halsteda,5000.0,99,7473
+1736,kalozotomia,3000.0,80,7483
+1737,zabieg Pateya,2000.0,54,7489
+1738,operacje korekty plci,3500.0,80,7490
+1739,astragalektomia,4000.0,77,7501
+1740,owarektomia,2500.0,39,7502
+1741,operacja Nussa,4500.0,44,7512
+1742,wulwektomia,5000.0,77,7513
+1743,splenektomia,2000.0,77,7516
+1744,operacja Hartmanna,2000.0,99,7517
+1745,irydektomia,4500.0,77,7523
+1746,fundoplastyka,4500.0,99,7524
+1747,wagotomia,4500.0,39,7531
+1748,zabieg Crile’a,4000.0,54,7546
+1749,obrzezanie,500.0,74,7547
+1750,owariektomia,2500.0,33,7551
+1751,wagotomia,3500.0,39,7557
+1752,laryngektomia,1500.0,99,7559
+1753,hepatektomia,3500.0,54,7571
+1754,tyreoidektomia,500.0,99,7580
+1755,operacja Jurasza,1500.0,77,7585
+1756,histerektomia,1000.0,74,7586
+1757,uwulopalatofaryngoplastyka,5000.0,74,7594
+1758,appendektomia,1500.0,77,7595
+1759,operacja Puestowa,3500.0,80,7599
+1760,fundoplastyka,3500.0,33,7600
+1761,hipofizektomia,500.0,39,7606
+1762,appendektomia,500.0,99,7615
+1763,uwulopalatofaryngoplastyka,4500.0,39,7621
+1764,mukosektomia,4000.0,39,7624
+1765,angioplastyka,4000.0,39,7628
+1766,segmentektomia,3500.0,99,7629
+1767,laminektomia,1000.0,80,7638
+1768,kalozotomia,500.0,54,7642
+1769,paracenteza,2000.0,54,7646
+1770,wyluszczenie konczyny,2500.0,74,7654
+1771,pankreatoduodenektomia,1500.0,39,7655
+1772,rynotomia,1500.0,39,7660
+1773,operacja Warrena,4000.0,80,7677
+1774,obrzezanie,500.0,77,7678
+1775,hepatektomia,2000.0,99,7681
+1776,artroskopia,4500.0,77,7683
+1777,pankreatoduodenektomia,4500.0,39,7686
+1778,heminefrektomia,3500.0,99,7690
+1779,perikardiektomia,1000.0,77,7692
+1780,operacja Shouldice'a,1000.0,39,7693
+1781,hipofizektomia,5000.0,74,7699
+1782,nefrotomia,4000.0,74,7704
+1783,mastektomia,5000.0,77,7705
+1784,kalozotomia,3500.0,54,7708
+1785,owarektomia,1500.0,77,7710
+1786,operacja Traverso-Longmire'a,3500.0,99,7712
+1787,heminefrektomia,1500.0,99,7713
+1788,cystogastrostomia,5000.0,77,7715
+1789,prostatektomia,2000.0,99,7717
+1790,nefrotomia,500.0,33,7720
+1791,cholecystektomia,3500.0,80,7721
+1792,owariektomia,4500.0,39,7723
+1793,metastazektomia,1000.0,99,7732
+1794,lobotomia,1000.0,77,7734
+1795,operacja Warrena,3500.0,99,7738
+1796,antromastoidektomia,1000.0,77,7741
+1797,zabieg Pateya,4000.0,39,7747
+1798,artroskopia,2000.0,77,7750
+1799,uwulopalatofaryngoplastyka,1500.0,99,7754
+1800,wagotomia,4000.0,99,7757
+1801,operacja Jurasza,2500.0,39,7767
+1802,operacja Rutkowa,5000.0,77,7775
+1803,litotrypsja,1500.0,99,7779
+1804,operacja Traverso-Longmire'a,500.0,99,7780
+1805,appendektomia,4000.0,77,7782
+1806,paracenteza,1500.0,99,7784
+1807,operacje korekty plci,4000.0,74,7786
+1808,histerektomia,5000.0,99,7789
+1809,orbitotomia,1000.0,77,7801
+1810,operacja Billrotha,3500.0,99,7813
+1811,litotrypsja,3000.0,77,7814
+1812,tyreoidektomia,2500.0,39,7816
+1813,irydektomia,2500.0,80,7818
+1814,zabieg Pateya,3500.0,39,7825
+1815,histerektomia,2500.0,77,7831
+1816,operacja Warrena,4500.0,39,7835
+1817,sfinkterotomia,3500.0,44,7838
+1818,operacja Rydygiera,1500.0,39,7842
+1819,ligacja jajowodu,1000.0,54,7848
+1820,zabieg Urbana,500.0,39,7850
+1821,laryngektomia,4500.0,44,7854
+1822,kraniektomia,4000.0,77,7862
+1823,operacja Shouldice'a,3500.0,39,7871
+1824,wagotomia,5000.0,74,7873
+1825,operacja Hartmanna,5000.0,99,7880
+1826,laminektomia,3000.0,77,7891
+1827,rynotomia,3000.0,74,7893
+1828,ligacja jajowodu,1500.0,33,7894
+1829,fundoplastyka,3000.0,80,7895
+1830,laryngofisura,1500.0,74,7902
+1831,wulwektomia,5000.0,74,7907
+1832,abdominoplastyka,2000.0,77,7908
+1833,operacja Whipple’a,3500.0,39,7915
+1834,operacja Nussa,500.0,39,7926
+1835,ureterosigmoidostomia,3000.0,39,7927
+1836,cystogastrostomia,5000.0,39,7928
+1837,fundoplastyka,5000.0,77,7932
+1838,dekortykacja pluca,1500.0,74,7933
+1839,zabieg Bentalla,2000.0,99,7937
+1840,cholecystektomia,1000.0,99,7938
+1841,ooforektomia,5000.0,77,7940
+1842,operacja Whipple’a,2500.0,39,7944
+1843,laryngofisura,4500.0,77,7948
+1844,nefrektomia,1000.0,77,7951
+1845,cystogastrostomia,2000.0,77,7963
+1846,operacja Mogga,500.0,54,7972
+1847,plastyka Heinekego-Mikulicza,1000.0,99,7973
+1848,penektomia,3500.0,99,7976
+1849,ligacja jajowodu,2000.0,74,7979
+1850,hipofizektomia,1000.0,39,7982
+1851,zabieg Pateya,2500.0,39,7985
+1852,plastyka Heinekego-Mikulicza,2000.0,39,7993
+1853,segmentektomia,4000.0,39,7994
+1854,histerektomia,3500.0,80,7996
+1855,naciecie krocza,4000.0,77,7997
+1856,antromastoidektomia,500.0,39,8001
+1857,lobotomia,5000.0,99,8006
+1858,operacja Drapanasa,3000.0,77,8007
+1859,operacja Mogga,1000.0,99,8008
+1860,operacja Rutkowa,1000.0,77,8011
+1861,wyluszczenie konczyny,500.0,44,8018
+1862,hepatektomia,3500.0,80,8019
+1863,sfinkterotomia,5000.0,39,8032
+1864,operacja Puestowa,4000.0,77,8033
+1865,astragalektomia,2500.0,80,8044
+1866,adenomektomia,3000.0,74,8045
+1867,adenomektomia,4000.0,99,8049
+1868,mastektomia,5000.0,74,8059
+1869,abdominoplastyka,3000.0,77,8061
+1870,paracenteza,4000.0,39,8062
+1871,zabieg Halsteda,2500.0,99,8063
+1872,hepatektomia,4000.0,77,8069
+1873,operacja Whipple’a,1500.0,77,8073
+1874,splenektomia,4000.0,77,8075
+1875,lobektomia,1500.0,74,8079
+1876,litotrypsja,4000.0,39,8087
+1877,laryngofisura,2000.0,77,8089
+1878,fundoplastyka,4500.0,39,8100
+1879,splenektomia,1000.0,74,8105
+1880,laryngektomia,4500.0,44,8111
+1881,operacja Halstedta,4500.0,77,8115
+1882,gastrektomia,5000.0,77,8123
+1883,segmentektomia,4500.0,74,8131
+1884,operacja Bassiniego,3000.0,39,8133
+1885,operacja Warrena,1000.0,39,8134
+1886,nefrektomia,2000.0,77,8142
+1887,laryngektomia,3000.0,99,8147
+1888,rynotomia,3500.0,99,8149
+1889,ooforektomia,2500.0,77,8152
+1890,adrenalektomia,500.0,74,8155
+1891,operacja Girarda,3500.0,39,8163
+1892,wagotomia,3000.0,39,8164
+1893,segmentektomia,3000.0,99,8171
+1894,zabieg Pateya,4000.0,54,8172
+1895,pankreatoduodenektomia,5000.0,99,8175
+1896,histerektomia,500.0,99,8181
+1897,astragalektomia,3500.0,77,8184
+1898,prostatektomia,5000.0,54,8194
+1899,operacja Rydygiera,1500.0,77,8195
+1900,hemisferektomia,4000.0,77,8199
+1901,operacja Traverso-Longmire'a,1500.0,77,8203
+1902,owariektomia,3500.0,39,8204
+1903,ureterosigmoidostomia,3000.0,80,8206
+1904,rynotomia,2000.0,77,8208
+1905,prostatektomia,2500.0,99,8210
+1906,laryngofisura,3500.0,99,8211
+1907,heminefrektomia,1500.0,77,8216
+1908,adenomektomia,4000.0,74,8217
+1909,operacja Nussa,1500.0,99,8222
+1910,operacja Jurasza,500.0,39,8223
+1911,operacja Mogga,1000.0,99,8224
+1912,prostatektomia,2500.0,77,8225
+1913,trachelektomia,1000.0,99,8233
+1914,uwuloplastyka,2000.0,54,8236
+1915,operacja Traverso-Longmire'a,2500.0,39,8239
+1916,antromastoidektomia,2500.0,99,8249
+1917,zabieg Halsteda,2000.0,99,8250
+1918,operacja Whipple’a,4000.0,77,8258
+1919,operacja Milesa,4000.0,99,8272
+1920,mukosektomia,500.0,44,8275
+1921,operacja Bassiniego,1500.0,80,8279
+1922,zabieg Crile’a,1500.0,54,8285
+1923,hemikorporektomia,1500.0,99,8286
+1924,zabieg Bentalla,4500.0,74,8288
+1925,naciecie krocza,3000.0,39,8292
+1926,uwuloplastyka,3500.0,39,8294
+1927,gastrektomia,5000.0,77,8295
+1928,metastazektomia,500.0,74,8309
+1929,bronchotomia,1500.0,77,8318
+1930,wazektomia,1000.0,77,8323
+1931,ligacja jajowodu,1000.0,39,8327
+1932,laryngofisura,1500.0,77,8331
+1933,obrzezanie,5000.0,54,8344
+1934,papilotomia,4500.0,77,8346
+1935,adenotomia,4500.0,33,8348
+1936,plastyka Heinekego-Mikulicza,4500.0,39,8351
+1937,zabieg Halsteda,3500.0,77,8352
+1938,lobotomia,3000.0,54,8354
+1939,ureterosigmoidostomia,2500.0,77,8356
+1940,hipofizektomia,4500.0,77,8360
+1941,ooforektomia,2500.0,99,8363
+1942,zabieg Urbana,2000.0,74,8366
+1943,laminektomia,2500.0,99,8367
+1944,sfinkterotomia,4500.0,54,8370
+1945,operacja Whipple’a,3000.0,99,8375
+1946,rynotomia,3500.0,99,8380
+1947,orbitotomia,1500.0,74,8387
+1948,uwuloplastyka,2000.0,39,8390
+1949,histerektomia,2000.0,99,8391
+1950,kalozotomia,1000.0,77,8396
+1951,perikardiektomia,1500.0,44,8400
+1952,zabieg Pateya,4000.0,99,8403
+1953,adrenalektomia,1500.0,80,8408
+1954,nefrotomia,3000.0,99,8409
+1955,metastazektomia,1000.0,77,8411
+1956,segmentektomia,1500.0,99,8416
+1957,nefrotomia,5000.0,99,8421
+1958,operacja Lichtensteina,3500.0,44,8424
+1959,ooforektomia,4500.0,99,8426
+1960,bronchotomia,4500.0,44,8428
+1961,penektomia,5000.0,77,8431
+1962,splenektomia,1000.0,39,8432
+1963,operacja Lichtensteina,3000.0,44,8434
+1964,zabieg Pateya,4500.0,80,8437
+1965,operacja Norwooda,3500.0,80,8443
+1966,sfinkterotomia,2000.0,80,8446
+1967,cholecystektomia,3500.0,54,8457
+1968,sfinkterotomia,2000.0,44,8459
+1969,operacja Jurasza,2000.0,54,8461
+1970,heminefrektomia,3000.0,99,8464
+1971,plastyka Heinekego-Mikulicza,2000.0,39,8467
+1972,segmentektomia,2500.0,77,8468
+1973,papilotomia,5000.0,77,8472
+1974,zabieg Halsteda,2500.0,77,8474
+1975,ureterosigmoidostomia,1000.0,77,8476
+1976,operacja Rydygiera,4500.0,77,8483
+1977,heminefrektomia,2000.0,39,8487
+1978,operacja Traverso-Longmire'a,5000.0,99,8492
+1979,operacja Traverso-Longmire'a,1000.0,77,8494
+1980,bronchotomia,1000.0,74,8497
+1981,bronchotomia,3500.0,80,8510
+1982,wulwektomia,2000.0,99,8511
+1983,zabieg Urbana,3500.0,74,8514
+1984,heminefrektomia,3000.0,80,8516
+1985,uwulopalatofaryngoplastyka,1000.0,39,8518
+1986,operacja Halstedta,1500.0,44,8530
+1987,zabieg Crile’a,500.0,77,8531
+1988,zabieg Halsteda,1500.0,99,8535
+1989,amputacja,2000.0,77,8539
+1990,zabieg Urbana,1000.0,80,8541
+1991,diwertikulotomia,3000.0,77,8556
+1992,mastektomia,2000.0,54,8564
+1993,operacja Milesa,2000.0,54,8565
+1994,penektomia,3500.0,39,8566
+1995,lobotomia,3500.0,77,8569
+1996,operacja Shouldice'a,3500.0,99,8573
+1997,operacje korekty plci,3500.0,99,8580
+1998,operacja Lichtensteina,1500.0,44,8582
+1999,nefrektomia,3000.0,54,8587
+2000,tyreoidektomia,4000.0,77,8593
+2001,operacja Brickera,1000.0,99,8596
+2002,heminefrektomia,5000.0,77,8598
+2003,operacja Warrena,3500.0,74,8601
+2004,perikardiektomia,2500.0,77,8602
+2005,operacja Bassiniego,4000.0,77,8604
+2006,zabieg Urbana,4500.0,39,8616
+2007,cholecystektomia,500.0,54,8624
+2008,metastazektomia,4000.0,39,8627
+2009,operacja Norwooda,1500.0,39,8631
+2010,kolektomia,1000.0,39,8633
+2011,litotrypsja,2500.0,54,8634
+2012,hepatektomia,4500.0,99,8635
+2013,nefrektomia,2000.0,77,8638
+2014,trachelektomia,2000.0,77,8643
+2015,operacje korekty plci,3000.0,44,8664
+2016,uwuloplastyka,1000.0,80,8679
+2017,abdominoplastyka,3500.0,99,8682
+2018,orchidektomia,4000.0,44,8688
+2019,laminektomia,4000.0,33,8692
+2020,uwuloplastyka,2500.0,99,8693
+2021,operacja Strassmana,1500.0,39,8694
+2022,lobektomia,2500.0,44,8701
+2023,operacja Warrena,4000.0,77,8704
+2024,ureterosigmoidostomia,500.0,77,8711
+2025,kraniektomia,2500.0,39,8719
+2026,plastyka Heinekego-Mikulicza,1000.0,77,8735
+2027,artroskopia,1000.0,39,8736
+2028,plastyka Heinekego-Mikulicza,2000.0,74,8739
+2029,ureterosigmoidostomia,4500.0,77,8740
+2030,nefrektomia,1500.0,77,8744
+2031,zabieg Crile’a,3000.0,77,8747
+2032,operacja Hartmanna,500.0,39,8754
+2033,segmentektomia,1000.0,74,8755
+2034,ooforektomia,500.0,39,8763
+2035,owariektomia,4000.0,99,8771
+2036,operacja Milesa,2000.0,77,8775
+2037,uwulopalatofaryngoplastyka,4000.0,39,8777
+2038,adenomektomia,4500.0,77,8780
+2039,operacja Warrena,1500.0,77,8787
+2040,ligacja jajowodu,2000.0,77,8791
+2041,operacja Jurasza,1000.0,99,8792
+2042,kraniektomia,3500.0,77,8796
+2043,antromastoidektomia,3000.0,80,8799
+2044,kolektomia,4000.0,77,8804
+2045,operacja Warrena,500.0,33,8808
+2046,operacja Nussa,3500.0,39,8810
+2047,obrzezanie,2000.0,39,8812
+2048,angioplastyka,2500.0,39,8817
+2049,nefrektomia,4500.0,77,8819
+2050,astragalektomia,2500.0,39,8820
+2051,wazektomia,500.0,44,8832
+2052,sfinkterotomia,4500.0,99,8833
+2053,operacja Puestowa,4000.0,77,8835
+2054,laryngofisura,4500.0,77,8836
+2055,kraniektomia,3500.0,74,8838
+2056,zabieg Halsteda,500.0,77,8840
+2057,antromastoidektomia,1500.0,39,8846
+2058,adenomektomia,1000.0,99,8847
+2059,operacja Hartmanna,2000.0,54,8856
+2060,operacja Rydygiera,4500.0,54,8859
+2061,zabieg Pateya,2000.0,99,8878
+2062,waginektomia,500.0,39,8879
+2063,hemikorporektomia,500.0,74,8907
+2064,operacja Norwooda,3000.0,33,8911
+2065,owarektomia,4500.0,77,8914
+2066,operacja Traverso-Longmire'a,3500.0,54,8917
+2067,operacja Billrotha,3000.0,80,8922
+2068,plastyka Heinekego-Mikulicza,4000.0,39,8923
+2069,operacja Jurasza,5000.0,44,8927
+2070,operacja Puestowa,500.0,80,8933
+2071,ureterosigmoidostomia,500.0,44,8936
+2072,cholecystektomia,4000.0,74,8937
+2073,plastyka Heinekego-Mikulicza,1500.0,74,8940
+2074,kolektomia,1000.0,54,8941
+2075,heminefrektomia,3000.0,77,8948
+2076,irydektomia,3000.0,77,8950
+2077,appendektomia,2500.0,33,8953
+2078,amputacja,3500.0,44,8956
+2079,operacja Bassiniego,5000.0,99,8970
+2080,pankreatoduodenektomia,500.0,77,8971
+2081,wyluszczenie konczyny,1500.0,39,8972
+2082,operacja Hartmanna,2000.0,77,8974
+2083,operacja Hartmanna,2500.0,54,8979
+2084,zabieg Crile’a,4000.0,80,8987
+2085,operacja Drapanasa,2500.0,77,8990
+2086,operacje korekty plci,5000.0,80,8992
+2087,zabieg Urbana,3000.0,74,8994
+2088,ooforektomia,3000.0,39,8998
+2089,operacja Shouldice'a,2000.0,39,9000
+2090,metastazektomia,4000.0,99,9005
+2091,operacja Shouldice'a,1000.0,80,9013
+2092,astragalektomia,1500.0,54,9034
+2093,litotrypsja,3500.0,39,9036
+2094,wagotomia,4500.0,77,9037
+2095,operacja Hartmanna,5000.0,77,9041
+2096,irydektomia,4000.0,74,9044
+2097,papilotomia,2000.0,80,9045
+2098,plastyka Heinekego-Mikulicza,500.0,54,9047
+2099,naciecie krocza,5000.0,39,9048
+2100,adenomektomia,1000.0,39,9053
+2101,kalozotomia,2500.0,80,9054
+2102,operacja Lichtensteina,1000.0,33,9060
+2103,mukosektomia,4500.0,74,9062
+2104,pankreatoduodenektomia,3500.0,54,9065
+2105,plastyka Heinekego-Mikulicza,5000.0,54,9066
+2106,wazektomia,5000.0,99,9068
+2107,nefrotomia,4500.0,77,9076
+2108,diwertikulotomia,2000.0,99,9081
+2109,zabieg Pateya,500.0,39,9082
+2110,paracenteza,4000.0,99,9086
+2111,papilotomia,3500.0,99,9088
+2112,operacja Jurasza,4500.0,44,9090
+2113,operacja Brickera,1500.0,77,9101
+2114,litotrypsja,3500.0,99,9103
+2115,operacja Milesa,5000.0,54,9107
+2116,kolektomia,500.0,33,9110
+2117,diwertikulotomia,4500.0,74,9111
+2118,wulwektomia,3500.0,39,9119
+2119,operacja Billrotha,2000.0,80,9122
+2120,nefrotomia,500.0,77,9127
+2121,adenomektomia,3500.0,80,9128
+2122,amputacja,4000.0,77,9132
+2123,heminefrektomia,1000.0,77,9134
+2124,naciecie krocza,1000.0,99,9135
+2125,histerektomia,4000.0,74,9139
+2126,zabieg Bentalla,3000.0,39,9141
+2127,angioplastyka,5000.0,77,9143
+2128,operacja Girarda,3000.0,39,9144
+2129,segmentektomia,500.0,99,9145
+2130,uwuloplastyka,5000.0,99,9148
+2131,orbitotomia,3000.0,54,9149
+2132,orchidektomia,500.0,77,9157
+2133,mastektomia,2500.0,77,9164
+2134,operacja Warrena,500.0,54,9165
+2135,splenektomia,4000.0,99,9166
+2136,segmentektomia,3500.0,99,9167
+2137,ureterosigmoidostomia,1000.0,80,9172
+2138,heminefrektomia,2000.0,77,9174
+2139,operacja Whipple’a,1500.0,77,9184
+2140,obrzezanie,1500.0,77,9185
+2141,operacja Rydygiera,3000.0,99,9188
+2142,operacja Norwooda,3500.0,77,9191
+2143,zabieg Crile’a,500.0,99,9192
+2144,antromastoidektomia,4000.0,99,9195
+2145,tyreoidektomia,2500.0,99,9197
+2146,artroskopia,2500.0,39,9202
+2147,histerektomia,4000.0,77,9209
+2148,metastazektomia,3000.0,54,9213
+2149,hepatektomia,3500.0,77,9216
+2150,abdominoplastyka,2500.0,99,9218
+2151,operacja Mogga,3500.0,77,9219
+2152,operacja Strassmana,3500.0,80,9221
+2153,laryngektomia,3000.0,54,9223
+2154,uwulopalatofaryngoplastyka,500.0,99,9225
+2155,uwuloplastyka,500.0,99,9227
+2156,operacja Drapanasa,2500.0,39,9230
+2157,operacja Puestowa,4000.0,54,9241
+2158,hepatektomia,3500.0,33,9243
+2159,perikardiektomia,1000.0,33,9247
+2160,heminefrektomia,5000.0,77,9249
+2161,splenektomia,500.0,33,9270
+2162,prostatektomia,2500.0,80,9272
+2163,operacja Rutkowa,1500.0,77,9276
+2164,operacja Whipple’a,5000.0,54,9280
+2165,gastrektomia,1500.0,77,9287
+2166,gastrektomia,2000.0,77,9288
+2167,sfinkterotomia,2500.0,39,9291
+2168,adrenalektomia,1500.0,77,9296
+2169,lobotomia,4500.0,99,9297
+2170,operacja Rutkowa,4500.0,80,9298
+2171,metastazektomia,1000.0,77,9301
+2172,operacja Strassmana,2000.0,99,9303
+2173,bronchotomia,4500.0,99,9323
+2174,adrenalektomia,4000.0,54,9324
+2175,obrzezanie,4500.0,74,9326
+2176,histerektomia,3500.0,77,9329
+2177,adenotomia,2000.0,80,9332
+2178,lobektomia,1000.0,99,9339
+2179,abdominoplastyka,2500.0,99,9340
+2180,nefrektomia,3000.0,99,9345
+2181,pankreatoduodenektomia,4500.0,77,9346
+2182,hipofizektomia,4500.0,39,9347
+2183,diwertikulotomia,500.0,54,9350
+2184,kalozotomia,4000.0,80,9355
+2185,operacje korekty plci,2500.0,77,9356
+2186,plastyka Heinekego-Mikulicza,4000.0,77,9367
+2187,zabieg Crile’a,1000.0,80,9370
+2188,kalozotomia,1500.0,54,9371
+2189,wyluszczenie konczyny,4000.0,77,9373
+2190,operacja Bassiniego,2000.0,77,9376
+2191,ureterosigmoidostomia,4500.0,33,9379
+2192,mastektomia,3500.0,33,9381
+2193,cystogastrostomia,1500.0,44,9384
+2194,owariektomia,3500.0,77,9386
+2195,orchidektomia,1000.0,39,9389
+2196,operacja Jurasza,2000.0,39,9390
+2197,diwertikulotomia,500.0,77,9391
+2198,lobektomia,2000.0,39,9396
+2199,ooforektomia,2000.0,33,9404
+2200,operacja Mogga,4000.0,39,9406
+2201,operacja Puestowa,5000.0,80,9407
+2202,mastektomia,1500.0,77,9416
+2203,artroskopia,1500.0,77,9417
+2204,penektomia,2500.0,54,9419
+2205,cholecystektomia,2000.0,54,9422
+2206,operacja Nussa,4500.0,77,9424
+2207,mukosektomia,1000.0,77,9428
+2208,angioplastyka,2500.0,54,9432
+2209,plastyka Heinekego-Mikulicza,2000.0,80,9438
+2210,papilotomia,500.0,77,9444
+2211,nefrektomia,500.0,99,9446
+2212,lobektomia,3000.0,99,9457
+2213,zabieg Pateya,5000.0,54,9462
+2214,perikardiektomia,4000.0,39,9468
+2215,mukosektomia,4000.0,99,9476
+2216,operacja Halstedta,4500.0,99,9477
+2217,laminektomia,2500.0,99,9484
+2218,ooforektomia,3500.0,77,9486
+2219,splenektomia,1000.0,99,9488
+2220,bronchotomia,5000.0,39,9497
+2221,litotrypsja,3500.0,39,9498
+2222,trachelektomia,4500.0,99,9499
+2223,operacja Lichtensteina,3500.0,33,9501
+2224,uwuloplastyka,5000.0,39,9502
+2225,operacja Jurasza,3000.0,99,9511
+2226,wagotomia,3000.0,44,9515
+2227,hepatektomia,4000.0,99,9522
+2228,operacja Shouldice'a,2500.0,99,9523
+2229,operacje korekty plci,4500.0,80,9525
+2230,operacja Traverso-Longmire'a,1000.0,33,9527
+2231,operacja Hartmanna,4000.0,99,9528
+2232,nefrotomia,4000.0,44,9535
+2233,kalozotomia,2500.0,54,9539
+2234,adenotomia,1500.0,39,9543
+2235,ligacja jajowodu,2500.0,80,9545
+2236,paracenteza,5000.0,99,9548
+2237,amputacja,1000.0,74,9550
+2238,operacja Warrena,1000.0,39,9566
+2239,heminefrektomia,1500.0,54,9583
+2240,operacja Warrena,3000.0,99,9585
+2241,tyreoidektomia,4500.0,77,9586
+2242,operacja Traverso-Longmire'a,500.0,99,9587
+2243,adenomektomia,4000.0,80,9590
+2244,artroskopia,500.0,54,9594
+2245,laryngofisura,4000.0,77,9599
+2246,cystogastrostomia,1500.0,77,9601
+2247,ooforektomia,1000.0,54,9605
+2248,zabieg Pateya,1500.0,77,9607
+2249,operacja Brickera,2000.0,39,9608
+2250,owariektomia,3500.0,99,9611
+2251,prostatektomia,1000.0,99,9613
+2252,orchidektomia,2500.0,99,9616
+2253,adenomektomia,2500.0,54,9619
+2254,zabieg Urbana,1000.0,39,9627
+2255,operacja Warrena,3500.0,39,9630
+2256,ligacja jajowodu,3500.0,33,9640
+2257,owariektomia,4500.0,99,9648
+2258,diwertikulotomia,2500.0,54,9649
+2259,ureterosigmoidostomia,1000.0,74,9651
+2260,zabieg Bentalla,3000.0,33,9657
+2261,metastazektomia,1500.0,77,9664
+2262,operacja Nussa,1500.0,77,9665
+2263,operacja Norwooda,3500.0,99,9673
+2264,paracenteza,1000.0,74,9677
+2265,trachelektomia,2000.0,39,9689
+2266,splenektomia,3000.0,77,9691
+2267,penektomia,2500.0,77,9696
+2268,adenomektomia,2500.0,74,9700
+2269,adenomektomia,5000.0,39,9701
+2270,lobektomia,500.0,99,9713
+2271,laryngofisura,2000.0,39,9716
+2272,cholecystektomia,4500.0,39,9717
+2273,orbitotomia,1000.0,99,9726
+2274,wyluszczenie konczyny,4000.0,99,9727
+2275,hepatektomia,1500.0,99,9732
+2276,diwertikulotomia,500.0,80,9736
+2277,kolektomia,3500.0,77,9737
+2278,prostatektomia,4000.0,39,9738
+2279,operacja Rydygiera,500.0,33,9752
+2280,gastrektomia,3500.0,77,9755
+2281,heminefrektomia,1000.0,77,9760
+2282,perikardiektomia,4500.0,99,9764
+2283,operacja Billrotha,4000.0,77,9768
+2284,sfinkterotomia,500.0,77,9770
+2285,orbitotomia,500.0,99,9772
+2286,owariektomia,2500.0,80,9774
+2287,hemisferektomia,4000.0,80,9779
+2288,operacja Drapanasa,1000.0,39,9781
+2289,splenektomia,5000.0,39,9782
+2290,operacja Rydygiera,4500.0,99,9783
+2291,pankreatoduodenektomia,1000.0,80,9787
+2292,laminektomia,2000.0,80,9789
+2293,rynotomia,4000.0,39,9801
+2294,ligacja jajowodu,1000.0,39,9806
+2295,nefrektomia,500.0,39,9807
+2296,operacje korekty plci,1500.0,74,9813
+2297,adrenalektomia,4000.0,99,9814
+2298,operacja Jurasza,4000.0,74,9821
+2299,trachelektomia,5000.0,99,9824
+2300,lobotomia,1500.0,54,9825
+2301,operacja Jurasza,1000.0,39,9833
+2302,gastrektomia,1500.0,74,9835
+2303,operacja Traverso-Longmire'a,2000.0,77,9841
+2304,operacja Jurasza,500.0,80,9842
+2305,paracenteza,4000.0,39,9858
+2306,operacja Halstedta,500.0,74,9860
+2307,kalozotomia,4500.0,77,9863
+2308,rynotomia,2500.0,74,9868
+2309,gastrektomia,500.0,77,9871
+2310,operacja Bassiniego,4500.0,77,9872
+2311,wagotomia,3000.0,54,9875
+2312,operacja Traverso-Longmire'a,5000.0,39,9880
+2313,fundoplastyka,2500.0,77,9883
+2314,operacja Drapanasa,4000.0,99,9888
+2315,zabieg Crile’a,3500.0,39,9889
+2316,papilotomia,2500.0,99,9901
+2317,owariektomia,4000.0,39,9903
+2318,fundoplastyka,4000.0,77,9905
+2319,zabieg Urbana,3000.0,80,9908
+2320,operacja Norwooda,3500.0,54,9915
+2321,litotrypsja,5000.0,99,9917
+2322,owarektomia,2000.0,80,9932
+2323,operacja Strassmana,1500.0,44,9935
+2324,obrzezanie,500.0,77,9941
+2325,zabieg Crile’a,1500.0,80,9944
+2326,operacja Warrena,1000.0,99,9946
+2327,cholecystektomia,4000.0,80,9952
+2328,uwuloplastyka,2000.0,39,9962
+2329,segmentektomia,3000.0,54,9963
+2330,operacja Rutkowa,5000.0,80,9964
+2331,operacja Bassiniego,3000.0,77,9968
+2332,wyluszczenie konczyny,1000.0,39,9977
+2333,operacja Norwooda,2500.0,54,9978
+2334,operacja Lichtensteina,2000.0,99,9979
+2335,papilotomia,1000.0,39,9980
+2336,paracenteza,3000.0,99,9986
+2337,mastektomia,2500.0,99,10000
