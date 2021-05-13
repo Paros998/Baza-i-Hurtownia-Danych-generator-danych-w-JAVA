@@ -147,7 +147,7 @@ CREATE TABLE wizyty(
     data_wizyty DATE NOT NULL,
     godzina_poczatek TIMESTAMP WITH LOCAL TIME ZONE NOT NULL,
     godzina_koniec TIMESTAMP WITH LOCAL TIME ZONE,
-    pacjent_id NUMBER(5) NOT NULL,
+    pacjent_id NUMBER(11) NOT NULL,
     prac_spec NUMBER(5) NOT NULL,
     prac_uma NUMBER(5) NOT NULL,
     gabinet_id NUMBER(5) NOT NULL,
