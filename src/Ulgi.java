@@ -15,7 +15,7 @@ public class Ulgi extends GlobalElements {
     public Ulgi(int liczbaRekordow) throws IOException {
         id = 1;
         generator = new Random();
-        file = new File("ulgi.csv");
+        file = new File("dane/ulgi.csv");
         typyUlg = new String[liczbaRekordow];
         idUlg = new int[liczbaRekordow];
         if (file.exists())

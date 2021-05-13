@@ -13,7 +13,7 @@ public class Zabiegi extends GlobalElements {
 
     public Zabiegi(int liczbaRekordow, Wizyty wizyty, Gabinety gabinety) throws IOException {
         generator = new Random();
-        file = new File("zabiegi.csv");
+        file = new File("dane/zabiegi.csv");
         zabieg_id = 1;
         if (file.exists())
             file.delete();

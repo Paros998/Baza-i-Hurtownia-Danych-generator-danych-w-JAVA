@@ -1,0 +1,51 @@
+1,orchidektomia,1000.0,9812,4
+2,kraniektomia,3500.0,2733,5
+3,abdominoplastyka,1000.0,3701,13
+4,kraniektomia,3000.0,2508,17
+5,trachelektomia,3000.0,2196,18
+6,adrenalektomia,2500.0,8623,21
+7,artroskopia,4000.0,1000,29
+8,papilotomia,3500.0,1308,34
+9,operacja Milesa,1500.0,5216,36
+10,irydektomia,500.0,3306,38
+11,operacja Strassmana,5000.0,4004,40
+12,appendektomia,1000.0,2940,42
+13,zabieg Urbana,4500.0,6902,51
+14,bronchotomia,5000.0,1222,55
+15,operacja Mogga,2500.0,7037,80
+16,nefrektomia,500.0,6332,83
+17,abdominoplastyka,2000.0,4963,91
+18,zabieg Halsteda,3000.0,3509,92
+19,operacja Traverso-Longmire'a,1000.0,733,96
+20,perikardiektomia,1000.0,8623,108
+21,operacja Whipple’a,1500.0,3044,110
+22,trachelektomia,4000.0,6312,117
+23,lobotomia,2500.0,5101,122
+24,operacja Lichtensteina,5000.0,2037,127
+25,perikardiektomia,5000.0,2240,132
+26,nefrektomia,2500.0,648,133
+27,orchidektomia,3500.0,9288,140
+28,litotrypsja,3000.0,4850,143
+29,operacja Rydygiera,500.0,90,151
+30,zabieg Halsteda,2000.0,6591,157
+31,kraniektomia,500.0,8862,162
+32,fundoplastyka,4000.0,2247,169
+33,nefrotomia,5000.0,9765,171
+34,operacja Lichtensteina,4500.0,5134,172
+35,metastazektomia,2500.0,8681,178
+36,rynotomia,3000.0,6343,189
+37,appendektomia,4500.0,7218,194
+38,penektomia,4000.0,9036,195
+39,tyreoidektomia,4000.0,8883,198
+40,operacja Traverso-Longmire'a,4500.0,3707,205
+41,litotrypsja,3500.0,5498,206
+42,splenektomia,3000.0,609,207
+43,operacja Girarda,5000.0,3600,210
+44,litotrypsja,3500.0,1237,211
+45,operacja Billrotha,3500.0,2940,214
+46,operacja Mogga,3500.0,7968,215
+47,operacja Warrena,4500.0,1897,219
+48,mukosektomia,1000.0,585,221
+49,operacja Milesa,1500.0,6208,222
+50,laryngofisura,5000.0,2247,232
+51,operacja Halstedta,1000.0,267,235

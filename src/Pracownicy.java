@@ -22,7 +22,7 @@ public class Pracownicy extends GlobalElements {
             Specjalnosci specjalnosci, Uprawnienia uprawnienia) throws IOException {
         id = 1;
         generator = new Random();
-        file = new File("pracownicy.csv");
+        file = new File("dane/pracownicy.csv");
         wylosowaneId = new int[liczbaRekordow];
         uzyteKontakty = new int[liczbaRekordow];
         uzyteAdresy = new int[liczbaRekordow];

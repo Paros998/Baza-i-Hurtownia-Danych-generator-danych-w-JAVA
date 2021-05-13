@@ -16,7 +16,7 @@ public class Stanowiska extends GlobalElements {
 
         id = 1;
         generator = new Random();
-        file = new File("stanowiska.csv");
+        file = new File("dane/stanowiska.csv");
         wylosowaneStanowiska = new int[liczbaRekordow];
         uprawnieniaStanowisk = new int[liczbaRekordow];
         if (file.exists())

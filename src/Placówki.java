@@ -16,7 +16,7 @@ public class Placówki extends GlobalElements {
     public Placówki(int liczbaRekordow, Adresy adresy, Kontakty kontakty) throws IOException {
         id = 1;
         generator = new Random();
-        file = new File("placówki.csv");
+        file = new File("dane/placowki.csv");
         uzyteKontakty = new int[liczbaRekordow];
         uzyteAdresy = new int[liczbaRekordow];
         wylosowaneId = new int[liczbaRekordow];

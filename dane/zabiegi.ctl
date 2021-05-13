@@ -1,7 +1,7 @@
 LOAD DATA
 INFILE 'zabiegi.csv'
-BADFILE 'zabiegi.bad'
-DISCARDFILE 'zabiegi.dsc'
+BADFILE 'bad/zabiegi.bad'
+DISCARDFILE 'dsc/zabiegi.dsc'
 REPLACE INTO TABLE zabiegi
 FIELDS TERMINATED BY ","
 TRAILING NULLCOLS

@@ -17,7 +17,7 @@ public class Gabinety extends GlobalElements {
             throws IOException {
         id = 1;
         generator = new Random();
-        file = new File("gabinety.csv");
+        file = new File("dane/gabinety.csv");
         wylosowaneId = new int[liczbaRekordow];
         uzyteKontakty = new int[liczbaRekordow];
         pracownicyUzyci = new int[liczbaRekordow];

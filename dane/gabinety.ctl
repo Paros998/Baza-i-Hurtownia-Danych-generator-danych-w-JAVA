@@ -1,7 +1,7 @@
 LOAD DATA
 INFILE 'gabinety.csv'
-BADFILE 'gabinety.bad'
-DISCARDFILE 'gabinety.dsc'
+BADFILE 'bad/gabinety.bad'
+DISCARDFILE 'dsc/gabinety.dsc'
 REPLACE INTO TABLE gabinety
 FIELDS TERMINATED BY ","
 TRAILING NULLCOLS

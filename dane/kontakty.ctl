@@ -1,7 +1,7 @@
 LOAD DATA
 INFILE 'kontakty.csv'
-BADFILE 'kontakty.bad'
-DISCARDFILE 'kontakty.dsc'
+BADFILE 'bad/kontakty.bad'
+DISCARDFILE 'dsc/kontakty.dsc'
 REPLACE INTO TABLE kontakty
 FIELDS TERMINATED BY ","
 TRAILING NULLCOLS

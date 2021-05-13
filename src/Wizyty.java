@@ -29,7 +29,7 @@ public class Wizyty extends GlobalElements {
 
     public Wizyty(int liczbaRekordow, Karty karty, Gabinety Gabinet, Pracownicy pracownicy) throws IOException {
         generator = new Random();
-        file = new File("wizyty.csv");
+        file = new File("dane/wizyty.csv");
         pacjenci = new String[liczbaRekordow];
         daty = new String[liczbaRekordow];
         // lata = new int[liczbaRekordow];

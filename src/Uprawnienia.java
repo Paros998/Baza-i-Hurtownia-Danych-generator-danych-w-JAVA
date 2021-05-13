@@ -14,7 +14,7 @@ public class Uprawnienia extends GlobalElements {
     public Uprawnienia(int liczbaRekordow) throws IOException {
         id = 1;
         generator = new Random();
-        file = new File("uprawnienia.csv");
+        file = new File("dane/uprawnienia.csv");
         wylosowaneId = new int[liczbaRekordow];
 
         if (file.exists())

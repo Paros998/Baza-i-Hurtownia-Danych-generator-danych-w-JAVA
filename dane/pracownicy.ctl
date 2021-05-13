@@ -1,7 +1,7 @@
 LOAD DATA
 INFILE 'pracownicy.csv'
-BADFILE 'pracownicy.bad'
-DISCARDFILE 'pracownicy.dsc'
+BADFILE 'bad/pracownicy.bad'
+DISCARDFILE 'dsc/pracownicy.dsc'
 REPLACE INTO TABLE pracownicy
 FIELDS TERMINATED BY ","
 TRAILING NULLCOLS

@@ -13,7 +13,7 @@ public class Kontakty extends GlobalElements {
     public Kontakty(int liczbaRekordow) throws IOException {
         id = 1;
         generator = new Random();
-        file = new File("kontakty.csv");
+        file = new File("dane/kontakty.csv");
         wylosowaneId = new int[liczbaRekordow];
         telefon = email = "";
         if (file.exists())

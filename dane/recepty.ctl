@@ -1,7 +1,7 @@
 LOAD DATA
 INFILE 'recepty.csv'
-BADFILE 'recepty.bad'
-DISCARDFILE 'recepty.dsc'
+BADFILE 'bad/recepty.bad'
+DISCARDFILE 'dsc/recepty.dsc'
 REPLACE INTO TABLE recepty
 FIELDS TERMINATED BY ","
 TRAILING NULLCOLS

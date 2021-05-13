@@ -11,7 +11,7 @@ public class StatusyWizyt extends GlobalElements {
 
     public StatusyWizyt(int liczbaRekordow, Wizyty wizyty) throws IOException {
         generator = new Random();
-        file = new File("statusy_wizyt.csv");
+        file = new File("dane/statusy_wizyt.csv");
         id = 1;
         if (file.exists())
             file.delete();

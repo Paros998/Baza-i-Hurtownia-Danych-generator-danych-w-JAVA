@@ -16,7 +16,7 @@ public class Specjalnosci extends GlobalElements {
     public Specjalnosci(int liczbaRekordow) throws IOException {
         id = 1;
         generator = new Random();
-        file = new File("specjalnosci.csv");
+        file = new File("dane/specjalnosci.csv");
         wylosowaneSpecjalnosci = new int[liczbaRekordow];
         wylosowaneDodatki = new int[liczbaRekordow];
 

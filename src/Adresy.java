@@ -18,7 +18,7 @@ public class Adresy extends GlobalElements {
     public Adresy(int liczbaRekordow) throws IOException {
         id = 1;
         generator = new Random();
-        file = new File("adresy.csv");
+        file = new File("dane/adresy.csv");
         wylosowaneId = new int[liczbaRekordow];
         if (file.exists())
             file.delete();

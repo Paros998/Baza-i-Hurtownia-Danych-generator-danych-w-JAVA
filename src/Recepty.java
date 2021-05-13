@@ -18,7 +18,7 @@ public class Recepty extends GlobalElements {
 
         id = 1;
         generator = new Random();
-        file = new File("recepty.csv");
+        file = new File("dane/recepty.csv");
 
         if (file.exists())
             file.delete();

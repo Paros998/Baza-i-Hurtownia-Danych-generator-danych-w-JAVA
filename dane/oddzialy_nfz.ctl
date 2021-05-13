@@ -1,7 +1,7 @@
 LOAD DATA
 INFILE 'oddzialy_nfz.csv'
-BADFILE 'oddzialy_nfz.bad'
-DISCARDFILE 'oddzialy_nfz.dsc'
+BADFILE 'bad/oddzialy_nfz.bad'
+DISCARDFILE 'dsc/oddzialy_nfz.dsc'
 REPLACE INTO TABLE oddzialy_nfz
 FIELDS TERMINATED BY ","
 TRAILING NULLCOLS

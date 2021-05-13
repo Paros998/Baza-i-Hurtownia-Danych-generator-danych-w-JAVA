@@ -1,8 +1,8 @@
 LOAD DATA
 INFILE 'choroby.csv'
-BADFILE 'choroby.bad'
-DISCARDFILE 'choroby.dsc'
+BADFILE 'bad/choroby.bad'
+DISCARDFILE 'dsc/choroby.dsc'
 REPLACE INTO TABLE choroby
 FIELDS TERMINATED BY ","
 TRAILING NULLCOLS
-(choroby_id,nazwa,opis,poczatek DATE "YYYY-MM-DD",koniec DATE "YYYY-MM-DD",pesel_id)
+(choroby_id,nazwa,opis,poczatek DATE "yyyy-mm-dd",koniec DATE "yyyy-mm-dd",pesel_id)

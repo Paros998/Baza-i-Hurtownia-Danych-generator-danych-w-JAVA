@@ -1,7 +1,7 @@
 LOAD DATA
 INFILE 'ulgi.csv'
-BADFILE 'ulgi.bad'
-DISCARDFILE 'ulgi.dsc'
+BADFILE 'bad/ulgi.bad'
+DISCARDFILE 'dsc/ulgi.dsc'
 REPLACE INTO TABLE ulgi
 FIELDS TERMINATED BY ","
 TRAILING NULLCOLS

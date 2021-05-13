@@ -6,7 +6,7 @@ import java.time.LocalDate;
 import java.util.Random;
 
 public class Choroby extends GlobalElements {
-    
+
     private int id;
     private String nazwa;
     private String opis;
@@ -14,7 +14,7 @@ public class Choroby extends GlobalElements {
     private String koniecData;
     private int peselId;
     public int[] idPacjentow;
-    
+
     private int[] losujDatePoczatku() {
         int rok, miesiac, dzien;
 
@@ -42,14 +42,14 @@ public class Choroby extends GlobalElements {
                     rok = 1992 + generator.nextInt(52);
                 miesiac = 1 + generator.nextInt(12);
                 dzien = 1 + generator.nextInt(28);
-            break;
+                break;
 
             case 2:
                 while (miesiac < data[1])
                     miesiac = 1 + generator.nextInt(12);
                 dzien = 1 + generator.nextInt(28);
                 rok = data[0];
-            break;
+                break;
         }
 
         koniecData = LocalDate.of(rok, miesiac, dzien).toString();
@@ -58,7 +58,7 @@ public class Choroby extends GlobalElements {
     public Choroby(int liczbaRekordow, Karty karty) throws IOException {
         id = 1;
         generator = new Random();
-        file = new File("choroby.csv");
+        file = new File("dane/choroby.csv");
         idPacjentow = new int[karty.pesele.length];
 
         if (file.exists())
@@ -76,8 +76,7 @@ public class Choroby extends GlobalElements {
 
             idPacjentow[i] = peselId = 1 + generator.nextInt(karty.pesele.length);
 
-            writer.write(id + "," + nazwa + "," + opis + "," + 
-            pocztekData + "," + koniecData + "," + peselId + '\n');
+            writer.write(id + "," + nazwa + "," + opis + "," + pocztekData + "," + koniecData + "," + peselId + '\n');
 
             id++;
         }

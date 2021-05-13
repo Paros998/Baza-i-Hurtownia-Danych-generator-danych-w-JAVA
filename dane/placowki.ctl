@@ -1,7 +1,7 @@
 LOAD DATA
-INFILE 'placówki.csv'
-BADFILE 'placówki.bad'
-DISCARDFILE 'placówki.dsc'
+INFILE 'placowki.csv'
+BADFILE 'bad/placowki.bad'
+DISCARDFILE 'dsc/placowki.dsc'
 REPLACE INTO TABLE placowki
 FIELDS TERMINATED BY ","
 TRAILING NULLCOLS

@@ -17,7 +17,7 @@ public class Pacjenci extends GlobalElements {
             Pracownicy pracownicy) throws IOException {
         id = 1;
         generator = new Random();
-        file = new File("pacjenci.csv");
+        file = new File("dane/pacjenci.csv");
         wylosowaneId = new int[liczbaRekordow];
         uzyteKontakty = new int[liczbaRekordow];
         uzyteAdresy = new int[liczbaRekordow];

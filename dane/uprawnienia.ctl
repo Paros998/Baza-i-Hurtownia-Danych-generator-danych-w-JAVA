@@ -1,7 +1,7 @@
 LOAD DATA
 INFILE 'uprawnienia.csv'
-BADFILE 'uprawnienia.bad'
-DISCARDFILE 'uprawnienia.dsc'
+BADFILE 'bad/uprawnienia.bad'
+DISCARDFILE 'dsc/uprawnienia.dsc'
 REPLACE INTO TABLE uprawnienia
 FIELDS TERMINATED BY ","
 TRAILING NULLCOLS
