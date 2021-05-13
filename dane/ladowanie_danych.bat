@@ -1,3 +1,4 @@
+cd
 SQLLDR potas/oracle CONTROL='ulgi.ctl'
 SQLLDR potas/oracle CONTROL='oddzialy_nfz.ctl'
 SQLLDR potas/oracle CONTROL='adresy.ctl'
@@ -16,3 +17,4 @@ SQLLDR potas/oracle CONTROL='recepty.ctl'
 SQLLDR potas/oracle CONTROL='pozycje_recept.ctl'
 SQLLDR potas/oracle CONTROL='statusy_wizyt.ctl'
 SQLLDR potas/oracle CONTROL='zabiegi.ctl'
+pause

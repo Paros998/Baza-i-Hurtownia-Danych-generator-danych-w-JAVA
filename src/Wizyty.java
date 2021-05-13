@@ -25,6 +25,7 @@ public class Wizyty extends GlobalElements {
     public int[] minuty;
     public int[] gabinety;
     int rok, miesiac, dzien, indeks;
+    private int[] specjalisci;
 
     public Wizyty(int liczbaRekordow, Karty karty, Gabinety Gabinet, Pracownicy pracownicy) throws IOException {
         generator = new Random();
@@ -37,6 +38,7 @@ public class Wizyty extends GlobalElements {
         godziny = new int[liczbaRekordow];
         minuty = new int[liczbaRekordow];
         gabinety = new int[liczbaRekordow];
+        specjalisci = new int[liczbaRekordow];
         data = h_koniec = h_początek = "";
         if (file.exists())
             file.delete();
@@ -53,6 +55,7 @@ public class Wizyty extends GlobalElements {
             indeks = generator.nextInt(Gabinet.wylosowaneId.length);
             gabinet = Gabinet.wylosowaneId[indeks];
             pracownik_specjalista = Gabinet.pracownicyUzyci[indeks];
+            specjalisci[i] = pracownik_specjalista;
             // losowanie recepjonistki
             indeks = generator.nextInt(pracownicy.iloscRecepcji);
             pracownik_umawiajacy = pracownicy.recepcja[indeks];
