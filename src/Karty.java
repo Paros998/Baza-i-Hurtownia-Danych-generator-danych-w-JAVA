@@ -7,20 +7,19 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class Karty extends GlobalElements {
-    
+
     private String pesel;
     private String data;
     private String grupaKrwi;
 
     public String[] pesele;
+    public int[] lata;
+    public int[] miesiace;
+    public int[] dni;
     public int[] wiekPacjentow;
 
     private void dostosujPesel(int[] peselTab) {
-        pesel = Arrays.toString(peselTab)
-            .replace("[", "")
-            .replace("]", "")
-            .replace(",", "")
-            .replace(" ", "");
+        pesel = Arrays.toString(peselTab).replace("[", "").replace("]", "").replace(",", "").replace(" ", "");
     }
 
     public Karty(int liczbaRekordow) throws IOException {
@@ -28,7 +27,9 @@ public class Karty extends GlobalElements {
         file = new File("karty.csv");
         pesele = new String[liczbaRekordow];
         wiekPacjentow = new int[liczbaRekordow];
-
+        lata = new int[liczbaRekordow];
+        miesiace = new int[liczbaRekordow];
+        dni = new int[liczbaRekordow];
         if (file.exists())
             file.delete();
         file.createNewFile();
@@ -43,8 +44,10 @@ public class Karty extends GlobalElements {
             miesiac = 1 + generator.nextInt(12);
             dzien = 1 + generator.nextInt(28);
             data = LocalDate.of(rok, miesiac, dzien).toString();
-
-            for(int j = 0; j < peselTab.length; j++)
+            lata[i] = rok;
+            miesiace[i] = miesiac;
+            dni[i] = dzien;
+            for (int j = 0; j < peselTab.length; j++)
                 peselTab[j] = generator.nextInt(9);
             dostosujPesel(peselTab);
 

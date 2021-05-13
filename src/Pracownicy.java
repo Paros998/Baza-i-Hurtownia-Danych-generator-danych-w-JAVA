@@ -15,7 +15,8 @@ public class Pracownicy extends GlobalElements {
     public int[] pracownicyZabiegowi;
     public int[] pracownicyBadawczy;
     public int[] lekarzeZwykli;
-    public int iloscpracownicyZabiegowi, iloscpracownicyBadawczy, ilosclekarzeZwykli;
+    public int[] recepcja;
+    public int iloscpracownicyZabiegowi, iloscpracownicyBadawczy, ilosclekarzeZwykli, iloscRecepcji;
 
     public Pracownicy(int liczbaRekordow, Placówki placówki, Adresy adresy, Kontakty kontakty, Stanowiska stanowiska,
             Specjalnosci specjalnosci, Uprawnienia uprawnienia) throws IOException {
@@ -28,6 +29,7 @@ public class Pracownicy extends GlobalElements {
         pracownicyZabiegowi = new int[liczbaRekordow];
         pracownicyBadawczy = new int[liczbaRekordow];
         lekarzeZwykli = new int[liczbaRekordow];
+        recepcja = new int[liczbaRekordow];
         iloscpracownicyZabiegowi = iloscpracownicyBadawczy = ilosclekarzeZwykli = 0;
         login = haslo = "";
         if (file.exists())
@@ -118,6 +120,9 @@ public class Pracownicy extends GlobalElements {
             } else if (stanowiska.uprawnieniaStanowisk[stanowisko] == 10) {
                 pracownicyZabiegowi[iloscpracownicyZabiegowi] = id;
                 iloscpracownicyZabiegowi++;
+            } else if (stanowiska.uprawnieniaStanowisk[stanowisko] == 1) {
+                recepcja[iloscRecepcji] = id;
+                iloscRecepcji++;
             }
 
             // Ustawianie pensji

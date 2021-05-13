@@ -1,100 +1,100 @@
-1,Wizyty,47,307,65
-2,Wizyty kontrolne,79,129,94
-3,Wizyty kontrolne,21,275,29
-4,Zabiegi,58,225,42
-5,Badania,86,359,30
-6,Zabiegi,22,185,56
-7,Zabiegi,87,276,94
-8,Wizyty kontrolne,21,256,62
-9,Wizyty,5,226,36
-10,Badania,86,301,79
-11,Wizyty kontrolne,41,120,73
-12,Wizyty,27,331,95
-13,Badania,86,211,24
-14,Badania,86,85,89
-15,Wizyty kontrolne,76,322,86
-16,Zabiegi,87,122,77
-17,Wizyty kontrolne,56,115,41
-18,Zabiegi,38,361,93
-19,Wizyty kontrolne,69,39,78
-20,Wizyty kontrolne,85,161,70
-21,Wizyty kontrolne,20,388,4
-22,Wizyty kontrolne,83,378,34
-23,Wizyty,39,349,88
-24,Wizyty kontrolne,73,29,6
-25,Badania,70,49,71
-26,Zabiegi,22,372,17
-27,Zabiegi,13,106,35
-28,Wizyty,18,206,1
-29,Zabiegi,88,202,92
-30,Wizyty kontrolne,83,37,52
-31,Badania,70,323,59
-32,Zabiegi,78,398,38
-33,Zabiegi,58,383,6
-34,Badania,70,173,46
-35,Wizyty,46,99,99
-36,Zabiegi,38,182,49
-37,Wizyty kontrolne,3,70,44
-38,Wizyty kontrolne,85,13,88
-39,Badania,86,282,90
-40,Wizyty,30,390,43
-41,Zabiegi,22,0,41
-42,Wizyty kontrolne,74,5,72
-43,Wizyty kontrolne,7,303,92
-44,Badania,86,371,11
-45,Badania,70,32,59
-46,Zabiegi,4,213,39
-47,Badania,70,104,99
-48,Zabiegi,88,98,69
-49,Wizyty kontrolne,14,158,65
-50,Zabiegi,88,67,22
-51,Zabiegi,37,350,30
-52,Zabiegi,4,293,49
-53,Wizyty,89,11,46
-54,Zabiegi,4,188,86
-55,Zabiegi,4,109,44
-56,Zabiegi,88,386,62
-57,Wizyty kontrolne,73,134,88
-58,Zabiegi,58,351,87
-59,Wizyty,50,268,33
-60,Wizyty,44,179,41
-61,Badania,86,215,100
-62,Wizyty kontrolne,25,79,17
-63,Badania,70,310,51
-64,Zabiegi,38,299,40
-65,Wizyty kontrolne,41,379,9
-66,Zabiegi,88,397,80
-67,Wizyty,65,343,84
-68,Badania,70,236,6
-69,Wizyty kontrolne,77,143,46
-70,Wizyty kontrolne,16,339,96
-71,Zabiegi,38,23,69
-72,Badania,70,381,1
-73,Zabiegi,38,34,74
-74,Wizyty,18,89,58
-75,Wizyty kontrolne,1,284,13
-76,Badania,86,265,33
-77,Badania,70,66,54
-78,Badania,70,278,17
-79,Wizyty,39,262,61
-80,Wizyty kontrolne,36,189,33
-81,Badania,86,20,62
-82,Wizyty,36,316,38
-83,Wizyty,92,260,40
-84,Wizyty kontrolne,46,271,93
-85,Zabiegi,22,286,64
-86,Wizyty kontrolne,52,97,37
-87,Wizyty kontrolne,79,146,56
-88,Badania,86,121,61
-89,Zabiegi,22,355,57
-90,Zabiegi,81,111,57
-91,Wizyty,3,289,33
-92,Wizyty kontrolne,73,172,49
-93,Zabiegi,81,245,51
-94,Badania,70,84,92
-95,Badania,70,376,43
-96,Zabiegi,4,196,71
-97,Badania,70,353,10
-98,Wizyty kontrolne,48,222,43
-99,Badania,70,298,38
-100,Zabiegi,87,377,19
+1,Zabiegi,63,395,97
+2,Wizyty,34,337,24
+3,Wizyty kontrolne,38,353,15
+4,Badania,18,232,64
+5,Wizyty kontrolne,79,390,87
+6,Zabiegi,91,382,94
+7,Zabiegi,88,13,80
+8,Zabiegi,37,199,18
+9,Badania,40,140,98
+10,Wizyty,33,106,18
+11,Zabiegi,91,92,50
+12,Wizyty,86,336,14
+13,Wizyty kontrolne,77,39,58
+14,Badania,6,101,55
+15,Zabiegi,63,168,31
+16,Wizyty,19,277,58
+17,Wizyty kontrolne,27,142,45
+18,Badania,4,175,31
+19,Wizyty kontrolne,54,376,19
+20,Wizyty kontrolne,2,293,92
+21,Zabiegi,91,153,93
+22,Zabiegi,37,209,51
+23,Zabiegi,37,179,8
+24,Wizyty kontrolne,31,221,64
+25,Zabiegi,37,105,4
+26,Wizyty,3,177,24
+27,Wizyty kontrolne,85,385,43
+28,Wizyty,86,270,57
+29,Wizyty,84,329,92
+30,Zabiegi,91,273,38
+31,Wizyty kontrolne,21,174,36
+32,Wizyty,67,2,87
+33,Zabiegi,47,52,42
+34,Badania,75,148,43
+35,Wizyty,66,341,48
+36,Badania,80,266,33
+37,Zabiegi,37,396,30
+38,Wizyty,84,59,32
+39,Zabiegi,47,62,43
+40,Wizyty,85,360,25
+41,Wizyty kontrolne,11,317,85
+42,Wizyty,7,298,84
+43,Zabiegi,63,242,51
+44,Wizyty,38,201,48
+45,Wizyty kontrolne,62,379,41
+46,Badania,52,146,67
+47,Wizyty kontrolne,36,79,46
+48,Zabiegi,47,150,60
+49,Zabiegi,88,281,99
+50,Badania,4,100,64
+51,Wizyty,16,149,43
+52,Badania,43,75,62
+53,Badania,81,338,7
+54,Badania,4,5,1
+55,Badania,18,261,64
+56,Zabiegi,63,265,50
+57,Badania,80,358,47
+58,Wizyty kontrolne,34,54,52
+59,Wizyty,66,333,29
+60,Badania,4,370,72
+61,Zabiegi,47,197,58
+62,Zabiegi,63,274,87
+63,Wizyty,38,86,51
+64,Zabiegi,47,348,56
+65,Badania,80,240,3
+66,Wizyty,42,29,21
+67,Wizyty,13,313,45
+68,Wizyty,66,253,27
+69,Badania,29,207,48
+70,Wizyty,25,346,34
+71,Wizyty,26,352,70
+72,Zabiegi,63,99,59
+73,Wizyty,89,236,88
+74,Zabiegi,91,16,80
+75,Wizyty,42,94,38
+76,Wizyty kontrolne,25,187,5
+77,Badania,6,247,21
+78,Badania,93,398,21
+79,Wizyty kontrolne,7,319,59
+80,Wizyty kontrolne,53,387,75
+81,Badania,40,68,64
+82,Badania,81,307,41
+83,Zabiegi,37,251,90
+84,Zabiegi,47,302,99
+85,Zabiegi,47,380,95
+86,Wizyty,31,186,95
+87,Wizyty kontrolne,42,90,74
+88,Badania,46,326,77
+89,Wizyty kontrolne,72,389,86
+90,Zabiegi,88,192,20
+91,Zabiegi,47,48,43
+92,Badania,12,369,2
+93,Wizyty kontrolne,79,193,81
+94,Wizyty kontrolne,21,391,34
+95,Wizyty kontrolne,70,231,16
+96,Wizyty kontrolne,8,258,65
+97,Zabiegi,88,109,50
+98,Zabiegi,88,295,24
+99,Badania,80,211,25
+100,Wizyty,3,206,54

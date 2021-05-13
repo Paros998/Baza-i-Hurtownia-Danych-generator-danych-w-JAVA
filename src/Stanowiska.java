@@ -34,7 +34,14 @@ public class Stanowiska extends GlobalElements {
 
             pensja = stanowiskaPlace[indeks];
             // Losowanie odpowiedniego id uprawnienia odnośnie stanowiska
-            if (indeks <= 1) {
+            if (indeks == 1) {
+                j = generator.nextInt(up.wylosowaneId.length);
+                while (up.wylosowaneId[j] != 0) {
+                    j = generator.nextInt(up.wylosowaneId.length);
+                }
+                uprawnienie_id = j;
+                uprawnieniaStanowisk[i] = up.wylosowaneId[j];
+            } else if (indeks == 0) {
                 j = generator.nextInt(up.wylosowaneId.length);
                 while (up.wylosowaneId[j] != 1) {
                     j = generator.nextInt(up.wylosowaneId.length);
