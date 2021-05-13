@@ -9,11 +9,13 @@ public class OddzialyNfz extends GlobalElements {
     private int id;
     private String nazwa;
     private int kodFunduszu;
+    public int[] oddzialyId;
 
     public OddzialyNfz(int liczbaRekordow) throws IOException {
         id = 1;
         generator = new Random();
         file = new File("oddzialy_nfz.csv");
+        oddzialyId = new int[liczbaRekordow];
 
         if (file.exists())
             file.delete();
@@ -29,6 +31,8 @@ public class OddzialyNfz extends GlobalElements {
 
             writer.write(id + "," + nazwa + "," + kodFunduszu + '\n');
 
+            oddzialyId[i] = id;
+            
             id++;
         }
 

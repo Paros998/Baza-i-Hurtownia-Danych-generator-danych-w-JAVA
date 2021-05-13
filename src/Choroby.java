@@ -13,6 +13,7 @@ public class Choroby extends GlobalElements {
     private String pocztekData;
     private String koniecData;
     private int peselId;
+    public String[] idPacjentow;
     
     private int[] losujDatePoczatku() {
         int rok, miesiac, dzien;
@@ -58,6 +59,7 @@ public class Choroby extends GlobalElements {
         id = 1;
         generator = new Random();
         file = new File("choroby.csv");
+        idPacjentow = new String[liczbaRekordow];
 
         if (file.exists())
             file.delete();

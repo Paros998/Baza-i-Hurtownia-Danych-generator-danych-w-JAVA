@@ -25,7 +25,7 @@ public class Wizyty extends GlobalElements {
     public int[] minuty;
     public int[] gabinety;
     int rok, miesiac, dzien, indeks;
-    private int[] specjalisci;
+    public int[] specjalisci;
 
     public Wizyty(int liczbaRekordow, Karty karty, Gabinety Gabinet, Pracownicy pracownicy) throws IOException {
         generator = new Random();
