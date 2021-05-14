@@ -1,100 +1,100 @@
-1,UPS9,Uprawnienia stopnia 9
-2,UPS3,Uprawnienia stopnia 3
-3,UPS8,Uprawnienia stopnia 8
-4,UPS4,Uprawnienia stopnia 4
-5,UPS5,Uprawnienia stopnia 5
+1,UPDB,Uprawnienia do przeprowadzania badan
+2,UPS7,Uprawnienia stopnia 7
+3,UPS5,Uprawnienia stopnia 5
+4,UPS8,Uprawnienia stopnia 8
+5,UPS3,Uprawnienia stopnia 3
 6,UPS1,Uprawnienia stopnia 1
-7,UPS1,Uprawnienia stopnia 1
-8,UPS5,Uprawnienia stopnia 5
-9,UPS4,Uprawnienia stopnia 4
+7,UPS3,Uprawnienia stopnia 3
+8,UPS9,Uprawnienia stopnia 9
+9,UPS7,Uprawnienia stopnia 7
 10,UPS9,Uprawnienia stopnia 9
-11,UPDZ,Uprawnienia do przeprowadzania zabiegow
-12,UPS5,Uprawnienia stopnia 5
+11,UPS8,Uprawnienia stopnia 8
+12,UPDZ,Uprawnienia do przeprowadzania zabiegow
 13,UPS8,Uprawnienia stopnia 8
-14,UPS1,Uprawnienia stopnia 1
-15,UPS8,Uprawnienia stopnia 8
-16,UPS2,Uprawnienia stopnia 2
-17,UPS5,Uprawnienia stopnia 5
-18,UPS8,Uprawnienia stopnia 8
-19,UPS1,Uprawnienia stopnia 1
+14,UPS6,Uprawnienia stopnia 6
+15,UPS1,Uprawnienia stopnia 1
+16,UPS8,Uprawnienia stopnia 8
+17,UPS2,Uprawnienia stopnia 2
+18,UPDZ,Uprawnienia do przeprowadzania zabiegow
+19,UPDZ,Uprawnienia do przeprowadzania zabiegow
 20,UPS9,Uprawnienia stopnia 9
-21,UPDZ,Uprawnienia do przeprowadzania zabiegow
-22,UPS1,Uprawnienia stopnia 1
-23,UPS6,Uprawnienia stopnia 6
-24,UPS5,Uprawnienia stopnia 5
-25,UPS4,Uprawnienia stopnia 4
-26,UPS9,Uprawnienia stopnia 9
-27,UPS4,Uprawnienia stopnia 4
-28,UPS3,Uprawnienia stopnia 3
-29,UPS2,Uprawnienia stopnia 2
-30,UPS7,Uprawnienia stopnia 7
-31,UPS1,Uprawnienia stopnia 1
-32,UPS7,Uprawnienia stopnia 7
-33,UPDZ,Uprawnienia do przeprowadzania zabiegow
-34,UPS9,Uprawnienia stopnia 9
-35,UPS5,Uprawnienia stopnia 5
+21,UPDB,Uprawnienia do przeprowadzania badan
+22,UPS2,Uprawnienia stopnia 2
+23,UPDZ,Uprawnienia do przeprowadzania zabiegow
+24,UPS8,Uprawnienia stopnia 8
+25,UPS5,Uprawnienia stopnia 5
+26,UPS5,Uprawnienia stopnia 5
+27,UPS5,Uprawnienia stopnia 5
+28,UPS9,Uprawnienia stopnia 9
+29,UPS7,Uprawnienia stopnia 7
+30,UPS8,Uprawnienia stopnia 8
+31,UPS6,Uprawnienia stopnia 6
+32,UPS8,Uprawnienia stopnia 8
+33,UPS3,Uprawnienia stopnia 3
+34,UPS5,Uprawnienia stopnia 5
+35,UPS8,Uprawnienia stopnia 8
 36,UPDB,Uprawnienia do przeprowadzania badan
-37,UPS5,Uprawnienia stopnia 5
-38,UPS7,Uprawnienia stopnia 7
-39,UPS6,Uprawnienia stopnia 6
-40,UPS4,Uprawnienia stopnia 4
-41,UPS8,Uprawnienia stopnia 8
-42,UPS3,Uprawnienia stopnia 3
-43,UPS8,Uprawnienia stopnia 8
-44,UPS1,Uprawnienia stopnia 1
-45,UPS8,Uprawnienia stopnia 8
-46,UPDZ,Uprawnienia do przeprowadzania zabiegow
-47,UPS2,Uprawnienia stopnia 2
-48,UPS6,Uprawnienia stopnia 6
-49,UPDZ,Uprawnienia do przeprowadzania zabiegow
-50,UPS9,Uprawnienia stopnia 9
-51,UPS3,Uprawnienia stopnia 3
-52,UPS4,Uprawnienia stopnia 4
-53,UPS4,Uprawnienia stopnia 4
-54,UPDB,Uprawnienia do przeprowadzania badan
-55,UPS7,Uprawnienia stopnia 7
-56,UPS3,Uprawnienia stopnia 3
+37,UPS6,Uprawnienia stopnia 6
+38,UPS5,Uprawnienia stopnia 5
+39,UPS9,Uprawnienia stopnia 9
+40,UPS9,Uprawnienia stopnia 9
+41,UPS4,Uprawnienia stopnia 4
+42,UPS2,Uprawnienia stopnia 2
+43,UPS9,Uprawnienia stopnia 9
+44,UPS7,Uprawnienia stopnia 7
+45,UPS4,Uprawnienia stopnia 4
+46,UPS9,Uprawnienia stopnia 9
+47,UPS7,Uprawnienia stopnia 7
+48,UPS1,Uprawnienia stopnia 1
+49,UPS5,Uprawnienia stopnia 5
+50,UPS4,Uprawnienia stopnia 4
+51,UPS8,Uprawnienia stopnia 8
+52,UPS7,Uprawnienia stopnia 7
+53,UPS3,Uprawnienia stopnia 3
+54,UPS1,Uprawnienia stopnia 1
+55,UPS5,Uprawnienia stopnia 5
+56,UPDZ,Uprawnienia do przeprowadzania zabiegow
 57,UPS3,Uprawnienia stopnia 3
 58,UPDB,Uprawnienia do przeprowadzania badan
-59,UPS8,Uprawnienia stopnia 8
-60,UPS5,Uprawnienia stopnia 5
-61,UPS5,Uprawnienia stopnia 5
-62,UPS4,Uprawnienia stopnia 4
-63,UPS3,Uprawnienia stopnia 3
-64,UPS1,Uprawnienia stopnia 1
-65,UPS8,Uprawnienia stopnia 8
-66,UPS9,Uprawnienia stopnia 9
-67,UPS6,Uprawnienia stopnia 6
+59,UPS9,Uprawnienia stopnia 9
+60,UPS4,Uprawnienia stopnia 4
+61,UPS9,Uprawnienia stopnia 9
+62,UPS9,Uprawnienia stopnia 9
+63,UPS4,Uprawnienia stopnia 4
+64,UPDB,Uprawnienia do przeprowadzania badan
+65,UPS5,Uprawnienia stopnia 5
+66,UPS8,Uprawnienia stopnia 8
+67,UPS5,Uprawnienia stopnia 5
 68,UPS2,Uprawnienia stopnia 2
-69,UPS7,Uprawnienia stopnia 7
-70,UPS3,Uprawnienia stopnia 3
-71,UPS1,Uprawnienia stopnia 1
+69,UPDZ,Uprawnienia do przeprowadzania zabiegow
+70,UPS7,Uprawnienia stopnia 7
+71,UPS5,Uprawnienia stopnia 5
 72,UPS5,Uprawnienia stopnia 5
-73,UPS9,Uprawnienia stopnia 9
-74,UPDB,Uprawnienia do przeprowadzania badan
-75,UPS8,Uprawnienia stopnia 8
-76,UPS9,Uprawnienia stopnia 9
-77,UPS9,Uprawnienia stopnia 9
-78,UPS7,Uprawnienia stopnia 7
+73,UPS4,Uprawnienia stopnia 4
+74,UPS1,Uprawnienia stopnia 1
+75,UPS6,Uprawnienia stopnia 6
+76,UPDB,Uprawnienia do przeprowadzania badan
+77,UPS3,Uprawnienia stopnia 3
+78,UPS3,Uprawnienia stopnia 3
 79,UPDZ,Uprawnienia do przeprowadzania zabiegow
-80,UPS8,Uprawnienia stopnia 8
-81,UPS4,Uprawnienia stopnia 4
-82,UPS8,Uprawnienia stopnia 8
-83,UPS3,Uprawnienia stopnia 3
-84,UPS9,Uprawnienia stopnia 9
+80,UPS9,Uprawnienia stopnia 9
+81,UPS3,Uprawnienia stopnia 3
+82,UPDB,Uprawnienia do przeprowadzania badan
+83,UPDZ,Uprawnienia do przeprowadzania zabiegow
+84,UPS3,Uprawnienia stopnia 3
 85,UPS9,Uprawnienia stopnia 9
-86,UPS8,Uprawnienia stopnia 8
-87,UPS3,Uprawnienia stopnia 3
-88,UPDB,Uprawnienia do przeprowadzania badan
-89,UPS6,Uprawnienia stopnia 6
-90,UPDB,Uprawnienia do przeprowadzania badan
-91,UPS4,Uprawnienia stopnia 4
-92,UPS9,Uprawnienia stopnia 9
-93,UPS8,Uprawnienia stopnia 8
-94,UPDB,Uprawnienia do przeprowadzania badan
-95,UPS2,Uprawnienia stopnia 2
-96,UPDB,Uprawnienia do przeprowadzania badan
-97,UPDZ,Uprawnienia do przeprowadzania zabiegow
+86,UPS4,Uprawnienia stopnia 4
+87,UPS7,Uprawnienia stopnia 7
+88,UPS2,Uprawnienia stopnia 2
+89,UPDZ,Uprawnienia do przeprowadzania zabiegow
+90,UPDZ,Uprawnienia do przeprowadzania zabiegow
+91,UPDZ,Uprawnienia do przeprowadzania zabiegow
+92,UPS3,Uprawnienia stopnia 3
+93,UPS7,Uprawnienia stopnia 7
+94,UPS2,Uprawnienia stopnia 2
+95,UPS5,Uprawnienia stopnia 5
+96,UPDZ,Uprawnienia do przeprowadzania zabiegow
+97,UPS6,Uprawnienia stopnia 6
 98,UPDZ,Uprawnienia do przeprowadzania zabiegow
-99,UPDZ,Uprawnienia do przeprowadzania zabiegow
-100,UPS1,Uprawnienia stopnia 1
+99,UPS9,Uprawnienia stopnia 9
+100,UPDZ,Uprawnienia do przeprowadzania zabiegow

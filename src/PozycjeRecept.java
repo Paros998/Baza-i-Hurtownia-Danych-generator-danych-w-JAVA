@@ -12,7 +12,7 @@ public class PozycjeRecept extends GlobalElements {
     private int ilosc;
     private double odplatnosc;
 
-    public PozycjeRecept(int liczbaRekordow) throws IOException {
+    public PozycjeRecept(Recepty recepty) throws IOException {
         id = 1;
         generator = new Random();
         file = new File("dane/pozycje_recept.csv");
@@ -23,7 +23,7 @@ public class PozycjeRecept extends GlobalElements {
 
         FileWriter writer = new FileWriter(file, StandardCharsets.UTF_8, true);
 
-        for (int i = 0; i < liczbaRekordow; i++) {
+        for (int i = 0; i < recepty.iloscReceptUtworzonych; i++) {
             receptaId = i + 1;
             int indeks = generator.nextInt(5) + 1;
             int z = indeks;
