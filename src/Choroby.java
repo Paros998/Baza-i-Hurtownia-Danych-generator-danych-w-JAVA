@@ -12,7 +12,7 @@ public class Choroby extends GlobalElements {
     private String opis;
     private String pocztekData;
     private String koniecData;
-    private int peselId;
+    private String peselId;
     public int[] idPacjentow;
 
     private int[] losujDatePoczatku() {
@@ -74,9 +74,11 @@ public class Choroby extends GlobalElements {
 
             losujDateKonca(losujDatePoczatku());
 
-            idPacjentow[i] = peselId = 1 + generator.nextInt(karty.pesele.length);
+            idPacjentow[i] = 1 + generator.nextInt(karty.pesele.length);
 
-            writer.write(id + "," + nazwa + "," + opis + "," + pocztekData + "," + koniecData + "," + peselId + '\n');
+            peselId = karty.pesele[idPacjentow[i] - 1];
+
+            writer.write(id + "*" + nazwa + "*" + opis + "*" + pocztekData + "*" + koniecData + "*" + peselId + '\n');
 
             id++;
         }

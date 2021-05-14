@@ -1,5 +1,5 @@
 
-SQL*Loader: Release 18.0.0.0.0 - Production on Thu May 13 20:31:30 2021
+SQL*Loader: Release 18.0.0.0.0 - Production on Fri May 14 12:37:18 2021
 Version 18.4.0.0.0
 
 Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
@@ -28,165 +28,10 @@ NAZWA                                NEXT     *   ,       CHARACTER
 PENSJA                               NEXT     *   ,       CHARACTER            
 UPRAWNIENIE_ID                       NEXT     *   ,       CHARACTER            
 
-Record 402: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 485: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 578: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 608: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 985: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 1062: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 1113: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 1296: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 1769: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 1824: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 2149: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 2182: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 2387: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 2403: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 2658: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 2753: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 2763: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 2887: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 2966: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 3000: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 3009: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 3035: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 3145: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 3240: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 3326: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 3354: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 3395: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 3520: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 3580: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 3597: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 3598: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 3607: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 3690: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 3698: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 3887: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 3991: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 4230: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 4728: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 4778: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 4859: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 4957: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 4970: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 4973: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 5040: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 5054: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 5069: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 5299: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 5409: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 5677: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 5792: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-Record 5840: Rejected - Error on table STANOWISKA.
-ORA-02291: integrity constraint (POTAS.FK_STA_UPR) violated - parent key not found
-
-
-MAXIMUM ERROR COUNT EXCEEDED - Above statistics reflect partial run.
 
 Table STANOWISKA:
-  5789 Rows successfully loaded.
-  51 Rows not loaded due to data errors.
+  10000 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
   0 Rows not loaded because all WHEN clauses were failed.
   0 Rows not loaded because all fields were null.
 
@@ -195,12 +40,12 @@ Space allocated for bind array:                 258000 bytes(250 rows)
 Read   buffer bytes: 1048576
 
 Total logical records skipped:          0
-Total logical records read:          6000
-Total logical records rejected:        51
+Total logical records read:         10000
+Total logical records rejected:         0
 Total logical records discarded:        0
 
-Run began on Thu May 13 20:31:30 2021
-Run ended on Thu May 13 20:31:30 2021
+Run began on Fri May 14 12:37:18 2021
+Run ended on Fri May 14 12:37:18 2021
 
-Elapsed time was:     00:00:00.35
-CPU time was:         00:00:00.14
+Elapsed time was:     00:00:00.33
+CPU time was:         00:00:00.18

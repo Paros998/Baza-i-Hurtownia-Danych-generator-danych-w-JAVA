@@ -1,5 +1,5 @@
 
-SQL*Loader: Release 18.0.0.0.0 - Production on Thu May 13 20:31:33 2021
+SQL*Loader: Release 18.0.0.0.0 - Production on Fri May 14 12:37:22 2021
 Version 18.4.0.0.0
 
 Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
@@ -30,8 +30,8 @@ ODDZIAL_NFZ_ID                       NEXT     *   ,       CHARACTER
 RECEPTA_CHOROBA_ID                   NEXT     *   ,       CHARACTER            
 ULGA_ID                              NEXT     *   ,       CHARACTER            
 
-Record 1: Rejected - Error on table RECEPTY, column RECEPTA_CHOROBA_ID.
-ORA-01400: cannot insert NULL into ("POTAS"."RECEPTY"."RECEPTA_CHOROBA_ID")
+Record 1: Rejected - Error on table RECEPTY.
+ORA-02291: integrity constraint (POTAS.FK_RECEPTA_CHOROBA_RECEPTY) violated - parent key not found
 
 Record 2: Rejected - Error on table RECEPTY, column RECEPTA_CHOROBA_ID.
 ORA-01400: cannot insert NULL into ("POTAS"."RECEPTY"."RECEPTA_CHOROBA_ID")
@@ -51,11 +51,11 @@ ORA-01400: cannot insert NULL into ("POTAS"."RECEPTY"."RECEPTA_CHOROBA_ID")
 Record 7: Rejected - Error on table RECEPTY, column RECEPTA_CHOROBA_ID.
 ORA-01400: cannot insert NULL into ("POTAS"."RECEPTY"."RECEPTA_CHOROBA_ID")
 
-Record 8: Rejected - Error on table RECEPTY.
-ORA-02291: integrity constraint (POTAS.FK_RECEPTA_CHOROBA_RECEPTY) violated - parent key not found
+Record 8: Rejected - Error on table RECEPTY, column RECEPTA_CHOROBA_ID.
+ORA-01400: cannot insert NULL into ("POTAS"."RECEPTY"."RECEPTA_CHOROBA_ID")
 
-Record 9: Rejected - Error on table RECEPTY.
-ORA-02291: integrity constraint (POTAS.FK_RECEPTA_CHOROBA_RECEPTY) violated - parent key not found
+Record 9: Rejected - Error on table RECEPTY, column RECEPTA_CHOROBA_ID.
+ORA-01400: cannot insert NULL into ("POTAS"."RECEPTY"."RECEPTA_CHOROBA_ID")
 
 Record 10: Rejected - Error on table RECEPTY, column RECEPTA_CHOROBA_ID.
 ORA-01400: cannot insert NULL into ("POTAS"."RECEPTY"."RECEPTA_CHOROBA_ID")
@@ -102,20 +102,20 @@ ORA-01400: cannot insert NULL into ("POTAS"."RECEPTY"."RECEPTA_CHOROBA_ID")
 Record 24: Rejected - Error on table RECEPTY, column RECEPTA_CHOROBA_ID.
 ORA-01400: cannot insert NULL into ("POTAS"."RECEPTY"."RECEPTA_CHOROBA_ID")
 
-Record 25: Rejected - Error on table RECEPTY, column RECEPTA_CHOROBA_ID.
-ORA-01400: cannot insert NULL into ("POTAS"."RECEPTY"."RECEPTA_CHOROBA_ID")
+Record 25: Rejected - Error on table RECEPTY.
+ORA-02291: integrity constraint (POTAS.FK_ODDZIAL_NFZ_RECEPTY) violated - parent key not found
 
-Record 26: Rejected - Error on table RECEPTY, column RECEPTA_CHOROBA_ID.
-ORA-01400: cannot insert NULL into ("POTAS"."RECEPTY"."RECEPTA_CHOROBA_ID")
+Record 26: Rejected - Error on table RECEPTY.
+ORA-02291: integrity constraint (POTAS.FK_ODDZIAL_NFZ_RECEPTY) violated - parent key not found
 
-Record 27: Rejected - Error on table RECEPTY, column RECEPTA_CHOROBA_ID.
-ORA-01400: cannot insert NULL into ("POTAS"."RECEPTY"."RECEPTA_CHOROBA_ID")
+Record 27: Rejected - Error on table RECEPTY.
+ORA-02291: integrity constraint (POTAS.FK_ODDZIAL_NFZ_RECEPTY) violated - parent key not found
 
-Record 28: Rejected - Error on table RECEPTY, column RECEPTA_CHOROBA_ID.
-ORA-01400: cannot insert NULL into ("POTAS"."RECEPTY"."RECEPTA_CHOROBA_ID")
+Record 28: Rejected - Error on table RECEPTY.
+ORA-02291: integrity constraint (POTAS.FK_ODDZIAL_NFZ_RECEPTY) violated - parent key not found
 
-Record 29: Rejected - Error on table RECEPTY, column RECEPTA_CHOROBA_ID.
-ORA-01400: cannot insert NULL into ("POTAS"."RECEPTY"."RECEPTA_CHOROBA_ID")
+Record 29: Rejected - Error on table RECEPTY.
+ORA-02291: integrity constraint (POTAS.FK_ODDZIAL_NFZ_RECEPTY) violated - parent key not found
 
 Record 30: Rejected - Error on table RECEPTY, column RECEPTA_CHOROBA_ID.
 ORA-01400: cannot insert NULL into ("POTAS"."RECEPTY"."RECEPTA_CHOROBA_ID")
@@ -159,14 +159,14 @@ ORA-01400: cannot insert NULL into ("POTAS"."RECEPTY"."RECEPTA_CHOROBA_ID")
 Record 43: Rejected - Error on table RECEPTY, column RECEPTA_CHOROBA_ID.
 ORA-01400: cannot insert NULL into ("POTAS"."RECEPTY"."RECEPTA_CHOROBA_ID")
 
-Record 44: Rejected - Error on table RECEPTY, column RECEPTA_CHOROBA_ID.
-ORA-01400: cannot insert NULL into ("POTAS"."RECEPTY"."RECEPTA_CHOROBA_ID")
+Record 44: Rejected - Error on table RECEPTY.
+ORA-02291: integrity constraint (POTAS.FK_ODDZIAL_NFZ_RECEPTY) violated - parent key not found
 
 Record 45: Rejected - Error on table RECEPTY, column RECEPTA_CHOROBA_ID.
 ORA-01400: cannot insert NULL into ("POTAS"."RECEPTY"."RECEPTA_CHOROBA_ID")
 
-Record 46: Rejected - Error on table RECEPTY.
-ORA-02291: integrity constraint (POTAS.FK_RECEPTA_CHOROBA_RECEPTY) violated - parent key not found
+Record 46: Rejected - Error on table RECEPTY, column RECEPTA_CHOROBA_ID.
+ORA-01400: cannot insert NULL into ("POTAS"."RECEPTY"."RECEPTA_CHOROBA_ID")
 
 Record 47: Rejected - Error on table RECEPTY, column RECEPTA_CHOROBA_ID.
 ORA-01400: cannot insert NULL into ("POTAS"."RECEPTY"."RECEPTA_CHOROBA_ID")
@@ -201,8 +201,8 @@ Total logical records read:           250
 Total logical records rejected:        51
 Total logical records discarded:        0
 
-Run began on Thu May 13 20:31:33 2021
-Run ended on Thu May 13 20:31:33 2021
+Run began on Fri May 14 12:37:22 2021
+Run ended on Fri May 14 12:37:22 2021
 
-Elapsed time was:     00:00:00.23
+Elapsed time was:     00:00:00.27
 CPU time was:         00:00:00.17

@@ -30,7 +30,7 @@ public class Pracownicy extends GlobalElements {
         pracownicyBadawczy = new int[liczbaRekordow];
         lekarzeZwykli = new int[liczbaRekordow];
         recepcja = new int[liczbaRekordow];
-        iloscpracownicyZabiegowi = iloscpracownicyBadawczy = ilosclekarzeZwykli = 0;
+        iloscpracownicyZabiegowi = iloscpracownicyBadawczy = ilosclekarzeZwykli = iloscRecepcji = 0;
         login = haslo = "";
         if (file.exists())
             file.delete();
@@ -94,7 +94,7 @@ public class Pracownicy extends GlobalElements {
                 }
             }
             uzyteAdresy[i] = indeks;
-            adres = uzyteAdresy[i];
+            adres = adresy.wylosowaneId[indeks];
             // losowanie kontaktu uwzględniając już użyte w placówkach
             indeks = generator.nextInt(kontakty.wylosowaneId.length);
 
@@ -105,28 +105,29 @@ public class Pracownicy extends GlobalElements {
                 }
             }
             uzyteKontakty[i] = indeks;
-            kontakt = uzyteKontakty[i];
+            kontakt = kontakty.wylosowaneId[indeks];
             // losowanie stanowiska
-            stanowisko = generator.nextInt(stanowiska.wylosowaneStanowiska.length);
-            if (stanowiska.wylosowaneStanowiska[stanowisko] > 4)
+            indeks = generator.nextInt(stanowiska.wylosowaneStanowiska.length);
+            stanowisko = stanowiska.wylosowaneStanowiska[indeks];
+            if (stanowiska.wylosowaneStanowiska[indeks] > 4)
                 specjalnosc = generator.nextInt(specjalnosci.wylosowaneSpecjalnosci.length);
             // Wpisywanie do tablic id lekarzy z odpowiednimi uprawnieniami
-            if (stanowiska.uprawnieniaStanowisk[stanowisko] >= 2 && stanowiska.uprawnieniaStanowisk[stanowisko] <= 8) {
+            if (stanowiska.uprawnieniaStanowisk[indeks] >= 2 && stanowiska.uprawnieniaStanowisk[indeks] <= 8) {
                 lekarzeZwykli[ilosclekarzeZwykli] = id;
                 ilosclekarzeZwykli++;
-            } else if (stanowiska.uprawnieniaStanowisk[stanowisko] == 9) {
+            } else if (stanowiska.uprawnieniaStanowisk[indeks] == 9) {
                 pracownicyBadawczy[iloscpracownicyBadawczy] = id;
                 iloscpracownicyBadawczy++;
-            } else if (stanowiska.uprawnieniaStanowisk[stanowisko] == 10) {
+            } else if (stanowiska.uprawnieniaStanowisk[indeks] == 10) {
                 pracownicyZabiegowi[iloscpracownicyZabiegowi] = id;
                 iloscpracownicyZabiegowi++;
-            } else if (stanowiska.uprawnieniaStanowisk[stanowisko] == 1) {
+            } else if (stanowiska.uprawnieniaStanowisk[indeks] == 1) {
                 recepcja[iloscRecepcji] = id;
                 iloscRecepcji++;
             }
 
             // Ustawianie pensji
-            pensja = stanowiskaPlace[stanowiska.wylosowaneStanowiska[stanowisko]];
+            pensja = stanowiska.pensje[indeks];
             if (specjalnosc > 0) {
                 pensja += specjalnosci.wylosowaneDodatki[specjalnosc];
                 writer.write(id + "," + imie + "," + nazwisko + "," + login + "," + haslo + "," + pensja + "," + adres

@@ -11,6 +11,7 @@ public class Stanowiska extends GlobalElements {
     private float pensja;
     public int[] wylosowaneStanowiska;
     public int[] uprawnieniaStanowisk;
+    public float[] pensje;
 
     public Stanowiska(int liczbaRekordow, Uprawnienia up) throws IOException {
 
@@ -19,6 +20,7 @@ public class Stanowiska extends GlobalElements {
         file = new File("dane/stanowiska.csv");
         wylosowaneStanowiska = new int[liczbaRekordow];
         uprawnieniaStanowisk = new int[liczbaRekordow];
+        pensje = new float[liczbaRekordow];
         if (file.exists())
             file.delete();
         file.createNewFile();
@@ -28,11 +30,12 @@ public class Stanowiska extends GlobalElements {
         for (int i = 0; i < liczbaRekordow; i++) {
 
             int indeks = generator.nextInt(stanowiskaNazwy.length);
-            wylosowaneStanowiska[i] = indeks;
+            wylosowaneStanowiska[i] = id;
 
             nazwa = stanowiskaNazwy[indeks];
 
             pensja = stanowiskaPlace[indeks];
+            pensje[i] = pensja;
             // Losowanie odpowiedniego id uprawnienia odnośnie stanowiska
             if (indeks == 1) {
                 j = generator.nextInt(up.wylosowaneId.length);
@@ -63,7 +66,7 @@ public class Stanowiska extends GlobalElements {
                 uprawnieniaStanowisk[i] = up.wylosowaneId[j];
             }
 
-            writer.write(id + "," + nazwa + "," + pensja + "," + uprawnienie_id + '\n');
+            writer.write(id + "," + nazwa + "," + pensja + "," + (uprawnienie_id + 1) + '\n');
 
             id++;
         }

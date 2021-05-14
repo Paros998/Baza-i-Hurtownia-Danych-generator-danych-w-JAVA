@@ -35,7 +35,7 @@ public class Adresy extends GlobalElements {
 
             indeks = generator.nextInt(adresyUlice.length);
             ulica = adresyUlice[indeks];
-            numerDomu = 1 + generator.nextInt(100);
+            numerDomu = generator.nextInt(100);
             nrMieszkania = 1 + generator.nextInt(50);
 
             writer.write(id + "," + kodPocztowy + "," + miasto + "," + wojewodztwo + "," + ulica + "," + numerDomu + ","

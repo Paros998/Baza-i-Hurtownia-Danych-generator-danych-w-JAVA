@@ -1,51 +1,51 @@
-1,1,Decilosal,4,302.24
-2,1,Halidor,5,224.95
-3,1,Fastum,3,77.97
-4,1,Jovesto,2,72.54
-5,1,Cachexan,1,137.09
-6,2,Halidor,3,134.97
-7,3,Efferalgan Codeine,3,46.47
-8,3,Fastum,1,25.99
-9,3,Cachexan,4,548.36
-10,4,Malidum,5,318.0
-11,4,Batrafen,1,42.8
-12,4,Efferalgan Codeine,5,77.45
-13,4,Halidor,3,134.97
-14,4,Abaktal,3,96.48
-15,5,Jovesto,1,36.27
-16,5,Decilosal,3,226.68
-17,6,Batrafen,3,128.4
-18,6,Lakcid,3,52.47
-19,7,Jovesto,2,72.54
-20,7,Halidor,5,224.95
-21,8,Ibuprom Max,4,59.52
-22,8,Ibuprom Max,3,44.64
-23,9,Jovesto,3,108.81
-24,9,Ibuprom Max,4,59.52
-25,9,Keppra,1,114.25
-26,9,Abaktal,4,128.64
-27,9,Halidor,3,134.97
-28,10,Keppra,5,571.25
-29,10,Decilosal,4,302.24
-30,10,Lakcid,2,34.98
-31,10,Cachexan,3,411.27
-32,11,Lakcid,3,52.47
-33,11,Ibuprom Max,4,59.52
-34,11,Efferalgan Codeine,2,30.98
-35,11,Lakcid,1,17.49
-36,12,Gynoxin Uno,5,168.4
-37,12,Efferalgan Codeine,2,30.98
-38,12,Lakcid,2,34.98
-39,12,Keppra,3,342.75
-40,13,Batrafen,3,128.4
-41,13,Batrafen,2,85.6
-42,13,Cachexan,5,685.45
-43,14,Decilosal,4,302.24
-44,14,Halidor,3,134.97
-45,15,Malidum,5,318.0
-46,15,Batrafen,5,214.0
-47,16,Decilosal,3,226.68
-48,16,Ibuprom Max,3,44.64
-49,16,Gynoxin Uno,5,168.4
-50,16,Keppra,3,342.75
-51,17,Lakcid,5,87.45
+1,1,Abaktal,5,160.8
+2,1,Batrafen,3,128.4
+3,2,Keppra,1,114.25
+4,2,Ibuprom Max,1,14.88
+5,2,Jovesto,1,36.27
+6,2,Jovesto,3,108.81
+7,3,Jovesto,2,72.54
+8,3,Batrafen,4,171.2
+9,3,Jovesto,4,145.08
+10,4,Ibuprom Max,1,14.88
+11,5,Abaktal,3,96.48
+12,5,Lakcid,1,17.49
+13,5,Batrafen,5,214.0
+14,5,Malidum,2,127.2
+15,6,Cachexan,2,274.18
+16,6,Malidum,5,318.0
+17,6,Cachexan,5,685.45
+18,7,Malidum,2,127.2
+19,7,Efferalgan Codeine,1,15.49
+20,7,Lakcid,4,69.96
+21,7,Keppra,2,228.5
+22,8,Fastum,3,77.97
+23,8,Efferalgan Codeine,1,15.49
+24,8,Decilosal,2,151.12
+25,8,Fastum,2,51.98
+26,9,Keppra,5,571.25
+27,10,Batrafen,5,214.0
+28,10,Abaktal,4,128.64
+29,10,Efferalgan Codeine,4,61.96
+30,10,Jovesto,1,36.27
+31,10,Ibuprom Max,4,59.52
+32,11,Ibuprom Max,1,14.88
+33,11,Malidum,3,190.8
+34,11,Jovesto,4,145.08
+35,11,Fastum,4,103.96
+36,11,Fastum,5,129.95
+37,12,Efferalgan Codeine,1,15.49
+38,12,Keppra,5,571.25
+39,12,Lakcid,4,69.96
+40,12,Jovesto,3,108.81
+41,13,Abaktal,1,32.16
+42,13,Decilosal,5,377.8
+43,13,Gynoxin Uno,1,33.68
+44,13,Lakcid,2,34.98
+45,14,Lakcid,1,17.49
+46,14,Fastum,4,103.96
+47,15,Keppra,5,571.25
+48,15,Lakcid,4,69.96
+49,15,Keppra,3,342.75
+50,16,Cachexan,2,274.18
+51,16,Malidum,2,127.2

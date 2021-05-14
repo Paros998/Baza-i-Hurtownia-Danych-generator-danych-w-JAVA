@@ -44,7 +44,7 @@ public class Placówki extends GlobalElements {
                 }
                 uzyteAdresy[i] = indeks;
             }
-            adres = uzyteAdresy[i];
+            adres = adresy.wylosowaneId[indeks];
             // losowanie kontaktu
             indeks = generator.nextInt(kontakty.wylosowaneId.length);
             if (i == 0)
@@ -58,7 +58,7 @@ public class Placówki extends GlobalElements {
                 }
                 uzyteKontakty[i] = indeks;
             }
-            kontakt = uzyteKontakty[i];
+            kontakt = kontakty.wylosowaneId[indeks];
 
             writer.write(id + "," + nazwa + "," + adres + "," + kontakt + '\n');
             id++;

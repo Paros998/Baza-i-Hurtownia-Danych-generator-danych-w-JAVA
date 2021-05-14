@@ -16,7 +16,7 @@ public class Wizyty extends GlobalElements {
     private int pracownik_specjalista;
     private int pracownik_umawiajacy;
     private int gabinet;
-    public String[] pacjenci;
+    public int[] pacjenci;
     public String[] daty;
     // public int[] lata;
     // public int[] miesiace;
@@ -30,7 +30,7 @@ public class Wizyty extends GlobalElements {
     public Wizyty(int liczbaRekordow, Karty karty, Gabinety Gabinet, Pracownicy pracownicy) throws IOException {
         generator = new Random();
         file = new File("dane/wizyty.csv");
-        pacjenci = new String[liczbaRekordow];
+        pacjenci = new int[liczbaRekordow];
         daty = new String[liczbaRekordow];
         // lata = new int[liczbaRekordow];
         // miesiace = new int[liczbaRekordow];
@@ -44,11 +44,11 @@ public class Wizyty extends GlobalElements {
             file.delete();
         file.createNewFile();
         FileWriter writer = new FileWriter(file, StandardCharsets.UTF_8, true);
-
+        id = 1;
         for (int i = 0; i < liczbaRekordow; i++) {
             // losowanie pacjenta
             indeks = generator.nextInt(karty.pesele.length);
-            pacjenci[i] = karty.pesele[indeks];
+            pacjenci[i] = pacjent = indeks;
             // losowanie opłaty
             opłata = 100 * (generator.nextInt(15) + 1);
             // Losowanie gabinetu i pracownika do niego

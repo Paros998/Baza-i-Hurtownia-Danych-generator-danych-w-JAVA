@@ -33,9 +33,9 @@ CREATE TABLE uprawnienia (
 
 CREATE TABLE specjalnosci (
     specjalnosc_id NUMBER(5) PRIMARY KEY,
-    nazwa VARCHAR2(50)NOT NULL,
+    nazwa VARCHAR2(100)NOT NULL,
     stopien NUMBER(1) CONSTRAINT chk_stopien CHECK(0 <= stopien AND stopien <= 2) NOT NULL ,
-    dodatek_pensja NUMBER(4,2)
+    dodatek_pensja NUMBER(5)
 );
 
 CREATE TABLE stanowiska(
@@ -57,7 +57,7 @@ CREATE TABLE adresy(
 );
 
 CREATE TABLE karty(
-    pesel_id NUMBER(11) PRIMARY KEY,
+    pesel_id VARCHAR2(11) PRIMARY KEY,
     data_ur DATE NOT NULL,
     grupa_krwi VARCHAR2(4)NOT NULL
 );
@@ -74,7 +74,7 @@ CREATE TABLE choroby(
     opis VARCHAR2(200) ,
     poczatek DATE NOT NULL,
     koniec DATE,
-    pesel_id NUMBER(11) NOT NULL,
+    pesel_id VARCHAR2(11) NOT NULL,
     CONSTRAINT fk_ch_kart FOREIGN KEY (pesel_id) REFERENCES karty(pesel_id)
 );
 
@@ -89,10 +89,10 @@ CREATE TABLE placowki(
 
 CREATE TABLE pracownicy(
     pracownik_id NUMBER(5) PRIMARY KEY,
-    imie VARCHAR2(45) NOT NULL,
-    nazwisko VARCHAR2(45) NOT NULL,
-    login VARCHAR2(45),
-    haslo VARCHAR2(45),
+    imie VARCHAR2(100) NOT NULL,
+    nazwisko VARCHAR2(100) NOT NULL,
+    login VARCHAR2(150),
+    haslo VARCHAR2(150),
     pensja NUMBER(6,2) NOT NULL,
     adres_id NUMBER(5) NOT NULL,
     kontakt_id NUMBER(5) NOT NULL,
@@ -117,11 +117,11 @@ CREATE TABLE gabinety(
 
 CREATE TABLE pacjenci(
     pacjent_id NUMBER(5) PRIMARY KEY,
-    imie VARCHAR2(45) NOT NULL,
-    nazwisko VARCHAR2(45) NOT NULL,
-    login VARCHAR2(45),
-    haslo VARCHAR2(45),
-    pesel_id NUMBER(11) NOT NULL,
+    imie VARCHAR2(100) NOT NULL,
+    nazwisko VARCHAR2(100) NOT NULL,
+    login VARCHAR2(150),
+    haslo VARCHAR2(150),
+    pesel_id VARCHAR2(11) NOT NULL,
     kontakt_id NUMBER(5) NOT NULL,
     adres_id NUMBER(5) NOT NULL,
     CONSTRAINT fk_pac_kart FOREIGN KEY (pesel_id) REFERENCES karty(pesel_id),
@@ -143,11 +143,11 @@ CREATE TABLE oddzialy_nfz (
 
 CREATE TABLE wizyty(
     wizyta_id NUMBER(5) NOT NULL PRIMARY KEY,
-    oplata NUMBER(5,2) NOT NULL,
+    oplata NUMBER(5) NOT NULL,
     data_wizyty DATE NOT NULL,
     godzina_poczatek VARCHAR2(5) NOT NULL,
     godzina_koniec VARCHAR2(5),
-    pacjent_id NUMBER(11) NOT NULL,
+    pacjent_id NUMBER(5) NOT NULL,
     prac_spec NUMBER(5) NOT NULL,
     prac_uma NUMBER(5) NOT NULL,
     gabinet_id NUMBER(5) NOT NULL,

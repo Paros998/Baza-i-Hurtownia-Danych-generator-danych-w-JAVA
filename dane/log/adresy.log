@@ -1,5 +1,5 @@
 
-SQL*Loader: Release 18.0.0.0.0 - Production on Thu May 13 20:31:28 2021
+SQL*Loader: Release 18.0.0.0.0 - Production on Fri May 14 12:37:16 2021
 Version 18.4.0.0.0
 
 Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
@@ -31,165 +31,10 @@ ULICA                                NEXT     *   ,       CHARACTER
 NR_DOMU                              NEXT     *   ,       CHARACTER            
 NR_MIESZKANIA                        NEXT     *   ,       CHARACTER            
 
-Record 25: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 56: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 88: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 105: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 157: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 215: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 310: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 333: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 382: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 425: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 677: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 726: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 754: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 872: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 1062: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 1181: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 1362: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 1545: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 1739: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 1897: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 2083: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 2122: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 2286: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 2324: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 2374: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 2384: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 2469: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 2506: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 2598: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 2624: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 2746: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 2783: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 2877: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 2891: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 2911: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 3120: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 3176: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 3254: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 3292: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 3397: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 3412: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 3699: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 4076: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 4083: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 4307: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 4532: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 4582: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 4654: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 4730: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 4802: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-Record 4832: Rejected - Error on table ADRESY, column NR_DOMU.
-ORA-01438: value larger than specified precision allowed for this column
-
-
-MAXIMUM ERROR COUNT EXCEEDED - Above statistics reflect partial run.
 
 Table ADRESY:
-  4781 Rows successfully loaded.
-  51 Rows not loaded due to data errors.
+  30000 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
   0 Rows not loaded because all WHEN clauses were failed.
   0 Rows not loaded because all fields were null.
 
@@ -198,12 +43,12 @@ Space allocated for bind array:                 451500 bytes(250 rows)
 Read   buffer bytes: 1048576
 
 Total logical records skipped:          0
-Total logical records read:          5000
-Total logical records rejected:        51
+Total logical records read:         30000
+Total logical records rejected:         0
 Total logical records discarded:        0
 
-Run began on Thu May 13 20:31:28 2021
-Run ended on Thu May 13 20:31:28 2021
+Run began on Fri May 14 12:37:16 2021
+Run ended on Fri May 14 12:37:17 2021
 
-Elapsed time was:     00:00:00.39
-CPU time was:         00:00:00.24
+Elapsed time was:     00:00:00.80
+CPU time was:         00:00:00.26

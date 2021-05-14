@@ -1,5 +1,5 @@
 
-SQL*Loader: Release 18.0.0.0.0 - Production on Thu May 13 20:31:34 2021
+SQL*Loader: Release 18.0.0.0.0 - Production on Fri May 14 12:37:23 2021
 Version 18.4.0.0.0
 
 Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
@@ -56,11 +56,11 @@ ORA-01438: value larger than specified precision allowed for this column
 Record 9: Rejected - Error on table ZABIEGI, column CENA_NETTO.
 ORA-01438: value larger than specified precision allowed for this column
 
-Record 10: Rejected - Error on table ZABIEGI.
-ORA-02291: integrity constraint (POTAS.FK_PRACOWNIK_ZABIEGI) violated - parent key not found
-
-Record 11: Rejected - Error on table ZABIEGI, column CENA_NETTO.
+Record 10: Rejected - Error on table ZABIEGI, column CENA_NETTO.
 ORA-01438: value larger than specified precision allowed for this column
+
+Record 11: Rejected - Error on table ZABIEGI.
+ORA-02291: integrity constraint (POTAS.FK_WIZ_ZAB) violated - parent key not found
 
 Record 12: Rejected - Error on table ZABIEGI, column CENA_NETTO.
 ORA-01438: value larger than specified precision allowed for this column
@@ -74,8 +74,8 @@ ORA-01438: value larger than specified precision allowed for this column
 Record 15: Rejected - Error on table ZABIEGI, column CENA_NETTO.
 ORA-01438: value larger than specified precision allowed for this column
 
-Record 16: Rejected - Error on table ZABIEGI.
-ORA-02291: integrity constraint (POTAS.FK_PRACOWNIK_ZABIEGI) violated - parent key not found
+Record 16: Rejected - Error on table ZABIEGI, column CENA_NETTO.
+ORA-01438: value larger than specified precision allowed for this column
 
 Record 17: Rejected - Error on table ZABIEGI, column CENA_NETTO.
 ORA-01438: value larger than specified precision allowed for this column
@@ -86,8 +86,8 @@ ORA-01438: value larger than specified precision allowed for this column
 Record 19: Rejected - Error on table ZABIEGI, column CENA_NETTO.
 ORA-01438: value larger than specified precision allowed for this column
 
-Record 20: Rejected - Error on table ZABIEGI, column CENA_NETTO.
-ORA-01438: value larger than specified precision allowed for this column
+Record 20: Rejected - Error on table ZABIEGI.
+ORA-02291: integrity constraint (POTAS.FK_WIZ_ZAB) violated - parent key not found
 
 Record 21: Rejected - Error on table ZABIEGI, column CENA_NETTO.
 ORA-01438: value larger than specified precision allowed for this column
@@ -113,29 +113,29 @@ ORA-01438: value larger than specified precision allowed for this column
 Record 28: Rejected - Error on table ZABIEGI, column CENA_NETTO.
 ORA-01438: value larger than specified precision allowed for this column
 
-Record 29: Rejected - Error on table ZABIEGI.
-ORA-02291: integrity constraint (POTAS.FK_PRACOWNIK_ZABIEGI) violated - parent key not found
+Record 29: Rejected - Error on table ZABIEGI, column CENA_NETTO.
+ORA-01438: value larger than specified precision allowed for this column
 
 Record 30: Rejected - Error on table ZABIEGI, column CENA_NETTO.
 ORA-01438: value larger than specified precision allowed for this column
 
-Record 31: Rejected - Error on table ZABIEGI.
-ORA-02291: integrity constraint (POTAS.FK_PRACOWNIK_ZABIEGI) violated - parent key not found
-
-Record 32: Rejected - Error on table ZABIEGI, column CENA_NETTO.
+Record 31: Rejected - Error on table ZABIEGI, column CENA_NETTO.
 ORA-01438: value larger than specified precision allowed for this column
 
-Record 33: Rejected - Error on table ZABIEGI, column CENA_NETTO.
-ORA-01438: value larger than specified precision allowed for this column
+Record 32: Rejected - Error on table ZABIEGI.
+ORA-02291: integrity constraint (POTAS.FK_WIZ_ZAB) violated - parent key not found
+
+Record 33: Rejected - Error on table ZABIEGI.
+ORA-02291: integrity constraint (POTAS.FK_WIZ_ZAB) violated - parent key not found
 
 Record 34: Rejected - Error on table ZABIEGI, column CENA_NETTO.
 ORA-01438: value larger than specified precision allowed for this column
 
-Record 35: Rejected - Error on table ZABIEGI, column CENA_NETTO.
-ORA-01438: value larger than specified precision allowed for this column
+Record 35: Rejected - Error on table ZABIEGI.
+ORA-02291: integrity constraint (POTAS.FK_WIZ_ZAB) violated - parent key not found
 
-Record 36: Rejected - Error on table ZABIEGI, column CENA_NETTO.
-ORA-01438: value larger than specified precision allowed for this column
+Record 36: Rejected - Error on table ZABIEGI.
+ORA-02291: integrity constraint (POTAS.FK_WIZ_ZAB) violated - parent key not found
 
 Record 37: Rejected - Error on table ZABIEGI, column CENA_NETTO.
 ORA-01438: value larger than specified precision allowed for this column
@@ -146,8 +146,8 @@ ORA-01438: value larger than specified precision allowed for this column
 Record 39: Rejected - Error on table ZABIEGI, column CENA_NETTO.
 ORA-01438: value larger than specified precision allowed for this column
 
-Record 40: Rejected - Error on table ZABIEGI, column CENA_NETTO.
-ORA-01438: value larger than specified precision allowed for this column
+Record 40: Rejected - Error on table ZABIEGI.
+ORA-02291: integrity constraint (POTAS.FK_WIZ_ZAB) violated - parent key not found
 
 Record 41: Rejected - Error on table ZABIEGI, column CENA_NETTO.
 ORA-01438: value larger than specified precision allowed for this column
@@ -167,8 +167,8 @@ ORA-01438: value larger than specified precision allowed for this column
 Record 46: Rejected - Error on table ZABIEGI, column CENA_NETTO.
 ORA-01438: value larger than specified precision allowed for this column
 
-Record 47: Rejected - Error on table ZABIEGI, column CENA_NETTO.
-ORA-01438: value larger than specified precision allowed for this column
+Record 47: Rejected - Error on table ZABIEGI.
+ORA-02291: integrity constraint (POTAS.FK_WIZ_ZAB) violated - parent key not found
 
 Record 48: Rejected - Error on table ZABIEGI, column CENA_NETTO.
 ORA-01438: value larger than specified precision allowed for this column
@@ -200,8 +200,8 @@ Total logical records read:           250
 Total logical records rejected:        51
 Total logical records discarded:        0
 
-Run began on Thu May 13 20:31:34 2021
-Run ended on Thu May 13 20:31:34 2021
+Run began on Fri May 14 12:37:23 2021
+Run ended on Fri May 14 12:37:23 2021
 
-Elapsed time was:     00:00:00.25
+Elapsed time was:     00:00:00.26
 CPU time was:         00:00:00.17

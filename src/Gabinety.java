@@ -70,7 +70,7 @@ public class Gabinety extends GlobalElements {
                 }
             }
             uzyteKontakty[i] = indeks;
-            kontakt = uzyteKontakty[i];
+            kontakt = kontakty.wylosowaneId[indeks];
             // Losowanie placówki
             indeks = generator.nextInt(placówki.wylosowaneId.length);
             placówka = placówki.wylosowaneId[indeks];

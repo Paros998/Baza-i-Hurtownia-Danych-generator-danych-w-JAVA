@@ -80,7 +80,7 @@ public class Pacjenci extends GlobalElements {
                 }
             }
             uzyteAdresy[i] = indeks;
-            adres = uzyteAdresy[i];
+            adres = adresy.wylosowaneId[indeks];
             // losowanie kontaktu uwzględniając już użyte w placówkach i pracownikach
             indeks = generator.nextInt(kontakty.wylosowaneId.length);
 
@@ -92,7 +92,7 @@ public class Pacjenci extends GlobalElements {
                 }
             }
             uzyteKontakty[i] = indeks;
-            kontakt = uzyteKontakty[i];
+            kontakt = kontakty.wylosowaneId[indeks];
             // losowanie peseluID
             indeks = generator.nextInt(karty.pesele.length);
             if (i == 0) {
@@ -106,8 +106,8 @@ public class Pacjenci extends GlobalElements {
                 }
                 pesel = karty.pesele[indeks];
             }
-            writer.write(id + "," + imie + "," + nazwisko + "," + login + "," + haslo + "," + pesel + "," + adres + ","
-                    + kontakt + '\n');
+            writer.write(id + "," + imie + "," + nazwisko + "," + login + "," + haslo + "," + pesel + "," + kontakt
+                    + "," + adres + '\n');
 
             id++;
             login = haslo = "";
