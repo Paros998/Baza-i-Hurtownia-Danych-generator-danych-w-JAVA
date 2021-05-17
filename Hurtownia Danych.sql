@@ -1,11 +1,9 @@
-DROP TABLE uprawnienia CASCADE CONSTRAINTS;
 DROP TABLE specjalnosci CASCADE CONSTRAINTS;
 DROP TABLE stanowiska CASCADE CONSTRAINTS;
 DROP TABLE pracownicy CASCADE CONSTRAINTS;
 DROP TABLE daty_wizyt CASCADE CONSTRAINTS;
 DROP TABLE statusy_wizyt CASCADE CONSTRAINTS;
 DROP TABLE zabiegi CASCADE CONSTRAINTS;
-DROP TABLE karty CASCADE CONSTRAINTS;
 DROP TABLE pacjenci CASCADE CONSTRAINTS;
 DROP TABLE placowki CASCADE CONSTRAINTS;
 DROP TABLE gabinety CASCADE CONSTRAINTS;
@@ -17,11 +15,6 @@ DROP TABLE recepty CASCADE CONSTRAINTS;
 DROP TABLE wizyty CASCADE CONSTRAINTS;
 
 --------------------------------- WYMIAR PRACOWNIKA ----------------------------------------------------------
-CREATE TABLE uprawnienia (
-    uprawnienie_id NUMBER(5) PRIMARY KEY,
-    oznaczenie VARCHAR2(4)NOT NULL,
-    opis VARCHAR2(50)
-);
 
 CREATE TABLE specjalnosci (
     specjalnosc_id NUMBER(5) PRIMARY KEY,
@@ -34,8 +27,8 @@ CREATE TABLE stanowiska (
     stanowisko_id NUMBER(5) PRIMARY KEY,
     nazwa VARCHAR2(150)NOT NULL,
     pensja NUMBER(6,2)NOT NULL,
-    uprawnienie_id NUMBER(5)NOT NULL,
-    CONSTRAINT fk_stanowiska_uprawnienie FOREIGN KEY (uprawnienie_id) REFERENCES uprawnienia(uprawnienie_id)
+    oznaczenie_uprawnienia VARCHAR2(4)NOT NULL,
+    opis_uprawnienia VARCHAR2(50)
 );
 
 CREATE TABLE pracownicy (
@@ -139,11 +132,6 @@ CREATE TABLE gabinety (
 );
 
 --------------------------------- WYMIAR PACJENTA ----------------------------------------------------------
-CREATE TABLE karty (
-    pesel_id VARCHAR2(11) PRIMARY KEY,
-    data_ur DATE NOT NULL,
-    grupa_krwi VARCHAR2(4) NOT NULL
-);
 
 CREATE TABLE pacjenci (
     pacjent_id NUMBER(5) PRIMARY KEY,
@@ -159,8 +147,9 @@ CREATE TABLE pacjenci (
     ulica VARCHAR2(45) NOT NULL,
     nr_domu NUMBER(2) NOT NULL,
     nr_mieszkania NUMBER(3),
-    pesel_id VARCHAR2(11) NOT NULL,
-    CONSTRAINT fk_pacj_karty FOREIGN KEY (pesel_id) REFERENCES karty(pesel_id)
+    pesel VARCHAR2(11) NOT NULL,
+    data_ur DATE NOT NULL,
+    grupa_krwi VARCHAR2(4) NOT NULL
 );
 
 --------------------------------- WYMIAR ZABIEGU -----------------------------------------------------------------
