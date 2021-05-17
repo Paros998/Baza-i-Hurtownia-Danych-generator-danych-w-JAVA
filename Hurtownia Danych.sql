@@ -132,8 +132,7 @@ CREATE TABLE h_zabiegi (
 --------------------------------- WYMIAR STATUSU_WIZYTY ----------------------------------------------------------
 CREATE TABLE h_statusy_wizyt (
     statusy_wizyt_id NUMBER PRIMARY KEY,
-    status VARCHAR2(10) NOT NULL,
-    opis VARCHAR2(50)
+    status VARCHAR2(10) NOT NULL
 );
 
 --------------------------------- FAKT -> WIZYTA ----------------------------------------------------------

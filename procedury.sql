@@ -321,8 +321,107 @@ END;
 
 /
 
+
+CREATE OR REPLACE PROCEDURE transformacja_zabiegi IS
+
+Z_ID zabiegi.zabieg_id%TYPE := 1;
+MAX_ID zabiegi.zabieg_id%TYPE;
+
+CURSOR pobierz_max_id IS
+SELECT MAX(zabieg_id) FROM zabiegi;
+
+CURSOR pobierz_zabiegi(ZID IN NUMBER) IS
+SELECT nazwa FROM zabiegi WHERE zabieg_id = ZID;
+
+wiersz pobierz_zabiegi%ROWTYPE;
+
+BEGIN
+    OPEN pobierz_max_id;
+        FETCH pobierz_max_id INTO MAX_ID;
+    CLOSE pobierz_max_id;
+    
+    LOOP
+        OPEN pobierz_zabiegi(Z_ID);
+            FETCH pobierz_zabiegi INTO wiersz;
+        CLOSE pobierz_zabiegi;
+        INSERT INTO h_zabiegi VALUES(Z_ID, wiersz.nazwa);
+        Z_ID := Z_ID + 1;
+        EXIT WHEN Z_ID = MAX_ID;
+    END LOOP;
+    
+END;
+/
+
+CREATE OR REPLACE PROCEDURE transformacja_daty_wizyt IS
+
+D_ID wizyty.wizyta_id%TYPE := 1;
+MAX_ID wizyty.wizyta_id%TYPE;
+
+CURSOR pobierz_max_id IS
+SELECT MAX(wizyta_id) FROM wizyty;
+
+CURSOR pobierz_date(D_ID IN NUMBER) IS
+SELECT data_wizyty, godzina_poczatek, godzina_koniec FROM wizyty
+WHERE wizyta_id = D_ID;
+
+wiersz pobierz_date%ROWTYPE;
+
+BEGIN
+    OPEN pobierz_max_id;
+        FETCH pobierz_max_id INTO MAX_ID;
+    CLOSE pobierz_max_id;
+    
+    LOOP
+        OPEN pobierz_date(D_ID);
+            FETCH pobierz_date INTO wiersz;
+        CLOSE pobierz_date;
+        
+        INSERT INTO h_daty_wizyt VALUES(D_ID, wiersz.data_wizyty, wiersz.godzina_poczatek, wiersz.godzina_koniec);
+        
+        D_ID := D_ID + 1;
+        
+        EXIT WHEN D_ID = MAX_ID;
+    END LOOP;
+END;
+/
+
+CREATE OR REPLACE PROCEDURE transformacja_statusow_wizyt IS
+
+S_ID statusy_wizyt.statusy_wizyt_id%TYPE := 1;
+MAX_ID statusy_wizyt.statusy_wizyt_id%TYPE;
+
+CURSOR pobierz_max_id IS
+SELECT MAX(statusy_wizyt_id) FROM statusy_wizyt;
+
+CURSOR pobierz_status(S_ID IN NUMBER) IS
+SELECT status FROM statusy_wizyt WHERE statusy_wizyt_id = S_ID;
+
+wiersz pobierz_status%ROWTYPE;
+
+BEGIN
+    OPEN pobierz_max_id;
+        FETCH pobierz_max_id INTO MAX_ID;
+    CLOSE pobierz_max_id;
+    
+    LOOP
+        OPEN pobierz_status(S_ID);
+            FETCH pobierz_status INTO wiersz;
+        CLOSE pobierz_status;
+        
+        INSERT INTO h_statusy_wizyt VALUES(S_ID, wiersz.status);
+        
+        S_ID := S_ID + 1;
+        
+        EXIT WHEN S_ID = MAX_ID;
+    END LOOP;
+END;
+/
+
 --EXEC--ZONE--
 EXEC transformacja_placowki;
 EXEC transformacja_gabinety;
 EXEC transformacja_pacjenci;
 EXEC transformacja_specjalnosci;
+EXEC transformacja_zabiegi;
+EXEC transformacja_daty_wizyt;
+EXEC transformacja_statusow_wizyt;
