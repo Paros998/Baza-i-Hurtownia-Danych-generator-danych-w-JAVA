@@ -76,10 +76,66 @@ LOOP
         FETCH pobierz_mieszk INTO nrmieszkania;
     CLOSE pobierz_mieszk;
 
-    INSERT INTO h_placowki VALUES(P_ID,nazwa,telefon,emailkod_poczt,miasto,wojewodztwo,ulica,nrdomu,nrmieszkania);
+    INSERT INTO h_placowki VALUES(P_ID,nazwa,telefon,email,kod_poczt,miasto,wojewodztwo,ulica,nrdomu,nrmieszkania);
     
     P_ID := P_ID + 1;
     EXIT WHEN P_ID = 10001;
 END LOOP;
-
 END;
+
+/
+
+create or replace NONEDITIONABLE PROCEDURE transformacja_gabinety IS
+G_ID gabinety.gabinet_id%type := 1;
+oznaczenie gabinety.oznaczenie%type;
+
+P_ID placowki.placowka_id%type ;
+ID_K placowki.kontakt_id%type;
+
+
+telefon kontakty.telefon%type;
+email kontakty.email%type;
+
+CURSOR pobierz_oznaczenie(IDG IN NUMBER)IS SELECT
+g.oznaczenie FROM gabinety g WHERE g.gabinet_id = IDG;
+CURSOR pobierz_idp(IDG IN NUMBER)IS SELECT
+g.placowka_id FROM gabinety g WHERE g.gabinet_id = IDG;
+CURSOR pobierz_idk(IDG IN NUMBER) IS SELECT
+g.kontakt_id FROM gabinety g WHERE g.gabinet_id = IDG;
+
+CURSOR pobierz_tel(IDK IN NUMBER) IS SELECT 
+k.telefon FROM kontakty k WHERE k.kontakt_id = IDK;
+CURSOR pobierz_email(IDK IN NUMBER) IS SELECT 
+k.email FROM kontakty k WHERE k.kontakt_id = IDK;
+
+
+BEGIN
+
+LOOP
+    OPEN pobierz_oznaczenie(G_ID);
+        FETCH pobierz_oznaczenie INTO oznaczenie;
+    CLOSE pobierz_oznaczenie;
+    OPEN pobierz_idp(G_ID);
+        FETCH pobierz_idp INTO P_ID;
+    CLOSE pobierz_idp;
+    OPEN pobierz_idk(P_ID);
+        FETCH pobierz_idk INTO ID_K;
+    CLOSE pobierz_idk;
+    OPEN pobierz_tel(ID_K);
+        FETCH pobierz_tel INTO telefon;
+    CLOSE pobierz_tel;
+    OPEN pobierz_email(ID_K);
+        FETCH pobierz_email INTO email;
+    CLOSE pobierz_email;
+    
+    INSERT INTO h_gabinety VALUES(G_ID,oznaczenie,P_ID,telefon,email);
+
+    G_ID := G_ID + 1;
+    EXIT WHEN G_ID = 10001;
+END LOOP;
+END;
+
+/
+--EXEC--ZONE--
+EXEC transformacja_placowki;
+EXEC transformacja_gabinety;
