@@ -1,5 +1,5 @@
 
-SQL*Loader: Release 18.0.0.0.0 - Production on Fri May 14 19:10:33 2021
+SQL*Loader: Release 18.0.0.0.0 - Production on Mon May 17 15:28:36 2021
 Version 18.4.0.0.0
 
 Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
@@ -29,13 +29,10 @@ CENA_NETTO                           NEXT     *   ,       CHARACTER
 PRACOWNIK_ID                         NEXT     *   ,       CHARACTER            
 WIZYTA_ID                            NEXT     *   ,       CHARACTER            
 
-Record 10349: Rejected - Error on table ZABIEGI.
-ORA-02291: integrity constraint (POTAS.FK_WIZ_ZAB) violated - parent key not found
-
 
 Table ZABIEGI:
-  25063 Rows successfully loaded.
-  1 Row not loaded due to data errors.
+  24451 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
   0 Rows not loaded because all WHEN clauses were failed.
   0 Rows not loaded because all fields were null.
 
@@ -44,12 +41,12 @@ Space allocated for bind array:                 322500 bytes(250 rows)
 Read   buffer bytes: 1048576
 
 Total logical records skipped:          0
-Total logical records read:         25064
-Total logical records rejected:         1
+Total logical records read:         24451
+Total logical records rejected:         0
 Total logical records discarded:        0
 
-Run began on Fri May 14 19:10:33 2021
-Run ended on Fri May 14 19:10:33 2021
+Run began on Mon May 17 15:28:36 2021
+Run ended on Mon May 17 15:28:37 2021
 
-Elapsed time was:     00:00:00.58
-CPU time was:         00:00:00.16
+Elapsed time was:     00:00:00.55
+CPU time was:         00:00:00.22

@@ -14,7 +14,7 @@ public class App {
                 uprawnienia);
         Pacjenci pacjenci = new Pacjenci(10000, adresy, kontakty, karty, placówki, pracownicy);
         Gabinety gabinety = new Gabinety(10000, kontakty, placówki, pracownicy, pacjenci);
-        Wizyty wizyty = new Wizyty(100000, karty, gabinety, pracownicy);
+        Wizyty wizyty = new Wizyty(100000, karty, gabinety, pracownicy, pacjenci);
         Recepty recepty = new Recepty(100000, wizyty, oddzialyNfz, choroby, karty, ulgi, pacjenci);
         PozycjeRecept pozycjeRecept = new PozycjeRecept(recepty);
         StatusyWizyt statusy = new StatusyWizyt(100000, wizyty);

@@ -1,5 +1,5 @@
 
-SQL*Loader: Release 18.0.0.0.0 - Production on Fri May 14 19:10:29 2021
+SQL*Loader: Release 18.0.0.0.0 - Production on Mon May 17 15:28:33 2021
 Version 18.4.0.0.0
 
 Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
@@ -29,165 +29,10 @@ NAZWA                                NEXT     *   ,       CHARACTER
 ILOSC                                NEXT     *   ,       CHARACTER            
 ODPLATNOSC                           NEXT     *   ,       CHARACTER            
 
-Record 67413: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 67414: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 67415: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 71186: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 86233: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 86234: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 86235: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 86236: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 86237: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 104486: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 104487: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 104488: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 104489: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 104612: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 164972: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 164973: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 164974: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 164975: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 210216: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 210217: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 210218: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 210219: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 210220: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 210221: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 210222: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 210223: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 210224: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 210225: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 210226: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 210227: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 210228: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 210229: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 210230: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 210231: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 210232: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 210233: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 210234: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 210235: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 210236: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 210237: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 210238: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 210239: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 210240: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 210241: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 210242: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 210243: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 210244: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 210245: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 210246: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 210247: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-Record 210248: Rejected - Error on table POZYCJE_RECEPT.
-ORA-02291: integrity constraint (POTAS.FK_POZYCJE_RECEPT) violated - parent key not found
-
-
-MAXIMUM ERROR COUNT EXCEEDED - Above statistics reflect partial run.
 
 Table POZYCJE_RECEPT:
-  210197 Rows successfully loaded.
-  51 Rows not loaded due to data errors.
+  209800 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
   0 Rows not loaded because all WHEN clauses were failed.
   0 Rows not loaded because all fields were null.
 
@@ -196,12 +41,12 @@ Space allocated for bind array:                 322500 bytes(250 rows)
 Read   buffer bytes: 1048576
 
 Total logical records skipped:          0
-Total logical records read:        210305
-Total logical records rejected:        51
+Total logical records read:        209800
+Total logical records rejected:         0
 Total logical records discarded:        0
 
-Run began on Fri May 14 19:10:29 2021
-Run ended on Fri May 14 19:10:31 2021
+Run began on Mon May 17 15:28:33 2021
+Run ended on Mon May 17 15:28:35 2021
 
-Elapsed time was:     00:00:02.19
-CPU time was:         00:00:00.20
+Elapsed time was:     00:00:02.11
+CPU time was:         00:00:00.41

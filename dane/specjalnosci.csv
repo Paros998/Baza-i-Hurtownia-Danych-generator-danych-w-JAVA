@@ -1,100 +1,100 @@
-1,Epidemiologia,2,600
-2,Periodontologia,2,600
-3,Periodontologia,1,300
-4,Transplantologia kliniczna,2,600
-5,Chirurgia szczekowo-twarzowa,1,300
-6,Reumatologia,2,600
-7,Radiologia i diagnostyka obrazowa,2,600
-8,Gastroenterologia,2,600
-9,Immunologia kliniczna,2,600
-10,Nefrologia,1,300
-11,Otorynolaryngologia dziecieca,2,600
-12,Medycyna paliatywna,1,300
-13,Chirurgia szczekowo-twarzowa,2,600
-14,Urologia,1,300
-15,Medycyna rodzinna,1,300
-16,Intensywna terapia,1,300
-17,Stomatologia zachowawcza z endodoncja,2,600
-18,Mikrobiologia lekarska,2,600
-19,Epidemiologia,2,600
-20,Protetyka stomatologiczna,1,300
-21,Transplantologia kliniczna,2,600
-22,Ortopedia i traumatologia narzadu ruchu,2,600
-23,Protetyka stomatologiczna,1,300
-24,Medycyna rodzinna,1,300
-25,Chirurgia klatki piersiowej,2,600
-26,Diabetologia,1,300
-27,Alergologia,1,300
-28,Poloznictwo i ginekologia,1,300
-29,Chirurgia plastyczna,1,300
-30,Ginekologia onkologiczna,2,600
-31,Rehabilitacja medyczna,2,600
-32,Audiologia i foniatria,1,300
-33,Ginekologia onkologiczna,2,600
-34,Reumatologia,1,300
-35,Perinatologia,2,600
-36,Okulistyka,1,300
-37,Endokrynologia,2,600
-38,Chirurgia szczekowo-twarzowa,1,300
-39,Chirurgia plastyczna,2,600
-40,Neurologia,1,300
-41,Choroby zakazne,1,300
-42,Chirurgia ogolna,1,300
-43,Stomatologia zachowawcza z endodoncja,1,300
-44,Urologia dziecieca,2,600
-45,Immunologia kliniczna,1,300
-46,Psychiatria,1,300
-47,Chirurgia ogolna,2,600
-48,Urologia dziecieca,2,600
-49,Radioterapia onkologiczna,1,300
-50,Choroby pluc,1,300
-51,Chirurgia plastyczna,1,300
-52,Ortodoncja,2,600
-53,Zdrowie publiczne,2,600
-54,Pediatria metaboliczna,1,300
-55,Neurochirurgia,2,600
-56,Ginekologia onkologiczna,1,300
-57,Otorynolaryngologia dziecieca,2,600
-58,Medycyna paliatywna,2,600
-59,Choroby pluc,1,300
-60,Endokrynologia i diabetologia dziecieca,2,600
-61,Toksykologia kliniczna,2,600
-62,Gastroenterologia dziecieca,1,300
-63,Chirurgia naczyniowa,1,300
-64,Epidemiologia,1,300
-65,Ginekologia onkologiczna,2,600
-66,Protetyka stomatologiczna,2,600
-67,Medycyna sadowa,1,300
-68,Kardiologia dziecieca,1,300
-69,Neurochirurgia,2,600
-70,Neonatologia,2,600
-71,Diagnostyka laboratoryjna,1,300
-72,Urologia dziecieca,1,300
-73,Perinatologia,1,300
-74,Audiologia i foniatria,1,300
-75,Medycyna sportowa,2,600
-76,Radiologia i diagnostyka obrazowa,1,300
-77,Genetyka kliniczna,1,300
-78,Endokrynologia ginekologiczna i rozrodczosc,1,300
-79,Pediatria,2,600
-80,Radioterapia onkologiczna,2,600
-81,Poloznictwo i ginekologia,1,300
-82,Stomatologia dziecieca,2,600
-83,Transfuzjologia kliniczna,1,300
-84,Medycyna sportowa,2,600
-85,Rehabilitacja medyczna,2,600
-86,Protetyka stomatologiczna,1,300
-87,Urologia dziecieca,2,600
-88,Choroby wewnetrzne,1,300
-89,Epidemiologia,2,600
-90,Pediatria metaboliczna,1,300
-91,Choroby wewnetrzne,2,600
-92,Radiologia i diagnostyka obrazowa,2,600
-93,Onkologia i hematologia dziecieca,2,600
-94,Toksykologia kliniczna,2,600
-95,Kardiologia,2,600
-96,Otorynolaryngologia,1,300
-97,Chirurgia plastyczna,1,300
-98,Kardiologia,1,300
-99,Stomatologia dziecieca,2,600
-100,Neurologia dziecieca,2,600
+1,Pediatria,1,300
+2,Neuropatologia,2,600
+3,Kardiologia,1,300
+4,Neurochirurgia,2,600
+5,Medycyna nuklearna,2,600
+6,Kardiochirurgia,2,600
+7,Medycyna nuklearna,2,600
+8,Medycyna pracy,2,600
+9,Otorynolaryngologia,2,600
+10,Choroby pluc,2,600
+11,Intensywna terapia,2,600
+12,Medycyna pracy,1,300
+13,Gastroenterologia,1,300
+14,Neurologia,1,300
+15,Endokrynologia,1,300
+16,Immunologia kliniczna,2,600
+17,Gastroenterologia,1,300
+18,Radioterapia onkologiczna,1,300
+19,Endokrynologia i diabetologia dziecieca,1,300
+20,Hipertensjologia,2,600
+21,Choroby zakazne,1,300
+22,Neurologia dziecieca,2,600
+23,Medycyna morska i tropikalna,2,600
+24,Urologia,2,600
+25,Neuropatologia,2,600
+26,Ortodoncja,1,300
+27,Medycyna rodzinna,2,600
+28,Epidemiologia,2,600
+29,Rehabilitacja medyczna,2,600
+30,Epidemiologia,1,300
+31,Dermatologia i wenerologia,1,300
+32,Nefrologia,2,600
+33,Perinatologia,1,300
+34,Diagnostyka laboratoryjna,2,600
+35,Chirurgia szczekowo-twarzowa,1,300
+36,Endokrynologia i diabetologia dziecieca,1,300
+37,Transplantologia kliniczna,2,600
+38,Stomatologia dziecieca,2,600
+39,Farmakologia kliniczna,2,600
+40,Ortopedia i traumatologia narzadu ruchu,2,600
+41,Endokrynologia,1,300
+42,Intensywna terapia,2,600
+43,Medycyna sadowa,1,300
+44,Mikrobiologia lekarska,1,300
+45,Kardiochirurgia,2,600
+46,Chirurgia klatki piersiowej,2,600
+47,Chirurgia szczekowo-twarzowa,1,300
+48,Geriatria,1,300
+49,Otorynolaryngologia,2,600
+50,Epidemiologia,1,300
+51,Neuropatologia,2,600
+52,Diabetologia,2,600
+53,Onkologia i hematologia dziecieca,2,600
+54,Radioterapia onkologiczna,1,300
+55,Stomatologia dziecieca,1,300
+56,Hipertensjologia,1,300
+57,Immunologia kliniczna,1,300
+58,Chirurgia dziecieca,2,600
+59,Endokrynologia,2,600
+60,Intensywna terapia,1,300
+61,Nefrologia dziecieca,1,300
+62,Neurochirurgia,1,300
+63,Gastroenterologia dziecieca,1,300
+64,Chirurgia klatki piersiowej,2,600
+65,Medycyna paliatywna,2,600
+66,Stomatologia dziecieca,1,300
+67,Chirurgia ogolna,1,300
+68,Gastroenterologia,1,300
+69,Transplantologia kliniczna,1,300
+70,Alergologia,2,600
+71,Medycyna sadowa,2,600
+72,Ortopedia i traumatologia narzadu ruchu,1,300
+73,Hipertensjologia,2,600
+74,Medycyna lotnicza,2,600
+75,Hipertensjologia,2,600
+76,Mikrobiologia lekarska,2,600
+77,Medycyna pracy,2,600
+78,Seksuologia,2,600
+79,Medycyna pracy,1,300
+80,Psychiatria,2,600
+81,Endokrynologia i diabetologia dziecieca,2,600
+82,Endokrynologia ginekologiczna i rozrodczosc,1,300
+83,Patomorfologia,2,600
+84,Toksykologia kliniczna,2,600
+85,Stomatologia dziecieca,2,600
+86,Zdrowie publiczne,2,600
+87,Choroby zakazne,2,600
+88,Audiologia i foniatria,1,300
+89,Chirurgia szczekowo-twarzowa,2,600
+90,Neurologia,1,300
+91,Stomatologia dziecieca,2,600
+92,Endokrynologia i diabetologia dziecieca,1,300
+93,Urologia dziecieca,2,600
+94,Balneologia i medycyna fizykalna,2,600
+95,Medycyna paliatywna,2,600
+96,Medycyna lotnicza,1,300
+97,Seksuologia,2,600
+98,Seksuologia,1,300
+99,Chirurgia onkologiczna,1,300
+100,Chirurgia plastyczna,2,600

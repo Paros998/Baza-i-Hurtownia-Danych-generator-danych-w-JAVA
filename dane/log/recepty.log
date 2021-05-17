@@ -1,5 +1,5 @@
 
-SQL*Loader: Release 18.0.0.0.0 - Production on Fri May 14 19:10:28 2021
+SQL*Loader: Release 18.0.0.0.0 - Production on Mon May 17 15:28:32 2021
 Version 18.4.0.0.0
 
 Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
@@ -30,28 +30,10 @@ ODDZIAL_NFZ_ID                       NEXT     *   ,       CHARACTER
 RECEPTA_CHOROBA_ID                   NEXT     *   ,       CHARACTER            
 ULGA_ID                              NEXT     *   ,       CHARACTER            
 
-Record 22595: Rejected - Error on table RECEPTY.
-ORA-02291: integrity constraint (POTAS.FK_WIZ_REC) violated - parent key not found
-
-Record 23851: Rejected - Error on table RECEPTY.
-ORA-02291: integrity constraint (POTAS.FK_WIZ_REC) violated - parent key not found
-
-Record 28823: Rejected - Error on table RECEPTY.
-ORA-02291: integrity constraint (POTAS.FK_WIZ_REC) violated - parent key not found
-
-Record 34912: Rejected - Error on table RECEPTY.
-ORA-02291: integrity constraint (POTAS.FK_WIZ_REC) violated - parent key not found
-
-Record 34953: Rejected - Error on table RECEPTY.
-ORA-02291: integrity constraint (POTAS.FK_WIZ_REC) violated - parent key not found
-
-Record 55028: Rejected - Error on table RECEPTY.
-ORA-02291: integrity constraint (POTAS.FK_WIZ_REC) violated - parent key not found
-
 
 Table RECEPTY:
-  70083 Rows successfully loaded.
-  6 Rows not loaded due to data errors.
+  69805 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
   0 Rows not loaded because all WHEN clauses were failed.
   0 Rows not loaded because all fields were null.
 
@@ -60,12 +42,12 @@ Space allocated for bind array:                 387000 bytes(250 rows)
 Read   buffer bytes: 1048576
 
 Total logical records skipped:          0
-Total logical records read:         70089
-Total logical records rejected:         6
+Total logical records read:         69805
+Total logical records rejected:         0
 Total logical records discarded:        0
 
-Run began on Fri May 14 19:10:28 2021
-Run ended on Fri May 14 19:10:29 2021
+Run began on Mon May 17 15:28:32 2021
+Run ended on Mon May 17 15:28:33 2021
 
-Elapsed time was:     00:00:01.19
-CPU time was:         00:00:00.21
+Elapsed time was:     00:00:01.15
+CPU time was:         00:00:00.17
