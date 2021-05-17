@@ -522,6 +522,28 @@ END;
 
 /
 
+create or replace NONEDITIONABLE PROCEDURE transformacja_choroby IS
+C_ID choroby.choroby_id%type := 1;
+
+CURSOR p_c(IDC IN NUMBER) IS
+SELECT c.nazwa,c.opis,c.poczatek,c.koniec FROM choroby c WHERE c.choroby_id = IDC;
+
+wiersz p_c%ROWTYPE;
+BEGIN
+LOOP
+    OPEN p_c(C_ID);
+        FETCH p_c INTO wiersz;
+    CLOSE p_c;
+    
+    INSERT INTO h_choroby VALUES(c_ID,wiersz.nazwa,wiersz.opis,wiersz.poczatek,wiersz.koniec);
+
+    C_ID := C_ID + 1;
+    EXIT WHEN C_ID = 10001;
+END LOOP;
+END;
+
+/
+
 
 --EXEC--ZONE--
 EXEC transformacja_placowki;
@@ -530,3 +552,4 @@ EXEC transformacja_pacjenci;
 EXEC transformacja_specjalnosci;
 EXEC transformacja_stanowiska;
 EXEC transformacja_pracownicy;
+EXEC transformacja_choroby;
