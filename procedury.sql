@@ -287,9 +287,42 @@ LOOP
 END LOOP;
 
 END;
+create or replace NONEDITIONABLE PROCEDURE transformacja_specjalnosci IS
+S_ID specjalnosci.specjalnosc_id%type := 1;
+nazwa specjalnosci.nazwa%type;
+stopien specjalnosci.stopien%type;
+dodatek specjalnosci.dodatek_pensja%type;
+
+CURSOR pobierz_n(IDS IN NUMBER)IS SELECT
+s.nazwa FROM specjalnosci s WHERE s.specjalnosc_id = IDS ;
+CURSOR pobierz_s(IDS IN NUMBER)IS SELECT
+s.stopien FROM specjalnosci s WHERE s.specjalnosc_id = IDS ;
+CURSOR pobierz_d(IDS IN NUMBER)IS SELECT
+s.dodatek_pensja FROM specjalnosci s WHERE s.specjalnosc_id = IDS ;
+
+BEGIN
+LOOP
+    OPEN pobierz_n(S_ID);
+        FETCH pobierz_n INTO nazwa;
+    CLOSE pobierz_n;
+    OPEN pobierz_s(S_ID);
+        FETCH pobierz_s INTO stopien;
+    CLOSE pobierz_s;
+    OPEN pobierz_d(S_ID);
+        FETCH pobierz_d INTO dodatek;
+    CLOSE pobierz_d;
+    
+    INSERT INTO h_specjalnosci VALUES(S_ID,nazwa,stopien,dodatek);
+    
+    S_ID := S_ID + 1;
+    EXIT WHEN S_ID = 101;
+END LOOP;
+END;
+
 /
 
 --EXEC--ZONE--
 EXEC transformacja_placowki;
 EXEC transformacja_gabinety;
 EXEC transformacja_pacjenci;
+EXEC transformacja_specjalnosci;
