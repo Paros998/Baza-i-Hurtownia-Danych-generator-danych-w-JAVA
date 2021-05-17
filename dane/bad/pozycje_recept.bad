@@ -1,51 +1,51 @@
-1,1,Abaktal,5,160.8
-2,1,Batrafen,3,128.4
-3,2,Keppra,1,114.25
-4,2,Ibuprom Max,1,14.88
-5,2,Jovesto,1,36.27
-6,2,Jovesto,3,108.81
-7,3,Jovesto,2,72.54
-8,3,Batrafen,4,171.2
-9,3,Jovesto,4,145.08
-10,4,Ibuprom Max,1,14.88
-11,5,Abaktal,3,96.48
-12,5,Lakcid,1,17.49
-13,5,Batrafen,5,214.0
-14,5,Malidum,2,127.2
-15,6,Cachexan,2,274.18
-16,6,Malidum,5,318.0
-17,6,Cachexan,5,685.45
-18,7,Malidum,2,127.2
-19,7,Efferalgan Codeine,1,15.49
-20,7,Lakcid,4,69.96
-21,7,Keppra,2,228.5
-22,8,Fastum,3,77.97
-23,8,Efferalgan Codeine,1,15.49
-24,8,Decilosal,2,151.12
-25,8,Fastum,2,51.98
-26,9,Keppra,5,571.25
-27,10,Batrafen,5,214.0
-28,10,Abaktal,4,128.64
-29,10,Efferalgan Codeine,4,61.96
-30,10,Jovesto,1,36.27
-31,10,Ibuprom Max,4,59.52
-32,11,Ibuprom Max,1,14.88
-33,11,Malidum,3,190.8
-34,11,Jovesto,4,145.08
-35,11,Fastum,4,103.96
-36,11,Fastum,5,129.95
-37,12,Efferalgan Codeine,1,15.49
-38,12,Keppra,5,571.25
-39,12,Lakcid,4,69.96
-40,12,Jovesto,3,108.81
-41,13,Abaktal,1,32.16
-42,13,Decilosal,5,377.8
-43,13,Gynoxin Uno,1,33.68
-44,13,Lakcid,2,34.98
-45,14,Lakcid,1,17.49
-46,14,Fastum,4,103.96
-47,15,Keppra,5,571.25
-48,15,Lakcid,4,69.96
-49,15,Keppra,3,342.75
-50,16,Cachexan,2,274.18
-51,16,Malidum,2,127.2
+67413,22595,Batrafen,3,128.4
+67414,22595,Halidor,3,134.97
+67415,22595,Cachexan,3,411.27
+71186,23851,Batrafen,5,214.0
+86233,28823,Efferalgan Codeine,5,77.45
+86234,28823,Abaktal,1,32.16
+86235,28823,Cachexan,5,685.45
+86236,28823,Abaktal,3,96.48
+86237,28823,Malidum,4,254.4
+104486,34912,Gynoxin Uno,4,134.72
+104487,34912,Halidor,4,179.96
+104488,34912,Efferalgan Codeine,1,15.49
+104489,34912,Jovesto,1,36.27
+104612,34953,Gynoxin Uno,2,67.36
+164972,55028,Jovesto,2,72.54
+164973,55028,Abaktal,1,32.16
+164974,55028,Gynoxin Uno,4,134.72
+164975,55028,Lakcid,4,69.96
+210216,70090,Fastum,3,77.97
+210217,70090,Keppra,4,457.0
+210218,70091,Cachexan,3,411.27
+210219,70092,Efferalgan Codeine,2,30.98
+210220,70092,Gynoxin Uno,2,67.36
+210221,70092,Abaktal,2,64.32
+210222,70092,Batrafen,5,214.0
+210223,70092,Malidum,2,127.2
+210224,70093,Lakcid,2,34.98
+210225,70093,Halidor,3,134.97
+210226,70093,Fastum,3,77.97
+210227,70094,Abaktal,4,128.64
+210228,70094,Lakcid,3,52.47
+210229,70094,Gynoxin Uno,4,134.72
+210230,70094,Fastum,5,129.95
+210231,70094,Abaktal,2,64.32
+210232,70095,Keppra,5,571.25
+210233,70095,Ibuprom Max,5,74.4
+210234,70095,Cachexan,3,411.27
+210235,70095,Halidor,2,89.98
+210236,70096,Halidor,4,179.96
+210237,70096,Keppra,5,571.25
+210238,70096,Decilosal,2,151.12
+210239,70097,Decilosal,2,151.12
+210240,70097,Halidor,2,89.98
+210241,70097,Ibuprom Max,5,74.4
+210242,70098,Malidum,4,254.4
+210243,70099,Malidum,5,318.0
+210244,70099,Batrafen,1,42.8
+210245,70099,Ibuprom Max,5,74.4
+210246,70100,Decilosal,3,226.68
+210247,70100,Gynoxin Uno,3,101.04
+210248,70100,Efferalgan Codeine,1,15.49

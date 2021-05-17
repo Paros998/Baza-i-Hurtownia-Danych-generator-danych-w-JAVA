@@ -105,6 +105,7 @@ public class Pacjenci extends GlobalElements {
                     }
                 }
                 pesel = karty.pesele[indeks];
+                uzytePesele[i] = pesel;
             }
             writer.write(id + "," + imie + "," + nazwisko + "," + login + "," + haslo + "," + pesel + "," + kontakt
                     + "," + adres + '\n');
