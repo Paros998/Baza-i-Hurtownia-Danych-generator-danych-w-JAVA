@@ -69,7 +69,7 @@ CREATE TABLE kontakty(
 );
 
 CREATE TABLE choroby(
-    choroby_id NUMBER(10) PRIMARY KEY,
+    choroby_id NUMBER(6) PRIMARY KEY,
     nazwa VARCHAR2(60) NOT NULL,
     opis VARCHAR2(200) ,
     poczatek DATE NOT NULL,
