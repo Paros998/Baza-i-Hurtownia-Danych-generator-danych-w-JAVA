@@ -543,7 +543,44 @@ END LOOP;
 END;
 
 /
+create or replace NONEDITIONABLE PROCEDURE transformacja_recepty IS
+R_ID recepty.recepta_id%type := 1;
+C_ID recepty.recepta_choroba_id%type;
+O_ID oddzialy_nfz.oddzial_nfz_id%type;
+MAX_ID recepty.recepta_id%type;
 
+CURSOR p_r(IDR IN NUMBER) IS
+SELECT r.recepta_choroba_id,r.oddzial_nfz_id FROM recepty r WHERE r.recepta_id = IDR;
+
+CURSOR p_o(IDO IN NUMBER) IS
+SELECT o.nazwa,o.kod_funduszu FROM oddzialy_nfz o WHERE o.oddzial_nfz_id= IDO;
+
+wiersz1 p_r%ROWTYPE;
+wiersz2 p_o%ROWTYPE;
+BEGIN
+
+SELECT MAX(recepta_id) INTO MAX_ID FROM recepty;
+
+LOOP
+    OPEN p_r(R_ID);
+        FETCH p_r INTO wiersz1;
+    CLOSE p_r;
+
+    O_ID := wiersz1.oddzial_nfz_id;
+    C_ID := wiersz1.recepta_choroba_id;
+
+    OPEN p_o(O_ID);
+        FETCH p_o INTO wiersz2;
+    CLOSE p_o;
+
+    INSERT INTO h_recepty VALUES(R_ID,wiersz1.recepta_choroba_id,wiersz2.nazwa,wiersz2.kod_funduszu);
+
+    R_ID := R_ID + 1;
+    EXIT WHEN R_ID = MAX_ID + 1;
+END LOOP;
+END;
+
+/
 
 --EXEC--ZONE--
 EXEC transformacja_placowki;
