@@ -37,7 +37,7 @@ CREATE TABLE h_recepty (
 CREATE TABLE h_specjalnosci (
     specjalnosc_id NUMBER PRIMARY KEY,
     nazwa VARCHAR2(100)NOT NULL,
-    stopien NUMBER(1) CONSTRAINT chk_stopien CHECK(0 <= stopien AND stopien <= 2) NOT NULL ,
+    stopien NUMBER(1) CONSTRAINT chk_stopien_2 CHECK(0 <= stopien AND stopien <= 2) NOT NULL ,
     dodatek_pensja NUMBER(5)
 );
 
@@ -149,14 +149,14 @@ CREATE TABLE h_wizyty (
     recepta_id NUMBER,
     oplata NUMBER(6),
     cena_netto_za_zabieg NUMBER(6),
-    CONSTRAINT fk_wiz_pac FOREIGN KEY (pacjent_id) REFERENCES h_pacjenci(pacjent_id),
-    CONSTRAINT fk_wiz_prac FOREIGN KEY (prac_spec) REFERENCES h_pracownicy(pracownik_id),
-    CONSTRAINT fk_wiz_prac2 FOREIGN KEY (prac_uma) REFERENCES h_pracownicy(pracownik_id),
-    CONSTRAINT fk_wiz_gab FOREIGN KEY (gabinet_id) REFERENCES h_gabinety(gabinet_id),
-    CONSTRAINT fk_wiz_data FOREIGN KEY (data_wizyty_id) REFERENCES h_daty_wizyt(data_id),
-    CONSTRAINT fk_wiz_status FOREIGN KEY (status_wizyty_id) REFERENCES h_statusy_wizyt(statusy_wizyt_id),
-    CONSTRAINT fk_wiz_zabieg FOREIGN KEY (zabieg_id) REFERENCES h_zabiegi(zabieg_id),
-    CONSTRAINT fk_wiz_recepta FOREIGN KEY (recepta_id) REFERENCES h_recepty(recepta_id)
+    CONSTRAINT fk_wiz_pac_2 FOREIGN KEY (pacjent_id) REFERENCES h_pacjenci(pacjent_id),
+    CONSTRAINT fk_wiz_prac_2 FOREIGN KEY (prac_spec) REFERENCES h_pracownicy(pracownik_id),
+    CONSTRAINT fk_wiz_prac2_2 FOREIGN KEY (prac_uma) REFERENCES h_pracownicy(pracownik_id),
+    CONSTRAINT fk_wiz_gab_2 FOREIGN KEY (gabinet_id) REFERENCES h_gabinety(gabinet_id),
+    CONSTRAINT fk_wiz_data_2 FOREIGN KEY (data_wizyty_id) REFERENCES h_daty_wizyt(data_id),
+    CONSTRAINT fk_wiz_status_2 FOREIGN KEY (status_wizyty_id) REFERENCES h_statusy_wizyt(statusy_wizyt_id),
+    CONSTRAINT fk_wiz_zabieg_2 FOREIGN KEY (zabieg_id) REFERENCES h_zabiegi(zabieg_id),
+    CONSTRAINT fk_wiz_recepta_2 FOREIGN KEY (recepta_id) REFERENCES h_recepty(recepta_id)
 );
 
 --------------------------------- WYMIAR ULGI ----------------------------------------------------------
