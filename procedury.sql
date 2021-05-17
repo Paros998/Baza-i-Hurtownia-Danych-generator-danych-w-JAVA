@@ -320,9 +320,56 @@ END LOOP;
 END;
 
 /
+create or replace NONEDITIONABLE PROCEDURE transformacja_stanowiska IS
+S_ID stanowiska.stanowisko_id%type := 1;
+U_ID stanowiska.uprawnienie_id%type;
+nazwa stanowiska.nazwa%type;
+pensja stanowiska.pensja%type;
+oznaczenie uprawnienia.oznaczenie%type;
+opis uprawnienia.opis%type;
+
+CURSOR p_u(IDS IN NUMBER) IS SELECT
+s.uprawnienie_id FROM stanowiska s WHERE s.stanowisko_id = IDS ; 
+CURSOR p_n(IDS IN NUMBER) IS SELECT
+s.nazwa FROM stanowiska s WHERE s.stanowisko_id = IDS ; 
+CURSOR p_p(IDS IN NUMBER) IS SELECT
+s.pensja FROM stanowiska s WHERE s.stanowisko_id = IDS ; 
+
+CURSOR p_oz(IDU IN NUMBER) IS SELECT
+u.oznaczenie FROM uprawnienia u WHERE u.uprawnienie_id = IDU;
+CURSOR p_op(IDU IN NUMBER) IS SELECT
+u.opis FROM uprawnienia u WHERE u.uprawnienie_id = IDU;
+BEGIN
+LOOP
+    OPEN p_u(S_ID);
+        FETCH p_u INTO U_ID;
+    CLOSE p_u;
+    OPEN p_n(S_ID);
+        FETCH p_n INTO nazwa;
+    CLOSE p_n;
+    OPEN p_p(S_ID);
+        FETCH p_p INTO pensja;
+    CLOSE p_p;
+    OPEN p_oz(U_ID);
+        FETCH p_oz INTO oznaczenie;
+    CLOSE p_oz;
+    OPEN p_op(U_ID);
+        FETCH p_op INTO opis;
+    CLOSE p_op;
+    
+    INSERT INTO h_stanowiska VALUES(S_ID,nazwa,pensja,oznaczenie,opis);
+
+    S_ID := S_ID + 1;
+    EXIT WHEN S_ID = 10001;
+END LOOP;
+END;
+
+/
+
 
 --EXEC--ZONE--
 EXEC transformacja_placowki;
 EXEC transformacja_gabinety;
 EXEC transformacja_pacjenci;
 EXEC transformacja_specjalnosci;
+EXEC transformacja_stanowiska;
