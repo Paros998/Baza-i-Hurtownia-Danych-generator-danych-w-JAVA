@@ -689,3 +689,4 @@ EXEC transformacja_statusow_wizyt;
 EXEC transformacja_stanowiska;
 EXEC transformacja_pracownicy;
 EXEC transformacja_choroby;
+EXEC transformacja_recepty;
