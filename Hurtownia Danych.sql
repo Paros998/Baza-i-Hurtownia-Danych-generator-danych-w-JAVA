@@ -1,38 +1,56 @@
-DROP TABLE specjalnosci CASCADE CONSTRAINTS;
-DROP TABLE stanowiska CASCADE CONSTRAINTS;
-DROP TABLE pracownicy CASCADE CONSTRAINTS;
-DROP TABLE daty_wizyt CASCADE CONSTRAINTS;
-DROP TABLE statusy_wizyt CASCADE CONSTRAINTS;
-DROP TABLE zabiegi CASCADE CONSTRAINTS;
-DROP TABLE pacjenci CASCADE CONSTRAINTS;
-DROP TABLE placowki CASCADE CONSTRAINTS;
-DROP TABLE gabinety CASCADE CONSTRAINTS;
-DROP TABLE leki CASCADE CONSTRAINTS;
-DROP TABLE oddzialy_nfz CASCADE CONSTRAINTS;
-DROP TABLE ulgi CASCADE CONSTRAINTS;
-DROP TABLE choroby CASCADE CONSTRAINTS;
-DROP TABLE recepty CASCADE CONSTRAINTS;
-DROP TABLE wizyty CASCADE CONSTRAINTS;
+DROP TABLE h_specjalnosci CASCADE CONSTRAINTS;
+DROP TABLE h_stanowiska CASCADE CONSTRAINTS;
+DROP TABLE h_pracownicy CASCADE CONSTRAINTS;
+DROP TABLE h_daty_wizyt CASCADE CONSTRAINTS;
+DROP TABLE h_statusy_wizyt CASCADE CONSTRAINTS;
+DROP TABLE h_zabiegi CASCADE CONSTRAINTS;
+DROP TABLE h_pacjenci CASCADE CONSTRAINTS;
+DROP TABLE h_placowki CASCADE CONSTRAINTS;
+DROP TABLE h_gabinety CASCADE CONSTRAINTS;
+DROP TABLE h_leki CASCADE CONSTRAINTS;
+DROP TABLE h_ulgi CASCADE CONSTRAINTS;
+DROP TABLE h_choroby CASCADE CONSTRAINTS;
+DROP TABLE h_recepty CASCADE CONSTRAINTS;
+DROP TABLE h_pozycje_recept CASCADE CONSTRAINTS;
+DROP TABLE h_wizyty CASCADE CONSTRAINTS;
+
+--------------------------------- WYMIAR CHOROBY ----------------------------------------------------------
+CREATE TABLE h_choroby (
+    choroby_id NUMBER PRIMARY KEY,
+    nazwa VARCHAR2(60) NOT NULL,
+    opis VARCHAR2(200),
+    poczatek DATE NOT NULL,
+    koniec DATE
+);
+
+--------------------------------- WYMIAR RECEPTY -------------------------------------------------------------
+CREATE TABLE h_recepty (
+    recepta_id NUMBER PRIMARY KEY,
+    choroba_id NUMBER NOT NULL,
+    nazwa_oddzialu VARCHAR2(100) NOT NULL,
+    kod_funduszu VARCHAR2(3) NOT NULL,
+    CONSTRAINT fk_recepty_choroba FOREIGN KEY (choroba_id) REFERENCES h_choroby(choroby_id)
+);
 
 --------------------------------- WYMIAR PRACOWNIKA ----------------------------------------------------------
 
-CREATE TABLE specjalnosci (
-    specjalnosc_id NUMBER(5) PRIMARY KEY,
+CREATE TABLE h_specjalnosci (
+    specjalnosc_id NUMBER PRIMARY KEY,
     nazwa VARCHAR2(100)NOT NULL,
     stopien NUMBER(1) CONSTRAINT chk_stopien CHECK(0 <= stopien AND stopien <= 2) NOT NULL ,
     dodatek_pensja NUMBER(5)
 );
 
-CREATE TABLE stanowiska (
-    stanowisko_id NUMBER(5) PRIMARY KEY,
+CREATE TABLE h_stanowiska (
+    stanowisko_id NUMBER PRIMARY KEY,
     nazwa VARCHAR2(150)NOT NULL,
     pensja NUMBER(6,2)NOT NULL,
     oznaczenie_uprawnienia VARCHAR2(4)NOT NULL,
     opis_uprawnienia VARCHAR2(50)
 );
 
-CREATE TABLE pracownicy (
-    pracownik_id NUMBER(5) PRIMARY KEY,
+CREATE TABLE h_pracownicy (
+    pracownik_id NUMBER PRIMARY KEY,
     imie VARCHAR2(100) NOT NULL,
     nazwisko VARCHAR2(100) NOT NULL,
     login VARCHAR2(150),
@@ -46,71 +64,24 @@ CREATE TABLE pracownicy (
     ulica VARCHAR2(45) NOT NULL,
     nr_domu NUMBER(2) NOT NULL,
     nr_mieszkania NUMBER(3),
-    stanowisko_id NUMBER(5) NOT NULL,
-    specjalnosc_id NUMBER(5),
-    CONSTRAINT fk_pracownicy_stanowisko FOREIGN KEY (stanowisko_id) REFERENCES stanowiska(stanowisko_id),
-    CONSTRAINT fk_pracownicy_specjalnosc FOREIGN KEY (specjalnosc_id) REFERENCES specjalnosci(specjalnosc_id)
+    stanowisko_id NUMBER NOT NULL,
+    specjalnosc_id NUMBER,
+    CONSTRAINT fk_pracownicy_stanowisko FOREIGN KEY (stanowisko_id) REFERENCES h_stanowiska(stanowisko_id),
+    CONSTRAINT fk_pracownicy_specjalnosc FOREIGN KEY (specjalnosc_id) REFERENCES h_specjalnosci(specjalnosc_id)
 );
 
 --------------------------------- WYMIAR CZAS_WIZYTY ----------------------------------------------------------
-CREATE TABLE daty_wizyt (
+CREATE TABLE h_daty_wizyt (
     data_id NUMBER PRIMARY KEY,
     data_wizyty DATE NOT NULL,
     godzina_poczatek VARCHAR2(5) NOT NULL,
     godzina_koniec VARCHAR2(5)
 );
 
---------------------------------- WYMIAR CHOROBY ----------------------------------------------------------
-CREATE TABLE choroby (
-    choroby_id NUMBER(10) PRIMARY KEY,
-    nazwa VARCHAR2(60) NOT NULL,
-    opis VARCHAR2(200),
-    poczatek DATE NOT NULL,
-    koniec DATE
-);
-
---------------------------------- WYMIAR ULGI ----------------------------------------------------------
-CREATE TABLE ulgi (
-    ulgi_id NUMBER(5) PRIMARY KEY,
-    typ_ulgi VARCHAR(45) NOT NULL
-);
-
---------------------------------- WYMIAR ODDZIALOW ----------------------------------------------------------
-CREATE TABLE oddzialy_nfz (
-    oddzial_nfz_id NUMBER(5) PRIMARY KEY,
-    nazwa VARCHAR2(100) NOT NULL,
-    kod_funduszu VARCHAR2(3) NOT NULL
-);
-
---------------------------------- WYMIAR LEKU ----------------------------------------------------------
-CREATE TABLE leki (
-    leki_id NUMBER PRIMARY KEY,
-    nazwa VARCHAR2(100) NOT NULL
-);
-
---------------------------------- FAKT -> RECEPTY -------------------------------------------------------------
-CREATE TABLE recepty (
-    recepta_id NUMBER(5) PRIMARY KEY,
-    lek_id NUMBER NOT NULL,
-    pracownik_id NUMBER(5) NOT NULL,
-    oddzial_nfz_id NUMBER(5) NOT NULL,
-    choroba_id NUMBER(5) NOT NULL,
-    data_wizyty_id NUMBER,
-    ulga_id NUMBER,
-    ilosc NUMBER(6) NOT NULL,
-    procent_ulgi NUMBER(3),
-    odplatnosc NUMBER(4) NOT NULL, -- CENA ZA SZT
-    CONSTRAINT fk_recepty_lek FOREIGN KEY (lek_id) REFERENCES leki(leki_id),
-    CONSTRAINT fk_recepty_pracownik FOREIGN KEY (pracownik_id) REFERENCES pracownicy(pracownik_id),
-    CONSTRAINT fk_recepty_oddzial_nfz FOREIGN KEY (oddzial_nfz_id) REFERENCES oddzialy_nfz(oddzial_nfz_id),
-    CONSTRAINT fk_recepty_choroba FOREIGN KEY (choroba_id) REFERENCES choroby(choroby_id),
-    CONSTRAINT fk_recepty_data FOREIGN KEY (data_wizyty_id) REFERENCES daty_wizyt(data_id),
-    CONSTRAINT fk_recepty_ulga FOREIGN KEY (ulga_id) REFERENCES ulgi(ulgi_id)
-);
 
 --------------------------------- WYMIAR GABINETU ----------------------------------------------------------
-CREATE TABLE placowki (
-    placowka_id NUMBER(5) PRIMARY KEY,
+CREATE TABLE h_placowki (
+    placowka_id NUMBER PRIMARY KEY,
     nazwa VARCHAR2(45),
     telefon NUMBER(9) NOT NULL,
     email VARCHAR2(45),
@@ -122,19 +93,19 @@ CREATE TABLE placowki (
     nr_mieszkania NUMBER(3)
 );
 
-CREATE TABLE gabinety (
-    gabinet_id NUMBER(5) PRIMARY KEY,
+CREATE TABLE h_gabinety (
+    gabinet_id NUMBER PRIMARY KEY,
     oznaczenie VARCHAR2(25) NOT NULL,
-    placowka_id NUMBER(5) NOT NULL,
+    placowka_id NUMBER NOT NULL,
     telefon NUMBER(9) NOT NULL,
     email VARCHAR2(45),
-    CONSTRAINT fk_gabinet_placowki FOREIGN KEY (placowka_id) REFERENCES placowki(placowka_id)
+    CONSTRAINT fk_gabinet_placowki FOREIGN KEY (placowka_id) REFERENCES h_placowki(placowka_id)
 );
 
 --------------------------------- WYMIAR PACJENTA ----------------------------------------------------------
 
-CREATE TABLE pacjenci (
-    pacjent_id NUMBER(5) PRIMARY KEY,
+CREATE TABLE h_pacjenci (
+    pacjent_id NUMBER PRIMARY KEY,
     imie VARCHAR2(100) NOT NULL,
     nazwisko VARCHAR2(100) NOT NULL,
     login VARCHAR2(150),
@@ -153,20 +124,20 @@ CREATE TABLE pacjenci (
 );
 
 --------------------------------- WYMIAR ZABIEGU -----------------------------------------------------------------
-CREATE TABLE zabiegi (
-    zabieg_id NUMBER(5) PRIMARY KEY,
+CREATE TABLE h_zabiegi (
+    zabieg_id NUMBER PRIMARY KEY,
     nazwa VARCHAR2(200) NOT NULL
 );
 
 --------------------------------- WYMIAR STATUSU_WIZYTY ----------------------------------------------------------
-CREATE TABLE statusy_wizyt (
+CREATE TABLE h_statusy_wizyt (
     statusy_wizyt_id NUMBER PRIMARY KEY,
     status VARCHAR2(10) NOT NULL,
     opis VARCHAR2(50)
 );
 
 --------------------------------- FAKT -> WIZYTA ----------------------------------------------------------
-CREATE TABLE wizyty (
+CREATE TABLE h_wizyty (
     wizyta_id NUMBER PRIMARY KEY,
     gabinet_id NUMBER NOT NULL,
     pacjent_id NUMBER NOT NULL,
@@ -175,13 +146,41 @@ CREATE TABLE wizyty (
     data_wizyty_id NUMBER NOT NULL,
     status_wizyty_id NUMBER NOT NULL,
     zabieg_id NUMBER,
-    oplata NUMBER(5),
-    cena_netto_za_zabieg NUMBER(5, 2),
-    CONSTRAINT fk_wiz_pac FOREIGN KEY (pacjent_id) REFERENCES pacjenci(pacjent_id),
-    CONSTRAINT fk_wiz_prac FOREIGN KEY (prac_spec) REFERENCES pracownicy(pracownik_id),
-    CONSTRAINT fk_wiz_prac2 FOREIGN KEY (prac_uma) REFERENCES pracownicy(pracownik_id),
-    CONSTRAINT fk_wiz_gab FOREIGN KEY (gabinet_id) REFERENCES gabinety(gabinet_id),
-    CONSTRAINT fk_wiz_data FOREIGN KEY (data_wizyty_id) REFERENCES daty_wizyt(data_id),
-    CONSTRAINT fk_wiz_status FOREIGN KEY (status_wizyty_id) REFERENCES statusy_wizyt(statusy_wizyt_id),
-    CONSTRAINT fk_wiz_zabieg FOREIGN KEY (zabieg_id) REFERENCES zabiegi(zabieg_id)
+    recepta_id NUMBER,
+    oplata NUMBER(6),
+    cena_netto_za_zabieg NUMBER(6),
+    CONSTRAINT fk_wiz_pac FOREIGN KEY (pacjent_id) REFERENCES h_pacjenci(pacjent_id),
+    CONSTRAINT fk_wiz_prac FOREIGN KEY (prac_spec) REFERENCES h_pracownicy(pracownik_id),
+    CONSTRAINT fk_wiz_prac2 FOREIGN KEY (prac_uma) REFERENCES h_pracownicy(pracownik_id),
+    CONSTRAINT fk_wiz_gab FOREIGN KEY (gabinet_id) REFERENCES h_gabinety(gabinet_id),
+    CONSTRAINT fk_wiz_data FOREIGN KEY (data_wizyty_id) REFERENCES h_daty_wizyt(data_id),
+    CONSTRAINT fk_wiz_status FOREIGN KEY (status_wizyty_id) REFERENCES h_statusy_wizyt(statusy_wizyt_id),
+    CONSTRAINT fk_wiz_zabieg FOREIGN KEY (zabieg_id) REFERENCES h_zabiegi(zabieg_id),
+    CONSTRAINT fk_wiz_recepta FOREIGN KEY (recepta_id) REFERENCES h_recepty(recepta_id)
+);
+
+--------------------------------- WYMIAR ULGI ----------------------------------------------------------
+CREATE TABLE h_ulgi (
+    ulgi_id NUMBER PRIMARY KEY,
+    typ_ulgi VARCHAR(45) NOT NULL
+);
+
+--------------------------------- WYMIAR LEKU ----------------------------------------------------------
+CREATE TABLE h_leki (
+    leki_id NUMBER PRIMARY KEY,
+    nazwa VARCHAR2(100) NOT NULL
+);
+
+--------------------------------- FAKT -> POZYCJA_RECEPTY -------------------------------------------------------------
+CREATE TABLE h_pozycje_recept (
+    pozycja_id NUMBER PRIMARY KEY,
+    recepta_id NUMBER,
+    lek_id NUMBER NOT NULL,
+    ulga_id NUMBER,
+    ilosc NUMBER(6) NOT NULL,
+    procent_ulgi NUMBER(3),
+    odplatnosc NUMBER(6, 3) NOT NULL,
+    CONSTRAINT fk_pozycje_recept_lek FOREIGN KEY (lek_id) REFERENCES h_leki(leki_id),
+    CONSTRAINT fk_pozycje_recept_ulga FOREIGN KEY (ulga_id) REFERENCES h_ulgi(ulgi_id),
+    CONSTRAINT fk_pozycje_recept_recepta FOREIGN KEY (recepta_id) REFERENCES h_recepty(recepta_id)
 );
