@@ -519,10 +519,11 @@ wiersz pobierz_pozycje%ROWTYPE;
 
 CURSOR pobierz_procent_ulgi(RID IN NUMBER) IS
 SELECT u.ulgi_id, u.procent_ulgi FROM recepty r
-JOIN ulgi u ON r.ulga_id = u.ulgi_id
+LEFT  JOIN ulgi u ON r.ulga_id = u.ulgi_id
 WHERE r.recepta_id = RID;
 
 ulga pobierz_procent_ulgi%ROWTYPE;
+
 
 BEGIN
     OPEN pobierz_max_id;
