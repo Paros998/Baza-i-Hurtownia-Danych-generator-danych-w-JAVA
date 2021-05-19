@@ -1,134 +1,72 @@
 CREATE OR REPLACE PROCEDURE transformacja_placowki IS
 P_ID placowki.placowka_id%type := 1;
-ID_A placowki.adres_id%type;
-ID_K placowki.kontakt_id%type;
 
-nazwa placowki.nazwa%type;
+CURSOR pobierz_placowka(IDP IN NUMBER) IS SELECT
+p.nazwa,p.adres_id,p.kontakt_id FROM placowki p WHERE p.placowka_id = IDP;
 
-telefon kontakty.telefon%type;
-email kontakty.email%type;
+CURSOR pobierz_kontakt(IDK IN NUMBER) IS SELECT 
+k.telefon,k.email FROM kontakty k WHERE k.kontakt_id = IDK;
 
-kod_poczt adresy.kod_poczt%type;
-miasto adresy.miasto%type;
-wojewodztwo adresy.wojewodztwo%type;
-ulica adresy.ulica%type;
-nrdomu adresy.nr_domu%type;
-nrmieszkania adresy.nr_mieszkania%type;
+CURSOR pobierz_adres(IDA IN NUMBER) IS SELECT 
+a.kod_poczt,a.miasto,a.wojewodztwo,a.ulica,a.nr_domu,a.nr_mieszkania FROM adresy a WHERE a.adres_id = IDA;
 
-CURSOR pobierz_nazwe(IDP IN NUMBER) IS SELECT
-p.nazwa FROM placowki p WHERE p.placowka_id = IDP;
-CURSOR pobierz_ida(IDP IN NUMBER) IS SELECT
-p.adres_id FROM placowki p WHERE p.placowka_id = IDP;
-CURSOR pobierz_idk(IDP IN NUMBER) IS SELECT
-p.kontakt_id FROM placowki p WHERE p.placowka_id = IDP;
+placowka pobierz_placowka%ROWTYPE;
 
-CURSOR pobierz_tel(IDK IN NUMBER) IS SELECT 
-k.telefon FROM kontakty k WHERE k.kontakt_id = IDK;
-CURSOR pobierz_email(IDK IN NUMBER) IS SELECT 
-k.email FROM kontakty k WHERE k.kontakt_id = IDK;
+kontakt pobierz_kontakt%ROWTYPE;
 
-CURSOR pobierz_kod(IDA IN NUMBER) IS SELECT 
-a.kod_poczt FROM adresy a WHERE a.adres_id = IDA;
-CURSOR pobierz_miasto(IDA IN NUMBER) IS SELECT 
-a.miasto FROM adresy a WHERE a.adres_id = IDA;
-CURSOR pobierz_woj(IDA IN NUMBER) IS SELECT 
-a.wojewodztwo FROM adresy a WHERE a.adres_id = IDA;
-CURSOR pobierz_ul(IDA IN NUMBER) IS SELECT 
-a.ulica FROM adresy a WHERE a.adres_id = IDA;
-CURSOR pobierz_dom(IDA IN NUMBER) IS SELECT 
-a.nr_domu FROM adresy a WHERE a.adres_id = IDA;
-CURSOR pobierz_mieszk(IDA IN NUMBER) IS SELECT 
-a.nr_mieszkania FROM adresy a WHERE a.adres_id = IDA;
+adres pobierz_adres%ROWTYPE;
+
 BEGIN
 
 LOOP
-    OPEN pobierz_nazwe(P_ID);
-        FETCH pobierz_nazwe INTO nazwa;
-    CLOSE pobierz_nazwe;
-    OPEN pobierz_ida(P_ID);
-        FETCH pobierz_ida INTO ID_A;
-    CLOSE pobierz_ida;
-    OPEN pobierz_idk(P_ID);
-        FETCH pobierz_idk INTO ID_K;
-    CLOSE pobierz_idk;
-    OPEN pobierz_tel(ID_K);
-        FETCH pobierz_tel INTO telefon;
-    CLOSE pobierz_tel;
-    OPEN pobierz_email(ID_K);
-        FETCH pobierz_email INTO email;
-    CLOSE pobierz_email;
-    OPEN pobierz_kod(ID_A);
-        FETCH pobierz_kod INTO kod_poczt;
-    CLOSE pobierz_kod;
-    OPEN pobierz_miasto(ID_A);
-        FETCH pobierz_miasto INTO miasto;
-    CLOSE pobierz_miasto;
-    OPEN pobierz_woj(ID_A);
-        FETCH pobierz_woj INTO wojewodztwo;
-    CLOSE pobierz_woj;
-    OPEN pobierz_ul(ID_A);
-        FETCH pobierz_ul INTO ulica;
-    CLOSE pobierz_ul;
-    OPEN pobierz_dom(ID_A);
-        FETCH pobierz_dom INTO nrdomu;
-    CLOSE pobierz_dom;
-    OPEN pobierz_mieszk(ID_A);
-        FETCH pobierz_mieszk INTO nrmieszkania;
-    CLOSE pobierz_mieszk;
+    OPEN pobierz_placowka(P_ID);
+        FETCH pobierz_placowka INTO placowka;
+    CLOSE pobierz_placowka;
+    
+    OPEN pobierz_kontakt(placowka.kontakt_id);
+        FETCH pobierz_kontakt INTO kontakt;
+    CLOSE pobierz_kontakt;
+    
+    OPEN pobierz_adres(placowka.adres_id);
+        FETCH pobierz_adres INTO adres;
+    CLOSE pobierz_adres;
+    
 
-    INSERT INTO h_placowki VALUES(P_ID,nazwa,telefon,email,kod_poczt,miasto,wojewodztwo,ulica,nrdomu,nrmieszkania);
+    INSERT INTO h_placowki VALUES(P_ID,placowka.nazwa,kontakt.telefon,kontakt.email,adres.kod_poczt,adres.miasto,adres.wojewodztwo,adres.ulica,adres.nr_domu,adres.nr_mieszkania);
     
     P_ID := P_ID + 1;
     EXIT WHEN P_ID = 10001;
 END LOOP;
 END;
 
+
 /
 
 create or replace NONEDITIONABLE PROCEDURE transformacja_gabinety IS
 G_ID gabinety.gabinet_id%type := 1;
-oznaczenie gabinety.oznaczenie%type;
 
-P_ID placowki.placowka_id%type ;
-ID_K placowki.kontakt_id%type;
+CURSOR pobierz_kontakt(IDK IN NUMBER) IS SELECT 
+k.telefon,k.email FROM kontakty k WHERE k.kontakt_id = IDK;
 
+CURSOR pobierz_gabinet(IDG IN NUMBER) IS SELECT 
+g.oznaczenie,g.placowka_id,g.kontakt_id FROM gabinety g WHERE g.gabinet_id = IDG;
 
-telefon kontakty.telefon%type;
-email kontakty.email%type;
-
-CURSOR pobierz_oznaczenie(IDG IN NUMBER)IS SELECT
-g.oznaczenie FROM gabinety g WHERE g.gabinet_id = IDG;
-CURSOR pobierz_idp(IDG IN NUMBER)IS SELECT
-g.placowka_id FROM gabinety g WHERE g.gabinet_id = IDG;
-CURSOR pobierz_idk(IDG IN NUMBER) IS SELECT
-g.kontakt_id FROM gabinety g WHERE g.gabinet_id = IDG;
-
-CURSOR pobierz_tel(IDK IN NUMBER) IS SELECT 
-k.telefon FROM kontakty k WHERE k.kontakt_id = IDK;
-CURSOR pobierz_email(IDK IN NUMBER) IS SELECT 
-k.email FROM kontakty k WHERE k.kontakt_id = IDK;
-
+gabinet pobierz_gabinet%ROWTYPE;
+kontakt pobierz_kontakt%ROWTYPE;
 
 BEGIN
 
 LOOP
-    OPEN pobierz_oznaczenie(G_ID);
-        FETCH pobierz_oznaczenie INTO oznaczenie;
-    CLOSE pobierz_oznaczenie;
-    OPEN pobierz_idp(G_ID);
-        FETCH pobierz_idp INTO P_ID;
-    CLOSE pobierz_idp;
-    OPEN pobierz_idk(P_ID);
-        FETCH pobierz_idk INTO ID_K;
-    CLOSE pobierz_idk;
-    OPEN pobierz_tel(ID_K);
-        FETCH pobierz_tel INTO telefon;
-    CLOSE pobierz_tel;
-    OPEN pobierz_email(ID_K);
-        FETCH pobierz_email INTO email;
-    CLOSE pobierz_email;
+    OPEN pobierz_gabinet(G_ID);
+        FETCH pobierz_gabinet INTO gabinet;
+    CLOSE pobierz_gabinet;
+
+    OPEN pobierz_kontakt(gabinet.kontakt_id);
+        FETCH pobierz_kontakt INTO kontakt;
+    CLOSE pobierz_kontakt;
+   
     
-    INSERT INTO h_gabinety VALUES(G_ID,oznaczenie,P_ID,telefon,email);
+    INSERT INTO h_gabinety VALUES(G_ID,gabinet.oznaczenie,gabinet.placowka_id,kontakt.telefon,kontakt.email);
 
     G_ID := G_ID + 1;
     EXIT WHEN G_ID = 10001;
@@ -139,81 +77,27 @@ END;
 
 CREATE OR REPLACE PROCEDURE transformacja_pacjenci IS
 P_ID pacjenci.pacjent_id%type := 1;
-ID_A pacjenci.adres_id%type;
-ID_K pacjenci.kontakt_id%type;
 ID_MAX pacjenci.pacjent_id%TYPE;
-
-imie pacjenci.imie%TYPE;
-nazwisko pacjenci.nazwisko%TYPE;
-login pacjenci.login%TYPE;
-haslo pacjenci.haslo%TYPE;
-pesel pacjenci.pesel_id%TYPE;
-
-data_ur karty.data_ur%TYPE;
-grupa_krwi karty.grupa_krwi%TYPE;
-
-telefon kontakty.telefon%type;
-email kontakty.email%type;
-
-kod_poczt adresy.kod_poczt%type;
-miasto adresy.miasto%type;
-wojewodztwo adresy.wojewodztwo%type;
-ulica adresy.ulica%type;
-nrdomu adresy.nr_domu%type;
-nrmieszkania adresy.nr_mieszkania%type;
 
 CURSOR pobierz_max_id IS
 SELECT MAX(pacjent_id) FROM pacjenci;
 
--- KARTY
-CURSOR pobierz_date_ur(pesel_pac karty.pesel_id%TYPE) IS
-SELECT data_ur FROM karty WHERE pesel_id = pesel_pac;
+CURSOR pobierz_pacjenta(IDP IN NUMBER) IS
+SELECT p.imie,p.nazwisko,p.pesel_id,p.adres_id,p.kontakt_id,p.login,p.haslo FROM pacjenci p WHERE p.pacjent_id = IDP;
 
-CURSOR pobierz_grupe_krwi(pesel_pac karty.pesel_id%TYPE) IS
-SELECT grupa_krwi FROM karty WHERE pesel_id = pesel_pac;
+CURSOR pobierz_kontakt(IDK IN NUMBER) IS SELECT 
+k.telefon,k.email FROM kontakty k WHERE k.kontakt_id = IDK;
 
--- PACJENCI
-CURSOR pobierz_pesel(IDP IN NUMBER) IS
-SELECT pesel_id FROM pacjenci WHERE pacjent_id = IDP;
+CURSOR pobierz_adres(IDA IN NUMBER) IS SELECT 
+a.kod_poczt,a.miasto,a.wojewodztwo,a.ulica,a.nr_domu,a.nr_mieszkania FROM adresy a WHERE a.adres_id = IDA;
 
-CURSOR pobierz_ida(IDP IN NUMBER) IS SELECT
-p.adres_id FROM pacjenci p WHERE p.pacjent_id = IDP;
+CURSOR pobierz_karte(PESEL IN pacjenci.pesel_id%TYPE) IS
+SELECT k.data_ur,k.grupa_krwi FROM karty k WHERE k.pesel_id = PESEL;
 
-CURSOR pobierz_idk(IDP IN NUMBER) IS SELECT
-p.kontakt_id FROM pacjenci p WHERE p.pacjent_id = IDP;
-
-CURSOR pobierz_imie(IDP IN NUMBER) IS
-SELECT imie FROM pacjenci WHERE pacjent_id = IDP;
-
-CURSOR pobierz_nazwisko(IDP IN NUMBER) IS
-SELECT nazwisko FROM pacjenci WHERE pacjent_id = IDP;
-
-CURSOR pobierz_login(IDP IN NUMBER) IS
-SELECT login FROM pacjenci WHERE pacjent_id = IDP;
-
-CURSOR pobierz_haslo(IDP IN NUMBER) IS
-SELECT haslo FROM pacjenci WHERE pacjent_id = IDP;
-
--- KONTAKTY
-CURSOR pobierz_tel(IDK IN NUMBER) IS SELECT 
-k.telefon FROM kontakty k WHERE k.kontakt_id = IDK;
-
-CURSOR pobierz_email(IDK IN NUMBER) IS SELECT 
-k.email FROM kontakty k WHERE k.kontakt_id = IDK;
-
--- ADRESY
-CURSOR pobierz_kod(IDA IN NUMBER) IS SELECT 
-a.kod_poczt FROM adresy a WHERE a.adres_id = IDA;
-CURSOR pobierz_miasto(IDA IN NUMBER) IS SELECT 
-a.miasto FROM adresy a WHERE a.adres_id = IDA;
-CURSOR pobierz_woj(IDA IN NUMBER) IS SELECT 
-a.wojewodztwo FROM adresy a WHERE a.adres_id = IDA;
-CURSOR pobierz_ul(IDA IN NUMBER) IS SELECT 
-a.ulica FROM adresy a WHERE a.adres_id = IDA;
-CURSOR pobierz_dom(IDA IN NUMBER) IS SELECT 
-a.nr_domu FROM adresy a WHERE a.adres_id = IDA;
-CURSOR pobierz_mieszk(IDA IN NUMBER) IS SELECT 
-a.nr_mieszkania FROM adresy a WHERE a.adres_id = IDA;
+karta pobierz_karte%ROWTYPE;
+pacjent pobierz_pacjenta%ROWTYPE;
+kontakt pobierz_kontakt%ROWTYPE;
+adres pobierz_adres%ROWTYPE;
 
 BEGIN
     OPEN pobierz_max_id;
@@ -221,98 +105,48 @@ BEGIN
     CLOSE pobierz_max_id;
 
 LOOP
-    OPEN pobierz_imie(P_ID);
-        FETCH pobierz_imie INTO imie;
-    CLOSE pobierz_imie;
-    
-    OPEN pobierz_nazwisko(P_ID);
-        FETCH pobierz_nazwisko INTO nazwisko;
-    CLOSE pobierz_nazwisko;
-    
-    OPEN pobierz_login(P_ID);
-        FETCH pobierz_login INTO login;
-    CLOSE pobierz_login;
-    
-    OPEN pobierz_haslo(P_ID);
-        FETCH pobierz_haslo INTO haslo;
-    CLOSE pobierz_haslo;
-    
-    OPEN pobierz_pesel(P_ID);
-        FETCH pobierz_pesel INTO pesel;
-    CLOSE pobierz_pesel;
-    
-    OPEN pobierz_date_ur(pesel);
-        FETCH pobierz_date_ur INTO data_ur;
-    CLOSE pobierz_date_ur;
-    
-    OPEN pobierz_grupe_krwi(pesel);
-        FETCH pobierz_grupe_krwi INTO grupa_krwi;
-    CLOSE pobierz_grupe_krwi;
-    
-    OPEN pobierz_ida(P_ID);
-        FETCH pobierz_ida INTO ID_A;
-    CLOSE pobierz_ida;
-    OPEN pobierz_idk(P_ID);
-        FETCH pobierz_idk INTO ID_K;
-    CLOSE pobierz_idk;
-    OPEN pobierz_tel(ID_K);
-        FETCH pobierz_tel INTO telefon;
-    CLOSE pobierz_tel;
-    OPEN pobierz_email(ID_K);
-        FETCH pobierz_email INTO email;
-    CLOSE pobierz_email;
-    OPEN pobierz_kod(ID_A);
-        FETCH pobierz_kod INTO kod_poczt;
-    CLOSE pobierz_kod;
-    OPEN pobierz_miasto(ID_A);
-        FETCH pobierz_miasto INTO miasto;
-    CLOSE pobierz_miasto;
-    OPEN pobierz_woj(ID_A);
-        FETCH pobierz_woj INTO wojewodztwo;
-    CLOSE pobierz_woj;
-    OPEN pobierz_ul(ID_A);
-        FETCH pobierz_ul INTO ulica;
-    CLOSE pobierz_ul;
-    OPEN pobierz_dom(ID_A);
-        FETCH pobierz_dom INTO nrdomu;
-    CLOSE pobierz_dom;
-    OPEN pobierz_mieszk(ID_A);
-        FETCH pobierz_mieszk INTO nrmieszkania;
-    CLOSE pobierz_mieszk;
+    OPEN pobierz_pacjenta(P_ID);
+        FETCH pobierz_pacjenta INTO pacjent;
+    CLOSE pobierz_pacjenta;
 
-    INSERT INTO h_pacjenci VALUES(P_ID,imie,nazwisko,login,haslo,telefon,email,kod_poczt,miasto,wojewodztwo,ulica,nrdomu,nrmieszkania,pesel,data_ur,grupa_krwi);
+    OPEN pobierz_kontakt(pacjent.kontakt_id);
+        FETCH pobierz_kontakt INTO kontakt;
+    CLOSE pobierz_kontakt;
+
+    OPEN pobierz_adres(pacjent.adres_id);
+        FETCH pobierz_adres INTO adres;
+    CLOSE pobierz_adres;
+
+    OPEN pobierz_karte(pacjent.pesel_id);
+        FETCH pobierz_karte INTO karta;
+    CLOSE pobierz_karte;
+
+    INSERT INTO h_pacjenci VALUES(P_ID,pacjent.imie,pacjent.nazwisko,pacjent.login,pacjent.haslo,
+    kontakt.telefon,kontakt.email,
+    adres.kod_poczt,adres.miasto,adres.wojewodztwo,adres.ulica,adres.nr_domu,adres.nr_mieszkania,
+    pacjent.pesel_id,karta.data_ur,karta.grupa_krwi);
     
     P_ID := P_ID + 1;
-    EXIT WHEN P_ID = ID_MAX;
+    EXIT WHEN P_ID = ID_MAX + 1 ;
 END LOOP;
 
 END;
+/
 create or replace NONEDITIONABLE PROCEDURE transformacja_specjalnosci IS
 S_ID specjalnosci.specjalnosc_id%type := 1;
-nazwa specjalnosci.nazwa%type;
-stopien specjalnosci.stopien%type;
-dodatek specjalnosci.dodatek_pensja%type;
 
-CURSOR pobierz_n(IDS IN NUMBER)IS SELECT
-s.nazwa FROM specjalnosci s WHERE s.specjalnosc_id = IDS ;
-CURSOR pobierz_s(IDS IN NUMBER)IS SELECT
-s.stopien FROM specjalnosci s WHERE s.specjalnosc_id = IDS ;
-CURSOR pobierz_d(IDS IN NUMBER)IS SELECT
-s.dodatek_pensja FROM specjalnosci s WHERE s.specjalnosc_id = IDS ;
+CURSOR pobierz_specjalnosc(IDS IN NUMBER)IS SELECT
+s.nazwa,s.stopien,s.dodatek_pensja FROM specjalnosci s WHERE s.specjalnosc_id = IDS ;
+
+specjalnosc pobierz_specjalnosc%ROWTYPE;
 
 BEGIN
 LOOP
-    OPEN pobierz_n(S_ID);
-        FETCH pobierz_n INTO nazwa;
-    CLOSE pobierz_n;
-    OPEN pobierz_s(S_ID);
-        FETCH pobierz_s INTO stopien;
-    CLOSE pobierz_s;
-    OPEN pobierz_d(S_ID);
-        FETCH pobierz_d INTO dodatek;
-    CLOSE pobierz_d;
+    OPEN pobierz_specjalnosc(S_ID);
+        FETCH pobierz_specjalnosc INTO specjalnosc;
+    CLOSE pobierz_specjalnosc;
     
-    INSERT INTO h_specjalnosci VALUES(S_ID,nazwa,stopien,dodatek);
+    INSERT INTO h_specjalnosci VALUES(S_ID,specjalnosc.nazwa,specjalnosc.stopien,specjalnosc.dodatek_pensja);
     
     S_ID := S_ID + 1;
     EXIT WHEN S_ID = 101;
@@ -322,42 +156,29 @@ END;
 /
 create or replace NONEDITIONABLE PROCEDURE transformacja_stanowiska IS
 S_ID stanowiska.stanowisko_id%type := 1;
-U_ID stanowiska.uprawnienie_id%type;
-nazwa stanowiska.nazwa%type;
-pensja stanowiska.pensja%type;
-oznaczenie uprawnienia.oznaczenie%type;
-opis uprawnienia.opis%type;
 
-CURSOR p_u(IDS IN NUMBER) IS SELECT
-s.uprawnienie_id FROM stanowiska s WHERE s.stanowisko_id = IDS ; 
-CURSOR p_n(IDS IN NUMBER) IS SELECT
-s.nazwa FROM stanowiska s WHERE s.stanowisko_id = IDS ; 
-CURSOR p_p(IDS IN NUMBER) IS SELECT
-s.pensja FROM stanowiska s WHERE s.stanowisko_id = IDS ; 
+CURSOR pobierz_stanowisko(IDS IN NUMBER) IS SELECT
+s.uprawnienie_id,s.nazwa,s.pensja FROM stanowiska s WHERE s.stanowisko_id = IDS ; 
 
-CURSOR p_oz(IDU IN NUMBER) IS SELECT
-u.oznaczenie FROM uprawnienia u WHERE u.uprawnienie_id = IDU;
-CURSOR p_op(IDU IN NUMBER) IS SELECT
-u.opis FROM uprawnienia u WHERE u.uprawnienie_id = IDU;
+CURSOR pobierz_uprawnienie(IDU IN NUMBER) IS SELECT
+u.oznaczenie,u.opis FROM uprawnienia u WHERE u.uprawnienie_id = IDU;
+
+stanowisko pobierz_stanowisko%ROWTYPE;
+uprawnienie pobierz_uprawnienie%ROWTYPE;
+
 BEGIN
 LOOP
-    OPEN p_u(S_ID);
-        FETCH p_u INTO U_ID;
-    CLOSE p_u;
-    OPEN p_n(S_ID);
-        FETCH p_n INTO nazwa;
-    CLOSE p_n;
-    OPEN p_p(S_ID);
-        FETCH p_p INTO pensja;
-    CLOSE p_p;
-    OPEN p_oz(U_ID);
-        FETCH p_oz INTO oznaczenie;
-    CLOSE p_oz;
-    OPEN p_op(U_ID);
-        FETCH p_op INTO opis;
-    CLOSE p_op;
+    OPEN pobierz_stanowisko(S_ID);
+        FETCH pobierz_stanowisko INTO stanowisko;
+    CLOSE pobierz_stanowisko;
+
+    OPEN pobierz_uprawnienie(stanowisko.uprawnienie_id);
+        FETCH pobierz_uprawnienie INTO uprawnienie;
+    CLOSE pobierz_uprawnienie;
+
     
-    INSERT INTO h_stanowiska VALUES(S_ID,nazwa,pensja,oznaczenie,opis);
+    
+    INSERT INTO h_stanowiska VALUES(S_ID,stanowisko.nazwa,stanowisko.pensja,uprawnienie.oznaczenie,uprawnienie.opis);
 
     S_ID := S_ID + 1;
     EXIT WHEN S_ID = 10001;
@@ -367,153 +188,39 @@ END;
 /
 create or replace NONEDITIONABLE PROCEDURE transformacja_pracownicy IS
 P_ID pracownicy.pracownik_id%type := 1;
-ID_K pracownicy.kontakt_id%type;
-ID_A pracownicy.adres_id%type;
-ID_SP pracownicy.specjalnosc_id%type;
-ID_ST pracownicy.stanowisko_id%type;
 
-imie pracownicy.imie%TYPE;
-nazwisko pracownicy.nazwisko%TYPE;
-login pracownicy.login%TYPE;
-haslo pracownicy.haslo%TYPE;
-pensja pracownicy.pensja%type;
+CURSOR pobierz_pracownika(IDP IN NUMBER) IS
+SELECT p.kontakt_id,p.adres_id,p.stanowisko_id,p.specjalnosc_id,p.imie,p.nazwisko,p.login,p.haslo,p.pensja FROM pracownicy p WHERE  p.pracownik_id = IDP;
 
-telefon kontakty.telefon%type;
-email kontakty.email%type;
+CURSOR pobierz_kontakt(IDK IN NUMBER) IS SELECT 
+k.telefon,k.email FROM kontakty k WHERE k.kontakt_id = IDK;
 
-kod_poczt adresy.kod_poczt%type;
-miasto adresy.miasto%type;
-wojewodztwo adresy.wojewodztwo%type;
-ulica adresy.ulica%type;
-nrdomu adresy.nr_domu%type;
-nrmieszkania adresy.nr_mieszkania%type;
---Id
-CURSOR p_k(IDP IN NUMBER) IS
-SELECT p.kontakt_id FROM pracownicy p WHERE p.pracownik_id = IDP;
+CURSOR pobierz_adres(IDA IN NUMBER) IS SELECT 
+a.kod_poczt,a.miasto,a.wojewodztwo,a.ulica,a.nr_domu,a.nr_mieszkania FROM adresy a WHERE a.adres_id = IDA;
 
-CURSOR p_a(IDP IN NUMBER) IS
-SELECT p.adres_id FROM pracownicy p WHERE p.pracownik_id = IDP;
-
-CURSOR p_st(IDP IN NUMBER) IS
-SELECT p.stanowisko_id FROM pracownicy p WHERE p.pracownik_id = IDP;
-
-CURSOR p_sp(IDP IN NUMBER) IS
-SELECT p.specjalnosc_id FROM pracownicy p WHERE p.pracownik_id = IDP;
---Pracownicy
-CURSOR pobierz_imie(IDP IN NUMBER) IS
-SELECT imie FROM pracownicy p WHERE p.pracownik_id = IDP;
-
-CURSOR pobierz_nazwisko(IDP IN NUMBER) IS
-SELECT nazwisko FROM pracownicy p WHERE p.pracownik_id = IDP;
-
-CURSOR pobierz_login(IDP IN NUMBER) IS
-SELECT login FROM pracownicy p WHERE p.pracownik_id = IDP;
-
-CURSOR pobierz_haslo(IDP IN NUMBER) IS
-SELECT haslo FROM pracownicy p WHERE p.pracownik_id = IDP;
-
-CURSOR pobierz_pensja(IDP IN NUMBER) IS 
-SELECT pensja FROM pracownicy p WHERE p.pracownik_id = IDP;
-
---Kontakty
-CURSOR pobierz_tel(IDK IN NUMBER) IS SELECT 
-k.telefon FROM kontakty k WHERE k.kontakt_id = IDK;
-
-CURSOR pobierz_email(IDK IN NUMBER) IS SELECT 
-k.email FROM kontakty k WHERE k.kontakt_id = IDK;
-
---Adresy
-CURSOR pobierz_kod(IDA IN NUMBER) IS SELECT 
-a.kod_poczt FROM adresy a WHERE a.adres_id = IDA;
-
-CURSOR pobierz_miasto(IDA IN NUMBER) IS SELECT 
-a.miasto FROM adresy a WHERE a.adres_id = IDA;
-
-CURSOR pobierz_woj(IDA IN NUMBER) IS SELECT 
-a.wojewodztwo FROM adresy a WHERE a.adres_id = IDA;
-
-CURSOR pobierz_ul(IDA IN NUMBER) IS SELECT 
-a.ulica FROM adresy a WHERE a.adres_id = IDA;
-
-CURSOR pobierz_dom(IDA IN NUMBER) IS SELECT 
-a.nr_domu FROM adresy a WHERE a.adres_id = IDA;
-
-CURSOR pobierz_mieszk(IDA IN NUMBER) IS SELECT 
-a.nr_mieszkania FROM adresy a WHERE a.adres_id = IDA;
+pracownik pobierz_pracownika%ROWTYPE;
+kontakt pobierz_kontakt%ROWTYPE;
+adres pobierz_adres%ROWTYPE;
 
 BEGIN
 LOOP
-   --Pracownicy
-    OPEN pobierz_imie(P_ID);
-        FETCH pobierz_imie INTO imie;
-    CLOSE pobierz_imie;
-    
-    OPEN pobierz_nazwisko(P_ID);
-        FETCH pobierz_nazwisko INTO nazwisko;
-    CLOSE pobierz_nazwisko;
-    
-    OPEN pobierz_login(P_ID);
-        FETCH pobierz_login INTO login;
-    CLOSE pobierz_login;
-    
-    OPEN pobierz_haslo(P_ID);
-        FETCH pobierz_haslo INTO haslo;
-    CLOSE pobierz_haslo;
-    
-    OPEN pobierz_pensja(P_ID);
-        FETCH pobierz_pensja INTO pensja;
-    CLOSE pobierz_pensja;
-    
-    OPEN p_st(P_ID);
-        FETCH p_st INTO ID_ST;
-    CLOSE p_st;
-    
-    OPEN p_sp(P_ID);
-        FETCH p_sp INTO ID_SP;
-    CLOSE p_sp;
-    --Kontakty
-    OPEN p_k(P_ID);
-        FETCH p_k INTO ID_K;
-    CLOSE p_k;
-    
-    OPEN pobierz_tel(ID_K);
-        FETCH pobierz_tel INTO telefon;
-    CLOSE pobierz_tel;
-    
-    OPEN pobierz_email(ID_K);
-        FETCH pobierz_email INTO email;
-    CLOSE pobierz_email;
-    --Adresy
-    
-    OPEN p_a(P_ID);
-        FETCH p_a INTO ID_A;
-    CLOSE p_a;
-    
-    OPEN pobierz_kod(ID_A);
-        FETCH pobierz_kod INTO kod_poczt;
-    CLOSE pobierz_kod;
-    
-    OPEN pobierz_miasto(ID_A);
-        FETCH pobierz_miasto INTO miasto;
-    CLOSE pobierz_miasto;
-    
-    OPEN pobierz_woj(ID_A);
-        FETCH pobierz_woj INTO wojewodztwo;
-    CLOSE pobierz_woj;
-    
-    OPEN pobierz_ul(ID_A);
-        FETCH pobierz_ul INTO ulica;
-    CLOSE pobierz_ul;
-    
-    OPEN pobierz_dom(ID_A);
-        FETCH pobierz_dom INTO nrdomu;
-    CLOSE pobierz_dom;
-    
-    OPEN pobierz_mieszk(ID_A);
-        FETCH pobierz_mieszk INTO nrmieszkania;
-    CLOSE pobierz_mieszk;
-    
-    INSERT INTO h_pracownicy VALUES(P_ID,imie,nazwisko,login,haslo,pensja,telefon,email,kod_poczt,miasto,wojewodztwo,ulica,nrdomu,nrmieszkania,ID_ST,ID_SP);
+
+    OPEN pobierz_pracownika(P_ID);
+        FETCH pobierz_pracownika INTO pracownik;
+    CLOSE pobierz_pracownika;
+
+    OPEN pobierz_kontakt(pracownik.kontakt_id);
+        FETCH pobierz_kontakt INTO kontakt;
+    CLOSE pobierz_kontakt;
+
+    OPEN pobierz_adres(pracownik.adres_id);
+        FETCH pobierz_adres INTO adres;
+    CLOSE pobierz_adres;
+
+    INSERT INTO h_pracownicy VALUES(P_ID,pracownik.imie,pracownik.nazwisko,pracownik.login,pracownik.haslo,pracownik.pensja,
+    kontakt.telefon,kontakt.email,
+    adres.kod_poczt,adres.miasto,adres.wojewodztwo,adres.ulica,adres.nr_domu,adres.nr_mieszkania,
+    pracownik.stanowisko_id,pracownik.specjalnosc_id);
     
     P_ID := P_ID + 1;
     EXIT WHEN P_ID = 10001;
@@ -607,7 +314,7 @@ BEGIN
         CLOSE pobierz_zabiegi;
         INSERT INTO h_zabiegi VALUES(Z_ID, wiersz.nazwa);
         Z_ID := Z_ID + 1;
-        EXIT WHEN Z_ID = MAX_ID;
+        EXIT WHEN Z_ID = MAX_ID  + 1 ;
     END LOOP;
     
 END;
@@ -641,7 +348,7 @@ BEGIN
         
         D_ID := D_ID + 1;
         
-        EXIT WHEN D_ID = MAX_ID;
+        EXIT WHEN D_ID = MAX_ID  + 1 ;
     END LOOP;
 END;
 /
@@ -673,11 +380,66 @@ BEGIN
         
         S_ID := S_ID + 1;
         
-        EXIT WHEN S_ID = MAX_ID;
+        EXIT WHEN S_ID = MAX_ID  + 1 ;
     END LOOP;
 END;
 /
+CREATE OR REPLACE PROCEDURE transformacja_wizyty IS
+W_ID wizyty.wizyta_id%TYPE := 1;
+MAX_ID wizyty.wizyta_id%TYPE;
 
+D_ID h_daty_wizyt.data_id%type;
+R_ID h_recepty.recepta_id%type;
+
+CURSOR pobierz_max_id IS
+SELECT MAX(wizyta_id) FROM wizyty;
+
+CURSOR pobierz_recepte(WID IN NUMBER) IS 
+SELECT r.recepta_id FROM recepty r WHERE r.wizyta_id = WID;
+
+CURSOR pobierz_zabieg(WID IN NUMBER) IS
+SELECT z.zabieg_id,z.cena_netto FROM zabiegi z WHERE z.wizyta_id = WID;
+
+CURSOR pobierz_date(data_wiz IN wizyty.data_wizyty%type,h_poczatek IN wizyty.godzina_poczatek%type,h_koniec IN wizyty.godzina_koniec%type) IS
+SELECT d.data_id FROM h_daty_wizyt d WHERE d.data_wizyty = data_wiz AND d.godzina_poczatek = h_poczatek AND d.godzina_koniec = h_koniec;
+
+CURSOR pobierz_wizyte(WID IN NUMBER) IS
+SELECT w.oplata,w.data_wizyty,w.godzina_poczatek,w.godzina_koniec,w.pacjent_id,w.prac_spec,w.prac_uma,w.gabinet_id FROM wizyty w WHERE w.wizyta_id = WID;
+
+zabieg pobierz_zabieg%ROWTYPE;
+wiersz pobierz_wizyte%ROWTYPE;
+
+BEGIN
+    OPEN pobierz_max_id;
+        FETCH pobierz_max_id INTO MAX_ID;
+    CLOSE pobierz_max_id;
+    
+    LOOP
+        OPEN pobierz_recepte(W_ID);
+            FETCH pobierz_recepte INTO R_ID;
+        CLOSE pobierz_recepte;
+        
+        OPEN pobierz_zabieg(W_ID);
+            FETCH pobierz_zabieg INTO zabieg;
+        CLOSE pobierz_zabieg;
+        
+        OPEN pobierz_wizyte(W_ID);
+            FETCH pobierz_wizyte INTO wiersz;
+        CLOSE pobierz_wizyte;
+        
+        OPEN pobierz_date(wiersz.data_wizyty,wiersz.godzina_poczatek,wiersz.godzina_koniec);
+            FETCH pobierz_date INTO D_ID;
+        CLOSE pobierz_date;
+        
+        INSERT INTO h_wizyty VALUES(W_ID,wiersz.gabinet_id,wiersz.pacjent_id,wiersz.prac_spec,wiersz.prac_uma,D_ID,W_ID,zabieg.zabieg_id,R_ID,wiersz.oplata,zabieg.cena_netto);
+        
+        R_ID := null;
+        W_ID := W_ID + 1;
+        
+        EXIT WHEN W_ID = MAX_ID + 1;
+    END LOOP;
+END;
+/
 --EXEC--ZONE--
 EXEC transformacja_placowki;
 EXEC transformacja_gabinety;
@@ -690,3 +452,4 @@ EXEC transformacja_stanowiska;
 EXEC transformacja_pracownicy;
 EXEC transformacja_choroby;
 EXEC transformacja_recepty;
+EXEC transformacja_wizyty;
