@@ -776,7 +776,7 @@ BEGIN
             FETCH pobierz_procent_ulgi INTO ulga;
         CLOSE pobierz_procent_ulgi;
         
-        INSERT INTO h_pozycje_recept VALUES(pr_id, wiersz.recepta_id, pr_id, ulga.ulgi_id, wiersz.ilosc, ulgi.procent_ulgi, wiersz.odplatnosc);
+        INSERT INTO h_pozycje_recept VALUES(pr_id, wiersz.recepta_id, pr_id, ulga.ulgi_id, wiersz.ilosc, ulga.procent_ulgi, wiersz.odplatnosc);
         
         pr_id := pr_id + 1;
         EXIT WHEN pr_id = max_id + 1;
@@ -798,3 +798,4 @@ EXEC transformacja_choroby;
 EXEC transformacja_recepty;
 EXEC transformacja_leki;
 EXEC transformacja_ulgi;
+EXEC transformacja_pozycje_recept;
