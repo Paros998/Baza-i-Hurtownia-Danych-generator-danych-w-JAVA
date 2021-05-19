@@ -678,6 +678,112 @@ BEGIN
 END;
 /
 
+CREATE OR REPLACE PROCEDURE transformacja_leki IS
+
+l_id pozycje_recept.pozycje_recept_id%TYPE := 1;
+max_id pozycje_recept.pozycje_recept_id%TYPE;
+
+CURSOR pobierz_max_id IS
+SELECT MAX(pozycje_recept_id) FROM pozycje_recept;
+
+CURSOR pobierz_lek(LID IN NUMBER) IS
+SELECT nazwa FROM pozycje_recept WHERE pozycje_recept_id = LID;
+
+wiersz pobierz_lek%ROWTYPE;
+
+BEGIN
+    OPEN pobierz_max_id;
+        FETCH pobierz_max_id INTO max_id;
+    CLOSE pobierz_max_id;
+    
+    LOOP
+        OPEN pobierz_lek(l_id);
+            FETCH pobierz_lek INTO wiersz;
+        CLOSE pobierz_lek;
+        
+        INSERT INTO h_leki VALUES(l_id, wiersz.nazwa);
+        
+        l_id := l_id + 1;
+        EXIT WHEN l_id = max_id + 1;
+    END LOOP;
+END;
+/
+
+CREATE OR REPLACE PROCEDURE transformacja_ulgi IS
+
+u_id ulgi.ulgi_id%TYPE := 1;
+max_id ulgi.ulgi_id%TYPE;
+
+CURSOR pobierz_max_id IS
+SELECT MAX(ulgi_id) FROM ulgi;
+
+CURSOR pobierz_ulge(UID IN NUMBER) IS
+SELECT typ_ulgi FROM ulgi WHERE ulgi_id = UID;
+
+wiersz pobierz_ulge%ROWTYPE;
+
+BEGIN
+    OPEN pobierz_max_id;
+        FETCH pobierz_max_id INTO max_id;
+    CLOSE pobierz_max_id;
+    
+    LOOP
+        OPEN pobierz_ulge(u_id);
+            FETCH pobierz_ulge INTO wiersz;
+        CLOSE pobierz_ulge;
+        
+        INSERT INTO h_ulgi VALUES(u_id, wiersz.typ_ulgi);
+        
+        u_id := u_id + 1;
+        EXIT WHEN u_id = max_id + 1;
+    END LOOP;
+END;
+/
+
+CREATE OR REPLACE PROCEDURE transformacja_pozycje_recept IS
+
+pr_id pozycje_recept.pozycje_recept_id%TYPE := 1;
+u_id ulgi.ulgi_id%TYPE := 1;
+max_id pozycje_recept.pozycje_recept_id%TYPE;
+
+CURSOR pobierz_max_id IS
+SELECT MAX(pozycje_recept_id) FROM pozycje_recept;
+
+CURSOR pobierz_pozycje(PRID IN NUMBER) IS
+SELECT recepta_id, ilosc, odplatnosc FROM pozycje_recept
+WHERE pozycje_recept_id = PRID;
+
+wiersz pobierz_pozycje%ROWTYPE;
+
+CURSOR pobierz_procent_ulgi(RID IN NUMBER) IS
+SELECT u.ulgi_id, u.procent_ulgi FROM recepty r
+JOIN ulgi u ON r.ulga_id = u.ulgi_id
+WHERE r.recepta_id = RID;
+
+ulga pobierz_procent_ulgi%ROWTYPE;
+
+BEGIN
+    OPEN pobierz_max_id;
+        FETCH pobierz_max_id INTO max_id;
+    CLOSE pobierz_max_id;
+    
+    LOOP
+        OPEN pobierz_pozycje(pr_id);
+            FETCH pobierz_pozycje INTO wiersz;
+        CLOSE pobierz_pozycje;
+        
+        OPEN pobierz_procent_ulgi(wiersz.recepta_id);
+            FETCH pobierz_procent_ulgi INTO ulga;
+        CLOSE pobierz_procent_ulgi;
+        
+        INSERT INTO h_pozycje_recept VALUES(pr_id, wiersz.recepta_id, pr_id, ulga.ulgi_id, wiersz.ilosc, ulgi.procent_ulgi, wiersz.odplatnosc);
+        
+        pr_id := pr_id + 1;
+        EXIT WHEN pr_id = max_id + 1;
+    END LOOP;
+END;
+/
+
 --EXEC--ZONE--
 EXEC transformacja_placowki;
 EXEC transformacja_gabinety;
@@ -690,3 +796,5 @@ EXEC transformacja_stanowiska;
 EXEC transformacja_pracownicy;
 EXEC transformacja_choroby;
 EXEC transformacja_recepty;
+EXEC transformacja_leki;
+EXEC transformacja_ulgi;
