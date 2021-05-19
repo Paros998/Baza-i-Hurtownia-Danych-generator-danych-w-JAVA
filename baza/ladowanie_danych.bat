@@ -1,0 +1,21 @@
+cd dane
+set user=potas/oracle
+SQLLDR USERID=%user% CONTROL='ulgi.ctl' LOG='log/ulgi.log'
+SQLLDR USERID=%user% CONTROL='oddzialy_nfz.ctl' LOG='log/oddzialy_nfz.log'
+SQLLDR USERID=%user% CONTROL='adresy.ctl' LOG='log/adresy.log'
+SQLLDR USERID=%user% CONTROL='kontakty.ctl' LOG='log/kontakty.log'
+SQLLDR USERID=%user% CONTROL='specjalnosci.ctl' LOG='log/specjalnosci.log'
+SQLLDR USERID=%user% CONTROL='uprawnienia.ctl' LOG='log/uprawnienia.log'
+SQLLDR USERID=%user% CONTROL='stanowiska.ctl' LOG='log/stanowiska.log'
+SQLLDR USERID=%user% CONTROL='karty.ctl' LOG='log/karty.log'
+SQLLDR USERID=%user% CONTROL='choroby.ctl' LOG='log/choroby.log'
+SQLLDR USERID=%user% CONTROL='placowki.ctl' LOG='log/placowki.log'
+SQLLDR USERID=%user% CONTROL='pracownicy.ctl' LOG='log/pracownicy.log'
+SQLLDR USERID=%user% CONTROL='pacjenci.ctl' LOG='log/pacjenci.log'
+SQLLDR USERID=%user% CONTROL='gabinety.ctl' LOG='log/gabinety.log'
+SQLLDR USERID=%user% CONTROL='wizyty.ctl' LOG='log/wizyty.log'
+SQLLDR USERID=%user% CONTROL='recepty.ctl' LOG='log/recepty.log'
+SQLLDR USERID=%user% CONTROL='pozycje_recept.ctl' LOG='log/pozycje_recept.log'
+SQLLDR USERID=%user% CONTROL='statusy_wizyt.ctl' LOG='log/statusy_wizyt.log'
+SQLLDR USERID=%user% CONTROL='zabiegi.ctl' LOG='log/zabiegi.log'
+pause

@@ -1,13 +1,13 @@
 
-SQL*Loader: Release 18.0.0.0.0 - Production on Mon May 17 19:35:09 2021
+SQL*Loader: Release 18.0.0.0.0 - Production on Wed May 19 12:11:55 2021
 Version 18.4.0.0.0
 
 Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
 
-Control File:   specjalnosci.ctl
-Data File:      specjalnosci.csv
-  Bad File:     bad/specjalnosci.bad
-  Discard File: dsc/specjalnosci.dsc 
+Control File:   pozycje_recept.ctl
+Data File:      pozycje_recept.csv
+  Bad File:     bad/pozycje_recept.bad
+  Discard File: dsc/pozycje_recept.dsc 
  (Allow all discards)
 
 Number to load: ALL
@@ -17,35 +17,36 @@ Bind array:     250 rows, maximum of 1048576 bytes
 Continuation:    none specified
 Path used:      Conventional
 
-Table SPECJALNOSCI, loaded from every logical record.
+Table POZYCJE_RECEPT, loaded from every logical record.
 Insert option in effect for this table: REPLACE
 TRAILING NULLCOLS option in effect
 
    Column Name                  Position   Len  Term Encl Datatype
 ------------------------------ ---------- ----- ---- ---- ---------------------
-SPECJALNOSC_ID                      FIRST     *   ,       CHARACTER            
+POZYCJE_RECEPT_ID                   FIRST     *   ,       CHARACTER            
+RECEPTA_ID                           NEXT     *   ,       CHARACTER            
 NAZWA                                NEXT     *   ,       CHARACTER            
-STOPIEN                              NEXT     *   ,       CHARACTER            
-DODATEK_PENSJA                       NEXT     *   ,       CHARACTER            
+ILOSC                                NEXT     *   ,       CHARACTER            
+ODPLATNOSC                           NEXT     *   ,       CHARACTER            
 
 
-Table SPECJALNOSCI:
-  100 Rows successfully loaded.
+Table POZYCJE_RECEPT:
+  209800 Rows successfully loaded.
   0 Rows not loaded due to data errors.
   0 Rows not loaded because all WHEN clauses were failed.
   0 Rows not loaded because all fields were null.
 
 
-Space allocated for bind array:                 258000 bytes(250 rows)
+Space allocated for bind array:                 322500 bytes(250 rows)
 Read   buffer bytes: 1048576
 
 Total logical records skipped:          0
-Total logical records read:           100
+Total logical records read:        209800
 Total logical records rejected:         0
 Total logical records discarded:        0
 
-Run began on Mon May 17 19:35:09 2021
-Run ended on Mon May 17 19:35:09 2021
+Run began on Wed May 19 12:11:55 2021
+Run ended on Wed May 19 12:11:57 2021
 
-Elapsed time was:     00:00:00.17
-CPU time was:         00:00:00.12
+Elapsed time was:     00:00:01.79
+CPU time was:         00:00:00.36

@@ -1,13 +1,13 @@
 
-SQL*Loader: Release 18.0.0.0.0 - Production on Mon May 17 19:35:08 2021
+SQL*Loader: Release 18.0.0.0.0 - Production on Wed May 19 12:11:45 2021
 Version 18.4.0.0.0
 
 Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
 
-Control File:   kontakty.ctl
-Data File:      kontakty.csv
-  Bad File:     bad/kontakty.bad
-  Discard File: dsc/kontakty.dsc 
+Control File:   ulgi.ctl
+Data File:      ulgi.csv
+  Bad File:     bad/ulgi.bad
+  Discard File: dsc/ulgi.dsc 
  (Allow all discards)
 
 Number to load: ALL
@@ -17,19 +17,19 @@ Bind array:     250 rows, maximum of 1048576 bytes
 Continuation:    none specified
 Path used:      Conventional
 
-Table KONTAKTY, loaded from every logical record.
+Table ULGI, loaded from every logical record.
 Insert option in effect for this table: REPLACE
 TRAILING NULLCOLS option in effect
 
    Column Name                  Position   Len  Term Encl Datatype
 ------------------------------ ---------- ----- ---- ---- ---------------------
-KONTAKT_ID                          FIRST     *   ,       CHARACTER            
-TELEFON                              NEXT     *   ,       CHARACTER            
-EMAIL                                NEXT     *   ,       CHARACTER            
+ULGI_ID                             FIRST     *   ,       CHARACTER            
+TYP_ULGI                             NEXT     *   ,       CHARACTER            
+PROCENT_ULGI                         NEXT     *   ,       CHARACTER            
 
 
-Table KONTAKTY:
-  40000 Rows successfully loaded.
+Table ULGI:
+  100 Rows successfully loaded.
   0 Rows not loaded due to data errors.
   0 Rows not loaded because all WHEN clauses were failed.
   0 Rows not loaded because all fields were null.
@@ -39,12 +39,12 @@ Space allocated for bind array:                 193500 bytes(250 rows)
 Read   buffer bytes: 1048576
 
 Total logical records skipped:          0
-Total logical records read:         40000
+Total logical records read:           100
 Total logical records rejected:         0
 Total logical records discarded:        0
 
-Run began on Mon May 17 19:35:08 2021
-Run ended on Mon May 17 19:35:09 2021
+Run began on Wed May 19 12:11:45 2021
+Run ended on Wed May 19 12:11:46 2021
 
-Elapsed time was:     00:00:00.91
-CPU time was:         00:00:00.19
+Elapsed time was:     00:00:00.92
+CPU time was:         00:00:00.12

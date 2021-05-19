@@ -1,13 +1,13 @@
 
-SQL*Loader: Release 18.0.0.0.0 - Production on Mon May 17 19:35:11 2021
+SQL*Loader: Release 18.0.0.0.0 - Production on Wed May 19 12:11:46 2021
 Version 18.4.0.0.0
 
 Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
 
-Control File:   placowki.ctl
-Data File:      placowki.csv
-  Bad File:     bad/placowki.bad
-  Discard File: dsc/placowki.dsc 
+Control File:   oddzialy_nfz.ctl
+Data File:      oddzialy_nfz.csv
+  Bad File:     bad/oddzialy_nfz.bad
+  Discard File: dsc/oddzialy_nfz.dsc 
  (Allow all discards)
 
 Number to load: ALL
@@ -17,35 +17,34 @@ Bind array:     250 rows, maximum of 1048576 bytes
 Continuation:    none specified
 Path used:      Conventional
 
-Table PLACOWKI, loaded from every logical record.
+Table ODDZIALY_NFZ, loaded from every logical record.
 Insert option in effect for this table: REPLACE
 TRAILING NULLCOLS option in effect
 
    Column Name                  Position   Len  Term Encl Datatype
 ------------------------------ ---------- ----- ---- ---- ---------------------
-PLACOWKA_ID                         FIRST     *   ,       CHARACTER            
+ODDZIAL_NFZ_ID                      FIRST     *   ,       CHARACTER            
 NAZWA                                NEXT     *   ,       CHARACTER            
-ADRES_ID                             NEXT     *   ,       CHARACTER            
-KONTAKT_ID                           NEXT     *   ,       CHARACTER            
+KOD_FUNDUSZU                         NEXT     *   ,       CHARACTER            
 
 
-Table PLACOWKI:
-  10000 Rows successfully loaded.
+Table ODDZIALY_NFZ:
+  100 Rows successfully loaded.
   0 Rows not loaded due to data errors.
   0 Rows not loaded because all WHEN clauses were failed.
   0 Rows not loaded because all fields were null.
 
 
-Space allocated for bind array:                 258000 bytes(250 rows)
+Space allocated for bind array:                 193500 bytes(250 rows)
 Read   buffer bytes: 1048576
 
 Total logical records skipped:          0
-Total logical records read:         10000
+Total logical records read:           100
 Total logical records rejected:         0
 Total logical records discarded:        0
 
-Run began on Mon May 17 19:35:11 2021
-Run ended on Mon May 17 19:35:11 2021
+Run began on Wed May 19 12:11:46 2021
+Run ended on Wed May 19 12:11:47 2021
 
-Elapsed time was:     00:00:00.28
+Elapsed time was:     00:00:00.91
 CPU time was:         00:00:00.14

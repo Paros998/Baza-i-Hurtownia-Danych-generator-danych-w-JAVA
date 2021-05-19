@@ -1,13 +1,13 @@
 
-SQL*Loader: Release 18.0.0.0.0 - Production on Mon May 17 19:35:12 2021
+SQL*Loader: Release 18.0.0.0.0 - Production on Wed May 19 12:11:50 2021
 Version 18.4.0.0.0
 
 Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
 
-Control File:   gabinety.ctl
-Data File:      gabinety.csv
-  Bad File:     bad/gabinety.bad
-  Discard File: dsc/gabinety.dsc 
+Control File:   placowki.ctl
+Data File:      placowki.csv
+  Bad File:     bad/placowki.bad
+  Discard File: dsc/placowki.dsc 
  (Allow all discards)
 
 Number to load: ALL
@@ -17,27 +17,26 @@ Bind array:     250 rows, maximum of 1048576 bytes
 Continuation:    none specified
 Path used:      Conventional
 
-Table GABINETY, loaded from every logical record.
+Table PLACOWKI, loaded from every logical record.
 Insert option in effect for this table: REPLACE
 TRAILING NULLCOLS option in effect
 
    Column Name                  Position   Len  Term Encl Datatype
 ------------------------------ ---------- ----- ---- ---- ---------------------
-GABINET_ID                          FIRST     *   ,       CHARACTER            
-OZNACZENIE                           NEXT     *   ,       CHARACTER            
-PRACOWNIK_ID                         NEXT     *   ,       CHARACTER            
+PLACOWKA_ID                         FIRST     *   ,       CHARACTER            
+NAZWA                                NEXT     *   ,       CHARACTER            
+ADRES_ID                             NEXT     *   ,       CHARACTER            
 KONTAKT_ID                           NEXT     *   ,       CHARACTER            
-PLACOWKA_ID                          NEXT     *   ,       CHARACTER            
 
 
-Table GABINETY:
+Table PLACOWKI:
   10000 Rows successfully loaded.
   0 Rows not loaded due to data errors.
   0 Rows not loaded because all WHEN clauses were failed.
   0 Rows not loaded because all fields were null.
 
 
-Space allocated for bind array:                 322500 bytes(250 rows)
+Space allocated for bind array:                 258000 bytes(250 rows)
 Read   buffer bytes: 1048576
 
 Total logical records skipped:          0
@@ -45,8 +44,8 @@ Total logical records read:         10000
 Total logical records rejected:         0
 Total logical records discarded:        0
 
-Run began on Mon May 17 19:35:12 2021
-Run ended on Mon May 17 19:35:12 2021
+Run began on Wed May 19 12:11:50 2021
+Run ended on Wed May 19 12:11:51 2021
 
-Elapsed time was:     00:00:00.28
-CPU time was:         00:00:00.11
+Elapsed time was:     00:00:00.34
+CPU time was:         00:00:00.15
