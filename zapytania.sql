@@ -108,3 +108,33 @@ WHERE s.nazwa LIKE 'Neurolog'
 ORDER BY z.nazwa, ranking;
 
 
+------------------------------------Partycje------------------------------------------------------------
+
+--Łączna wartość roczna za każdy zabieg przeprowadzany na pacjentach z grupą krwi A-
+SELECT DISTINCT z.nazwa,
+EXTRACT(YEAR FROM w.data_wizyty) AS Rok,
+k.grupa_krwi,
+SUM(z.cena_netto) OVER (PARTITION BY EXTRACT(YEAR FROM w.data_wizyty),k.grupa_krwi,z.nazwa) AS "Wartosc_Roczna" 
+FROM zabiegi z 
+JOIN wizyty w ON w.wizyta_id = z.wizyta_id 
+JOIN pacjenci p ON w.pacjent_id = p.pacjent_id
+JOIN karty k ON p.pesel_id = k.pesel_id
+WHERE k.grupa_krwi = 'A-'
+ORDER BY z.nazwa,Rok DESC;
+
+
+--Id pacjenta,jego imie ,nazwisko , pesel oraz jego Wydatki na leki wciągu jednego roku z/bez ulgą
+SELECT DISTINCT
+p.pacjent_id,
+p.imie,
+p.nazwisko,
+p.pesel_id,
+EXTRACT(YEAR FROM w.data_wizyty) AS Rok,
+SUM(pr.odplatnosc) OVER (PARTITION BY p.pacjent_id,EXTRACT(YEAR FROM w.data_wizyty)) AS "Wydatki Pacjenta Na Leki Bez Ulgi",
+(SUM(pr.odplatnosc) OVER (PARTITION BY p.pacjent_id,EXTRACT(YEAR FROM w.data_wizyty)) * (u.procent_ulgi / 100) ) AS "Wydatki Pacjenta Na Leki Z Wliczona Ulga"
+FROM recepty r
+JOIN pozycje_recept pr ON pr.recepta_id = r.recepta_id
+JOIN wizyty w ON w.wizyta_id = r.wizyta_id 
+JOIN pacjenci p ON p.pacjent_id = w.pacjent_id
+LEFT JOIN ulgi u ON u.ulgi_id = r.ulga_id
+ORDER BY p.pacjent_id ASC,Rok DESC;
