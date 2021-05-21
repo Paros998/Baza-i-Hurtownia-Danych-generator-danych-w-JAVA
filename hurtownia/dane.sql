@@ -334,6 +334,10 @@ WHERE wizyta_id = D_ID;
 
 wiersz pobierz_date%ROWTYPE;
 
+dzien_tygodnia h_daty_wizyt.dzien_tygodnia%TYPE;
+miesiac h_daty_wizyt.miesiac%TYPE;
+rok h_daty_wizyt.rok%TYPE;
+
 BEGIN
     OPEN pobierz_max_id;
         FETCH pobierz_max_id INTO MAX_ID;
@@ -344,7 +348,11 @@ BEGIN
             FETCH pobierz_date INTO wiersz;
         CLOSE pobierz_date;
         
-        INSERT INTO h_daty_wizyt VALUES(D_ID, wiersz.data_wizyty, wiersz.godzina_poczatek, wiersz.godzina_koniec);
+        dzien_tygodnia := TO_CHAR (wiersz.data_wizyty, 'DAY');
+        miesiac := EXTRACT (MONTH FROM wiersz.data_wizyty);
+        rok := EXTRACT (YEAR FROM wiersz.data_wizyty);
+        
+        INSERT INTO h_daty_wizyt VALUES(D_ID, wiersz.data_wizyty, dzien_tygodnia, miesiac, rok, wiersz.godzina_poczatek, wiersz.godzina_koniec);
         
         D_ID := D_ID + 1;
         
