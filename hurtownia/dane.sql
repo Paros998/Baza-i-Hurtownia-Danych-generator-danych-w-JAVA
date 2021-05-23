@@ -34,12 +34,13 @@ LOOP
 
     INSERT INTO h_placowki VALUES(P_ID,placowka.nazwa,kontakt.telefon,kontakt.email,adres.kod_poczt,adres.miasto,adres.wojewodztwo,adres.ulica,adres.nr_domu,adres.nr_mieszkania);
     
+    kontakt := null;
+    adres := null;
+    
     P_ID := P_ID + 1;
     EXIT WHEN P_ID = 10001;
 END LOOP;
 END;
-
-
 /
 
 create or replace NONEDITIONABLE PROCEDURE transformacja_gabinety IS
@@ -67,7 +68,9 @@ LOOP
    
     
     INSERT INTO h_gabinety VALUES(G_ID,gabinet.oznaczenie,gabinet.placowka_id,kontakt.telefon,kontakt.email);
-
+    
+    gabinet := null;
+    
     G_ID := G_ID + 1;
     EXIT WHEN G_ID = 10001;
 END LOOP;
@@ -126,6 +129,11 @@ LOOP
     adres.kod_poczt,adres.miasto,adres.wojewodztwo,adres.ulica,adres.nr_domu,adres.nr_mieszkania,
     pacjent.pesel_id,karta.data_ur,karta.grupa_krwi);
     
+    karta := null;
+    pacjent := null;
+    kontakt := null;
+    adres := null;
+    
     P_ID := P_ID + 1;
     EXIT WHEN P_ID = ID_MAX + 1 ;
 END LOOP;
@@ -179,7 +187,9 @@ LOOP
     
     
     INSERT INTO h_stanowiska VALUES(S_ID,stanowisko.nazwa,stanowisko.pensja,uprawnienie.oznaczenie,uprawnienie.opis);
-
+    
+    uprawnienie := null;
+    
     S_ID := S_ID + 1;
     EXIT WHEN S_ID = 10001;
 END LOOP;
@@ -221,6 +231,9 @@ LOOP
     kontakt.telefon,kontakt.email,
     adres.kod_poczt,adres.miasto,adres.wojewodztwo,adres.ulica,adres.nr_domu,adres.nr_mieszkania,
     pracownik.stanowisko_id,pracownik.specjalnosc_id);
+    
+    kontakt := null;
+    adres := null;
     
     P_ID := P_ID + 1;
     EXIT WHEN P_ID = 10001;
@@ -281,7 +294,9 @@ LOOP
     CLOSE p_o;
 
     INSERT INTO h_recepty VALUES(R_ID,wiersz1.recepta_choroba_id,wiersz2.nazwa,wiersz2.kod_funduszu);
-
+    
+    wiersz2 := null;
+    
     R_ID := R_ID + 1;
     EXIT WHEN R_ID = MAX_ID + 1;
 END LOOP;
@@ -548,6 +563,8 @@ BEGIN
         CLOSE pobierz_procent_ulgi;
         
         INSERT INTO h_pozycje_recept VALUES(pr_id, wiersz.recepta_id, pr_id, ulga.ulgi_id, wiersz.ilosc, ulga.procent_ulgi, wiersz.odplatnosc);
+        
+        ulga := null;
         
         pr_id := pr_id + 1;
         EXIT WHEN pr_id = max_id + 1;
