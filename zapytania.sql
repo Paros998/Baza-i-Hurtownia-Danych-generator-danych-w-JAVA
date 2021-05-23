@@ -1,13 +1,15 @@
 --------------------------------------------- ROLLUP ---------------------------------------------
 
 -- Liczba pacjentow pochodzacych z okreslonego oddzialu NFZ, chorujacych na dana chorobe, 
--- ktorzy posiadaja ulge niepelnosprawnosciowa
-SELECT c.nazwa AS nazwa_choroby, o.nazwa AS nazwa_oddzialu_nfz, u.typ_ulgi, COUNT (c.pesel_id) AS liczba_pacjentow FROM recepty r
-JOIN choroby c ON c.choroby_id = r.recepta_choroba_id
-JOIN ulgi u ON u.ulgi_id = r.ulga_id
+-- ktorzy naleza do placowki Prodimed
+SELECT c.nazwa AS nazwa_choroby, o.nazwa AS nazwa_oddzialu_nfz, p.nazwa AS nazwa_placowki, COUNT (w.pacjent_id) AS liczba_pacjentow FROM recepty r
 JOIN oddzialy_nfz o ON o.oddzial_nfz_id = r.oddzial_nfz_id
-WHERE u.typ_ulgi LIKE 'Niepelnosprawnosciowa'
-GROUP BY ROLLUP (c.nazwa, o.nazwa, u.typ_ulgi);
+JOIN choroby c ON c.choroby_id = r.recepta_choroba_id
+JOIN wizyty w ON w.wizyta_id = r.wizyta_id
+JOIN gabinety g ON g.gabinet_id = w.gabinet_id
+JOIN placowki p ON p.placowka_id = g.placowka_id
+WHERE p.nazwa LIKE 'Prodimed'
+GROUP BY ROLLUP (c.nazwa, o.nazwa, p.nazwa);
 
 -- Liczba pracownikow pracujacych na danym stanowisku, posiadajacych okreslone uprawnienia,
 -- mieszkajacych w Kielcach
@@ -18,10 +20,10 @@ JOIN adresy a ON a.adres_id = p.adres_id
 WHERE a.miasto LIKE 'Kielce'
 GROUP BY ROLLUP (s.nazwa, u.opis, a.miasto);
 
--- Liczba wizyt pacjentow ze schorzeniem osteoporozy, w danej placowce oraz w danym miescie
-SELECT c.nazwa AS nazwa_choroby, p.nazwa AS nazwa_placowki, a.miasto, COUNT (w.wizyta_id) AS liczba_wizyt FROM recepty r
+-- Liczba wizyt pacjentow z danym schorzeniem , w danej placowce oraz w danym miescie
+SELECT c.nazwa AS nazwa_choroby, p.nazwa AS nazwa_placowki, a.miasto, COUNT (w.wizyta_id) AS liczba_wizyt FROM wizyty w
+JOIN recepty r ON w.wizyta_id = r.wizyta_id
 JOIN choroby c ON c.choroby_id = r.recepta_choroba_id
-JOIN wizyty w ON w.wizyta_id = r.wizyta_id
 JOIN gabinety g ON g.gabinet_id = w.gabinet_id
 JOIN placowki p ON p.placowka_id = g.placowka_id
 JOIN adresy a ON a.adres_id = p.adres_id
@@ -40,8 +42,8 @@ WHERE g.oznaczenie LIKE 'Wizyty%'
 GROUP BY CUBE (pac.nazwisko, p.nazwa, a.miasto);
 
 -- Srednia oplata zabiegow danego pacjenta, w placowce, w danym miescie
-SELECT pac.nazwisko AS nazwisko_pacjenta, p.nazwa AS nazwa_placowki, a.miasto, AVG (z.cena_netto) AS srednia_oplata FROM zabiegi z
-JOIN wizyty w ON w.wizyta_id = z.wizyta_id
+SELECT pac.nazwisko AS nazwisko_pacjenta, p.nazwa AS nazwa_placowki, a.miasto, AVG (z.cena_netto) AS srednia_oplata FROM wizyty w
+JOIN zabiegi z ON w.wizyta_id = z.wizyta_id
 JOIN pacjenci pac ON pac.pacjent_id = w.pacjent_id
 JOIN gabinety g ON g.gabinet_id = w.gabinet_id
 JOIN placowki p ON p.placowka_id = g.placowka_id
@@ -98,8 +100,8 @@ ORDER BY pr.nazwa, ranking;
 -- Ranking zabiegow, ktore zostaly wykonane przez neurologa, w danej placowce oraz w danym miescie
 SELECT z.nazwa AS nazwa_zabiegu, pr.nazwisko, p.nazwa AS nazwa_placowki, a.miasto, z.cena_netto AS oplata_za_zabieg,
 RANK () OVER (PARTITION BY p.nazwa, a.miasto ORDER BY z.cena_netto DESC)
-ranking FROM zabiegi z
-JOIN wizyty w ON z.wizyta_id = w.wizyta_id
+ranking FROM wizyty w
+JOIN zabiegi z ON z.wizyta_id = w.wizyta_id
 JOIN pracownicy pr ON pr.pracownik_id = w.prac_spec
 JOIN stanowiska s ON s.stanowisko_id = pr.stanowisko_id
 JOIN gabinety g ON g.gabinet_id = w.gabinet_id
@@ -107,5 +109,4 @@ JOIN placowki p ON p.placowka_id = g.placowka_id
 JOIN adresy a ON a.adres_id = p.adres_id
 WHERE s.nazwa LIKE 'Neurolog'
 ORDER BY z.nazwa, ranking;
-
 
