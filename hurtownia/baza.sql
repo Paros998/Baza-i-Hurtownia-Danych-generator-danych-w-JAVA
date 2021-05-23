@@ -75,7 +75,7 @@ CREATE TABLE h_daty_wizyt (
     data_id NUMBER PRIMARY KEY,
     data_wizyty DATE NOT NULL,
     dzien_tygodnia VARCHAR2(30),
-    miesiac VARCHAR2(30),
+    miesiac NUMBER(2),
     rok NUMBER(5),
     godzina_poczatek VARCHAR2(5) NOT NULL,
     godzina_koniec VARCHAR2(5)
