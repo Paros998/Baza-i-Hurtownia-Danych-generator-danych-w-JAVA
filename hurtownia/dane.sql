@@ -443,7 +443,7 @@ BEGIN
         
         R_ID := null;
         W_ID := W_ID + 1;
-        
+        zabieg := null;
         EXIT WHEN W_ID = MAX_ID + 1;
     END LOOP;
 END;
