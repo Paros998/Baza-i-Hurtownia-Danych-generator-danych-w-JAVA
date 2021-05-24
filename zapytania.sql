@@ -62,7 +62,7 @@ GROUP BY CUBE (pac.nazwisko, a.miasto, c.nazwa);
 
 ---------------------------------------------- PARTYCJE OBLICZENIOWE ----------------------------------------------------------------
 
---�?ączna wartość roczna za każdy zabieg przeprowadzany na pacjentach z grupą krwi A-
+--łączna wartość roczna za każdy zabieg przeprowadzany na pacjentach z grupą krwi A-
 SELECT DISTINCT z.nazwa,
 EXTRACT(YEAR FROM w.data_wizyty) AS Rok,
 k.grupa_krwi,
@@ -125,9 +125,9 @@ EXTRACT(YEAR FROM c.poczatek) Rok,
 w.wizyta_id,
 COUNT(*) OVER (PARTITION BY c.nazwa,EXTRACT(YEAR FROM c.poczatek) ORDER BY c.choroby_id ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS "Ilość zapadnięć na tę chorobę w tym roku do aktualnego rekordu wizyty",
 ROUND(100 * COUNT(*) OVER (PARTITION BY c.nazwa,EXTRACT(YEAR FROM c.poczatek) ORDER BY c.choroby_id ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) / COUNT(*) OVER (PARTITION BY c.nazwa,EXTRACT(YEAR FROM c.poczatek) ) , 3) "Udzial % w tym roku",
-COUNT(*) OVER (PARTITION BY c.nazwa,EXTRACT(YEAR FROM c.poczatek) ) "�?aczna wartość zapadnięć na tę chorobę w tym roku",
+COUNT(*) OVER (PARTITION BY c.nazwa,EXTRACT(YEAR FROM c.poczatek) ) "Łaczna wartość zapadnięć na tę chorobę w tym roku",
 ROUND(100 * COUNT(*) OVER (PARTITION BY c.nazwa,EXTRACT(YEAR FROM c.poczatek) ) / COUNT(*) OVER (PARTITION BY c.nazwa) , 3) "Udzial % na tle lat",
-COUNT(*) OVER (PARTITION BY c.nazwa) "�?aczna wartość zapadnięć na tę chorobę na przestrzeni lat",
+COUNT(*) OVER (PARTITION BY c.nazwa) "Łaczna wartość zapadnięć na tę chorobę na przestrzeni lat",
 k.grupa_krwi "Grupa Krwi Pacjenta",
 p.imie,
 p.nazwisko
