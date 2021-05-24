@@ -1,9 +1,7 @@
 --------------------------------------------- OKNA OBLICZENIOWE----------------------------------------------------------------------
---Zlicza ilość wizyt przeprowadzonych w danym roku,recept wypisanych oraz zabiegów od 15 dni przed do 15 dni po aktualnej dacie wizyty
+--Zlicza ilość wizyt przeprowadzonych ,recept wypisanych oraz zabiegów w danym roku od 15 dni przed do 15 dni po aktualnej dacie wizyty
 SELECT DISTINCT
-d.rok AS Rok ,
-d.miesiac AS Miesiac ,
-d.data_wizyty AS Data,
+d.rok AS Rok ,d.miesiac AS Miesiac ,d.data_wizyty AS Data,
 COUNT(w.wizyta_id) OVER (PARTITION BY d.rok ORDER BY d.data_wizyty DESC RANGE BETWEEN INTERVAL '15' DAY PRECEDING AND INTERVAL '15' DAY FOLLOWING) AS Ilosc_wizyt,
 COUNT(w.zabieg_id) OVER (PARTITION BY d.rok ORDER BY d.data_wizyty DESC RANGE BETWEEN INTERVAL '15' DAY PRECEDING AND INTERVAL '15' DAY FOLLOWING) AS Ilosc_zabiegow,
 COUNT(w.recepta_id) OVER (PARTITION BY d.rok ORDER BY d.data_wizyty DESC RANGE BETWEEN INTERVAL '15' DAY PRECEDING AND INTERVAL '15' DAY FOLLOWING) AS Ilosc_recept 
@@ -11,7 +9,7 @@ FROM h_wizyty w
 JOIN h_daty_wizyt  d ON d.data_id = w.data_wizyty_id
 ORDER BY Rok DESC , Miesiac ASC;
 
---Wypisuje nazwę choroby, jej ID , Rok przeszukiwań danych,Ilość znalezionych rekordów od początku tabeli do aktualnego rekordu z uwzględnieniem nazwy oraz roku,Itd oraz dane Pacjenta
+--Wypisuje nazwę choroby, jej ID , Rok przeszukiwań danych,Ilość znalezionych rekordów od początku tabeli do aktualnego rekordu z uwzględnieniem nazwy oraz roku, oraz dane Pacjenta
 SELECT DISTINCT
 c.nazwa AS Nazwa_Choroby,
 c.choroby_id,
@@ -32,7 +30,7 @@ JOIN h_daty_wizyt d ON d.data_id = w.data_wizyty_id
 JOIN h_pacjenci p ON p.pacjent_id = w.pacjent_id
 ORDER BY Rok DESC,COUNT(*) OVER (PARTITION BY c.nazwa,EXTRACT(YEAR FROM c.poczatek) ORDER BY c.choroby_id ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) DESC;
 
---Opłaty,ceny leków i zabiegów każdej wizyty oraz sumaryczna wartość dotychczasowych wizyt
+--Opłaty,ceny leków i zabiegów dla każdej wizyty oraz sumaryczna wartość dotychczasowych wizyt
 SELECT DISTINCT
 w.wizyta_id,
 p.pesel,

@@ -12,7 +12,7 @@ JOIN h_pacjenci p ON w.pacjent_id = p.pacjent_id
 WHERE p.grupa_krwi = 'A-'
 ORDER BY z.nazwa,Rok DESC;
 
---Id pacjenta,jego imie ,nazwisko , pesel oraz jego Wydatki na leki wciągu jednego roku z/bez ulgą
+--Id pacjenta,jego imie ,nazwisko , pesel oraz jego Wydatki na leki wciągu jednego roku z ulgą/bez ulgi
 SELECT DISTINCT
 p.pacjent_id,
 p.imie,

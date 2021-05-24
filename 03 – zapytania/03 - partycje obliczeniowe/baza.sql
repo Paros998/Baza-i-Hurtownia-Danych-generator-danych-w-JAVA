@@ -13,7 +13,7 @@ WHERE k.grupa_krwi = 'A-'
 ORDER BY z.nazwa,Rok DESC;
 
 
---Id pacjenta,jego imie ,nazwisko , pesel oraz jego Wydatki na leki wciągu jednego roku z/bez ulgą
+--Id pacjenta,jego imie ,nazwisko , pesel oraz jego Wydatki na leki wciągu jednego roku z ulgą/bez ulgi
 SELECT DISTINCT
 p.pacjent_id,
 p.imie,
@@ -30,11 +30,11 @@ LEFT JOIN ulgi u ON u.ulgi_id = r.ulga_id
 ORDER BY p.pacjent_id ASC,Rok DESC;
 
 -- Procentowy udzial oplat za wizyte, w danym roku, w okreslonej placowce, znajdujacej sie w okreslonym miescie, na przestrzeni wszystkich lat
-SELECT p.placowka_id, p.nazwa AS nazwa_placowki, a.miasto, EXTRACT (YEAR FROM w.data_wizyty) AS rok, 
+SELECT DISTINCT p.placowka_id, p.nazwa AS nazwa_placowki, a.miasto, EXTRACT (YEAR FROM w.data_wizyty) AS rok, 
 SUM (w.oplata) OVER (PARTITION BY EXTRACT (YEAR FROM w.data_wizyty), p.placowka_id, a.miasto) suma_w_danym_roku,
 SUM (w.oplata) OVER (PARTITION BY p.placowka_id, a.miasto) suma_na_przestrzeni_lat,
 ROUND (100 * (SUM (w.oplata) OVER (PARTITION BY EXTRACT (YEAR FROM w.data_wizyty), p.placowka_id, a.miasto)) / SUM (w.oplata) OVER (PARTITION BY p.placowka_id, a.miasto))
-"UDZIAL %" FROM wizyty w
+"UDZIAL % danego roku" FROM wizyty w
 JOIN gabinety g ON g.gabinet_id = w.gabinet_id
 JOIN placowki p ON p.placowka_id = g.placowka_id
 JOIN adresy a ON a.adres_id = p.adres_id

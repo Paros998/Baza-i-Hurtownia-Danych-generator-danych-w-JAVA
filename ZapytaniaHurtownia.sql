@@ -83,11 +83,11 @@ JOIN h_pacjenci p ON p.pacjent_id = w.pacjent_id
 ORDER BY p.pacjent_id ASC,Rok DESC;
 
 -- Procentowy udzial oplat za wizyte, w danym roku, w okreslonej placowce, znajdujacej sie w okreslonym miescie, na przestrzeni wszystkich lat
-SELECT p.placowka_id, p.nazwa AS nazwa_placowki, p.miasto, d.rok, 
+SELECT DISTINCT p.placowka_id, p.nazwa AS nazwa_placowki, p.miasto, d.rok, 
 SUM (w.oplata) OVER (PARTITION BY d.rok, p.placowka_id, p.miasto) suma_w_danym_roku,
 SUM (w.oplata) OVER (PARTITION BY p.placowka_id, p.miasto) suma_na_przestrzeni_lat,
 ROUND (100 * (SUM (w.oplata) OVER (PARTITION BY d.rok, p.placowka_id, p.miasto)) / SUM (w.oplata) OVER (PARTITION BY p.placowka_id, p.miasto))
-"UDZIAL %" FROM h_wizyty w
+"UDZIAL % danego roku" FROM h_wizyty w
 JOIN h_gabinety g ON g.gabinet_id = w.gabinet_id
 JOIN h_placowki p ON p.placowka_id = g.placowka_id
 JOIN h_daty_wizyt d ON d.data_id = w.data_wizyty_id
@@ -127,7 +127,7 @@ JOIN h_daty_wizyt d ON d.data_id = w.data_wizyty_id
 JOIN h_pacjenci p ON p.pacjent_id = w.pacjent_id
 ORDER BY Rok DESC,COUNT(*) OVER (PARTITION BY c.nazwa,EXTRACT(YEAR FROM c.poczatek) ORDER BY c.choroby_id ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) DESC;
 
---Opłaty,ceny leków i zabiegów każdej wizyty oraz sumaryczna wartość dotychczasowych wizyt
+--Opłaty,ceny leków i zabiegów dla każdej wizyty oraz sumaryczna wartość dotychczasowych wizyt
 SELECT DISTINCT
 w.wizyta_id,
 p.pesel,
