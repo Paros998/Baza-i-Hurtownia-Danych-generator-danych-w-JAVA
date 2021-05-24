@@ -16,8 +16,8 @@ public class App {
         Gabinety gabinety = new Gabinety(10000, kontakty, placówki, pracownicy, pacjenci);
         Wizyty wizyty = new Wizyty(100000, karty, gabinety, pracownicy, pacjenci);
         Recepty recepty = new Recepty(100000, wizyty, oddzialyNfz, choroby, karty, ulgi, pacjenci);
-        PozycjeRecept pozycjeRecept = new PozycjeRecept(recepty);
-        StatusyWizyt statusy = new StatusyWizyt(100000, wizyty);
-        Zabiegi zabiegi = new Zabiegi(100000, wizyty, gabinety);
+        new PozycjeRecept(recepty);
+        new StatusyWizyt(100000, wizyty);
+        new Zabiegi(100000, wizyty, gabinety);
     }
 }

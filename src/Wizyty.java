@@ -26,6 +26,7 @@ public class Wizyty extends GlobalElements {
     public int[] gabinety;
     int rok, miesiac, dzien, indeks;
     public int[] specjalisci;
+    int godzina1, godzina2, minuta1, minuta2;
 
     public Wizyty(int liczbaRekordow, Karty karty, Gabinety Gabinet, Pracownicy pracownicy, Pacjenci pacjeNci)
             throws IOException {
@@ -74,7 +75,7 @@ public class Wizyty extends GlobalElements {
             data = LocalDate.of(rok, miesiac, dzien).toString();
             daty[i] = data;
             // Losowanie godzin początkowych i końcowych
-            int godzina1, godzina2, minuta1, minuta2;
+
             godzina1 = generator.nextInt(12) + 8;
             minuta1 = generator.nextInt(60);
             godzina2 = godzina1 + generator.nextInt(3) + 1;
@@ -114,7 +115,7 @@ public class Wizyty extends GlobalElements {
         data = LocalDate.of(rok, miesiac, dzien).toString();
         daty[i] = data;
         // Losowanie godzin początkowych i końcowych
-        int godzina1, godzina2, minuta1, minuta2;
+
         godzina1 = generator.nextInt(12) + 8;
         minuta1 = generator.nextInt(60);
         godzina2 = godzina1 + generator.nextInt(3) + 1;
