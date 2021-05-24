@@ -91,7 +91,6 @@ JOIN pacjenci p ON p.pacjent_id = w.pacjent_id
 LEFT JOIN ulgi u ON u.ulgi_id = r.ulga_id
 ORDER BY p.pacjent_id ASC,Rok DESC;
 
-
 -- Procentowy udzial oplat za wizyte, w danym roku, w okreslonej placowce, znajdujacej sie w okreslonym miescie, na przestrzeni wszystkich lat
 SELECT p.placowka_id, p.nazwa AS nazwa_placowki, a.miasto, EXTRACT (YEAR FROM w.data_wizyty) AS rok, 
 SUM (w.oplata) OVER (PARTITION BY EXTRACT (YEAR FROM w.data_wizyty), p.placowka_id, a.miasto) suma_w_danym_roku,
@@ -123,7 +122,8 @@ SELECT DISTINCT
 c.nazwa AS Nazwa_Choroby,
 c.choroby_id,
 EXTRACT(YEAR FROM c.poczatek) Rok,
-COUNT(*) OVER (PARTITION BY c.nazwa,EXTRACT(YEAR FROM c.poczatek) ORDER BY c.choroby_id ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS "Ilość zapadnięć na tę chorobę w tym roku do aktualnego rekordu",
+w.wizyta_id,
+COUNT(*) OVER (PARTITION BY c.nazwa,EXTRACT(YEAR FROM c.poczatek) ORDER BY c.choroby_id ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS "Ilość zapadnięć na tę chorobę w tym roku do aktualnego rekordu wizyty",
 ROUND(100 * COUNT(*) OVER (PARTITION BY c.nazwa,EXTRACT(YEAR FROM c.poczatek) ORDER BY c.choroby_id ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) / COUNT(*) OVER (PARTITION BY c.nazwa,EXTRACT(YEAR FROM c.poczatek) ) , 3) "Udzial % w tym roku",
 COUNT(*) OVER (PARTITION BY c.nazwa,EXTRACT(YEAR FROM c.poczatek) ) "�?aczna wartość zapadnięć na tę chorobę w tym roku",
 ROUND(100 * COUNT(*) OVER (PARTITION BY c.nazwa,EXTRACT(YEAR FROM c.poczatek) ) / COUNT(*) OVER (PARTITION BY c.nazwa) , 3) "Udzial % na tle lat",
@@ -132,8 +132,10 @@ k.grupa_krwi "Grupa Krwi Pacjenta",
 p.imie,
 p.nazwisko
 FROM choroby c
-JOIN karty k ON k.pesel_id = c.pesel_id
-JOIN pacjenci p ON p.pesel_id = k.pesel_id
+JOIN recepty r ON r.recepta_choroba_id = c.choroby_id
+JOIN wizyty  w ON w.wizyta_id = r.wizyta_id
+JOIN pacjenci p ON p.pacjent_id = w.pacjent_id
+JOIN karty k ON k.pesel_id = p.pesel_id
 ORDER BY Rok DESC,COUNT(*) OVER (PARTITION BY c.nazwa,EXTRACT(YEAR FROM c.poczatek) ORDER BY c.choroby_id ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) DESC;
 
 --Opłaty,ceny leków i zabiegów każdej wizyty oraz sumaryczna wartość dotychczasowych wizyt
@@ -149,7 +151,7 @@ SUM(w.oplata) OVER ( ORDER BY w.wizyta_id RANGE BETWEEN UNBOUNDED PRECEDING AND 
 z.cena_netto "Oplata za zabieg pacjenta",
 SUM(z.cena_netto ) OVER (ORDER BY w.wizyta_id RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) "Suma wszystkich dotychczasowych oplat za zabiegi"
 FROM wizyty w
-LEFT JOIN zabiegi z ON w.wizyta_id = z.zabieg_id
+LEFT JOIN zabiegi z ON w.wizyta_id = z.wizyta_id
 JOIN pacjenci p ON p.pacjent_id = w.pacjent_id
 LEFT JOIN recepty r ON r.wizyta_id = w.wizyta_id
 LEFT JOIN pozycje_recept pz ON pz.recepta_id = r.recepta_id
