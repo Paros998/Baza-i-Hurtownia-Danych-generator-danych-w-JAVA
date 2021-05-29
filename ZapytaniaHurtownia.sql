@@ -55,96 +55,87 @@ GROUP BY CUBE (pac.nazwisko, pac.miasto, c.nazwa);
 ---------------------------------------------- PARTYCJE OBLICZENIOWE ----------------------------------------------------------------
 
 --Łączna wartość roczna za każdy zabieg przeprowadzany na pacjentach z grupą krwi A-
-SELECT DISTINCT z.nazwa,
-d.rok AS Rok,
-p.grupa_krwi,
-SUM(w.cena_netto_za_zabieg) OVER (PARTITION BY d.rok,p.grupa_krwi,z.nazwa) AS "Wartosc_Roczna" 
-FROM h_wizyty w 
-JOIN h_daty_wizyt d ON d.data_id = w.data_wizyty_id
-RIGHT JOIN h_zabiegi z ON w.zabieg_id = z.zabieg_id 
-JOIN h_pacjenci p ON w.pacjent_id = p.pacjent_id
-WHERE p.grupa_krwi = 'A-'
-ORDER BY z.nazwa,Rok DESC;
+SELECT DISTINCT z.nazwa Nazwa,d.rok Rok,p.grupa_krwi,SUM(CNZ)OVER(PARTITION BY d.rok,p.grupa_krwi,z.nazwa) CNZ FROM
+(SELECT wizyta_id WID,pacjent_id PID,zabieg_id ZID,SUM(cena_netto_za_zabieg) CNZ,data_wizyty_id DID 
+FROM h_wizyty WHERE zabieg_id IS NOT NULL AND pacjent_id IN (SELECT pacjent_id FROM h_pacjenci WHERE h_pacjenci.grupa_krwi = 'A-') 
+GROUP BY wizyta_id,pacjent_id,zabieg_id,data_wizyty_id)
+,h_zabiegi z,h_daty_wizyt d,h_pacjenci p 
+WHERE z.zabieg_id = ZID AND d.data_id = DID AND p.pacjent_id  = PID
+ORDER BY Nazwa,Rok DESC;
 
---Id pacjenta,jego imie ,nazwisko , pesel oraz jego Wydatki na leki wciągu jednego roku z/bez ulgą
-SELECT DISTINCT
-p.pacjent_id,
-p.imie,
-p.nazwisko,
-p.pesel,
-d.rok AS Rok,
-SUM(pr.odplatnosc) OVER (PARTITION BY p.pacjent_id,d.rok) AS "Wydatki Pacjenta Na Leki Bez Ulgi",
-(SUM(pr.odplatnosc) OVER (PARTITION BY p.pacjent_id,d.rok) * (pr.procent_ulgi / 100) ) AS "Wydatki Pacjenta Na Leki Z Wliczona Ulga"
-FROM h_wizyty w
-JOIN h_daty_wizyt d ON d.data_id = w.data_wizyty_id
-JOIN h_recepty r ON w.recepta_id = r.recepta_id
-JOIN h_pozycje_recept pr ON pr.recepta_id = r.recepta_id
-JOIN h_pacjenci p ON p.pacjent_id = w.pacjent_id
-ORDER BY p.pacjent_id ASC,Rok DESC;
+--Id pacjenta,jego imie ,nazwisko , pesel oraz jego Wydatki na leki wciągu jednego roku z ulgą/bez ulgi
+SELECT DISTINCT PID AS Pacjent_ID,imie,nazwisko,pesel AS Pesel_id,rok AS Rok,
+SUM(ODP) OVER (PARTITION BY PID,rok) AS "Wydatki Pacjenta Na Leki Bez Ulgi",
+(SUM(ODP) OVER (PARTITION BY PID,rok) * (PUL / 100) ) AS "Wydatki Pacjenta Na Leki Z Wliczona Ulga" FROM
+(SELECT p.pacjent_id PID,p.imie imie,p.nazwisko nazwisko,p.pesel pesel,d.rok rok,SUM(pr.odplatnosc) ODP,pr.procent_ulgi PUL FROM 
+(SELECT pacjent_id PID,data_wizyty_id DID ,recepta_id RID  FROM h_wizyty w WHERE recepta_id IS NOT NULL),h_pacjenci p,h_daty_wizyt d,h_pozycje_recept pr 
+WHERE p.pacjent_id = PID AND d.data_id = DID AND pr.recepta_id = RID
+GROUP BY p.pacjent_id,p.imie,p.nazwisko,p.pesel,d.rok,pr.procent_ulgi)
+ORDER BY PID ASC,Rok DESC;
 
 -- Procentowy udzial oplat za wizyte, w danym roku, w okreslonej placowce, znajdujacej sie w okreslonym miescie, na przestrzeni wszystkich lat
-SELECT DISTINCT p.placowka_id, p.nazwa AS nazwa_placowki, p.miasto, d.rok, 
-SUM (w.oplata) OVER (PARTITION BY d.rok, p.placowka_id, p.miasto) suma_w_danym_roku,
-SUM (w.oplata) OVER (PARTITION BY p.placowka_id, p.miasto) suma_na_przestrzeni_lat,
-ROUND (100 * (SUM (w.oplata) OVER (PARTITION BY d.rok, p.placowka_id, p.miasto)) / SUM (w.oplata) OVER (PARTITION BY p.placowka_id, p.miasto))
-"UDZIAL % danego roku" FROM h_wizyty w
-JOIN h_gabinety g ON g.gabinet_id = w.gabinet_id
-JOIN h_placowki p ON p.placowka_id = g.placowka_id
-JOIN h_daty_wizyt d ON d.data_id = w.data_wizyty_id
-ORDER BY p.placowka_id ASC, d.rok DESC;
+SELECT DISTINCT PID AS Placowka_id, nazwa AS nazwa_placowki, miasto AS miasto, rok as rok, 
+SUM (OPL) OVER (PARTITION BY rok, PID, miasto) suma_w_danym_roku,
+SUM (OPL) OVER (PARTITION BY PID, miasto) suma_na_przestrzeni_lat,
+ROUND (100 * (SUM (OPL) OVER (PARTITION BY rok, PID, miasto)) / SUM (OPL) OVER (PARTITION BY PID, miasto))
+"UDZIAL % danego roku" FROM
+(SELECT placowka_id PID, p.nazwa nazwa,p.miasto miasto,d.rok rok, SUM(OPL) OPL FROM
+(SELECT gabinet_id GID,SUM(oplata) OPL,data_wizyty_id DID FROM h_wizyty GROUP BY gabinet_id,data_wizyty_id),
+h_placowki p,h_daty_wizyt d WHERE p.placowka_id IN (SELECT placowka_id FROM h_gabinety WHERE gabinet_id = GID) AND d.data_id = DID
+GROUP BY placowka_id,p.nazwa,p.miasto,d.rok)
+ORDER BY PID ASC, rok DESC;
 
 --------------------------------------------- OKNA OBLICZENIOWE----------------------------------------------------------------------
---Zlicza ilość wizyt przeprowadzonych w danym roku,recept wypisanych oraz zabiegów od 15 dni przed do 15 dni po aktualnej dacie wizyty
+--Zlicza ilość wizyt przeprowadzonych ,recept wypisanych oraz zabiegów w danym roku od 15 dni przed do 15 dni po aktualnej dacie wizyty
 SELECT DISTINCT
 d.rok AS Rok ,
 d.miesiac AS Miesiac ,
 d.data_wizyty AS Data,
-COUNT(w.wizyta_id) OVER (PARTITION BY d.rok ORDER BY d.data_wizyty DESC RANGE BETWEEN INTERVAL '15' DAY PRECEDING AND INTERVAL '15' DAY FOLLOWING) AS Ilosc_wizyt,
-COUNT(w.zabieg_id) OVER (PARTITION BY d.rok ORDER BY d.data_wizyty DESC RANGE BETWEEN INTERVAL '15' DAY PRECEDING AND INTERVAL '15' DAY FOLLOWING) AS Ilosc_zabiegow,
-COUNT(w.recepta_id) OVER (PARTITION BY d.rok ORDER BY d.data_wizyty DESC RANGE BETWEEN INTERVAL '15' DAY PRECEDING AND INTERVAL '15' DAY FOLLOWING) AS Ilosc_recept 
-FROM h_wizyty w
-JOIN h_daty_wizyt  d ON d.data_id = w.data_wizyty_id
+COUNT(WID) OVER (PARTITION BY d.rok ORDER BY d.data_wizyty DESC RANGE BETWEEN INTERVAL '15' DAY PRECEDING AND INTERVAL '15' DAY FOLLOWING) AS Ilosc_wizyt,
+COUNT(ZID) OVER (PARTITION BY d.rok ORDER BY d.data_wizyty DESC RANGE BETWEEN INTERVAL '15' DAY PRECEDING AND INTERVAL '15' DAY FOLLOWING) AS Ilosc_zabiegow,
+COUNT(RID) OVER (PARTITION BY d.rok ORDER BY d.data_wizyty DESC RANGE BETWEEN INTERVAL '15' DAY PRECEDING AND INTERVAL '15' DAY FOLLOWING) AS Ilosc_recept 
+FROM (SELECT wizyta_id WID,zabieg_id ZID,recepta_id RID,data_wizyty_id DID FROM h_wizyty GROUP BY wizyta_id,zabieg_id,recepta_id,data_wizyty_id),
+h_daty_wizyt d WHERE d.data_id = DID 
 ORDER BY Rok DESC , Miesiac ASC;
 
---Wypisuje nazwę choroby, jej ID , Rok przeszukiwań danych,Ilość znalezionych rekordów od początku tabeli do aktualnego rekordu z uwzględnieniem nazwy oraz roku,Itd oraz dane Pacjenta
+--Wypisuje nazwę choroby, jej ID , Rok przeszukiwań danych,Ilość znalezionych rekordów od początku tabeli do aktualnego rekordu z uwzględnieniem nazwy oraz roku, oraz dane Pacjenta
 SELECT DISTINCT
-c.nazwa AS Nazwa_Choroby,
-c.choroby_id,
-EXTRACT(YEAR FROM c.poczatek) Rok,
-w.wizyta_id,
-COUNT(*) OVER (PARTITION BY c.nazwa,EXTRACT(YEAR FROM c.poczatek) ORDER BY c.choroby_id ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS "Ilość zapadnięć na tę chorobę w tym roku do aktualnego rekordu  wizyty",
-ROUND(100 * COUNT(*) OVER (PARTITION BY c.nazwa,EXTRACT(YEAR FROM c.poczatek) ORDER BY c.choroby_id ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) / COUNT(*) OVER (PARTITION BY c.nazwa,EXTRACT(YEAR FROM c.poczatek) ) , 3) "Udzial % w tym roku",
-COUNT(*) OVER (PARTITION BY c.nazwa,EXTRACT(YEAR FROM c.poczatek) ) "Łaczna wartość zapadnięć na tę chorobę w tym roku",
-ROUND(100 * COUNT(*) OVER (PARTITION BY c.nazwa,EXTRACT(YEAR FROM c.poczatek) ) / COUNT(*) OVER (PARTITION BY c.nazwa) , 3) "Udzial % na tle lat",
-COUNT(*) OVER (PARTITION BY c.nazwa) "Łaczna wartość zapadnięć na tę chorobę na przestrzeni lat",
-p.grupa_krwi "Grupa Krwi Pacjenta",
-p.imie,
-p.nazwisko
-FROM h_choroby c
-JOIN h_recepty r ON r.choroba_id = c.choroby_id
-JOIN h_wizyty w ON w.recepta_id = r.recepta_id
-JOIN h_daty_wizyt d ON d.data_id = w.data_wizyty_id
-JOIN h_pacjenci p ON p.pacjent_id = w.pacjent_id
-ORDER BY Rok DESC,COUNT(*) OVER (PARTITION BY c.nazwa,EXTRACT(YEAR FROM c.poczatek) ORDER BY c.choroby_id ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) DESC;
+Nazwa AS Nazwa_Choroby,
+CID choroby_id,
+EXTRACT(YEAR FROM CP) Rok,
+WID AS wizyta_id,
+COUNT(*) OVER (PARTITION BY Nazwa,EXTRACT(YEAR FROM CP) ORDER BY CID ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS "Ilość zapadnięć na tę chorobę w tym roku do aktualnego rekordu  wizyty",
+ROUND(100 * COUNT(*) OVER (PARTITION BY Nazwa,EXTRACT(YEAR FROM CP) ORDER BY CID ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) / COUNT(*) OVER (PARTITION BY Nazwa,EXTRACT(YEAR FROM CP) ) , 3) "Udzial % w tym roku",
+COUNT(*) OVER (PARTITION BY Nazwa,EXTRACT(YEAR FROM CP) ) "Łaczna wartość zapadnięć na tę chorobę w tym roku",
+ROUND(100 * COUNT(*) OVER (PARTITION BY Nazwa,EXTRACT(YEAR FROM CP) ) / COUNT(*) OVER (PARTITION BY Nazwa) , 3) "Udzial % na tle lat",
+COUNT(*) OVER (PARTITION BY Nazwa) "Łaczna wartość zapadnięć na tę chorobę na przestrzeni lat",
+PGK AS "Grupa Krwi Pacjenta",
+PIMIE AS Imie,
+PNAZ AS Nazwisko
+FROM
+(SELECT WID WID,CID CID,Nazwa Nazwa,CP CP,p.grupa_krwi PGK,p.imie PIMIE,p.nazwisko PNAZ FROM
+(SELECT wizyta_id WID,pacjent_id PID,CID CID,Nazwa Nazwa,CP CP FROM
+(SELECT CID CID,Nazwa Nazwa,CP CP,recepta_id RID FROM
+(SELECT choroby_id CID,nazwa Nazwa,poczatek CP FROM h_choroby ),h_recepty WHERE h_recepty.choroba_id = CID),h_wizyty WHERE h_wizyty.recepta_id = RID),h_pacjenci p WHERE p.pacjent_id = PID )
+ORDER BY Rok DESC,COUNT(*) OVER (PARTITION BY Nazwa,EXTRACT(YEAR FROM CP) ORDER BY CID ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) DESC;
 
 --Opłaty,ceny leków i zabiegów dla każdej wizyty oraz sumaryczna wartość dotychczasowych wizyt
 SELECT DISTINCT
-w.wizyta_id,
+WID wizyta_id,
 p.pesel,
 p.imie,
 p.nazwisko,
-w.oplata "Oplata za wizytę pacjenta",
-SUM(pz.odplatnosc) OVER (PARTITION  BY w.wizyta_id) "Cena leków",
-(pz.procent_ulgi / 100 * (SUM(pz.odplatnosc) OVER (PARTITION  BY w.wizyta_id))) "Cena leków Po Uldze",
-SUM(w.oplata) OVER ( ORDER BY w.wizyta_id RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) "Suma wszystkich dotychczasowych oplat za wizyty pacjentów",
-w.cena_netto_za_zabieg "Oplata za zabieg pacjenta",
-SUM(w.cena_netto_za_zabieg ) OVER (ORDER BY w.wizyta_id RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) "Suma wszystkich dotychczasowych oplat za zabiegi"
-FROM h_wizyty w
-JOIN h_pacjenci p ON p.pacjent_id = w.pacjent_id
-LEFT JOIN h_recepty r ON r.recepta_id = w.recepta_id
-LEFT JOIN h_pozycje_recept pz ON pz.recepta_id = r.recepta_id
-ORDER BY w.wizyta_id ASC;
-
+OPL "Oplata za wizytę pacjenta",
+SUM(pr.odplatnosc) OVER (PARTITION  BY WID) "Cena leków",
+(pr.procent_ulgi / 100 * (SUM(pr.odplatnosc) OVER (PARTITION  BY WID))) "Cena leków Po Uldze",
+SUM(OPL) OVER ( ORDER BY WID RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) "Suma wszystkich dotychczasowych oplat za wizyty pacjentów",
+CNZ "Oplata za zabieg pacjenta",
+SUM(CNZ) OVER (ORDER BY WID RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) "Suma wszystkich dotychczasowych oplat za zabiegi"
+FROM
+(SELECT wizyta_id WID,oplata OPL,cena_netto_za_zabieg CNZ,pacjent_id PID,recepta_id RID FROM h_wizyty WHERE recepta_id IS NULL OR recepta_id IS NOT NULL
+GROUP BY wizyta_id,pacjent_id,recepta_id,oplata,cena_netto_za_zabieg ),
+h_pozycje_recept pr,h_pacjenci p WHERE pr.recepta_id = RID  AND p.pacjent_id = PID 
+ORDER BY WID ASC;
 --------------------------------------------- FUNKCJE RANKINGOWE ---------------------------------------------------------------------
 
 -- Ranking pacjentow, ktorzy wniesli najwiecej oplat za wizyte w danej placowce, w danym miescie

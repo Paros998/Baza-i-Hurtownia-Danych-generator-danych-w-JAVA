@@ -1,6 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="POTAS" directorySegmentName="seg_0" id="FEF02F8E-60BE-9AB9-86B3-746E288FD571">
-<createdBy>part4</createdBy>
-<createdTime>2021-05-12 12:40:03 UTC</createdTime>
-<ownerDesignName>relational_1</ownerDesignName>
-</SchemaObject>

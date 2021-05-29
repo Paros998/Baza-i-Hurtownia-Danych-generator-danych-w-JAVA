@@ -29,22 +29,22 @@ JOIN pacjenci p ON p.pacjent_id = w.pacjent_id
 JOIN karty k ON k.pesel_id = p.pesel_id
 ORDER BY Rok DESC,COUNT(*) OVER (PARTITION BY c.nazwa,EXTRACT(YEAR FROM c.poczatek) ORDER BY c.choroby_id ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) DESC;
 
---Opłaty,ceny leków i zabiegów dla każdej wizyty oraz sumaryczna wartość dotychczasowych wizyt
+--Opłaty,ceny leków i zabiegów każdej wizyty oraz sumaryczna wartość dotychczasowych wizyt ,ktore zakonczyly sie recepta lub recepta i zabiegiem
 SELECT DISTINCT
 w.wizyta_id,
 p.pesel_id,
 p.imie,
 p.nazwisko,
 w.oplata "Oplata za wizytę pacjenta",
-SUM(pz.odplatnosc) OVER (PARTITION  BY w.wizyta_id) "Cena leków",
+(SUM(pz.odplatnosc) OVER (PARTITION  BY w.wizyta_id)) "Cena leków",
 (u.procent_ulgi / 100 * (SUM(pz.odplatnosc) OVER (PARTITION  BY w.wizyta_id))) "Cena leków Po Uldze",
-SUM(w.oplata) OVER ( ORDER BY w.wizyta_id RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) "Suma wszystkich dotychczasowych oplat za wizyty pacjentów",
+SUM(w.oplata) OVER (ORDER BY w.wizyta_id RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) "Suma wszystkich dotychczasowych oplat za wizyty pacjentów",
 z.cena_netto "Oplata za zabieg pacjenta",
 SUM(z.cena_netto ) OVER (ORDER BY w.wizyta_id RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) "Suma wszystkich dotychczasowych oplat za zabiegi"
 FROM wizyty w
-LEFT JOIN zabiegi z ON w.wizyta_id = z.wizyta_id
 JOIN pacjenci p ON p.pacjent_id = w.pacjent_id
-LEFT JOIN recepty r ON r.wizyta_id = w.wizyta_id
+LEFT JOIN zabiegi z ON w.wizyta_id = z.wizyta_id
+JOIN recepty r ON r.wizyta_id = w.wizyta_id
 LEFT JOIN pozycje_recept pz ON pz.recepta_id = r.recepta_id
 LEFT JOIN ulgi u ON u.ulgi_id = r.ulga_id
 ORDER BY w.wizyta_id ASC;
