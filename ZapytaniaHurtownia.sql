@@ -1,60 +1,72 @@
 --------------------------------------------- ROLLUP ---------------------------------------------
 
--- Liczba pacjentow pochodzacych z okreslonego oddzialu NFZ, chorujacych na dana chorobe, 
--- ktorzy naleza do placowki Prodimed
-SELECT c.nazwa AS nazwa_choroby, r.nazwa_oddzialu AS nazwa_oddzialu_nfz, p.nazwa, COUNT (w.pacjent_id) AS liczba_pacjentow FROM h_wizyty w
-JOIN h_recepty r ON r.recepta_id = w.recepta_id
-JOIN h_choroby c ON c.choroby_id = r.choroba_id
-JOIN h_gabinety g ON g.gabinet_id = w.gabinet_id
-JOIN h_placowki p ON p.placowka_id = g.placowka_id
-WHERE p.nazwa LIKE 'Prodimed'
-GROUP BY ROLLUP (c.nazwa, r.nazwa_oddzialu, p.nazwa);
+-- Ilosc wizyt ze statusem 'zakonczona' w kazdym gabinecie
+SELECT DISTINCT
+NVL (TO_CHAR ((SELECT oznaczenie FROM h_gabinety WHERE gabinet_id = g_id)), 'Laczna ilosc wizyt') oznaczenie_gabinetu,
+NVL (TO_CHAR ((SELECT status FROM h_statusy_wizyt WHERE statusy_wizyt_id = sw_id AND status LIKE 'Zakonczona')), 'Ilosc wizyt w gabinecie') status_wizyty,
+ilosc_wizyt
+FROM (
+    SELECT gabinet_id g_id, status_wizyty_id sw_id, COUNT (wizyta_id) ilosc_wizyt FROM h_wizyty
+    GROUP BY ROLLUP (gabinet_id, status_wizyty_id)
+);
 
--- Liczba pracownikow pracujacych na danym stanowisku, posiadajacych okreslone uprawnienia,
--- mieszkajacych w Kielcach
-SELECT s.nazwa AS nazwa_stanowiska, s.opis_uprawnienia AS typ_uprawnienia, p.miasto, COUNT (*) AS liczba_pracownikow FROM h_pracownicy p
-JOIN h_stanowiska s ON s.stanowisko_id = p.stanowisko_id
-WHERE p.miasto LIKE 'Kielce'
-GROUP BY ROLLUP (s.nazwa, s.opis_uprawnienia, p.miasto);
+-- Liczba pracownikow pracujacych na danym stanowisku, posiadajacych okreslone specjalnosci, mieszkajacych w danym miescie
+SELECT DISTINCT
+NVL (TO_CHAR ((SELECT nazwa FROM h_stanowiska WHERE stanowisko_id = s_id)), 'Laczna ilosc pracownikow') nazwa_stanowiska,
+NVL (TO_CHAR ((SELECT nazwa FROM h_specjalnosci WHERE specjalnosc_id = sp_id)), 'Ilosc pracownikow na danym stanowisku') nazwa_specjalnosci,
+NVL (adres, 'Ilosc pracownikow na danym stanowisku z okreslna spec.') miasto,
+liczba_pracownikow
+FROM (
+    SELECT p.stanowisko_id s_id, p.specjalnosc_id sp_id, p.miasto adres, COUNT (p.pracownik_id) liczba_pracownikow FROM h_pracownicy p
+    GROUP BY ROLLUP (p.stanowisko_id, p.specjalnosc_id, p.miasto)
+);
 
--- Liczba wizyt pacjentow ze schorzeniem osteoporozy, w danej placowce oraz w danym miescie
-SELECT c.nazwa AS nazwa_choroby, p.nazwa AS nazwa_placowki, p.miasto, COUNT (w.wizyta_id) AS liczba_wizyt FROM h_wizyty w
-JOIN h_recepty r ON w.recepta_id = r.recepta_id
-JOIN h_choroby c ON c.choroby_id = r.choroba_id
-JOIN h_gabinety g ON g.gabinet_id = w.gabinet_id
-JOIN h_placowki p ON p.placowka_id = g.placowka_id
-WHERE g.oznaczenie LIKE 'Wizyty%'
-GROUP BY ROLLUP (c.nazwa, p.nazwa, p.miasto);
+-- Liczba pacjentow umowionych na wizyte, wymagajaca zabiegu
+SELECT DISTINCT
+NVL (TO_CHAR ((SELECT nazwa FROM h_zabiegi WHERE zabieg_id = z_id)), 'Laczna ilosc pacjentow') nazwa_zabiegu,
+NVL (TO_CHAR ((SELECT status FROM h_statusy_wizyt WHERE statusy_wizyt_id = sw_id AND status LIKE 'Oczekujaca')), 'Ilosc wizyt wymagajacych zabiegu') status_wizyty,
+liczba_pacjentow
+FROM (
+    SELECT zabieg_id z_id, status_wizyty_id sw_id, COUNT (pacjent_id) liczba_pacjentow FROM h_wizyty
+    GROUP BY ROLLUP (zabieg_id, status_wizyty_id)
+);
 
 --------------------------------------------- CUBE ---------------------------------------------------
 
--- Srednia oplata wizyt danego pacjenta, w placowce, w danym miescie
-SELECT pac.nazwisko AS nazwisko_pacjenta, p.nazwa AS nazwa_placowki, p.miasto, AVG (w.oplata) AS srednia_oplata FROM h_wizyty w
-JOIN h_pacjenci pac ON pac.pacjent_id = w.pacjent_id
-JOIN h_gabinety g ON g.gabinet_id = w.gabinet_id
-JOIN h_placowki p ON p.placowka_id = g.placowka_id
-WHERE g.oznaczenie LIKE 'Wizyty%'
-GROUP BY CUBE (pac.nazwisko, p.nazwa, p.miasto);
+-- Srednia oplata wizyt danego pacjenta, w kazdym gabinecie
+SELECT DISTINCT
+TO_CHAR ((SELECT nazwisko FROM h_pacjenci WHERE pacjent_id = p_id)) nazwisko_pacjenta,
+TO_CHAR ((SELECT oznaczenie FROM h_gabinety WHERE gabinet_id = g_id)) oznaczenie_gabinetu,
+srednia_oplata
+FROM (
+    SELECT pacjent_id p_id, gabinet_id g_id, AVG (oplata) srednia_oplata FROM h_wizyty
+    GROUP BY CUBE (pacjent_id, gabinet_id)
+);
 
--- Srednia oplata zabiegow danego pacjenta, w placowce, w danym miescie
-SELECT pac.nazwisko AS nazwisko_pacjenta, p.nazwa AS nazwa_placowki, p.miasto, AVG (w.cena_netto_za_zabieg) AS srednia_oplata FROM h_wizyty w
-JOIN h_pacjenci pac ON pac.pacjent_id = w.pacjent_id
-JOIN h_gabinety g ON g.gabinet_id = w.gabinet_id
-JOIN h_placowki p ON p.placowka_id = g.placowka_id
-WHERE g.oznaczenie LIKE 'Zabiegi'
-GROUP BY CUBE (pac.nazwisko, p.nazwa, p.miasto);
+-- Srednia oplata zabiegow danego pacjenta z okreslonego oddzialu, w kazdym gabinecie
+SELECT DISTINCT
+TO_CHAR ((SELECT nazwisko FROM h_pacjenci WHERE pacjent_id = p_id)) nazwisko_pacjenta,
+TO_CHAR ((SELECT oznaczenie FROM h_gabinety WHERE gabinet_id = g_id)) oznaczenie_gabinetu,
+TO_CHAR ((SELECT nazwa_oddzialu FROM h_recepty WHERE recepta_id = r_id)) nazwa_oddzialu,
+srednia_oplata
+FROM (
+    SELECT pacjent_id p_id, gabinet_id g_id, recepta_id r_id, AVG (cena_netto_za_zabieg) srednia_oplata FROM h_wizyty
+    GROUP BY CUBE (pacjent_id, gabinet_id, recepta_id)
+);
 
--- Srednia oplata za leki danego pacjenta, w danym miescie, chorujacego na okreslona chorobe
-SELECT pac.nazwisko AS nazwisko_pacjenta, pac.miasto, c.nazwa AS nazwa_choroby, AVG (pr.odplatnosc) AS srednia_oplata_za_leki FROM h_pozycje_recept pr
-JOIN h_recepty r ON pr.recepta_id = r.recepta_id
-RIGHT JOIN h_wizyty w ON w.recepta_id = r.recepta_id
-JOIN h_pacjenci pac ON pac.pacjent_id = w.pacjent_id
-JOIN h_choroby c ON c.choroby_id = r.choroba_id
-GROUP BY CUBE (pac.nazwisko, pac.miasto, c.nazwa);
+-- Laczna odplatnosc lekow na kazdej recepcie z dana ulga
+SELECT DISTINCT
+r_id numer_recepty,
+TO_CHAR ((SELECT typ_ulgi FROM h_ulgi WHERE ulgi_id = u_id)) typ_ulgi,
+laczna_odplatnosc
+FROM (
+    SELECT recepta_id r_id, ulga_id u_id, SUM (odplatnosc) laczna_odplatnosc FROM h_pozycje_recept
+    GROUP BY CUBE (recepta_id, ulga_id)
+);
 
 ---------------------------------------------- PARTYCJE OBLICZENIOWE ----------------------------------------------------------------
 
---Łączna wartość roczna za każdy zabieg przeprowadzany na pacjentach z grupą krwi A-
+--�?ączna wartość roczna za każdy zabieg przeprowadzany na pacjentach z grupą krwi A-
 SELECT DISTINCT z.nazwa,
 d.rok AS Rok,
 p.grupa_krwi,
@@ -82,7 +94,7 @@ JOIN h_pozycje_recept pr ON pr.recepta_id = r.recepta_id
 JOIN h_pacjenci p ON p.pacjent_id = w.pacjent_id
 ORDER BY p.pacjent_id ASC,Rok DESC;
 
--- Procentowy udzial oplat za wizyte, w danym roku, w okreslonej placowce, znajdujacej sie w okreslonym miescie, na przestrzeni wszystkich lat
+-- Procentowy udzial oplat za wizyte, w danym roku, w okreslonym gabinecie, na przestrzeni wszystkich lat
 SELECT DISTINCT p.placowka_id, p.nazwa AS nazwa_placowki, p.miasto, d.rok, 
 SUM (w.oplata) OVER (PARTITION BY d.rok, p.placowka_id, p.miasto) suma_w_danym_roku,
 SUM (w.oplata) OVER (PARTITION BY p.placowka_id, p.miasto) suma_na_przestrzeni_lat,
@@ -114,9 +126,9 @@ EXTRACT(YEAR FROM c.poczatek) Rok,
 w.wizyta_id,
 COUNT(*) OVER (PARTITION BY c.nazwa,EXTRACT(YEAR FROM c.poczatek) ORDER BY c.choroby_id ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS "Ilość zapadnięć na tę chorobę w tym roku do aktualnego rekordu  wizyty",
 ROUND(100 * COUNT(*) OVER (PARTITION BY c.nazwa,EXTRACT(YEAR FROM c.poczatek) ORDER BY c.choroby_id ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) / COUNT(*) OVER (PARTITION BY c.nazwa,EXTRACT(YEAR FROM c.poczatek) ) , 3) "Udzial % w tym roku",
-COUNT(*) OVER (PARTITION BY c.nazwa,EXTRACT(YEAR FROM c.poczatek) ) "Łaczna wartość zapadnięć na tę chorobę w tym roku",
+COUNT(*) OVER (PARTITION BY c.nazwa,EXTRACT(YEAR FROM c.poczatek) ) "�?aczna wartość zapadnięć na tę chorobę w tym roku",
 ROUND(100 * COUNT(*) OVER (PARTITION BY c.nazwa,EXTRACT(YEAR FROM c.poczatek) ) / COUNT(*) OVER (PARTITION BY c.nazwa) , 3) "Udzial % na tle lat",
-COUNT(*) OVER (PARTITION BY c.nazwa) "Łaczna wartość zapadnięć na tę chorobę na przestrzeni lat",
+COUNT(*) OVER (PARTITION BY c.nazwa) "�?aczna wartość zapadnięć na tę chorobę na przestrzeni lat",
 p.grupa_krwi "Grupa Krwi Pacjenta",
 p.imie,
 p.nazwisko
@@ -147,37 +159,48 @@ ORDER BY w.wizyta_id ASC;
 
 --------------------------------------------- FUNKCJE RANKINGOWE ---------------------------------------------------------------------
 
--- Ranking pacjentow, ktorzy wniesli najwiecej oplat za wizyte w danej placowce, w danym miescie
-SELECT pac.nazwisko AS nazwisko_pacjenta, p.nazwa AS nazwa_placowki, p.miasto, w.oplata AS oplata_za_wizyte,
-RANK () OVER (PARTITION BY p.nazwa, p.miasto ORDER BY w.oplata DESC)
-ranking FROM h_wizyty w
-JOIN h_pacjenci pac ON pac.pacjent_id = w.pacjent_id
-JOIN h_gabinety g ON g.gabinet_id = w.gabinet_id
-JOIN h_placowki p ON p.placowka_id = g.placowka_id
-ORDER BY pac.nazwisko, ranking;
+-- Ranking pacjentow, ktorzy wniesli najwiecej oplat za wizyte w danym gabinecie
+SELECT DISTINCT
+TO_CHAR ((SELECT nazwisko FROM h_pacjenci WHERE pacjent_id = p_id)) nazwisko_pacjenta,
+g_id identyfikator_gabinetu,
+oplata_za_wizyte,
+ranking
+FROM (
+    SELECT pacjent_id p_id, gabinet_id g_id, oplata oplata_za_wizyte,
+    RANK () OVER (PARTITION BY gabinet_id ORDER BY oplata DESC) ranking
+    FROM h_wizyty
+)
+ORDER BY ranking;
 
--- Ranking najlepszej sredniej sprzedazy lekow na dana chorobe z dana ulga
-SELECT l.nazwa AS nazwa_leku, c.nazwa AS nazwa_choroby, u.typ_ulgi, AVG (pr.ilosc),
-RANK () OVER (PARTITION BY c.nazwa, u.typ_ulgi ORDER BY AVG (pr.ilosc) DESC)
-ranking FROM h_pozycje_recept pr
-JOIN h_leki l ON l.leki_id = pr.lek_id
-JOIN h_ulgi u ON u.ulgi_id = pr.ulga_id
-JOIN h_recepty r ON r.recepta_id = pr.recepta_id
-JOIN h_choroby c ON c.choroby_id = r.choroba_id
-GROUP BY ROLLUP (l.nazwa, c.nazwa, u.typ_ulgi)
-ORDER BY c.nazwa, ranking;
+-- Ranking najlepszej sumy sprzedanych lekow na recepte, z dana ulga
+SELECT DISTINCT
+r_id numer_recepty,
+TO_CHAR ((SELECT typ_ulgi FROM h_ulgi WHERE ulgi_id = u_id)) typ_ulgi,
+odplatnosc_suma,
+ranking
+FROM (
+    SELECT r_id, u_id, odplatnosc_suma,
+    RANK () OVER (ORDER BY odplatnosc_suma DESC) ranking
+    FROM (
+        SELECT recepta_id r_id, ulga_id u_id, SUM (odplatnosc) odplatnosc_suma FROM h_pozycje_recept
+        GROUP BY recepta_id, ulga_id
+    )
+)
+ORDER BY ranking;
 
--- Ranking zabiegow, ktore zostaly wykonane przez neurologa, w danej placowce oraz w danym miescie
-SELECT z.nazwa AS nazwa_zabiegu, pr.nazwisko, p.nazwa AS nazwa_placowki, p.miasto, w.cena_netto_za_zabieg AS oplata_za_zabieg,
-RANK () OVER (PARTITION BY p.nazwa, p.miasto ORDER BY w.cena_netto_za_zabieg DESC)
-ranking FROM h_wizyty w
-JOIN h_zabiegi z ON w.zabieg_id = z.zabieg_id
-JOIN h_pracownicy pr ON pr.pracownik_id = w.prac_spec
-JOIN h_stanowiska s ON s.stanowisko_id = pr.stanowisko_id
-JOIN h_gabinety g ON g.gabinet_id = w.gabinet_id
-JOIN h_placowki p ON p.placowka_id = g.placowka_id
-WHERE s.nazwa LIKE 'Neurolog'
-ORDER BY z.nazwa, ranking;
+-- Ranking najdrozej wykonanych zabiegow przez pracownika pracujacego w okreslonym gabinecie
+SELECT DISTINCT
+TO_CHAR ((SELECT nazwa FROM h_zabiegi WHERE zabieg_id = z_id)) nazwa_zabiegu,
+TO_CHAR ((SELECT nazwisko FROM h_pracownicy WHERE pracownik_id = p_id)) nazwisko_pracownika,
+identyfikator_gabinetu,
+cena_netto_za_zabieg,
+ranking
+FROM (
+    SELECT zabieg_id z_id, prac_spec p_id, gabinet_id identyfikator_gabinetu, cena_netto_za_zabieg,
+    RANK () OVER (PARTITION BY gabinet_id ORDER BY cena_netto_za_zabieg DESC) ranking
+    FROM h_wizyty
+)
+ORDER BY nazwa_zabiegu, ranking;
 
 
 

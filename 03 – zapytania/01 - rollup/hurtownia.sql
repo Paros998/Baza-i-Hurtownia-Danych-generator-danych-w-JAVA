@@ -1,27 +1,31 @@
 --------------------------------------------- ROLLUP ---------------------------------------------
+-- Ilosc wizyt ze statusem 'zakonczona' w kazdym gabinecie
+SELECT DISTINCT
+NVL (TO_CHAR ((SELECT oznaczenie FROM h_gabinety WHERE gabinet_id = g_id)), 'Laczna ilosc wizyt') oznaczenie_gabinetu,
+NVL (TO_CHAR ((SELECT status FROM h_statusy_wizyt WHERE statusy_wizyt_id = sw_id AND status LIKE 'Zakonczona')), 'Ilosc wizyt w gabinecie') status_wizyty,
+ilosc_wizyt
+FROM (
+    SELECT gabinet_id g_id, status_wizyty_id sw_id, COUNT (wizyta_id) ilosc_wizyt FROM h_wizyty
+    GROUP BY ROLLUP (gabinet_id, status_wizyty_id)
+);
 
--- Liczba pacjentow pochodzacych z okreslonego oddzialu NFZ, chorujacych na dana chorobe, 
--- ktorzy naleza do placowki Prodimed
-SELECT c.nazwa AS nazwa_choroby, r.nazwa_oddzialu AS nazwa_oddzialu_nfz, p.nazwa, COUNT (w.pacjent_id) AS liczba_pacjentow FROM h_wizyty w
-JOIN h_recepty r ON r.recepta_id = w.recepta_id
-JOIN h_choroby c ON c.choroby_id = r.choroba_id
-JOIN h_gabinety g ON g.gabinet_id = w.gabinet_id
-JOIN h_placowki p ON p.placowka_id = g.placowka_id
-WHERE p.nazwa LIKE 'Prodimed'
-GROUP BY ROLLUP (c.nazwa, r.nazwa_oddzialu, p.nazwa);
+-- Liczba pracownikow pracujacych na danym stanowisku, posiadajacych okreslone specjalnosci, mieszkajacych w danym miescie
+SELECT DISTINCT
+NVL (TO_CHAR ((SELECT nazwa FROM h_stanowiska WHERE stanowisko_id = s_id)), 'Laczna ilosc pracownikow') nazwa_stanowiska,
+NVL (TO_CHAR ((SELECT nazwa FROM h_specjalnosci WHERE specjalnosc_id = sp_id)), 'Ilosc pracownikow na danym stanowisku') nazwa_specjalnosci,
+NVL (adres, 'Ilosc pracownikow na danym stanowisku z okreslna spec.') miasto,
+liczba_pracownikow
+FROM (
+    SELECT p.stanowisko_id s_id, p.specjalnosc_id sp_id, p.miasto adres, COUNT (p.pracownik_id) liczba_pracownikow FROM h_pracownicy p
+    GROUP BY ROLLUP (p.stanowisko_id, p.specjalnosc_id, p.miasto)
+);
 
--- Liczba pracownikow pracujacych na danym stanowisku, posiadajacych okreslone uprawnienia,
--- mieszkajacych w Kielcach
-SELECT s.nazwa AS nazwa_stanowiska, s.opis_uprawnienia AS typ_uprawnienia, p.miasto, COUNT (*) AS liczba_pracownikow FROM h_pracownicy p
-JOIN h_stanowiska s ON s.stanowisko_id = p.stanowisko_id
-WHERE p.miasto LIKE 'Kielce'
-GROUP BY ROLLUP (s.nazwa, s.opis_uprawnienia, p.miasto);
-
--- Liczba wizyt pacjentow ze schorzeniem osteoporozy, w danej placowce oraz w danym miescie
-SELECT c.nazwa AS nazwa_choroby, p.nazwa AS nazwa_placowki, p.miasto, COUNT (w.wizyta_id) AS liczba_wizyt FROM h_wizyty w
-JOIN h_recepty r ON w.recepta_id = r.recepta_id
-JOIN h_choroby c ON c.choroby_id = r.choroba_id
-JOIN h_gabinety g ON g.gabinet_id = w.gabinet_id
-JOIN h_placowki p ON p.placowka_id = g.placowka_id
-WHERE g.oznaczenie LIKE 'Wizyty%'
-GROUP BY ROLLUP (c.nazwa, p.nazwa, p.miasto);
+-- Liczba pacjentow umowionych na wizyte, wymagajaca zabiegu
+SELECT DISTINCT
+NVL (TO_CHAR ((SELECT nazwa FROM h_zabiegi WHERE zabieg_id = z_id)), 'Laczna ilosc pacjentow') nazwa_zabiegu,
+NVL (TO_CHAR ((SELECT status FROM h_statusy_wizyt WHERE statusy_wizyt_id = sw_id AND status LIKE 'Oczekujaca')), 'Ilosc wizyt wymagajacych zabiegu') status_wizyty,
+liczba_pacjentow
+FROM (
+    SELECT zabieg_id z_id, status_wizyty_id sw_id, COUNT (pacjent_id) liczba_pacjentow FROM h_wizyty
+    GROUP BY ROLLUP (zabieg_id, status_wizyty_id)
+);
