@@ -14,7 +14,6 @@ CREATE
 (pac4:Pacjenci{name:"P_5" , pacjent_id:5 , imie:"Oskar" ,nazwisko:"Marciniak" ,login:"106775671104100765010255651041175452",haslo:"4879121536810888678649566650102106"
 ,pesel_id:"68637325387",kontakt_id:134,adres_id:28766}),
 
-CREATE
 (p1:Pracownicy{name:"PR_1",pracownik_id:1,imie:"Maja",nazwisko:"Wojcik",login:"V4950oscgKOoQIi5048OFLjjwtUq5348OrdoJa54ItPQ",
 haslo:"4856k5148k49C56IY50W53DKC55hn50c48ukTyKfIlMg5449uy",pensja:5600,adres_id:15219,kontakt_id:16904,stanowisko_id:7526,specjalnosc_id:33}),
 
