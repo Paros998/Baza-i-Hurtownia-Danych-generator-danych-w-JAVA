@@ -11,7 +11,7 @@ CREATE
 (pac4:Pacjenci{name:"P_4" , pacjent_id:4 , imie:"Grzegorz" ,nazwisko:"Krupski" ,login:null,haslo:null
 ,pesel_id:"16780166056",kontakt_id:35844,adres_id:13847}),
 
-(pac4:Pacjenci{name:"P_5" , pacjent_id:5 , imie:"Oskar" ,nazwisko:"Marciniak" ,login:"106775671104100765010255651041175452",haslo:"4879121536810888678649566650102106"
+(pac5:Pacjenci{name:"P_5" , pacjent_id:5 , imie:"Oskar" ,nazwisko:"Marciniak" ,login:"106775671104100765010255651041175452",haslo:"4879121536810888678649566650102106"
 ,pesel_id:"68637325387",kontakt_id:134,adres_id:28766}),
 
 (p1:Pracownicy{name:"PR_1",pracownik_id:1,imie:"Maja",nazwisko:"Wojcik",login:"V4950oscgKOoQIi5048OFLjjwtUq5348OrdoJa54ItPQ",
@@ -34,6 +34,24 @@ haslo:null,pensja:5500,adres_id:5160,kontakt_id:7492,stanowisko_id:2978,specjaln
 (g3:Gabinety{name:"G_3",gabinet_id:3,oznaczenie:"Zabiegi",pracownik_id:3,kontakt_id:24034,placowka_id:5135}),
 (g4:Gabinety{name:"G_4",gabinet_id:4,oznaczenie:"Wizyty kontrolne",pracownik_id:4,kontakt_id:10406,placowka_id:6315}),
 (g5:Gabinety{name:"G_5",gabinet_id:5,oznaczenie:"Badania",pracownik_id:5,kontakt_id:1133,placowka_id:4882}),
+
+(z1:Zabiegi { wezel: "Z_1", zabieg_id: 1, nazwa: "zabieg Urbana", cena_netto: 2000.0, pracownik_id: 2, wizyta_id: 2 }), 
+(z2:Zabiegi { wezel: "Z_2", zabieg_id: 2, nazwa: "operacja Nussa", cena_netto: 4500.0, pracownik_id: 2, wizyta_id: 1 }), 
+(z3:Zabiegi { wezel: "Z_3", zabieg_id: 3, nazwa: "penektomia", cena_netto: 3000.0, pracownik_id: 1, wizyta_id: 3 }),
+(z4:Zabiegi { wezel: "Z_4", zabieg_id: 4, nazwa: "operacja Milesa", cena_netto: 5000.0, pracownik_id: 4, wizyta_id: 4 }),
+(z5:Zabiegi { wezel: "Z_5", zabieg_id: 5, nazwa: "tyreoidektomia", cena_netto: 2500.0, pracownik_id: 5, wizyta_id: 5 }),
+
+(sw1:Statusy_wizyt { wezel: "SW_1", statusy_wizyt_id: 1, status: "Zakonczona" }),
+(sw2:Statusy_wizyt { wezel: "SW_2", statusy_wizyt_id: 2, status: "Odwolana" }),
+(sw3:Statusy_wizyt { wezel: "SW_3", statusy_wizyt_id: 3, status: "Oczekujaca" }),
+(sw4:Statusy_wizyt { wezel: "SW_4", statusy_wizyt_id: 4, status: "Zakonczona" }),
+(sw5:Statusy_wizyt { wezel: "SW_5", statusy_wizyt_id: 5, status: "Zakonczona" }),
+
+(r1:Recepty { wezel: "R_1", pracownik_id: 2, wizyta_id: 2, oddzial_nfz_id: 85, recepta_choroba_id: 5788, ulga_id: null }),
+(r2:Recepty { wezel: "R_2", pracownik_id: 2, wizyta_id: 1, oddzial_nfz_id: 58, recepta_choroba_id: 5788, ulga_id: 50 }),
+(r3:Recepty { wezel: "R_3", pracownik_id: 1, wizyta_id: 3, oddzial_nfz_id: 17, recepta_choroba_id: 5683, ulga_id: null }),
+(r4:Recepty { wezel: "R_4", pracownik_id: 4, wizyta_id: 4, oddzial_nfz_id: 75, recepta_choroba_id: 4871, ulga_id: null }),
+(r5:Recepty { wezel: "R_5", pracownik_id: 5, wizyta_id: 5, oddzial_nfz_id: 66, recepta_choroba_id: 1881, ulga_id: null }),
 
 (g1)-[:Przynależy]->(p1),
 (g2)-[:Przynależy]->(p2),
