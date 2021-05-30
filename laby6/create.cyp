@@ -1,3 +1,4 @@
+MATCH(n) DETACH DELETE n;
 CREATE
 (pac1:Pacjenci{name:"P_1" , pacjent_id:1 , imie:"Emil" ,nazwisko:"Brzezinski" ,login:"50985051100527250119105568051514956120551155354",haslo:"48771005311849665310351688348499750119108885456"
 ,pesel_id:"13088027337",kontakt_id:7212,adres_id:26782}),
@@ -29,10 +30,10 @@ haslo:"TfiM49K54e5248i53HVkWnRoS51pVb",pensja:6700,adres_id:26641,kontakt_id:132
 (p5:Pracownicy{name:"PR_5",pracownik_id:5,imie:"Grzegorz",nazwisko:"Brzezinski",login:null,
 haslo:null,pensja:5500,adres_id:5160,kontakt_id:7492,stanowisko_id:2978,specjalnosc_id:96}),
 
-(g1:Gabinety{name:"G_1",gabinet_id:1,oznaczenie:"Wizyty",pracownik_id:1,kontakt_id:27589,placowka_id:1347}),
-(g2:Gabinety{name:"G_2",gabinet_id:2,oznaczenie:"Wizyty",pracownik_id:2,kontakt_id:4990,placowka_id:4452}),
-(g3:Gabinety{name:"G_3",gabinet_id:3,oznaczenie:"Zabiegi",pracownik_id:3,kontakt_id:24034,placowka_id:5135}),
-(g4:Gabinety{name:"G_4",gabinet_id:4,oznaczenie:"Wizyty kontrolne",pracownik_id:4,kontakt_id:10406,placowka_id:6315}),
+(g1:Gabinety{name:"G_1",gabinet_id:1,oznaczenie:"Zabiegi",pracownik_id:1,kontakt_id:27589,placowka_id:1347}),
+(g2:Gabinety{name:"G_2",gabinet_id:2,oznaczenie:"Zabiegi",pracownik_id:2,kontakt_id:4990,placowka_id:4452}),
+(g3:Gabinety{name:"G_3",gabinet_id:3,oznaczenie:"Wizyty",pracownik_id:3,kontakt_id:24034,placowka_id:5135}),
+(g4:Gabinety{name:"G_4",gabinet_id:4,oznaczenie:"Zabiegi",pracownik_id:4,kontakt_id:10406,placowka_id:6315}),
 (g5:Gabinety{name:"G_5",gabinet_id:5,oznaczenie:"Badania",pracownik_id:5,kontakt_id:1133,placowka_id:4882}),
 
 (z1:Zabiegi { wezel: "Z_1", zabieg_id: 1, nazwa: "zabieg Urbana", cena_netto: 2000.0, pracownik_id: 2, wizyta_id: 2 }), 
@@ -47,14 +48,74 @@ haslo:null,pensja:5500,adres_id:5160,kontakt_id:7492,stanowisko_id:2978,specjaln
 (sw4:Statusy_wizyt { wezel: "SW_4", statusy_wizyt_id: 4, status: "Zakonczona" }),
 (sw5:Statusy_wizyt { wezel: "SW_5", statusy_wizyt_id: 5, status: "Zakonczona" }),
 
-(r1:Recepty { wezel: "R_1", pracownik_id: 2, wizyta_id: 2, oddzial_nfz_id: 85, recepta_choroba_id: 5788, ulga_id: null }),
-(r2:Recepty { wezel: "R_2", pracownik_id: 2, wizyta_id: 1, oddzial_nfz_id: 58, recepta_choroba_id: 5788, ulga_id: 50 }),
-(r3:Recepty { wezel: "R_3", pracownik_id: 1, wizyta_id: 3, oddzial_nfz_id: 17, recepta_choroba_id: 5683, ulga_id: null }),
-(r4:Recepty { wezel: "R_4", pracownik_id: 4, wizyta_id: 4, oddzial_nfz_id: 75, recepta_choroba_id: 4871, ulga_id: null }),
-(r5:Recepty { wezel: "R_5", pracownik_id: 5, wizyta_id: 5, oddzial_nfz_id: 66, recepta_choroba_id: 1881, ulga_id: null }),
+(r1:Recepty { wezel: "R_1", recepta_id: 1, pracownik_id: 2, wizyta_id: 2, oddzial_nfz_id: 85, recepta_choroba_id: 5788, ulga_id: null }),
+(r2:Recepty { wezel: "R_2", recepta_id: 2, pracownik_id: 2, wizyta_id: 1, oddzial_nfz_id: 58, recepta_choroba_id: 5788, ulga_id: 50 }),
+(r3:Recepty { wezel: "R_3", recepta_id: 3, pracownik_id: 1, wizyta_id: 3, oddzial_nfz_id: 17, recepta_choroba_id: 5683, ulga_id: null }),
+(r4:Recepty { wezel: "R_4", recepta_id: 4, pracownik_id: 4, wizyta_id: 4, oddzial_nfz_id: 75, recepta_choroba_id: 4871, ulga_id: null }),
+(r5:Recepty { wezel: "R_5", recepta_id: 5, pracownik_id: 5, wizyta_id: 5, oddzial_nfz_id: 66, recepta_choroba_id: 1881, ulga_id: null }),
 
-(g1)-[:Przynależy]->(p1),
-(g2)-[:Przynależy]->(p2),
-(g3)-[:Przynależy]->(p3),
-(g4)-[:Przynależy]->(p4),
-(g5)-[:Przynależy]->(p5),
+(w1:Wizyty{name:"W_1",wizyta_id:1,oplata:200,data_wizyty:"02-10-04",godzina_poczatek:"18:38",godzina_koniec:"19:11",pacjent_id:1,prac_spec:2,prac_uma:2,gabinet_id:2}),
+(w2:Wizyty{name:"W_2",wizyta_id:2,oplata:1500,data_wizyty:"21-05-29",godzina_poczatek:"19:03",godzina_koniec:"20:15",pacjent_id:2,prac_spec:2,prac_uma:2,gabinet_id:2}),
+(w3:Wizyty{name:"W_3",wizyta_id:3,oplata:100,data_wizyty:"21-07-18",godzina_poczatek:"09:33",godzina_koniec:"12:02",pacjent_id:3,prac_spec:1,prac_uma:1,gabinet_id:1}),
+(w4:Wizyty{name:"W_4",wizyta_id:4,oplata:1000,data_wizyty:"06-07-07",godzina_poczatek:"08:20",godzina_koniec:"08:45",pacjent_id:4,prac_spec:4,prac_uma:4,gabinet_id:4}),
+(w5:Wizyty{name:"W_5",wizyta_id:5,oplata:900,data_wizyty:"02-12-14",godzina_poczatek:"12:31",godzina_koniec:"15:56",pacjent_id:5,prac_spec:5,prac_uma:5,gabinet_id:5}),
+
+(g1)-[:Przynależy{gabinet_id:1,pracownik_id:1}]->(p1),
+(g2)-[:Przynależy{gabinet_id:2,pracownik_id:2}]->(p2),
+(g3)-[:Przynależy{gabinet_id:3,pracownik_id:3}]->(p3),
+(g4)-[:Przynależy{gabinet_id:4,pracownik_id:4}]->(p4),
+(g5)-[:Przynależy{gabinet_id:5,pracownik_id:5}]->(p5),
+
+(z1)-[:Wykonywał{zabieg_id:1,pracownik_id:2}]->(p2),
+(z2)-[:Wykonywał{zabieg_id:2,pracownik_id:2}]->(p2),
+(z3)-[:Wykonywał{zabieg_id:3,pracownik_id:1}]->(p1),
+(z4)-[:Wykonywał{zabieg_id:4,pracownik_id:4}]->(p4),
+(z5)-[:Wykonywał{zabieg_id:5,pracownik_id:5}]->(p5),
+
+(z1)-[:Przy{zabieg_id:1,wizyta_id:2}]->(w2),
+(z2)-[:Przy{zabieg_id:2,wizyta_id:1}]->(w1),
+(z3)-[:Przy{zabieg_id:3,wizyta_id:3}]->(w3),
+(z4)-[:Przy{zabieg_id:4,wizyta_id:4}]->(w4),
+(z5)-[:Przy{zabieg_id:5,wizyta_id:5}]->(w5),
+
+(r1)-[:Wypisał{recepta_id:1,pracownik_id:2}]->(p2),
+(r2)-[:Wypisał{recepta_id:2,pracownik_id:2}]->(p2),
+(r3)-[:Wypisał{recepta_id:3,pracownik_id:1}]->(p1),
+(r4)-[:Wypisał{recepta_id:4,pracownik_id:4}]->(p4),
+(r5)-[:Wypisał{recepta_id:5,pracownik_id:5}]->(p5),
+
+(r1)-[:Podczas{recepta_id:1,wizyta_id:2}]->(w2),
+(r2)-[:Podczas{recepta_id:2,wizyta_id:1}]->(w1),
+(r3)-[:Podczas{recepta_id:3,wizyta_id:3}]->(w3),
+(r4)-[:Podczas{recepta_id:4,wizyta_id:4}]->(w4),
+(r5)-[:Podczas{recepta_id:5,wizyta_id:5}]->(w5),
+
+(w1)-[:Status{wizyta_id:1,statusy_wizyt_id:1}]->(sw1),
+(w2)-[:Status{wizyta_id:2,statusy_wizyt_id:2}]->(sw2),
+(w3)-[:Status{wizyta_id:3,statusy_wizyt_id:3}]->(sw3),
+(w4)-[:Status{wizyta_id:4,statusy_wizyt_id:4}]->(sw4),
+(w5)-[:Status{wizyta_id:5,statusy_wizyt_id:5}]->(sw5),
+
+(w1)-[:Pacjent{wizyta_id:1,pacjent_id:1}]->(pac1),
+(w2)-[:Pacjent{wizyta_id:2,pacjent_id:2}]->(pac2),
+(w3)-[:Pacjent{wizyta_id:3,pacjent_id:3}]->(pac3),
+(w4)-[:Pacjent{wizyta_id:4,pacjent_id:4}]->(pac4),
+(w5)-[:Pacjent{wizyta_id:5,pacjent_id:5}]->(pac5),
+
+(w1)-[:Umówił{wizyta_id:1,prac_uma:2}]->(p2),
+(w2)-[:Umówił{wizyta_id:2,prac_uma:2}]->(p2),
+(w3)-[:Umówił{wizyta_id:3,prac_uma:1}]->(p1),
+(w4)-[:Umówił{wizyta_id:4,prac_uma:4}]->(p4),
+(w5)-[:Umówił{wizyta_id:5,prac_uma:5}]->(p5),
+
+(w1)-[:Przyjmował{wizyta_id:1,prac_uma:2}]->(p2),
+(w2)-[:Przyjmował{wizyta_id:2,prac_uma:2}]->(p2),
+(w3)-[:Przyjmował{wizyta_id:3,prac_uma:1}]->(p1),
+(w4)-[:Przyjmował{wizyta_id:4,prac_uma:4}]->(p4),
+(w5)-[:Przyjmował{wizyta_id:5,prac_uma:5}]->(p5),
+
+(w1)-[:Gdzie{wizyta_id:1,gabinet_id:2}]->(g2),
+(w2)-[:Gdzie{wizyta_id:2,gabinet_id:2}]->(g2),
+(w3)-[:Gdzie{wizyta_id:3,gabinet_id:1}]->(g1),
+(w4)-[:Gdzie{wizyta_id:4,gabinet_id:4}]->(g4),
+(w5)-[:Gdzie{wizyta_id:5,gabinet_id:4}]->(g4);
