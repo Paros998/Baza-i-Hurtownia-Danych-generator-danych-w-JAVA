@@ -1,0 +1,15 @@
+CREATE
+(:Pacjenci{name:"P_1" , pacjent_id:1 , imie:"Emil" ,nazwisko:"Brzezinski" ,login:"50985051100527250119105568051514956120551155354",haslo:"48771005311849665310351688348499750119108885456"
+,pesel_id:"13088027337",kontakt_id:7212,adres_id:26782}),
+
+(:Pacjenci{name:"P_2" , pacjent_id:2 , imie:"Kewin" ,nazwisko:"Marciniak" ,login:null,haslo:null
+,pesel_id:"61124651421",kontakt_id:4498,adres_id:24485}),
+
+(:Pacjenci{name:"P_3" , pacjent_id:3 , imie:"Jozef" ,nazwisko:"Szewczyk" ,login:null,haslo:null
+,pesel_id:"57747460188",kontakt_id:6874,adres_id:22533}),
+
+(:Pacjenci{name:"P_4" , pacjent_id:4 , imie:"Grzegorz" ,nazwisko:"Krupski" ,login:null,haslo:null
+,pesel_id:"16780166056",kontakt_id:35844,adres_id:13847}),
+
+(:Pacjenci{name:"P_5" , pacjent_id:5 , imie:"Oskar" ,nazwisko:"Marciniak" ,login:"106775671104100765010255651041175452",haslo:"4879121536810888678649566650102106"
+,pesel_id:"68637325387",kontakt_id:134,adres_id:28766})
