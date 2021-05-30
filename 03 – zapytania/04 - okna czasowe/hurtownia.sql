@@ -66,7 +66,7 @@ SUM(CNZ) OVER (ORDER BY WID RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) "
 FROM
     (SELECT wizyta_id WID,oplata OPL,cena_netto_za_zabieg CNZ,pacjent_id PID,recepta_id RID 
     FROM h_wizyty 
-    WHERE recepta_id IS NULL OR recepta_id IS NOT NULL
+    WHERE recepta_id IS NOT NULL
     GROUP BY wizyta_id,pacjent_id,recepta_id,oplata,cena_netto_za_zabieg 
 ),
 h_pozycje_recept pr,
