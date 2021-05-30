@@ -1,33 +1,44 @@
 --------------------------------------------- FUNKCJE RANKINGOWE ---------------------------------------------------------------------
 
--- Ranking pacjentow, ktorzy wniesli najwiecej oplat za wizyte w danej placowce, w danym miescie
-SELECT pac.nazwisko AS nazwisko_pacjenta, p.nazwa AS nazwa_placowki, p.miasto, w.oplata AS oplata_za_wizyte,
-RANK () OVER (PARTITION BY p.nazwa, p.miasto ORDER BY w.oplata DESC)
-ranking FROM h_wizyty w
-JOIN h_pacjenci pac ON pac.pacjent_id = w.pacjent_id
-JOIN h_gabinety g ON g.gabinet_id = w.gabinet_id
-JOIN h_placowki p ON p.placowka_id = g.placowka_id
-ORDER BY pac.nazwisko, ranking;
+-- Ranking pacjentow, ktorzy wniesli najwiecej oplat za wizyte w danym gabinecie
+SELECT DISTINCT
+TO_CHAR ((SELECT nazwisko FROM h_pacjenci WHERE pacjent_id = p_id)) nazwisko_pacjenta,
+g_id identyfikator_gabinetu,
+oplata_za_wizyte,
+ranking
+FROM (
+    SELECT pacjent_id p_id, gabinet_id g_id, oplata oplata_za_wizyte,
+    RANK () OVER (PARTITION BY gabinet_id ORDER BY oplata DESC) ranking
+    FROM h_wizyty
+)
+ORDER BY ranking;
 
--- Ranking najlepszej sredniej sprzedazy lekow na dana chorobe z dana ulga
-SELECT l.nazwa AS nazwa_leku, c.nazwa AS nazwa_choroby, u.typ_ulgi, AVG (pr.ilosc),
-RANK () OVER (PARTITION BY c.nazwa, u.typ_ulgi ORDER BY AVG (pr.ilosc) DESC)
-ranking FROM h_pozycje_recept pr
-JOIN h_leki l ON l.leki_id = pr.lek_id
-JOIN h_ulgi u ON u.ulgi_id = pr.ulga_id
-JOIN h_recepty r ON r.recepta_id = pr.recepta_id
-JOIN h_choroby c ON c.choroby_id = r.choroba_id
-GROUP BY ROLLUP (l.nazwa, c.nazwa, u.typ_ulgi)
-ORDER BY c.nazwa, ranking;
+-- Ranking najlepszej sumy sprzedanych lekow na recepte, z dana ulga
+SELECT DISTINCT
+r_id numer_recepty,
+TO_CHAR ((SELECT typ_ulgi FROM h_ulgi WHERE ulgi_id = u_id)) typ_ulgi,
+odplatnosc_suma,
+ranking
+FROM (
+    SELECT r_id, u_id, odplatnosc_suma,
+    RANK () OVER (ORDER BY odplatnosc_suma DESC) ranking
+    FROM (
+        SELECT recepta_id r_id, ulga_id u_id, SUM (odplatnosc) odplatnosc_suma FROM h_pozycje_recept
+        GROUP BY recepta_id, ulga_id
+    )
+)
+ORDER BY ranking;
 
--- Ranking zabiegow, ktore zostaly wykonane przez neurologa, w danej placowce oraz w danym miescie
-SELECT z.nazwa AS nazwa_zabiegu, pr.nazwisko, p.nazwa AS nazwa_placowki, p.miasto, w.cena_netto_za_zabieg AS oplata_za_zabieg,
-RANK () OVER (PARTITION BY p.nazwa, p.miasto ORDER BY w.cena_netto_za_zabieg DESC)
-ranking FROM h_wizyty w
-JOIN h_zabiegi z ON w.zabieg_id = z.zabieg_id
-JOIN h_pracownicy pr ON pr.pracownik_id = w.prac_spec
-JOIN h_stanowiska s ON s.stanowisko_id = pr.stanowisko_id
-JOIN h_gabinety g ON g.gabinet_id = w.gabinet_id
-JOIN h_placowki p ON p.placowka_id = g.placowka_id
-WHERE s.nazwa LIKE 'Neurolog'
-ORDER BY z.nazwa, ranking;
+-- Ranking najdrozej wykonanych zabiegow przez pracownika pracujacego w okreslonym gabinecie
+SELECT DISTINCT
+TO_CHAR ((SELECT nazwa FROM h_zabiegi WHERE zabieg_id = z_id)) nazwa_zabiegu,
+TO_CHAR ((SELECT nazwisko FROM h_pracownicy WHERE pracownik_id = p_id)) nazwisko_pracownika,
+identyfikator_gabinetu,
+cena_netto_za_zabieg,
+ranking
+FROM (
+    SELECT zabieg_id z_id, prac_spec p_id, gabinet_id identyfikator_gabinetu, cena_netto_za_zabieg,
+    RANK () OVER (PARTITION BY gabinet_id ORDER BY cena_netto_za_zabieg DESC) ranking
+    FROM h_wizyty
+)
+ORDER BY nazwa_zabiegu, ranking;

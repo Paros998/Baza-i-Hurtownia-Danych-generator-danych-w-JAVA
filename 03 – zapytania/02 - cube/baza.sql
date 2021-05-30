@@ -1,29 +1,35 @@
 --------------------------------------------- CUBE ---------------------------------------------------
 
--- Srednia oplata wizyt danego pacjenta, w placowce, w danym miescie
-SELECT pac.nazwisko AS nazwisko_pacjenta, p.nazwa AS nazwa_placowki, a.miasto, AVG (w.oplata) AS srednia_oplata FROM wizyty w
-JOIN pacjenci pac ON pac.pacjent_id = w.pacjent_id
-JOIN gabinety g ON g.gabinet_id = w.gabinet_id
-JOIN placowki p ON p.placowka_id = g.placowka_id
-JOIN adresy a ON a.adres_id = p.adres_id
-WHERE g.oznaczenie LIKE 'Wizyty%'
-GROUP BY CUBE (pac.nazwisko, p.nazwa, a.miasto);
+-- Srednia oplata wizyt danego pacjenta, w kazdym gabinecie
+SELECT DISTINCT
+TO_CHAR ((SELECT nazwisko FROM pacjenci WHERE pacjent_id = p_id)) nazwisko_pacjenta,
+TO_CHAR ((SELECT oznaczenie FROM gabinety WHERE gabinet_id = g_id)) oznaczenie_gabinetu,
+srednia_oplata
+FROM (
+    SELECT pacjent_id p_id, gabinet_id g_id, AVG (oplata) srednia_oplata FROM wizyty
+    GROUP BY CUBE (pacjent_id, gabinet_id)
+);
 
--- Srednia oplata zabiegow danego pacjenta, w placowce, w danym miescie
-SELECT pac.nazwisko AS nazwisko_pacjenta, p.nazwa AS nazwa_placowki, a.miasto, AVG (z.cena_netto) AS srednia_oplata FROM wizyty w
-JOIN zabiegi z ON w.wizyta_id = z.wizyta_id
-JOIN pacjenci pac ON pac.pacjent_id = w.pacjent_id
-JOIN gabinety g ON g.gabinet_id = w.gabinet_id
-JOIN placowki p ON p.placowka_id = g.placowka_id
-JOIN adresy a ON a.adres_id = p.adres_id
-WHERE g.oznaczenie LIKE 'Zabiegi'
-GROUP BY CUBE (pac.nazwisko, p.nazwa, a.miasto);
+-- Srednia oplata zabiegow danego pacjenta z okreslonego oddzialu, w kazdym gabinecie
+SELECT DISTINCT
+TO_CHAR ((SELECT nazwisko FROM pacjenci WHERE pacjent_id = p_id)) nazwisko_pacjenta,
+TO_CHAR ((SELECT oznaczenie FROM gabinety WHERE gabinet_id = g_id)) oznaczenie_gabinetu,
+TO_CHAR ((SELECT nazwa FROM oddzialy_nfz o JOIN recepty r ON r.oddzial_nfz_id = o.oddzial_nfz_id WHERE r.recepta_id = r_id)) nazwa_oddzialu,
+srednia_oplata
+FROM (
+    SELECT w.pacjent_id p_id, w.gabinet_id g_id, r.recepta_id r_id, AVG (z.cena_netto) srednia_oplata FROM zabiegi z
+    RIGHT JOIN wizyty w ON w.wizyta_id = z.wizyta_id
+    LEFT JOIN recepty r ON r.wizyta_id = w.wizyta_id
+    GROUP BY CUBE (w.pacjent_id, w.gabinet_id, r.recepta_id)
+);
 
--- Srednia oplata za leki danego pacjenta, w danym miescie, chorujacego na okreslona chorobe, powiazanego z danego oddzialu
-SELECT pac.nazwisko AS nazwisko_pacjenta, a.miasto, c.nazwa AS nazwa_choroby, AVG (pr.odplatnosc) AS srednia_oplata_za_leki FROM pozycje_recept pr
-JOIN recepty r ON pr.recepta_id = r.recepta_id
-JOIN wizyty w ON w.wizyta_id = r.wizyta_id
-JOIN pacjenci pac ON pac.pacjent_id = w.pacjent_id
-JOIN adresy a ON a.adres_id = pac.adres_id
-JOIN choroby c ON c.choroby_id = r.recepta_choroba_id
-GROUP BY CUBE (pac.nazwisko, a.miasto, c.nazwa);
+-- Laczna odplatnosc lekow na kazdej recepcie z dana ulga
+SELECT DISTINCT
+r_id numer_recepty,
+TO_CHAR ((SELECT typ_ulgi FROM ulgi WHERE ulgi_id = u_id)) typ_ulgi,
+laczna_odplatnosc
+FROM (
+    SELECT r.recepta_id r_id, r.ulga_id u_id, SUM (pr.odplatnosc) laczna_odplatnosc FROM pozycje_recept pr
+    JOIN recepty r ON r.recepta_id = pr.recepta_id
+    GROUP BY CUBE (r.recepta_id, r.ulga_id)
+);
