@@ -28,7 +28,8 @@ RETURN date(w.data_wizyty).year AS rok, a.miasto, avg(w.oplata) ORDER BY rok
 
 //Suma dochodów z zabiegów w każdym gabinecie 
 MATCH (z:Zabiegi)-[:fk_Zabiegi_Wizyty]->(w:Wizyty)-[:fk_Wizyty_Gabinety]->(g:Gabinety)
-RETURN w.gabinet_id AS identyfikator_gabinetu, sum(z.cena_netto)
+RETURN w.gabinet_id AS identyfikator_gabinetu, sum(z.cena_netto) 
+ORDER BY identyfikator_gabinetu
 
 //Suma opłat za leki z każdej recepty, w danym roku 
 MATCH (pr:Pozycje_recept)-[:fk_Pozycje_Recepty]->(r:Recepty)-[:fk_Recepty_Wizyty]->(w:Wizyty)
