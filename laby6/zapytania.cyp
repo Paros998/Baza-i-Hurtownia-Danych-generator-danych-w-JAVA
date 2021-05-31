@@ -34,3 +34,22 @@ ORDER BY identyfikator_gabinetu
 //Suma opłat za leki z każdej recepty, w danym roku 
 MATCH (pr:Pozycje_recept)-[:fk_Pozycje_Recepty]->(r:Recepty)-[:fk_Recepty_Wizyty]->(w:Wizyty)
 RETURN pr.recepta_id AS id_recepty, date(w.data_wizyty).year AS rok, sum(pr.odplatnosc) AS suma ORDER BY rok
+
+
+//
+MATCH(w:Wizyty)-[WIZPAC:fk_Wizyty_Pacjenci]->(p:Pacjenci)-[PAKA:fk_Pacjenci_Karty]->(k:Karty)
+
+WITH p
+MATCH(p:Pacjenci)-[PAA:fk_Pacjenci_Adresy]->(:Adresy)
+MATCH(p:Pacjenci)-[PAK:fk_Pacjenci_Kontakty]-(:Kontakty)
+
+WITH w
+MATCH(w:Wizyty)-[WPU:fk_Wizyty_Pracownicy_Uma]->(pum:Pracownicy)->[PRA:fk_Pracownicy_Adresy]-(a:Adresy)
+
+MATCH(w:Wizyty)-[:fk_Wizyty_Pracownicy_Spec]->(pspec:Pracownicy)-[:fk_Pracownicy_Specjalnosci]->(spec:Specjalnosci)
+MATCH(sw:Statusy_wizyt)-[:fk_Statusy_Wizyty]->(w:Wizyty)
+MATCH(r:Recepty)-[:fk_Recepty_Wizyty]->(w:Wizyty)
+MATCH(r:Recepty)-[:fk_Recepty_Oddzialy]->(o:Oddzialy_nfz)
+MATCH(r:Recepty)-[:fk_Recepty_Ulgi]->(u:Ulgi)
+MATCH(r:Recepty)-[:fk_Recepty_Pracownicy]->(pr:Pracownicy)
+MATCH(r:Recepty)-[:fk_Recepty_Choroby]->(c:Choroby)-[:fk_Choroby_Karty]->(k:Karty)
