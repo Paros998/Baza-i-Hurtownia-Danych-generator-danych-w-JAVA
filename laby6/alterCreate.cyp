@@ -19,59 +19,59 @@ MATCH(n:Wizyty) DETACH DELETE n;
 MATCH(n:Zabiegi) DETACH DELETE n;
 //Rekordy w tabelach
 LOAD CSV WITH HEADERS FROM 'file:///ulgi.csv'  AS row
-CREATE (:Ulgi{ulgi_id:row.ulgi_id,typ_ulgi:row.typ_ulgi,procent_ulgi:toInteger(row.procent_ulgi)});
+CREATE (:Ulgi{ulgi_id:toInteger(row.ulgi_id),typ_ulgi:row.typ_ulgi,procent_ulgi:toInteger(row.procent_ulgi)});
 
 LOAD CSV WITH HEADERS FROM 'file:///oddzialy_nfz.csv' AS row
-CREATE (:Oddzialy_nfz{oddzial_nfz_id:row.oddzial_nfz_id,nazwa:row.nazwa,kod_funduszu:row.kod_funduszu});
+CREATE (:Oddzialy_nfz{oddzial_nfz_id:toInteger(row.oddzial_nfz_id),nazwa:row.nazwa,kod_funduszu:row.kod_funduszu});
 
 LOAD CSV WITH HEADERS FROM 'file:///adresy.csv' AS row
-CREATE (:Adresy {adres_id:row.adres_id,kod_poczt:row.kod_poczt,miasto:row.miasto,wojewodztwo:row.wojewodztwo,ulica:row.ulica,
-nr_domu:row.nr_domu,nr_mieszkania:row.nr_mieszkania});
+CREATE (:Adresy {adres_id:toInteger(row.adres_id),kod_poczt:row.kod_poczt,miasto:row.miasto,wojewodztwo:row.wojewodztwo,ulica:row.ulica,
+nr_domu:toInteger(row.nr_domu),nr_mieszkania:toInteger(row.nr_mieszkania)});
 
 LOAD CSV WITH HEADERS FROM 'file:///kontakty.csv' AS row
-CREATE (:Kontakty{kontakt_id:row.kontakt_id,telefon:row.telefon,email:row.email});
+CREATE (:Kontakty{kontakt_id:toInteger(row.kontakt_id),telefon:row.telefon,email:row.email});
 
 LOAD CSV WITH HEADERS FROM 'file:///specjalnosci.csv' AS row
-CREATE (:Specjalnosci{specjalnosc_id:row.specjalnosc_id,nazwa:row.nazwa,stopien:row.stopien,dodatek_pensja:toInteger(row.dodatek_pensja)});
+CREATE (:Specjalnosci{specjalnosc_id:toInteger(row.specjalnosc_id),nazwa:row.nazwa,stopien:row.stopien,dodatek_pensja:toInteger(row.dodatek_pensja)});
 
 LOAD CSV WITH HEADERS FROM 'file:///uprawnienia.csv' AS row
-CREATE (:Uprawnienia{uprawnienie_id:row.uprawnienie_id,oznaczenie:row.oznaczenie,opis:row.opis});
+CREATE (:Uprawnienia{uprawnienie_id:toInteger(row.uprawnienie_id),oznaczenie:row.oznaczenie,opis:row.opis});
 
 LOAD CSV WITH HEADERS FROM 'file:///stanowiska.csv' AS row
-CREATE (:Stanowiska{stanowisko_id:row.stanowisko_id,nazwa:row.nazwa,pensja:toInteger(row.pensja),uprawnienie_id:row.uprawnienie_id});
+CREATE (:Stanowiska{stanowisko_id:toInteger(row.stanowisko_id),nazwa:row.nazwa,pensja:toInteger(row.pensja),uprawnienie_id:toInteger(row.uprawnienie_id)});
 
 LOAD CSV WITH HEADERS FROM 'file:///karty.csv' AS row
 CREATE (:Karty{pesel_id:row.pesel_id,data_ur:row.data_ur,grupa_krwi:row.grupa_krwi});
 
 LOAD CSV WITH HEADERS FROM 'file:///choroby.csv' AS row FIELDTERMINATOR '*'
-CREATE (:Choroby{choroby_id:row.choroby_id,nazwa:row.nazwa,opis:row.opis,poczatek:row.poczatek,koniec:row.koniec,pesel_id:row.pesel_id});
+CREATE (:Choroby{choroby_id:toInteger(row.choroby_id),nazwa:row.nazwa,opis:row.opis,poczatek:row.poczatek,koniec:row.koniec,pesel_id:row.pesel_id});
 
 LOAD CSV WITH HEADERS FROM 'file:///placowki.csv' AS row
-CREATE (:Placowki{placowka_id:row.placowka_id,nazwa:row.nazwa,adres_id:row.adres_id,kontakt_id:row.kontakt_id});
+CREATE (:Placowki{placowka_id:toInteger(row.placowka_id),nazwa:row.nazwa,adres_id:toInteger(row.adres_id),kontakt_id:toInteger(row.kontakt_id)});
 
 LOAD CSV WITH HEADERS FROM 'file:///pracownicy.csv' AS row
-CREATE (:Pracownicy{pracownik_id:row.pracownik_id,imie:row.imie,nazwisko:row.nazwisko,login:row.login,haslo:row.haslo,pensja:toInteger(row.pensja),adres_id:row.adres_id,kontakt_id:row.kontakt_id,stanowisko_id:row.stanowisko_id,specjalnosc_id:row.specjalnosc_id});
+CREATE (:Pracownicy{pracownik_id:toInteger(row.pracownik_id),imie:row.imie,nazwisko:row.nazwisko,login:row.login,haslo:row.haslo,pensja:toInteger(row.pensja),adres_id:toInteger(row.adres_id),kontakt_id:toInteger(row.kontakt_id),stanowisko_id:toInteger(row.stanowisko_id),specjalnosc_id:toInteger(row.specjalnosc_id)});
 
 LOAD CSV WITH HEADERS FROM 'file:///pacjenci.csv' AS row
-CREATE (:Pacjenci{pacjent_id:row.pacjent_id,imie:row.imie,nazwisko:row.nazwisko,login:row.login,haslo:row.haslo,pesel_id:row.pesel_id,kontakt_id:row.kontakt_id,adres_id:row.adres_id});
+CREATE (:Pacjenci{pacjent_id:toInteger(row.pacjent_id),imie:row.imie,nazwisko:row.nazwisko,login:row.login,haslo:row.haslo,pesel_id:row.pesel_id,kontakt_id:toInteger(row.kontakt_id),adres_id:toInteger(row.adres_id)});
 
 LOAD CSV WITH HEADERS FROM 'file:///gabinety.csv' AS row
-CREATE (:Gabinety{gabinet_id:row.gabinet_id,oznaczenie:row.oznaczenie,pracownik_id:row.pracownik_id,kontakt_id:row.kontakt_id,placowka_id:row.placowka_id});
+CREATE (:Gabinety{gabinet_id:toInteger(row.gabinet_id),oznaczenie:row.oznaczenie,pracownik_id:toInteger(row.pracownik_id),kontakt_id:toInteger(row.kontakt_id),placowka_id:toInteger(row.placowka_id)});
 
 LOAD CSV WITH HEADERS FROM 'file:///wizyty.csv' AS row
-CREATE (:Wizyty{wizyta_id:row.wizyta_id,oplata:toInteger(row.oplata),data_wizyty:row.data_wizyty,godzina_poczatek:row.godzina_poczatek,godzina_koniec:row.godzina_koniec,pacjent_id:row.pacjent_id,prac_spec:row.prac_spec,prac_uma:row.prac_uma,gabinet_id:row.gabinet_id});
+CREATE (:Wizyty{wizyta_id:toInteger(row.wizyta_id),oplata:toInteger(row.oplata),data_wizyty:row.data_wizyty,godzina_poczatek:row.godzina_poczatek,godzina_koniec:row.godzina_koniec,pacjent_id:toInteger(row.pacjent_id),prac_spec:toInteger(row.prac_spec),prac_uma:toInteger(row.prac_uma),gabinet_id:toInteger(row.gabinet_id)});
 
 LOAD CSV WITH HEADERS FROM 'file:///recepty.csv' AS row
-CREATE (:Recepty{recepta_id:row.recepta_id,pracownik_id:row.pracownik_id,wizyta_id:row.wizyta_id,oddzial_nfz_id:row.oddzial_nfz_id,recepta_choroba_id:row.recepta_choroba_id,ulga_id:row.ulga_id});
+CREATE (:Recepty{recepta_id:toInteger(row.recepta_id),pracownik_id:toInteger(row.pracownik_id),wizyta_id:toInteger(row.wizyta_id),oddzial_nfz_id:toInteger(row.oddzial_nfz_id),recepta_choroba_id:toInteger(row.recepta_choroba_id),ulga_id:toInteger(row.ulga_id)});
 
 LOAD CSV WITH HEADERS FROM 'file:///pozycje_recept.csv' AS row
-CREATE (:Pozycje_recept{pozycje_recept_id:row.pozycje_recept_id,recepta_id:row.recepta_id,nazwa:row.nazwa,ilosc:toInteger(row.ilosc),odplatnosc:toFloat(row.odplatnosc)});
+CREATE (:Pozycje_recept{pozycje_recept_id:toInteger(row.pozycje_recept_id),recepta_id:toInteger(row.recepta_id),nazwa:row.nazwa,ilosc:toInteger(row.ilosc),odplatnosc:toFloat(row.odplatnosc)});
 
 LOAD CSV WITH HEADERS FROM 'file:///statusy_wizyt.csv' AS row
-CREATE (:Statusy_wizyt{statusy_wizyt_id:row.statusy_wizyt_id,status:row.status,opis:row.opis});
+CREATE (:Statusy_wizyt{statusy_wizyt_id:toInteger(row.statusy_wizyt_id),status:row.status,opis:row.opis});
 
 LOAD CSV WITH HEADERS FROM 'file:///zabiegi.csv' AS row
-CREATE (:Zabiegi{zabieg_id:row.zabieg_id,nazwa:row.nazwa,cena_netto:toInteger(row.cena_netto),pracownik_id:row.pracownik_id,wizyta_id:row.wizyta_id});
+CREATE (:Zabiegi{zabieg_id:toInteger(row.zabieg_id),nazwa:row.nazwa,cena_netto:toInteger(row.cena_netto),pracownik_id:toInteger(row.pracownik_id),wizyta_id:toInteger(row.wizyta_id)});
 
 //Relacje
 MATCH(s:Stanowiska) MATCH(u:Uprawnienia) 
