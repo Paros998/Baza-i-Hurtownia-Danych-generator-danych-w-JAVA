@@ -22,14 +22,14 @@ RETURN placowka_id,placowka,miasto,rok,SUM(Suma_w_DanymRoku) AS Suma_w_DanymRoku
 ORDER BY placowka_id ASC,rok DESC;
 
 
-------- Średnia opłat za wizyty w każdym roku, pacjentów pochodzących z danego miasta ----------
-match (w:Wizyty)-[:fk_Wizyty_Pacjenci]->(p:Pacjenci)-[:fk_Pacjenci_Adresy]->(a:Adresy)
-return date(w.data_wizyty).year as rok, a.miasto, avg(w.oplata) order by rok
+//Średnia opłat za wizyty w każdym roku, pacjentów pochodzących z danego miasta 
+MATCH (w:Wizyty)-[:fk_Wizyty_Pacjenci]->(p:Pacjenci)-[:fk_Pacjenci_Adresy]->(a:Adresy)
+RETURN date(w.data_wizyty).year AS rok, a.miasto, avg(w.oplata) ORDER BY rok
 
-------- Suma dochodów z zabiegów w każdym gabinecie ----------
-match (z:Zabiegi)-[:fk_Zabiegi_Wizyty]->(w:Wizyty)-[:fk_Wizyty_Gabinety]->(g:Gabinety)
-return w.gabinet_id as identyfikator_gabinetu, sum(z.cena_netto)
+//Suma dochodów z zabiegów w każdym gabinecie 
+MATCH (z:Zabiegi)-[:fk_Zabiegi_Wizyty]->(w:Wizyty)-[:fk_Wizyty_Gabinety]->(g:Gabinety)
+RETURN w.gabinet_id AS identyfikator_gabinetu, sum(z.cena_netto)
 
-------- Suma opłat za leki z każdej recepty, w danym roku ----------
-match (pr:Pozycje_recept)-[:fk_Pozycje_Recepty]->(r:Recepty)-[:fk_Recepty_Wizyty]->(w:Wizyty)
-return pr.recepta_id as id_recepty, date(w.data_wizyty).year as rok, sum(pr.odplatnosc) as suma order by rok
+//Suma opłat za leki z każdej recepty, w danym roku 
+MATCH (pr:Pozycje_recept)-[:fk_Pozycje_Recepty]->(r:Recepty)-[:fk_Recepty_Wizyty]->(w:Wizyty)
+RETURN pr.recepta_id AS id_recepty, date(w.data_wizyty).year AS rok, sum(pr.odplatnosc) AS suma ORDER BY rok
