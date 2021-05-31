@@ -86,10 +86,13 @@ MATCH(p:Placowki)MATCH(a:Adresy)MATCH(k:Kontakty)
 WHERE p.adres_id = a.adres_id AND p.kontakt_id = k.kontakt_id
 CREATE (p)-[:fk_Placowki_Adresy]->(a),(p)-[:fk_Placowki_Kontakty]->(k);
 
-MATCH(p:Pracownicy)MATCH(a:Adresy)MATCH(k:Kontakty)MATCH(st:Stanowiska)MATCH(sp:Specjalnosci)
-WHERE p.adres_id = a.adres_id AND p.kontakt_id = k.kontakt_id AND p.stanowisko_id = st.stanowisko_id AND p.specjalnosc_id = sp.specjalnosc_id
-CREATE (p)-[:fk_Pracownicy_Adresy]->(a),(p)-[:fk_Pracownicy_Kontakty]->(k),(p)-[:fk_Pracownicy_Stanowiska]->(st),
-(p)-[:fk_Pracownicy_Specjalnosci]->(sp);
+MATCH(p:Pracownicy)MATCH(a:Adresy)MATCH(k:Kontakty)MATCH(st:Stanowiska)
+WHERE p.adres_id = a.adres_id AND p.kontakt_id = k.kontakt_id AND p.stanowisko_id = st.stanowisko_id 
+CREATE (p)-[:fk_Pracownicy_Adresy]->(a),(p)-[:fk_Pracownicy_Kontakty]->(k),(p)-[:fk_Pracownicy_Stanowiska]->(st);
+
+MATCH(p:Pracownicy)MATCH(sp:Specjalnosci)
+WHERE p.specjalnosc_id = sp.specjalnosc_id
+CREATE (p)-[:fk_Pracownicy_Specjalnosci]->(sp);
 
 MATCH(p:Pacjenci)MATCH(a:Adresy)MATCH(ko:Kontakty)MATCH(ka:Karty)
 WHERE p.adres_id = a.adres_id AND p.kontakt_id = ko.kontakt_id AND p.pesel_id = ka.pesel_id
@@ -103,11 +106,15 @@ MATCH(w:Wizyty)MATCH(g:Gabinety)MATCH(ps:Pracownicy)MATCH(pu:Pracownicy)MATCH(pa
 WHERE w.gabinet_id = g.gabinet_id AND w.prac_spec = ps.pracownik_id AND w.prac_uma = pu.pracownik_id AND w.pacjent_id = pac.pacjent_id
 CREATE (w)-[:fk_Wizyty_Gabinety]->(g),(w)-[:fk_Wizyty_Pacjenci]->(pac),(w)-[:fk_Wizyty_Pracownicy_Spec]->(ps),
 (w)-[:fk_Wizyty_Pracownicy_Uma]->(pu);
-//Te recepty coś nie domagają jeszcze
-MATCH(r:Recepty)MATCH(p:Pracownicy)MATCH(w:Wizyty)MATCH(o:Oddzialy_nfz)MATCH(c:Choroby)MATCH(u:Ulgi)
+
+MATCH(r:Recepty)MATCH(p:Pracownicy)MATCH(w:Wizyty)MATCH(o:Oddzialy_nfz)MATCH(c:Choroby)
 WHERE r.pracownik_id = p.pracownik_id AND r.wizyta_id = w.wizyta_id AND r.oddzial_nfz_id = o.oddzial_nfz_id AND
-r.recepta_choroba_id = c.choroby_id AND r.ulga_id = u.ulgi_id
-CREATE (r)-[:fk_Recepty_Pracownicy]->(p),(r)-[:fk_Recepty_Wizyty]->(w),(r)-[:fk_Recepty_Oddzialy]->(o),(r)-[:fk_Recepty_Choroby]->(c),(r)-[:fk_Recepty_Ulgi]->(u);
+r.recepta_choroba_id = c.choroby_id 
+CREATE (r)-[:fk_Recepty_Pracownicy]->(p),(r)-[:fk_Recepty_Wizyty]->(w),(r)-[:fk_Recepty_Oddzialy]->(o),(r)-[:fk_Recepty_Choroby]->(c);
+
+MATCH(r:Recepty)MATCH(u:Ulgi)
+WHERE r.ulga_id = u.ulgi_id
+CREATE (r)-[:fk_Recepty_Ulgi]->(u);
 
 MATCH(pr:Pozycje_recept)MATCH(r:Recepty)
 WHERE pr.recepta_id = r.recepta_id
