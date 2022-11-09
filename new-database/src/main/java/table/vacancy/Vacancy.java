@@ -12,7 +12,7 @@ import java.util.UUID;
 @Builder
 public class Vacancy {
     private UUID id;
-    private Sector sector;
+    private String sectorName;
     private String name;
     private String jobDescription;
     private Float lowestSalaryGap;
@@ -22,11 +22,13 @@ public class Vacancy {
 
     private List<Benefit> benefits;
 
+    private List<JobRequirement> requirements;
+
     @Override
     public String toString() {
         return "%s,%s,%s,%s,%f,%f,%d".formatted(
                 id,
-                sector.getId(),
+                sectorName,
                 name,
                 jobDescription,
                 lowestSalaryGap,
