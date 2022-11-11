@@ -1,4 +1,4 @@
-package data.types;
+package pg.types;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

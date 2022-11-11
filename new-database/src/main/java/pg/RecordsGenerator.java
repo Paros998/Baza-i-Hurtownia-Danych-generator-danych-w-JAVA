@@ -1,10 +1,12 @@
-import utils.Data;
+package pg;
+
+import pg.utils.Data;
 
 public class RecordsGenerator {
 
     public static void main(String[] args) {
 
-        final var ct = Data.countries;
+        final Data data = new Data();
 
         var i = 1;
 
