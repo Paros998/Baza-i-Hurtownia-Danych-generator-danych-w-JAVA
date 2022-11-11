@@ -1,4 +1,4 @@
-package table.vacancy;
+package pg.table.vacancy;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

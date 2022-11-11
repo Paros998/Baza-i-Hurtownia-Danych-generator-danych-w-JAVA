@@ -1,4 +1,4 @@
-package table.cv;
+package pg.table.cv;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

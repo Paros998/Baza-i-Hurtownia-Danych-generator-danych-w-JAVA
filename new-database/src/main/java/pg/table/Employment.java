@@ -1,14 +1,14 @@
-package table;
+package pg.table;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 
-import table.cv.CurriculumVitae;
-import table.people.Applicant;
-import table.people.CompanyRepresentative;
-import table.people.Recruiter;
-import table.vacancy.Vacancy;
+import pg.table.cv.CurriculumVitae;
+import pg.table.people.Applicant;
+import pg.table.people.CompanyRepresentative;
+import pg.table.people.Recruiter;
+import pg.table.vacancy.Vacancy;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;

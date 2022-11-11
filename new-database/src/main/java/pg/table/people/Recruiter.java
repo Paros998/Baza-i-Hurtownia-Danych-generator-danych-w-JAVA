@@ -1,4 +1,4 @@
-package table.people;
+package pg.table.people;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
