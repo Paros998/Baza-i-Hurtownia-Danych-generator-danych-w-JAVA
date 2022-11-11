@@ -10,6 +10,8 @@ import java.util.UUID;
 @AllArgsConstructor
 @Builder
 public class Company {
+    public static final String TABLE = "Firma";
+    public static final String COLUMNS = "firma_id,nazwa,adres,email,nip";
     private UUID id;
     private String companyName;
     private String address;

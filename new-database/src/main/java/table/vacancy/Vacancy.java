@@ -11,9 +11,11 @@ import java.util.UUID;
 @AllArgsConstructor
 @Builder
 public class Vacancy {
+    public static final String TABLE = "Stanowisko";
+    public static final String COLUMNS = "stanowisko_id,nazwa,nazwa_sektora,opis,widelki_od,widelki_do,stopień_zaawansowania";
     private UUID id;
-    private String sectorName;
     private String name;
+    private String sectorName;
     private String jobDescription;
     private Float lowestSalaryGap;
     private Float highestSalaryGap;
@@ -28,8 +30,8 @@ public class Vacancy {
     public String toString() {
         return "%s,%s,%s,%s,%f,%f,%d".formatted(
                 id,
-                sectorName,
                 name,
+                sectorName,
                 jobDescription,
                 lowestSalaryGap,
                 highestSalaryGap,

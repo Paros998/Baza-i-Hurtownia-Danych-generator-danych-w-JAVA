@@ -12,13 +12,15 @@ import table.vacancy.Vacancy;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.UUID;
 
 @Data
 @AllArgsConstructor
 @Builder
 public class Employment {
-    private UUID id;
+    public static final String TABLE = "Zatrudnienie";
+    public static final String COLUMNS = "aplikant_id,cv_id,umowa_id,firma_id,stanowisko_id,rekruter_id"
+            + ",reprezentant_id,test_id,ilosc_aplikacji_na_stan,data_zatrudnienia,rozmowa_kwal_przeprowadzona"
+            + ",liczba_prac_firmy,zdany_test_kwal,stawka_pocz,waznosc_umowy";
     private Applicant applicant;
     private CurriculumVitae cv;
     private Arrangement arrangement;
@@ -35,14 +37,11 @@ public class Employment {
     private Boolean isQualificationTestPassed;
 
     private Float beginningSalary;
-    private Integer arrangementMonths;
-    private Integer arrangementYears;
-
+    private LocalDate validTo;
 
     @Override
     public String toString() {
-        return "%s,%s,%s,%s,%s,%s,%s,%s,%s,%d,%s,%s,%d,%s,%f,%d,%d".formatted(
-                id,
+        return "%s,%s,%s,%s,%s,%s,%s,%s,%d,%s,%s,%d,%s,%f,%s".formatted(
                 applicant.getId(),
                 cv.getId(),
                 arrangement.getId(),
@@ -59,8 +58,7 @@ public class Employment {
                 isQualificationTestPassed,
 
                 beginningSalary,
-                arrangementMonths,
-                arrangementYears
+                validTo.format(DateTimeFormatter.ISO_LOCAL_DATE)
         );
     }
 }

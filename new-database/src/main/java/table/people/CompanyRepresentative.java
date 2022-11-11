@@ -10,6 +10,8 @@ import java.util.UUID;
 @Data
 @Builder
 public class CompanyRepresentative {
+    public static final String TABLE = "Reprezentant_firmy";
+    public static final String COLUMNS = "reprezentant_id,nazwisko,imie,rola_w_firmie";
     private UUID id;
     private String firstName;
     private String lastName;

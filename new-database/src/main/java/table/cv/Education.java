@@ -12,13 +12,15 @@ import java.util.UUID;
 @AllArgsConstructor
 @Builder
 public class Education {
+    public static final String TABLE = "Wyksztalcenie";
+    public static final String COLUMNS = "wyksztalcenie_id,cv_id,od,do,opis,nazwa";
     private UUID id;
     private UUID cvId;
 
     private LocalDate since;
     private LocalDate to;
-    private String schoolName;
     private String description;
+    private String schoolName;
 
     @Override
     public String toString() {
@@ -27,8 +29,8 @@ public class Education {
                 cvId,
                 since.format(DateTimeFormatter.ISO_LOCAL_DATE),
                 to.format(DateTimeFormatter.ISO_LOCAL_DATE),
-                schoolName,
-                description
+                description,
+                schoolName
         );
     }
 }

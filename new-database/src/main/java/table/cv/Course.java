@@ -12,6 +12,8 @@ import java.util.UUID;
 @Data
 @Builder
 public class Course {
+    public static final String TABLE = "Kursy";
+    public static final String COLUMNS = "kurs_id,cv_id,data,wazne_do,nazwa,opis";
     private UUID id;
     private UUID cvId;
     private LocalDate date;

@@ -11,6 +11,8 @@ import java.util.UUID;
 @AllArgsConstructor
 @Builder
 public class CurriculumVitae {
+    public static final String TABLE = "CV";
+    public static final String COLUMNS = "cv_id,miasto,wojewodztwo,kod_pocztowy,kraj,ulica";
     private UUID id;
     private String city;
     private String voivodeship;

@@ -10,6 +10,8 @@ import java.util.UUID;
 @AllArgsConstructor
 @Builder
 public class JobRequirement {
+    public static final String TABLE = "Wymagania";
+    public static final String COLUMNS = "wymaganie_id,stanowisko_id,nazwa,opis,stopien_zaawansowania";
     private UUID id;
     private Vacancy vacancy;
     private String name;

@@ -11,8 +11,21 @@ import java.util.UUID;
 @Data
 @Builder
 public class Arrangement {
+    public static final String TABLE = "Umowa";
+    public static final String COLUMNS = "umowa_id,obowiazki,wymogi,typ_umowy";
+
     private UUID id;
     private List<String> responsibilities;
     private List<String> requirements;
     private String typeOfArrangement;
+
+    @Override
+    public String toString() {
+        return "%s,%s,%s,%s".formatted(
+                id,
+                responsibilities,
+                requirements,
+                typeOfArrangement
+        );
+    }
 }

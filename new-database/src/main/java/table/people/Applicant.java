@@ -12,6 +12,8 @@ import java.util.UUID;
 @AllArgsConstructor
 @Builder
 public class Applicant {
+    public static final String TABLE = "Aplikant";
+    public static final String COLUMNS = "aplikant_id,imie,nazwisko,data_urodzenia,pesel,doswiadczenie";
     private UUID id;
     private String firstName;
     private String lastName;

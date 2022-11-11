@@ -13,6 +13,8 @@ import java.util.UUID;
 @Data
 @Builder
 public class Experience {
+    public static final String TABLE = "Doswiadczenie";
+    public static final String COLUMNS = "doswiadczenie_id,cv_id,od,do,obowiazki,stanowisko,firma";
     private UUID id;
     private UUID cvId;
     private LocalDate since;
