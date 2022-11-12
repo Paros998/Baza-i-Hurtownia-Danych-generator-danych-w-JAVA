@@ -3,6 +3,9 @@ package pg.table.people;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import pg.table.csv.CsvData;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -10,8 +13,9 @@ import java.util.UUID;
 
 @Data
 @AllArgsConstructor
+@NoArgsConstructor(staticName = "dummy")
 @Builder
-public class Applicant {
+public class Applicant implements CsvData {
     public static final String TABLE = "Aplikant";
     public static final String COLUMNS = "aplikant_id,imie,nazwisko,data_urodzenia,pesel,doswiadczenie";
     private UUID id;
@@ -31,5 +35,15 @@ public class Applicant {
                 personalNumber,
                 yearsOfExperience
         );
+    }
+
+    @Override
+    public String getColumns() {
+        return COLUMNS;
+    }
+
+    @Override
+    public String getData() {
+        return this.toString();
     }
 }

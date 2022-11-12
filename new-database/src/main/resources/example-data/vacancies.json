@@ -1,0 +1,7002 @@
+[
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Energy",
+    "name": "Professor",
+    "highestSalaryGap": 12137.95,
+    "lowestSalaryGap": 2452.36
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Registered Nurse",
+    "highestSalaryGap": 9994.31,
+    "lowestSalaryGap": 1309.4
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Account Representative III",
+    "highestSalaryGap": 18236.15,
+    "lowestSalaryGap": 1571.24
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Physical Therapy Assistant",
+    "highestSalaryGap": 9632.06,
+    "lowestSalaryGap": 2285.13
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Energy",
+    "name": "Media Manager III",
+    "highestSalaryGap": 6352.06,
+    "lowestSalaryGap": 2417.05
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Tax Accountant",
+    "highestSalaryGap": 10077.43,
+    "lowestSalaryGap": 2580.48
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Web Developer III",
+    "highestSalaryGap": 13000.46,
+    "lowestSalaryGap": 2062.08
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Administrative Assistant III",
+    "highestSalaryGap": 6325.6,
+    "lowestSalaryGap": 1647.94
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Public Utilities",
+    "name": "Help Desk Technician",
+    "highestSalaryGap": 15775.84,
+    "lowestSalaryGap": 2260.55
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "VP Accounting",
+    "highestSalaryGap": 13355.56,
+    "lowestSalaryGap": 2808.12
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Operator",
+    "highestSalaryGap": 9204.29,
+    "lowestSalaryGap": 2191.47
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Design Engineer",
+    "highestSalaryGap": 19253.08,
+    "lowestSalaryGap": 2512.66
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Energy",
+    "name": "Professor",
+    "highestSalaryGap": 14620.64,
+    "lowestSalaryGap": 1442.42
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Capital Goods",
+    "name": "Environmental Specialist",
+    "highestSalaryGap": 16558.98,
+    "lowestSalaryGap": 2425.5
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Capital Goods",
+    "name": "Occupational Therapist",
+    "highestSalaryGap": 18470.41,
+    "lowestSalaryGap": 1597.71
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Energy",
+    "name": "Research Assistant I",
+    "highestSalaryGap": 7655.05,
+    "lowestSalaryGap": 1624.26
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Transportation",
+    "name": "Community Outreach Specialist",
+    "highestSalaryGap": 16142.59,
+    "lowestSalaryGap": 2499.36
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Services",
+    "name": "Information Systems Manager",
+    "highestSalaryGap": 7037.21,
+    "lowestSalaryGap": 2805.67
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Actuary",
+    "highestSalaryGap": 19112.49,
+    "lowestSalaryGap": 2683.42
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Basic Industries",
+    "name": "Database Administrator II",
+    "highestSalaryGap": 6780.56,
+    "lowestSalaryGap": 2664.71
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Marketing Assistant",
+    "highestSalaryGap": 6835.98,
+    "lowestSalaryGap": 1636.65
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Software Consultant",
+    "highestSalaryGap": 9392.14,
+    "lowestSalaryGap": 1399.25
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Staff Accountant III",
+    "highestSalaryGap": 17291.71,
+    "lowestSalaryGap": 2838.91
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Financial Advisor",
+    "highestSalaryGap": 9176.62,
+    "lowestSalaryGap": 1462.7
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Senior Financial Analyst",
+    "highestSalaryGap": 14286.78,
+    "lowestSalaryGap": 2886.3
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Computer Systems Analyst IV",
+    "highestSalaryGap": 9674.38,
+    "lowestSalaryGap": 2537.16
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Services",
+    "name": "VP Accounting",
+    "highestSalaryGap": 16156.62,
+    "lowestSalaryGap": 1645.15
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Media Manager IV",
+    "highestSalaryGap": 6789.35,
+    "lowestSalaryGap": 1987.29
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Miscellaneous",
+    "name": "Sales Associate",
+    "highestSalaryGap": 13441.38,
+    "lowestSalaryGap": 2268.42
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Services",
+    "name": "Senior Sales Associate",
+    "highestSalaryGap": 17019.83,
+    "lowestSalaryGap": 1712.93
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Public Utilities",
+    "name": "Graphic Designer",
+    "highestSalaryGap": 13695.82,
+    "lowestSalaryGap": 1733.98
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Clinical Specialist",
+    "highestSalaryGap": 19139.84,
+    "lowestSalaryGap": 1761.67
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Transportation",
+    "name": "VP Accounting",
+    "highestSalaryGap": 19550.97,
+    "lowestSalaryGap": 2042.09
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Speech Pathologist",
+    "highestSalaryGap": 19414.74,
+    "lowestSalaryGap": 2011.49
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Accounting Assistant I",
+    "highestSalaryGap": 6501.59,
+    "lowestSalaryGap": 2082.37
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Software Test Engineer III",
+    "highestSalaryGap": 5206.04,
+    "lowestSalaryGap": 2375.28
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Accounting Assistant IV",
+    "highestSalaryGap": 13935.69,
+    "lowestSalaryGap": 1765.2
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Database Administrator III",
+    "highestSalaryGap": 17667.16,
+    "lowestSalaryGap": 1835.8
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Clinical Specialist",
+    "highestSalaryGap": 12887.83,
+    "lowestSalaryGap": 2245.98
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Durables",
+    "name": "Biostatistician III",
+    "highestSalaryGap": 17098.61,
+    "lowestSalaryGap": 1881.25
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Clinical Specialist",
+    "highestSalaryGap": 13281.37,
+    "lowestSalaryGap": 2196.27
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Staff Scientist",
+    "highestSalaryGap": 5743.69,
+    "lowestSalaryGap": 1476.57
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Capital Goods",
+    "name": "GIS Technical Architect",
+    "highestSalaryGap": 5580.44,
+    "lowestSalaryGap": 2577.79
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Business Systems Development Analyst",
+    "highestSalaryGap": 8438.3,
+    "lowestSalaryGap": 1950.85
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Technology",
+    "name": "Human Resources Manager",
+    "highestSalaryGap": 14744.51,
+    "lowestSalaryGap": 2434.03
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Senior Financial Analyst",
+    "highestSalaryGap": 19681.65,
+    "lowestSalaryGap": 2361.53
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Programmer I",
+    "highestSalaryGap": 6147.15,
+    "lowestSalaryGap": 2738.69
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "VP Marketing",
+    "highestSalaryGap": 6964.29,
+    "lowestSalaryGap": 2084.1
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Durables",
+    "name": "Help Desk Operator",
+    "highestSalaryGap": 15801.55,
+    "lowestSalaryGap": 2531.18
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "Payment Adjustment Coordinator",
+    "highestSalaryGap": 5834.84,
+    "lowestSalaryGap": 2146.94
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Media Manager II",
+    "highestSalaryGap": 14901.6,
+    "lowestSalaryGap": 1951.11
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Programmer IV",
+    "highestSalaryGap": 11274.87,
+    "lowestSalaryGap": 1538.39
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Account Executive",
+    "highestSalaryGap": 6578.4,
+    "lowestSalaryGap": 2698.58
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Energy",
+    "name": "Junior Executive",
+    "highestSalaryGap": 16278.22,
+    "lowestSalaryGap": 1349.36
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Public Utilities",
+    "name": "Speech Pathologist",
+    "highestSalaryGap": 8074.09,
+    "lowestSalaryGap": 1495.13
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Capital Goods",
+    "name": "Editor",
+    "highestSalaryGap": 19188.52,
+    "lowestSalaryGap": 2564.93
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "VP Product Management",
+    "highestSalaryGap": 5340.88,
+    "lowestSalaryGap": 2214.81
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Pharmacist",
+    "highestSalaryGap": 13994.63,
+    "lowestSalaryGap": 1489.23
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Computer Systems Analyst III",
+    "highestSalaryGap": 7683.45,
+    "lowestSalaryGap": 1565.13
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Teacher",
+    "highestSalaryGap": 7817.93,
+    "lowestSalaryGap": 1979.68
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Technical Writer",
+    "highestSalaryGap": 5536.65,
+    "lowestSalaryGap": 2788.98
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Durables",
+    "name": "Marketing Assistant",
+    "highestSalaryGap": 9717.68,
+    "lowestSalaryGap": 1307.73
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Marketing Manager",
+    "highestSalaryGap": 11270.39,
+    "lowestSalaryGap": 1665.34
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Nurse Practicioner",
+    "highestSalaryGap": 12831.92,
+    "lowestSalaryGap": 2151.54
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Services",
+    "name": "Recruiting Manager",
+    "highestSalaryGap": 16202.31,
+    "lowestSalaryGap": 2614.72
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Public Utilities",
+    "name": "Help Desk Technician",
+    "highestSalaryGap": 7955.61,
+    "lowestSalaryGap": 1845.27
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Energy",
+    "name": "Safety Technician I",
+    "highestSalaryGap": 8227.65,
+    "lowestSalaryGap": 1388.62
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Pharmacist",
+    "highestSalaryGap": 13310.26,
+    "lowestSalaryGap": 1915.06
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Basic Industries",
+    "name": "Associate Professor",
+    "highestSalaryGap": 8897.02,
+    "lowestSalaryGap": 2857.41
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Non-Durables",
+    "name": "Pharmacist",
+    "highestSalaryGap": 11102.62,
+    "lowestSalaryGap": 1317.18
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "VP Quality Control",
+    "highestSalaryGap": 10615.79,
+    "lowestSalaryGap": 2167.29
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Technology",
+    "name": "Speech Pathologist",
+    "highestSalaryGap": 6275.19,
+    "lowestSalaryGap": 1635.48
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Programmer I",
+    "highestSalaryGap": 19491.86,
+    "lowestSalaryGap": 1534.25
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Quality Engineer",
+    "highestSalaryGap": 19089.29,
+    "lowestSalaryGap": 1926.17
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Technology",
+    "name": "Human Resources Assistant III",
+    "highestSalaryGap": 13593.13,
+    "lowestSalaryGap": 1390.08
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Staff Scientist",
+    "highestSalaryGap": 18574.38,
+    "lowestSalaryGap": 1560.95
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Technology",
+    "name": "Database Administrator III",
+    "highestSalaryGap": 19189.84,
+    "lowestSalaryGap": 1879.86
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Help Desk Operator",
+    "highestSalaryGap": 12624.68,
+    "lowestSalaryGap": 2786.0
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Recruiting Manager",
+    "highestSalaryGap": 17703.92,
+    "lowestSalaryGap": 2494.01
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Help Desk Technician",
+    "highestSalaryGap": 7744.85,
+    "lowestSalaryGap": 2701.68
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Capital Goods",
+    "name": "Tax Accountant",
+    "highestSalaryGap": 18647.94,
+    "lowestSalaryGap": 2033.81
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Assistant Manager",
+    "highestSalaryGap": 19902.99,
+    "lowestSalaryGap": 2566.77
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Miscellaneous",
+    "name": "Senior Sales Associate",
+    "highestSalaryGap": 19186.94,
+    "lowestSalaryGap": 2547.19
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Basic Industries",
+    "name": "Electrical Engineer",
+    "highestSalaryGap": 18748.36,
+    "lowestSalaryGap": 2684.97
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Accounting Assistant IV",
+    "highestSalaryGap": 16313.21,
+    "lowestSalaryGap": 2717.81
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Automation Specialist I",
+    "highestSalaryGap": 18980.26,
+    "lowestSalaryGap": 1468.64
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Public Utilities",
+    "name": "Editor",
+    "highestSalaryGap": 12554.97,
+    "lowestSalaryGap": 1996.46
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Associate Professor",
+    "highestSalaryGap": 17043.55,
+    "lowestSalaryGap": 1413.2
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Public Utilities",
+    "name": "Quality Engineer",
+    "highestSalaryGap": 14955.81,
+    "lowestSalaryGap": 1344.52
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Compensation Analyst",
+    "highestSalaryGap": 6856.59,
+    "lowestSalaryGap": 1404.75
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Project Manager",
+    "highestSalaryGap": 18424.2,
+    "lowestSalaryGap": 1574.19
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Design Engineer",
+    "highestSalaryGap": 15725.48,
+    "lowestSalaryGap": 2684.88
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Services",
+    "name": "Environmental Specialist",
+    "highestSalaryGap": 13161.84,
+    "lowestSalaryGap": 1959.84
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Capital Goods",
+    "name": "Financial Analyst",
+    "highestSalaryGap": 12289.98,
+    "lowestSalaryGap": 1620.12
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Software Test Engineer I",
+    "highestSalaryGap": 8575.07,
+    "lowestSalaryGap": 1850.59
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Help Desk Operator",
+    "highestSalaryGap": 13943.4,
+    "lowestSalaryGap": 1991.6
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Capital Goods",
+    "name": "Physical Therapy Assistant",
+    "highestSalaryGap": 7272.19,
+    "lowestSalaryGap": 2612.43
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Technology",
+    "name": "Accounting Assistant IV",
+    "highestSalaryGap": 7951.51,
+    "lowestSalaryGap": 1970.43
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Design Engineer",
+    "highestSalaryGap": 16027.58,
+    "lowestSalaryGap": 1930.86
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Software Engineer IV",
+    "highestSalaryGap": 6914.84,
+    "lowestSalaryGap": 1581.14
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "VP Quality Control",
+    "highestSalaryGap": 7644.21,
+    "lowestSalaryGap": 1991.37
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Community Outreach Specialist",
+    "highestSalaryGap": 17731.45,
+    "lowestSalaryGap": 1929.35
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Technology",
+    "name": "Speech Pathologist",
+    "highestSalaryGap": 16997.18,
+    "lowestSalaryGap": 2847.3
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Energy",
+    "name": "Senior Cost Accountant",
+    "highestSalaryGap": 17160.79,
+    "lowestSalaryGap": 1305.57
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Account Coordinator",
+    "highestSalaryGap": 12012.13,
+    "lowestSalaryGap": 2309.44
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Developer II",
+    "highestSalaryGap": 18286.07,
+    "lowestSalaryGap": 1315.47
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Public Utilities",
+    "name": "Structural Analysis Engineer",
+    "highestSalaryGap": 15474.75,
+    "lowestSalaryGap": 2236.06
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Quality Engineer",
+    "highestSalaryGap": 14896.6,
+    "lowestSalaryGap": 2323.68
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Food Chemist",
+    "highestSalaryGap": 5968.74,
+    "lowestSalaryGap": 1617.18
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Public Utilities",
+    "name": "Research Associate",
+    "highestSalaryGap": 8172.45,
+    "lowestSalaryGap": 2583.32
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Occupational Therapist",
+    "highestSalaryGap": 18537.82,
+    "lowestSalaryGap": 2343.33
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Registered Nurse",
+    "highestSalaryGap": 16453.9,
+    "lowestSalaryGap": 2122.44
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "VP Accounting",
+    "highestSalaryGap": 7795.26,
+    "lowestSalaryGap": 1926.83
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "Speech Pathologist",
+    "highestSalaryGap": 18607.49,
+    "lowestSalaryGap": 1494.23
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "VP Marketing",
+    "highestSalaryGap": 10663.57,
+    "lowestSalaryGap": 1735.62
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "VP Accounting",
+    "highestSalaryGap": 6911.31,
+    "lowestSalaryGap": 2848.24
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Product Engineer",
+    "highestSalaryGap": 12491.36,
+    "lowestSalaryGap": 2201.31
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Staff Scientist",
+    "highestSalaryGap": 11173.79,
+    "lowestSalaryGap": 2070.63
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Civil Engineer",
+    "highestSalaryGap": 9063.15,
+    "lowestSalaryGap": 1899.58
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Internal Auditor",
+    "highestSalaryGap": 17981.03,
+    "lowestSalaryGap": 1713.16
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Food Chemist",
+    "highestSalaryGap": 13253.98,
+    "lowestSalaryGap": 1642.84
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Non-Durables",
+    "name": "Assistant Professor",
+    "highestSalaryGap": 18102.05,
+    "lowestSalaryGap": 1709.81
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Cost Accountant",
+    "highestSalaryGap": 5427.9,
+    "lowestSalaryGap": 1783.25
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Technology",
+    "name": "Junior Executive",
+    "highestSalaryGap": 6172.4,
+    "lowestSalaryGap": 1837.62
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Sales Representative",
+    "highestSalaryGap": 10627.72,
+    "lowestSalaryGap": 1928.52
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Assistant Professor",
+    "highestSalaryGap": 9295.45,
+    "lowestSalaryGap": 2880.64
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Senior Developer",
+    "highestSalaryGap": 14256.87,
+    "lowestSalaryGap": 1573.32
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Services",
+    "name": "Administrative Officer",
+    "highestSalaryGap": 10324.63,
+    "lowestSalaryGap": 1955.06
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Environmental Tech",
+    "highestSalaryGap": 10399.59,
+    "lowestSalaryGap": 2041.22
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Basic Industries",
+    "name": "Chemical Engineer",
+    "highestSalaryGap": 7810.75,
+    "lowestSalaryGap": 1840.55
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Basic Industries",
+    "name": "Marketing Assistant",
+    "highestSalaryGap": 11907.05,
+    "lowestSalaryGap": 1464.26
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Services",
+    "name": "General Manager",
+    "highestSalaryGap": 19976.28,
+    "lowestSalaryGap": 1679.8
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Capital Goods",
+    "name": "Payment Adjustment Coordinator",
+    "highestSalaryGap": 6890.38,
+    "lowestSalaryGap": 1348.09
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "Compensation Analyst",
+    "highestSalaryGap": 9403.63,
+    "lowestSalaryGap": 2215.98
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Staff Scientist",
+    "highestSalaryGap": 6672.86,
+    "lowestSalaryGap": 2283.66
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Services",
+    "name": "Technical Writer",
+    "highestSalaryGap": 7020.36,
+    "lowestSalaryGap": 1771.61
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Information Systems Manager",
+    "highestSalaryGap": 14902.27,
+    "lowestSalaryGap": 2384.9
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Basic Industries",
+    "name": "Research Nurse",
+    "highestSalaryGap": 9941.35,
+    "lowestSalaryGap": 2858.08
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Energy",
+    "name": "Dental Hygienist",
+    "highestSalaryGap": 12015.08,
+    "lowestSalaryGap": 2210.79
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Quality Control Specialist",
+    "highestSalaryGap": 8697.05,
+    "lowestSalaryGap": 1366.4
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Professor",
+    "highestSalaryGap": 6745.74,
+    "lowestSalaryGap": 1957.74
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Durables",
+    "name": "Recruiting Manager",
+    "highestSalaryGap": 9512.76,
+    "lowestSalaryGap": 1965.55
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Food Chemist",
+    "highestSalaryGap": 19991.81,
+    "lowestSalaryGap": 1317.99
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Nurse",
+    "highestSalaryGap": 16770.55,
+    "lowestSalaryGap": 2769.63
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Capital Goods",
+    "name": "Tax Accountant",
+    "highestSalaryGap": 13234.64,
+    "lowestSalaryGap": 1704.13
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Desktop Support Technician",
+    "highestSalaryGap": 14774.58,
+    "lowestSalaryGap": 2557.44
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Miscellaneous",
+    "name": "Structural Engineer",
+    "highestSalaryGap": 11007.85,
+    "lowestSalaryGap": 2502.95
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Mechanical Systems Engineer",
+    "highestSalaryGap": 12969.39,
+    "lowestSalaryGap": 2578.66
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Capital Goods",
+    "name": "Statistician IV",
+    "highestSalaryGap": 17132.22,
+    "lowestSalaryGap": 1790.85
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Energy",
+    "name": "Nuclear Power Engineer",
+    "highestSalaryGap": 9870.97,
+    "lowestSalaryGap": 1314.35
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Computer Systems Analyst I",
+    "highestSalaryGap": 15637.14,
+    "lowestSalaryGap": 1533.63
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Technology",
+    "name": "Senior Financial Analyst",
+    "highestSalaryGap": 11810.24,
+    "lowestSalaryGap": 2157.33
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Capital Goods",
+    "name": "Statistician IV",
+    "highestSalaryGap": 15232.71,
+    "lowestSalaryGap": 2218.16
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Technology",
+    "name": "Product Engineer",
+    "highestSalaryGap": 7153.62,
+    "lowestSalaryGap": 2409.17
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Technology",
+    "name": "Research Assistant I",
+    "highestSalaryGap": 16748.02,
+    "lowestSalaryGap": 1660.81
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Public Utilities",
+    "name": "Payment Adjustment Coordinator",
+    "highestSalaryGap": 7645.53,
+    "lowestSalaryGap": 2280.3
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Technical Writer",
+    "highestSalaryGap": 17962.88,
+    "lowestSalaryGap": 2805.08
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Marketing Manager",
+    "highestSalaryGap": 8070.68,
+    "lowestSalaryGap": 2162.38
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Computer Systems Analyst II",
+    "highestSalaryGap": 18145.41,
+    "lowestSalaryGap": 2497.27
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Analyst Programmer",
+    "highestSalaryGap": 5931.93,
+    "lowestSalaryGap": 2489.15
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Research Associate",
+    "highestSalaryGap": 13512.03,
+    "lowestSalaryGap": 2498.55
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Senior Financial Analyst",
+    "highestSalaryGap": 13122.36,
+    "lowestSalaryGap": 1790.41
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Durables",
+    "name": "Director of Sales",
+    "highestSalaryGap": 19842.49,
+    "lowestSalaryGap": 2780.19
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Senior Quality Engineer",
+    "highestSalaryGap": 17476.31,
+    "lowestSalaryGap": 1713.91
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Non-Durables",
+    "name": "Web Designer II",
+    "highestSalaryGap": 18365.06,
+    "lowestSalaryGap": 2556.72
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Social Worker",
+    "highestSalaryGap": 16043.2,
+    "lowestSalaryGap": 1390.0
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Junior Executive",
+    "highestSalaryGap": 6520.97,
+    "lowestSalaryGap": 2309.23
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Account Executive",
+    "highestSalaryGap": 9024.72,
+    "lowestSalaryGap": 2239.74
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Non-Durables",
+    "name": "Geologist III",
+    "highestSalaryGap": 19682.45,
+    "lowestSalaryGap": 2592.48
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Web Designer I",
+    "highestSalaryGap": 11894.9,
+    "lowestSalaryGap": 2050.88
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Actuary",
+    "highestSalaryGap": 7970.21,
+    "lowestSalaryGap": 2003.11
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Physical Therapy Assistant",
+    "highestSalaryGap": 14379.42,
+    "lowestSalaryGap": 1665.71
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Director of Sales",
+    "highestSalaryGap": 14144.14,
+    "lowestSalaryGap": 1591.64
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Structural Analysis Engineer",
+    "highestSalaryGap": 9108.49,
+    "lowestSalaryGap": 1653.27
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Non-Durables",
+    "name": "Senior Cost Accountant",
+    "highestSalaryGap": 15854.39,
+    "lowestSalaryGap": 2002.89
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Capital Goods",
+    "name": "Budget/Accounting Analyst I",
+    "highestSalaryGap": 9175.21,
+    "lowestSalaryGap": 1687.41
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Physical Therapy Assistant",
+    "highestSalaryGap": 15946.18,
+    "lowestSalaryGap": 1454.41
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Chemical Engineer",
+    "highestSalaryGap": 8016.91,
+    "lowestSalaryGap": 1560.0
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Miscellaneous",
+    "name": "Information Systems Manager",
+    "highestSalaryGap": 9504.23,
+    "lowestSalaryGap": 2100.62
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Durables",
+    "name": "Occupational Therapist",
+    "highestSalaryGap": 11096.05,
+    "lowestSalaryGap": 1461.2
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Media Manager III",
+    "highestSalaryGap": 19034.08,
+    "lowestSalaryGap": 1841.9
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Chemical Engineer",
+    "highestSalaryGap": 16737.95,
+    "lowestSalaryGap": 1695.6
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Database Administrator III",
+    "highestSalaryGap": 9777.65,
+    "lowestSalaryGap": 1578.27
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Staff Accountant I",
+    "highestSalaryGap": 8354.55,
+    "lowestSalaryGap": 1731.34
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Office Assistant II",
+    "highestSalaryGap": 6938.89,
+    "lowestSalaryGap": 2833.97
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Miscellaneous",
+    "name": "Project Manager",
+    "highestSalaryGap": 18139.99,
+    "lowestSalaryGap": 1868.12
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Services",
+    "name": "Technical Writer",
+    "highestSalaryGap": 8282.99,
+    "lowestSalaryGap": 1777.1
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Payment Adjustment Coordinator",
+    "highestSalaryGap": 15605.26,
+    "lowestSalaryGap": 2494.04
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Analog Circuit Design manager",
+    "highestSalaryGap": 12370.47,
+    "lowestSalaryGap": 1728.6
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Capital Goods",
+    "name": "Web Developer III",
+    "highestSalaryGap": 5416.45,
+    "lowestSalaryGap": 1891.2
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Financial Advisor",
+    "highestSalaryGap": 6477.27,
+    "lowestSalaryGap": 2542.88
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Business Systems Development Analyst",
+    "highestSalaryGap": 8783.86,
+    "lowestSalaryGap": 1767.53
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Media Manager IV",
+    "highestSalaryGap": 15367.8,
+    "lowestSalaryGap": 1985.96
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Help Desk Operator",
+    "highestSalaryGap": 8446.96,
+    "lowestSalaryGap": 2019.99
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Information Systems Manager",
+    "highestSalaryGap": 18801.17,
+    "lowestSalaryGap": 2069.08
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Technology",
+    "name": "Accountant III",
+    "highestSalaryGap": 19014.88,
+    "lowestSalaryGap": 1682.58
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Miscellaneous",
+    "name": "Software Test Engineer III",
+    "highestSalaryGap": 7752.08,
+    "lowestSalaryGap": 2192.73
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "Systems Administrator I",
+    "highestSalaryGap": 10818.63,
+    "lowestSalaryGap": 2247.43
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Account Executive",
+    "highestSalaryGap": 16641.19,
+    "lowestSalaryGap": 1751.16
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Executive Secretary",
+    "highestSalaryGap": 18468.07,
+    "lowestSalaryGap": 2609.87
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Basic Industries",
+    "name": "Analog Circuit Design manager",
+    "highestSalaryGap": 19036.29,
+    "lowestSalaryGap": 1816.02
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Payment Adjustment Coordinator",
+    "highestSalaryGap": 9409.77,
+    "lowestSalaryGap": 2250.27
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Recruiter",
+    "highestSalaryGap": 12970.23,
+    "lowestSalaryGap": 1500.86
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Non-Durables",
+    "name": "Electrical Engineer",
+    "highestSalaryGap": 19525.01,
+    "lowestSalaryGap": 1331.51
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Geologist III",
+    "highestSalaryGap": 5569.44,
+    "lowestSalaryGap": 2476.29
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Technology",
+    "name": "Recruiter",
+    "highestSalaryGap": 17194.47,
+    "lowestSalaryGap": 2680.25
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Energy",
+    "name": "Staff Accountant III",
+    "highestSalaryGap": 18131.5,
+    "lowestSalaryGap": 2410.96
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Executive Secretary",
+    "highestSalaryGap": 11841.19,
+    "lowestSalaryGap": 2800.96
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Technology",
+    "name": "Assistant Media Planner",
+    "highestSalaryGap": 10374.34,
+    "lowestSalaryGap": 2529.29
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Research Associate",
+    "highestSalaryGap": 13256.29,
+    "lowestSalaryGap": 1912.49
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "VP Quality Control",
+    "highestSalaryGap": 8750.98,
+    "lowestSalaryGap": 2285.79
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Cost Accountant",
+    "highestSalaryGap": 17689.33,
+    "lowestSalaryGap": 2021.17
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Quality Control Specialist",
+    "highestSalaryGap": 9492.96,
+    "lowestSalaryGap": 2587.79
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Basic Industries",
+    "name": "Operator",
+    "highestSalaryGap": 15575.43,
+    "lowestSalaryGap": 2432.86
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Transportation",
+    "name": "General Manager",
+    "highestSalaryGap": 11481.38,
+    "lowestSalaryGap": 2234.14
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Structural Analysis Engineer",
+    "highestSalaryGap": 17525.39,
+    "lowestSalaryGap": 2614.64
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "Electrical Engineer",
+    "highestSalaryGap": 5463.14,
+    "lowestSalaryGap": 1781.09
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Database Administrator II",
+    "highestSalaryGap": 8554.58,
+    "lowestSalaryGap": 1393.66
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Durables",
+    "name": "Administrative Officer",
+    "highestSalaryGap": 19271.57,
+    "lowestSalaryGap": 1509.65
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Miscellaneous",
+    "name": "Speech Pathologist",
+    "highestSalaryGap": 11643.46,
+    "lowestSalaryGap": 2767.58
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Social Worker",
+    "highestSalaryGap": 7177.58,
+    "lowestSalaryGap": 2834.9
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Quality Control Specialist",
+    "highestSalaryGap": 14895.06,
+    "lowestSalaryGap": 2119.18
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Electrical Engineer",
+    "highestSalaryGap": 9523.15,
+    "lowestSalaryGap": 2773.07
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Durables",
+    "name": "Computer Systems Analyst III",
+    "highestSalaryGap": 14960.77,
+    "lowestSalaryGap": 1300.52
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Capital Goods",
+    "name": "Social Worker",
+    "highestSalaryGap": 11856.34,
+    "lowestSalaryGap": 1995.29
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Librarian",
+    "highestSalaryGap": 13893.09,
+    "lowestSalaryGap": 2150.74
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Capital Goods",
+    "name": "Research Assistant III",
+    "highestSalaryGap": 15762.75,
+    "lowestSalaryGap": 1463.25
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Technology",
+    "name": "Accounting Assistant I",
+    "highestSalaryGap": 8545.81,
+    "lowestSalaryGap": 1316.95
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Information Systems Manager",
+    "highestSalaryGap": 10275.26,
+    "lowestSalaryGap": 2198.72
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Graphic Designer",
+    "highestSalaryGap": 7015.28,
+    "lowestSalaryGap": 2251.48
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Energy",
+    "name": "VP Marketing",
+    "highestSalaryGap": 16700.02,
+    "lowestSalaryGap": 2433.3
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Energy",
+    "name": "Quality Control Specialist",
+    "highestSalaryGap": 13802.83,
+    "lowestSalaryGap": 2556.73
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Capital Goods",
+    "name": "Technical Writer",
+    "highestSalaryGap": 18473.41,
+    "lowestSalaryGap": 1664.85
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Basic Industries",
+    "name": "Pharmacist",
+    "highestSalaryGap": 13660.85,
+    "lowestSalaryGap": 2092.4
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Transportation",
+    "name": "Assistant Media Planner",
+    "highestSalaryGap": 5127.77,
+    "lowestSalaryGap": 2571.59
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "VP Accounting",
+    "highestSalaryGap": 11019.19,
+    "lowestSalaryGap": 1524.01
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Public Utilities",
+    "name": "VP Sales",
+    "highestSalaryGap": 13728.25,
+    "lowestSalaryGap": 2869.13
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Transportation",
+    "name": "Desktop Support Technician",
+    "highestSalaryGap": 8324.84,
+    "lowestSalaryGap": 1749.3
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Nuclear Power Engineer",
+    "highestSalaryGap": 11302.28,
+    "lowestSalaryGap": 2026.41
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Electrical Engineer",
+    "highestSalaryGap": 17730.65,
+    "lowestSalaryGap": 2730.72
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Technology",
+    "name": "Paralegal",
+    "highestSalaryGap": 16464.13,
+    "lowestSalaryGap": 1345.6
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Social Worker",
+    "highestSalaryGap": 6878.41,
+    "lowestSalaryGap": 1766.77
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Miscellaneous",
+    "name": "Statistician II",
+    "highestSalaryGap": 5515.06,
+    "lowestSalaryGap": 1439.74
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Software Test Engineer II",
+    "highestSalaryGap": 14310.19,
+    "lowestSalaryGap": 1557.38
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Senior Editor",
+    "highestSalaryGap": 9336.53,
+    "lowestSalaryGap": 1800.79
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Capital Goods",
+    "name": "Marketing Assistant",
+    "highestSalaryGap": 18232.55,
+    "lowestSalaryGap": 2842.07
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Geologist IV",
+    "highestSalaryGap": 6842.66,
+    "lowestSalaryGap": 2028.87
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Librarian",
+    "highestSalaryGap": 18228.87,
+    "lowestSalaryGap": 2581.31
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Media Manager II",
+    "highestSalaryGap": 16168.51,
+    "lowestSalaryGap": 1982.04
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Technical Writer",
+    "highestSalaryGap": 19919.78,
+    "lowestSalaryGap": 2463.96
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Statistician II",
+    "highestSalaryGap": 8700.39,
+    "lowestSalaryGap": 2123.4
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Technology",
+    "name": "Computer Systems Analyst I",
+    "highestSalaryGap": 16271.75,
+    "lowestSalaryGap": 2391.37
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Professor",
+    "highestSalaryGap": 16853.95,
+    "lowestSalaryGap": 1464.61
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Director of Sales",
+    "highestSalaryGap": 11583.21,
+    "lowestSalaryGap": 2140.84
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Editor",
+    "highestSalaryGap": 14944.29,
+    "lowestSalaryGap": 2464.29
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Non-Durables",
+    "name": "Social Worker",
+    "highestSalaryGap": 12330.67,
+    "lowestSalaryGap": 2158.56
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Account Executive",
+    "highestSalaryGap": 6435.43,
+    "lowestSalaryGap": 2409.38
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "VP Accounting",
+    "highestSalaryGap": 11425.13,
+    "lowestSalaryGap": 2804.4
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "Analog Circuit Design manager",
+    "highestSalaryGap": 12593.51,
+    "lowestSalaryGap": 2218.63
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Analyst Programmer",
+    "highestSalaryGap": 19048.48,
+    "lowestSalaryGap": 1482.46
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Research Nurse",
+    "highestSalaryGap": 17756.3,
+    "lowestSalaryGap": 2667.9
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "GIS Technical Architect",
+    "highestSalaryGap": 10924.41,
+    "lowestSalaryGap": 2221.76
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Energy",
+    "name": "Biostatistician III",
+    "highestSalaryGap": 6472.38,
+    "lowestSalaryGap": 1692.57
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Civil Engineer",
+    "highestSalaryGap": 8231.49,
+    "lowestSalaryGap": 2254.13
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Geologist II",
+    "highestSalaryGap": 19834.0,
+    "lowestSalaryGap": 2773.95
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Marketing Assistant",
+    "highestSalaryGap": 5508.11,
+    "lowestSalaryGap": 2710.19
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "VP Quality Control",
+    "highestSalaryGap": 10109.35,
+    "lowestSalaryGap": 1980.83
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Basic Industries",
+    "name": "Help Desk Technician",
+    "highestSalaryGap": 16070.22,
+    "lowestSalaryGap": 1837.74
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Dental Hygienist",
+    "highestSalaryGap": 10737.5,
+    "lowestSalaryGap": 1998.39
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "Administrative Officer",
+    "highestSalaryGap": 12701.4,
+    "lowestSalaryGap": 1724.7
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Transportation",
+    "name": "Senior Financial Analyst",
+    "highestSalaryGap": 5987.97,
+    "lowestSalaryGap": 1549.84
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Safety Technician I",
+    "highestSalaryGap": 9204.0,
+    "lowestSalaryGap": 1377.4
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Technology",
+    "name": "Actuary",
+    "highestSalaryGap": 12399.72,
+    "lowestSalaryGap": 1690.6
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Staff Scientist",
+    "highestSalaryGap": 15321.82,
+    "lowestSalaryGap": 1792.29
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "Sales Representative",
+    "highestSalaryGap": 16962.45,
+    "lowestSalaryGap": 1550.04
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Structural Engineer",
+    "highestSalaryGap": 5649.84,
+    "lowestSalaryGap": 2348.63
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Mechanical Systems Engineer",
+    "highestSalaryGap": 7711.42,
+    "lowestSalaryGap": 1676.47
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Programmer III",
+    "highestSalaryGap": 5691.65,
+    "lowestSalaryGap": 1976.63
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Account Coordinator",
+    "highestSalaryGap": 12779.16,
+    "lowestSalaryGap": 1887.36
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Technology",
+    "name": "Recruiting Manager",
+    "highestSalaryGap": 11949.61,
+    "lowestSalaryGap": 1459.06
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Administrative Officer",
+    "highestSalaryGap": 14044.42,
+    "lowestSalaryGap": 1708.46
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Pharmacist",
+    "highestSalaryGap": 8383.1,
+    "lowestSalaryGap": 2104.51
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Basic Industries",
+    "name": "Executive Secretary",
+    "highestSalaryGap": 13256.75,
+    "lowestSalaryGap": 2628.18
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Quality Engineer",
+    "highestSalaryGap": 18769.52,
+    "lowestSalaryGap": 2195.6
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Miscellaneous",
+    "name": "Administrative Assistant I",
+    "highestSalaryGap": 11581.65,
+    "lowestSalaryGap": 2172.63
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Budget/Accounting Analyst IV",
+    "highestSalaryGap": 12924.14,
+    "lowestSalaryGap": 2478.43
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Recruiting Manager",
+    "highestSalaryGap": 5732.6,
+    "lowestSalaryGap": 2628.75
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Office Assistant I",
+    "highestSalaryGap": 9871.61,
+    "lowestSalaryGap": 2844.3
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Technology",
+    "name": "Speech Pathologist",
+    "highestSalaryGap": 7313.46,
+    "lowestSalaryGap": 2163.12
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Geologist III",
+    "highestSalaryGap": 11975.31,
+    "lowestSalaryGap": 1708.7
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Structural Analysis Engineer",
+    "highestSalaryGap": 16742.22,
+    "lowestSalaryGap": 1409.73
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Compensation Analyst",
+    "highestSalaryGap": 13038.01,
+    "lowestSalaryGap": 2479.01
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Capital Goods",
+    "name": "Professor",
+    "highestSalaryGap": 17454.88,
+    "lowestSalaryGap": 2548.84
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Pharmacist",
+    "highestSalaryGap": 15763.25,
+    "lowestSalaryGap": 1487.51
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Services",
+    "name": "Systems Administrator IV",
+    "highestSalaryGap": 8550.67,
+    "lowestSalaryGap": 1402.68
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "Operator",
+    "highestSalaryGap": 15073.81,
+    "lowestSalaryGap": 1526.25
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Account Representative III",
+    "highestSalaryGap": 5629.55,
+    "lowestSalaryGap": 2339.53
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Actuary",
+    "highestSalaryGap": 9778.68,
+    "lowestSalaryGap": 2078.07
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Compensation Analyst",
+    "highestSalaryGap": 6375.56,
+    "lowestSalaryGap": 1553.23
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Durables",
+    "name": "Budget/Accounting Analyst III",
+    "highestSalaryGap": 14344.52,
+    "lowestSalaryGap": 2285.13
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Human Resources Assistant IV",
+    "highestSalaryGap": 6715.0,
+    "lowestSalaryGap": 1304.3
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "VP Sales",
+    "highestSalaryGap": 18179.39,
+    "lowestSalaryGap": 1632.64
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Technology",
+    "name": "Human Resources Manager",
+    "highestSalaryGap": 10628.7,
+    "lowestSalaryGap": 2828.79
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Durables",
+    "name": "Chemical Engineer",
+    "highestSalaryGap": 5312.39,
+    "lowestSalaryGap": 2884.4
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Technology",
+    "name": "Media Manager I",
+    "highestSalaryGap": 11550.15,
+    "lowestSalaryGap": 1387.58
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Capital Goods",
+    "name": "Structural Engineer",
+    "highestSalaryGap": 9926.27,
+    "lowestSalaryGap": 1864.06
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Technology",
+    "name": "Developer IV",
+    "highestSalaryGap": 14815.86,
+    "lowestSalaryGap": 2819.46
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Human Resources Assistant II",
+    "highestSalaryGap": 16602.34,
+    "lowestSalaryGap": 2444.17
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Web Developer IV",
+    "highestSalaryGap": 8307.26,
+    "lowestSalaryGap": 2119.81
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Programmer IV",
+    "highestSalaryGap": 18599.64,
+    "lowestSalaryGap": 1441.72
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Non-Durables",
+    "name": "Safety Technician IV",
+    "highestSalaryGap": 9247.17,
+    "lowestSalaryGap": 2315.2
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Transportation",
+    "name": "Senior Quality Engineer",
+    "highestSalaryGap": 16766.58,
+    "lowestSalaryGap": 2099.3
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Staff Scientist",
+    "highestSalaryGap": 14067.09,
+    "lowestSalaryGap": 1982.38
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Developer III",
+    "highestSalaryGap": 5467.5,
+    "lowestSalaryGap": 2256.14
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Energy",
+    "name": "Paralegal",
+    "highestSalaryGap": 11978.79,
+    "lowestSalaryGap": 2773.79
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Senior Quality Engineer",
+    "highestSalaryGap": 18448.23,
+    "lowestSalaryGap": 2521.01
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Statistician I",
+    "highestSalaryGap": 14684.59,
+    "lowestSalaryGap": 1941.83
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Public Utilities",
+    "name": "Assistant Professor",
+    "highestSalaryGap": 5649.93,
+    "lowestSalaryGap": 2073.23
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Editor",
+    "highestSalaryGap": 10739.02,
+    "lowestSalaryGap": 2457.69
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Design Engineer",
+    "highestSalaryGap": 7184.8,
+    "lowestSalaryGap": 1642.72
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Senior Cost Accountant",
+    "highestSalaryGap": 5204.62,
+    "lowestSalaryGap": 1399.78
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Project Manager",
+    "highestSalaryGap": 19141.38,
+    "lowestSalaryGap": 1714.92
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Structural Analysis Engineer",
+    "highestSalaryGap": 6131.55,
+    "lowestSalaryGap": 1407.07
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Basic Industries",
+    "name": "Administrative Officer",
+    "highestSalaryGap": 5329.5,
+    "lowestSalaryGap": 1966.09
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Librarian",
+    "highestSalaryGap": 9124.04,
+    "lowestSalaryGap": 1673.4
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Transportation",
+    "name": "Media Manager IV",
+    "highestSalaryGap": 7972.27,
+    "lowestSalaryGap": 1985.57
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Developer III",
+    "highestSalaryGap": 10176.67,
+    "lowestSalaryGap": 2771.19
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "GIS Technical Architect",
+    "highestSalaryGap": 14692.07,
+    "lowestSalaryGap": 1490.33
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Budget/Accounting Analyst II",
+    "highestSalaryGap": 5174.36,
+    "lowestSalaryGap": 1406.39
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Web Developer III",
+    "highestSalaryGap": 14333.74,
+    "lowestSalaryGap": 1499.95
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Physical Therapy Assistant",
+    "highestSalaryGap": 7321.5,
+    "lowestSalaryGap": 2244.71
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Legal Assistant",
+    "highestSalaryGap": 13328.66,
+    "lowestSalaryGap": 2224.68
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Geologist I",
+    "highestSalaryGap": 13607.69,
+    "lowestSalaryGap": 2630.77
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Office Assistant III",
+    "highestSalaryGap": 5140.7,
+    "lowestSalaryGap": 2482.85
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Software Engineer IV",
+    "highestSalaryGap": 8126.84,
+    "lowestSalaryGap": 1883.7
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Biostatistician II",
+    "highestSalaryGap": 10989.41,
+    "lowestSalaryGap": 1460.84
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Basic Industries",
+    "name": "Web Developer II",
+    "highestSalaryGap": 5802.89,
+    "lowestSalaryGap": 2531.41
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Recruiter",
+    "highestSalaryGap": 9216.72,
+    "lowestSalaryGap": 2321.59
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Quality Engineer",
+    "highestSalaryGap": 9537.84,
+    "lowestSalaryGap": 1877.28
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Office Assistant II",
+    "highestSalaryGap": 16497.3,
+    "lowestSalaryGap": 2138.92
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Help Desk Operator",
+    "highestSalaryGap": 12026.29,
+    "lowestSalaryGap": 1825.29
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Technology",
+    "name": "Office Assistant II",
+    "highestSalaryGap": 5187.03,
+    "lowestSalaryGap": 2538.1
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Public Utilities",
+    "name": "General Manager",
+    "highestSalaryGap": 11927.63,
+    "lowestSalaryGap": 1400.7
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Junior Executive",
+    "highestSalaryGap": 11030.03,
+    "lowestSalaryGap": 1491.04
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Energy",
+    "name": "Programmer I",
+    "highestSalaryGap": 8178.8,
+    "lowestSalaryGap": 1346.94
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Sales Representative",
+    "highestSalaryGap": 15684.37,
+    "lowestSalaryGap": 2530.75
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Internal Auditor",
+    "highestSalaryGap": 18771.85,
+    "lowestSalaryGap": 2205.94
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Services",
+    "name": "Project Manager",
+    "highestSalaryGap": 15832.68,
+    "lowestSalaryGap": 2109.22
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Software Engineer I",
+    "highestSalaryGap": 6231.92,
+    "lowestSalaryGap": 2614.51
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Dental Hygienist",
+    "highestSalaryGap": 17522.88,
+    "lowestSalaryGap": 2805.29
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Staff Accountant III",
+    "highestSalaryGap": 16286.09,
+    "lowestSalaryGap": 1818.21
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Transportation",
+    "name": "Quality Control Specialist",
+    "highestSalaryGap": 19505.95,
+    "lowestSalaryGap": 1393.33
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Research Nurse",
+    "highestSalaryGap": 9963.81,
+    "lowestSalaryGap": 2262.27
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "Occupational Therapist",
+    "highestSalaryGap": 12697.06,
+    "lowestSalaryGap": 1756.21
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Design Engineer",
+    "highestSalaryGap": 12570.73,
+    "lowestSalaryGap": 2197.24
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "VP Sales",
+    "highestSalaryGap": 5881.01,
+    "lowestSalaryGap": 2470.36
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Basic Industries",
+    "name": "Director of Sales",
+    "highestSalaryGap": 19255.75,
+    "lowestSalaryGap": 1492.22
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Teacher",
+    "highestSalaryGap": 12516.76,
+    "lowestSalaryGap": 2598.23
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Registered Nurse",
+    "highestSalaryGap": 16517.55,
+    "lowestSalaryGap": 2598.76
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Media Manager IV",
+    "highestSalaryGap": 12579.97,
+    "lowestSalaryGap": 2665.64
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Physical Therapy Assistant",
+    "highestSalaryGap": 8105.55,
+    "lowestSalaryGap": 2224.68
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Senior Sales Associate",
+    "highestSalaryGap": 12251.03,
+    "lowestSalaryGap": 2876.53
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Energy",
+    "name": "Recruiter",
+    "highestSalaryGap": 12033.35,
+    "lowestSalaryGap": 1580.7
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Sales Associate",
+    "highestSalaryGap": 8161.87,
+    "lowestSalaryGap": 1906.42
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Staff Scientist",
+    "highestSalaryGap": 12112.18,
+    "lowestSalaryGap": 1549.75
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Basic Industries",
+    "name": "Mechanical Systems Engineer",
+    "highestSalaryGap": 14999.46,
+    "lowestSalaryGap": 2590.46
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Analog Circuit Design manager",
+    "highestSalaryGap": 7453.02,
+    "lowestSalaryGap": 2682.09
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Junior Executive",
+    "highestSalaryGap": 16499.64,
+    "lowestSalaryGap": 1688.94
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Durables",
+    "name": "Product Engineer",
+    "highestSalaryGap": 15271.95,
+    "lowestSalaryGap": 1993.35
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Basic Industries",
+    "name": "Safety Technician IV",
+    "highestSalaryGap": 8180.55,
+    "lowestSalaryGap": 2026.1
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Basic Industries",
+    "name": "Civil Engineer",
+    "highestSalaryGap": 7414.66,
+    "lowestSalaryGap": 1351.68
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Technology",
+    "name": "Software Consultant",
+    "highestSalaryGap": 12791.27,
+    "lowestSalaryGap": 1684.98
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Systems Administrator II",
+    "highestSalaryGap": 11819.67,
+    "lowestSalaryGap": 1470.35
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Capital Goods",
+    "name": "Quality Control Specialist",
+    "highestSalaryGap": 11593.23,
+    "lowestSalaryGap": 1760.5
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Public Utilities",
+    "name": "Community Outreach Specialist",
+    "highestSalaryGap": 10504.03,
+    "lowestSalaryGap": 2464.74
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Chemical Engineer",
+    "highestSalaryGap": 19030.44,
+    "lowestSalaryGap": 2144.71
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Chemical Engineer",
+    "highestSalaryGap": 13616.55,
+    "lowestSalaryGap": 1873.97
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Research Assistant III",
+    "highestSalaryGap": 17431.25,
+    "lowestSalaryGap": 2568.85
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Research Associate",
+    "highestSalaryGap": 10245.75,
+    "lowestSalaryGap": 2298.4
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Miscellaneous",
+    "name": "Dental Hygienist",
+    "highestSalaryGap": 12554.07,
+    "lowestSalaryGap": 1964.48
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Associate Professor",
+    "highestSalaryGap": 16276.09,
+    "lowestSalaryGap": 1527.82
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Speech Pathologist",
+    "highestSalaryGap": 8556.99,
+    "lowestSalaryGap": 2173.31
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Software Consultant",
+    "highestSalaryGap": 7550.84,
+    "lowestSalaryGap": 2538.27
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Structural Analysis Engineer",
+    "highestSalaryGap": 9814.76,
+    "lowestSalaryGap": 1666.2
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Developer IV",
+    "highestSalaryGap": 14499.52,
+    "lowestSalaryGap": 1360.27
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Chemical Engineer",
+    "highestSalaryGap": 19304.54,
+    "lowestSalaryGap": 1892.29
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Programmer Analyst IV",
+    "highestSalaryGap": 19989.71,
+    "lowestSalaryGap": 2041.94
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Basic Industries",
+    "name": "Tax Accountant",
+    "highestSalaryGap": 5231.64,
+    "lowestSalaryGap": 1814.58
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Public Utilities",
+    "name": "Help Desk Technician",
+    "highestSalaryGap": 6095.02,
+    "lowestSalaryGap": 2062.75
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Analyst Programmer",
+    "highestSalaryGap": 16415.13,
+    "lowestSalaryGap": 2157.63
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Human Resources Manager",
+    "highestSalaryGap": 6139.49,
+    "lowestSalaryGap": 2115.18
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Structural Analysis Engineer",
+    "highestSalaryGap": 5822.76,
+    "lowestSalaryGap": 2874.03
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Energy",
+    "name": "Nurse",
+    "highestSalaryGap": 18040.59,
+    "lowestSalaryGap": 1351.22
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Assistant Manager",
+    "highestSalaryGap": 5806.94,
+    "lowestSalaryGap": 1447.77
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Database Administrator II",
+    "highestSalaryGap": 12844.45,
+    "lowestSalaryGap": 1852.12
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Basic Industries",
+    "name": "Systems Administrator III",
+    "highestSalaryGap": 9444.7,
+    "lowestSalaryGap": 2874.21
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Public Utilities",
+    "name": "Technical Writer",
+    "highestSalaryGap": 8349.83,
+    "lowestSalaryGap": 1313.19
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "VP Sales",
+    "highestSalaryGap": 9583.73,
+    "lowestSalaryGap": 2440.46
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Energy",
+    "name": "Safety Technician I",
+    "highestSalaryGap": 5803.18,
+    "lowestSalaryGap": 1632.08
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Services",
+    "name": "Tax Accountant",
+    "highestSalaryGap": 16476.69,
+    "lowestSalaryGap": 2444.73
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Actuary",
+    "highestSalaryGap": 12413.18,
+    "lowestSalaryGap": 2476.89
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Staff Scientist",
+    "highestSalaryGap": 8430.72,
+    "lowestSalaryGap": 1715.42
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Budget/Accounting Analyst II",
+    "highestSalaryGap": 9298.26,
+    "lowestSalaryGap": 2705.73
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Senior Quality Engineer",
+    "highestSalaryGap": 18373.09,
+    "lowestSalaryGap": 2001.4
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "Design Engineer",
+    "highestSalaryGap": 6898.57,
+    "lowestSalaryGap": 1665.18
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Energy",
+    "name": "Actuary",
+    "highestSalaryGap": 15127.03,
+    "lowestSalaryGap": 2017.95
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Miscellaneous",
+    "name": "Software Engineer I",
+    "highestSalaryGap": 19216.33,
+    "lowestSalaryGap": 1974.71
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Capital Goods",
+    "name": "Account Executive",
+    "highestSalaryGap": 18296.97,
+    "lowestSalaryGap": 2320.56
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "General Manager",
+    "highestSalaryGap": 18236.89,
+    "lowestSalaryGap": 2228.94
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Occupational Therapist",
+    "highestSalaryGap": 7431.52,
+    "lowestSalaryGap": 1769.72
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Payment Adjustment Coordinator",
+    "highestSalaryGap": 10219.9,
+    "lowestSalaryGap": 2530.59
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Research Nurse",
+    "highestSalaryGap": 15702.33,
+    "lowestSalaryGap": 1687.4
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Statistician IV",
+    "highestSalaryGap": 13269.06,
+    "lowestSalaryGap": 2341.17
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Dental Hygienist",
+    "highestSalaryGap": 7247.39,
+    "lowestSalaryGap": 2243.77
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Account Executive",
+    "highestSalaryGap": 18695.18,
+    "lowestSalaryGap": 2227.19
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Technology",
+    "name": "Safety Technician I",
+    "highestSalaryGap": 15471.58,
+    "lowestSalaryGap": 2635.39
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Marketing Assistant",
+    "highestSalaryGap": 18911.86,
+    "lowestSalaryGap": 2187.85
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Basic Industries",
+    "name": "Internal Auditor",
+    "highestSalaryGap": 14988.25,
+    "lowestSalaryGap": 2719.19
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Recruiting Manager",
+    "highestSalaryGap": 12272.15,
+    "lowestSalaryGap": 2159.35
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Librarian",
+    "highestSalaryGap": 9525.48,
+    "lowestSalaryGap": 2209.7
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Capital Goods",
+    "name": "Legal Assistant",
+    "highestSalaryGap": 18718.88,
+    "lowestSalaryGap": 1592.97
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "Human Resources Assistant I",
+    "highestSalaryGap": 12113.75,
+    "lowestSalaryGap": 1894.22
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Physical Therapy Assistant",
+    "highestSalaryGap": 19778.77,
+    "lowestSalaryGap": 1667.94
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Structural Analysis Engineer",
+    "highestSalaryGap": 8240.92,
+    "lowestSalaryGap": 1425.12
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Graphic Designer",
+    "highestSalaryGap": 18790.69,
+    "lowestSalaryGap": 1895.63
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Programmer Analyst I",
+    "highestSalaryGap": 15922.14,
+    "lowestSalaryGap": 1303.23
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Geologist I",
+    "highestSalaryGap": 8320.98,
+    "lowestSalaryGap": 1972.05
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "Account Executive",
+    "highestSalaryGap": 14778.94,
+    "lowestSalaryGap": 2754.35
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Director of Sales",
+    "highestSalaryGap": 6487.0,
+    "lowestSalaryGap": 2896.74
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Services",
+    "name": "Financial Advisor",
+    "highestSalaryGap": 16983.18,
+    "lowestSalaryGap": 2220.9
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Web Designer IV",
+    "highestSalaryGap": 15010.45,
+    "lowestSalaryGap": 2452.15
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Basic Industries",
+    "name": "Chief Design Engineer",
+    "highestSalaryGap": 19495.13,
+    "lowestSalaryGap": 2256.17
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Public Utilities",
+    "name": "Administrative Officer",
+    "highestSalaryGap": 8057.89,
+    "lowestSalaryGap": 2203.89
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Business Systems Development Analyst",
+    "highestSalaryGap": 7863.01,
+    "lowestSalaryGap": 1505.25
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Assistant Professor",
+    "highestSalaryGap": 10660.74,
+    "lowestSalaryGap": 2231.89
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Capital Goods",
+    "name": "Engineer IV",
+    "highestSalaryGap": 15134.34,
+    "lowestSalaryGap": 1873.77
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "Systems Administrator I",
+    "highestSalaryGap": 10492.78,
+    "lowestSalaryGap": 2460.43
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Capital Goods",
+    "name": "Chief Design Engineer",
+    "highestSalaryGap": 10511.88,
+    "lowestSalaryGap": 1351.67
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Staff Accountant IV",
+    "highestSalaryGap": 7627.02,
+    "lowestSalaryGap": 2507.62
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Capital Goods",
+    "name": "Health Coach II",
+    "highestSalaryGap": 9884.74,
+    "lowestSalaryGap": 1450.25
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Durables",
+    "name": "Geologist I",
+    "highestSalaryGap": 11158.53,
+    "lowestSalaryGap": 1887.72
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Professor",
+    "highestSalaryGap": 9666.48,
+    "lowestSalaryGap": 1668.67
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Miscellaneous",
+    "name": "Marketing Assistant",
+    "highestSalaryGap": 7161.81,
+    "lowestSalaryGap": 2731.3
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Dental Hygienist",
+    "highestSalaryGap": 7648.62,
+    "lowestSalaryGap": 2060.03
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Non-Durables",
+    "name": "Social Worker",
+    "highestSalaryGap": 9594.43,
+    "lowestSalaryGap": 1785.91
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Miscellaneous",
+    "name": "Human Resources Assistant IV",
+    "highestSalaryGap": 7600.15,
+    "lowestSalaryGap": 1792.1
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Basic Industries",
+    "name": "Paralegal",
+    "highestSalaryGap": 16039.63,
+    "lowestSalaryGap": 1802.94
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Technology",
+    "name": "Programmer Analyst II",
+    "highestSalaryGap": 14288.56,
+    "lowestSalaryGap": 2544.65
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "Clinical Specialist",
+    "highestSalaryGap": 15171.69,
+    "lowestSalaryGap": 1991.53
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Senior Sales Associate",
+    "highestSalaryGap": 7317.26,
+    "lowestSalaryGap": 2287.54
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Paralegal",
+    "highestSalaryGap": 19283.08,
+    "lowestSalaryGap": 1429.52
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Technology",
+    "name": "Pharmacist",
+    "highestSalaryGap": 16164.1,
+    "lowestSalaryGap": 2367.99
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Non-Durables",
+    "name": "Senior Financial Analyst",
+    "highestSalaryGap": 19244.18,
+    "lowestSalaryGap": 1917.27
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Energy",
+    "name": "General Manager",
+    "highestSalaryGap": 16097.65,
+    "lowestSalaryGap": 2257.71
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Systems Administrator II",
+    "highestSalaryGap": 11000.94,
+    "lowestSalaryGap": 2024.83
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Services",
+    "name": "Assistant Manager",
+    "highestSalaryGap": 15399.95,
+    "lowestSalaryGap": 2457.83
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Recruiting Manager",
+    "highestSalaryGap": 11478.41,
+    "lowestSalaryGap": 1872.57
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Durables",
+    "name": "Associate Professor",
+    "highestSalaryGap": 7571.46,
+    "lowestSalaryGap": 2013.66
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Basic Industries",
+    "name": "Marketing Manager",
+    "highestSalaryGap": 5102.3,
+    "lowestSalaryGap": 1358.09
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Administrative Assistant IV",
+    "highestSalaryGap": 8857.53,
+    "lowestSalaryGap": 1674.66
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Financial Analyst",
+    "highestSalaryGap": 7846.75,
+    "lowestSalaryGap": 2057.0
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Services",
+    "name": "General Manager",
+    "highestSalaryGap": 7869.71,
+    "lowestSalaryGap": 2573.06
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Structural Engineer",
+    "highestSalaryGap": 17709.54,
+    "lowestSalaryGap": 1974.3
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Programmer Analyst IV",
+    "highestSalaryGap": 19860.94,
+    "lowestSalaryGap": 2055.86
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Media Manager III",
+    "highestSalaryGap": 10084.56,
+    "lowestSalaryGap": 1967.51
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Public Utilities",
+    "name": "Editor",
+    "highestSalaryGap": 11069.57,
+    "lowestSalaryGap": 2527.23
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "VP Accounting",
+    "highestSalaryGap": 13761.49,
+    "lowestSalaryGap": 2401.05
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Senior Cost Accountant",
+    "highestSalaryGap": 13149.01,
+    "lowestSalaryGap": 2770.52
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Basic Industries",
+    "name": "Senior Sales Associate",
+    "highestSalaryGap": 18810.24,
+    "lowestSalaryGap": 2077.6
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Senior Financial Analyst",
+    "highestSalaryGap": 8121.57,
+    "lowestSalaryGap": 1963.56
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "Data Coordiator",
+    "highestSalaryGap": 15281.24,
+    "lowestSalaryGap": 2030.74
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Non-Durables",
+    "name": "Administrative Assistant I",
+    "highestSalaryGap": 17047.4,
+    "lowestSalaryGap": 1829.13
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Public Utilities",
+    "name": "Engineer III",
+    "highestSalaryGap": 11083.61,
+    "lowestSalaryGap": 2693.41
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Technology",
+    "name": "Structural Analysis Engineer",
+    "highestSalaryGap": 17533.76,
+    "lowestSalaryGap": 1634.41
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Public Utilities",
+    "name": "Research Assistant IV",
+    "highestSalaryGap": 12812.92,
+    "lowestSalaryGap": 1961.78
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Structural Analysis Engineer",
+    "highestSalaryGap": 18775.3,
+    "lowestSalaryGap": 2389.13
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Non-Durables",
+    "name": "Social Worker",
+    "highestSalaryGap": 6671.62,
+    "lowestSalaryGap": 2395.18
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Software Engineer IV",
+    "highestSalaryGap": 16404.4,
+    "lowestSalaryGap": 1668.82
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Public Utilities",
+    "name": "Administrative Officer",
+    "highestSalaryGap": 13797.36,
+    "lowestSalaryGap": 2392.84
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Community Outreach Specialist",
+    "highestSalaryGap": 11001.03,
+    "lowestSalaryGap": 1483.36
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Non-Durables",
+    "name": "Senior Editor",
+    "highestSalaryGap": 15923.34,
+    "lowestSalaryGap": 1461.13
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Services",
+    "name": "Accountant II",
+    "highestSalaryGap": 5471.68,
+    "lowestSalaryGap": 1811.88
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "VP Quality Control",
+    "highestSalaryGap": 8367.35,
+    "lowestSalaryGap": 1882.57
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Capital Goods",
+    "name": "Engineer II",
+    "highestSalaryGap": 5611.03,
+    "lowestSalaryGap": 2242.81
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Transportation",
+    "name": "Data Coordiator",
+    "highestSalaryGap": 9529.38,
+    "lowestSalaryGap": 2136.52
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Senior Developer",
+    "highestSalaryGap": 9311.34,
+    "lowestSalaryGap": 1342.89
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Recruiter",
+    "highestSalaryGap": 19148.77,
+    "lowestSalaryGap": 1827.77
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Basic Industries",
+    "name": "Help Desk Technician",
+    "highestSalaryGap": 14665.16,
+    "lowestSalaryGap": 2059.54
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Technology",
+    "name": "Business Systems Development Analyst",
+    "highestSalaryGap": 12678.2,
+    "lowestSalaryGap": 1541.86
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "VP Accounting",
+    "highestSalaryGap": 11305.38,
+    "lowestSalaryGap": 1472.22
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Durables",
+    "name": "Director of Sales",
+    "highestSalaryGap": 12971.77,
+    "lowestSalaryGap": 1954.22
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Basic Industries",
+    "name": "Associate Professor",
+    "highestSalaryGap": 10650.27,
+    "lowestSalaryGap": 1940.4
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Information Systems Manager",
+    "highestSalaryGap": 13001.28,
+    "lowestSalaryGap": 2764.12
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Business Systems Development Analyst",
+    "highestSalaryGap": 15422.69,
+    "lowestSalaryGap": 2385.87
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Assistant Media Planner",
+    "highestSalaryGap": 16114.56,
+    "lowestSalaryGap": 2841.74
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "Safety Technician I",
+    "highestSalaryGap": 13562.7,
+    "lowestSalaryGap": 1332.61
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Services",
+    "name": "Pharmacist",
+    "highestSalaryGap": 11059.37,
+    "lowestSalaryGap": 2171.08
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Capital Goods",
+    "name": "Graphic Designer",
+    "highestSalaryGap": 10165.0,
+    "lowestSalaryGap": 2691.67
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Public Utilities",
+    "name": "Social Worker",
+    "highestSalaryGap": 13542.81,
+    "lowestSalaryGap": 2774.11
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Capital Goods",
+    "name": "Sales Representative",
+    "highestSalaryGap": 12312.22,
+    "lowestSalaryGap": 2728.63
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Basic Industries",
+    "name": "Account Coordinator",
+    "highestSalaryGap": 16242.15,
+    "lowestSalaryGap": 1316.89
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Health Coach III",
+    "highestSalaryGap": 18383.36,
+    "lowestSalaryGap": 2020.11
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Miscellaneous",
+    "name": "Senior Cost Accountant",
+    "highestSalaryGap": 17770.96,
+    "lowestSalaryGap": 1512.0
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Services",
+    "name": "Design Engineer",
+    "highestSalaryGap": 10856.15,
+    "lowestSalaryGap": 1375.3
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Assistant Professor",
+    "highestSalaryGap": 19491.28,
+    "lowestSalaryGap": 2657.38
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Accounting Assistant II",
+    "highestSalaryGap": 14209.99,
+    "lowestSalaryGap": 2599.78
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Non-Durables",
+    "name": "Legal Assistant",
+    "highestSalaryGap": 11366.43,
+    "lowestSalaryGap": 2011.99
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Technology",
+    "name": "Structural Analysis Engineer",
+    "highestSalaryGap": 19866.63,
+    "lowestSalaryGap": 1932.98
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Durables",
+    "name": "Structural Engineer",
+    "highestSalaryGap": 18914.92,
+    "lowestSalaryGap": 1976.52
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Programmer III",
+    "highestSalaryGap": 7973.71,
+    "lowestSalaryGap": 2707.11
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Physical Therapy Assistant",
+    "highestSalaryGap": 17998.27,
+    "lowestSalaryGap": 1707.96
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Energy",
+    "name": "Product Engineer",
+    "highestSalaryGap": 10331.84,
+    "lowestSalaryGap": 2154.89
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Pharmacist",
+    "highestSalaryGap": 9797.51,
+    "lowestSalaryGap": 1958.87
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Internal Auditor",
+    "highestSalaryGap": 17430.24,
+    "lowestSalaryGap": 2161.2
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Software Consultant",
+    "highestSalaryGap": 5985.09,
+    "lowestSalaryGap": 1531.2
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Dental Hygienist",
+    "highestSalaryGap": 16925.74,
+    "lowestSalaryGap": 2295.99
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Quality Engineer",
+    "highestSalaryGap": 14666.05,
+    "lowestSalaryGap": 1841.16
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Recruiter",
+    "highestSalaryGap": 19843.22,
+    "lowestSalaryGap": 1428.86
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "Help Desk Technician",
+    "highestSalaryGap": 13510.53,
+    "lowestSalaryGap": 2715.24
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Quality Engineer",
+    "highestSalaryGap": 6111.97,
+    "lowestSalaryGap": 1792.91
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Nurse Practicioner",
+    "highestSalaryGap": 13710.84,
+    "lowestSalaryGap": 2891.61
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Account Representative II",
+    "highestSalaryGap": 18234.23,
+    "lowestSalaryGap": 2222.7
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "VP Marketing",
+    "highestSalaryGap": 12332.56,
+    "lowestSalaryGap": 1692.22
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Research Assistant II",
+    "highestSalaryGap": 7953.75,
+    "lowestSalaryGap": 1358.23
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Basic Industries",
+    "name": "Internal Auditor",
+    "highestSalaryGap": 11085.35,
+    "lowestSalaryGap": 2393.93
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Capital Goods",
+    "name": "Web Designer II",
+    "highestSalaryGap": 17401.71,
+    "lowestSalaryGap": 2797.28
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Basic Industries",
+    "name": "Graphic Designer",
+    "highestSalaryGap": 15844.49,
+    "lowestSalaryGap": 2680.12
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Transportation",
+    "name": "Nuclear Power Engineer",
+    "highestSalaryGap": 9850.92,
+    "lowestSalaryGap": 1679.05
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Analyst Programmer",
+    "highestSalaryGap": 15271.48,
+    "lowestSalaryGap": 2410.22
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Services",
+    "name": "Payment Adjustment Coordinator",
+    "highestSalaryGap": 8103.36,
+    "lowestSalaryGap": 2478.79
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Systems Administrator IV",
+    "highestSalaryGap": 13480.4,
+    "lowestSalaryGap": 1772.53
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Human Resources Manager",
+    "highestSalaryGap": 19131.73,
+    "lowestSalaryGap": 2881.73
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Social Worker",
+    "highestSalaryGap": 13372.18,
+    "lowestSalaryGap": 2666.91
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Compensation Analyst",
+    "highestSalaryGap": 14225.87,
+    "lowestSalaryGap": 2679.8
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Professor",
+    "highestSalaryGap": 11485.02,
+    "lowestSalaryGap": 1437.82
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Basic Industries",
+    "name": "Civil Engineer",
+    "highestSalaryGap": 17145.27,
+    "lowestSalaryGap": 2016.93
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Miscellaneous",
+    "name": "Computer Systems Analyst IV",
+    "highestSalaryGap": 12760.97,
+    "lowestSalaryGap": 2260.83
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Desktop Support Technician",
+    "highestSalaryGap": 9388.92,
+    "lowestSalaryGap": 1354.99
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Research Associate",
+    "highestSalaryGap": 15924.58,
+    "lowestSalaryGap": 2057.7
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Professor",
+    "highestSalaryGap": 7678.71,
+    "lowestSalaryGap": 2351.43
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Statistician II",
+    "highestSalaryGap": 18518.73,
+    "lowestSalaryGap": 2104.19
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Financial Advisor",
+    "highestSalaryGap": 8992.43,
+    "lowestSalaryGap": 2169.73
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Research Associate",
+    "highestSalaryGap": 12935.04,
+    "lowestSalaryGap": 2844.43
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Dental Hygienist",
+    "highestSalaryGap": 10851.51,
+    "lowestSalaryGap": 2525.27
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Nuclear Power Engineer",
+    "highestSalaryGap": 19260.71,
+    "lowestSalaryGap": 2651.3
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Services",
+    "name": "Help Desk Operator",
+    "highestSalaryGap": 6931.98,
+    "lowestSalaryGap": 2504.42
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Services",
+    "name": "Analyst Programmer",
+    "highestSalaryGap": 9306.41,
+    "lowestSalaryGap": 2116.3
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "VP Sales",
+    "highestSalaryGap": 8551.09,
+    "lowestSalaryGap": 2199.06
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Teacher",
+    "highestSalaryGap": 8105.43,
+    "lowestSalaryGap": 2039.72
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Recruiting Manager",
+    "highestSalaryGap": 8610.57,
+    "lowestSalaryGap": 2541.91
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Technology",
+    "name": "Administrative Officer",
+    "highestSalaryGap": 15131.85,
+    "lowestSalaryGap": 2732.89
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Director of Sales",
+    "highestSalaryGap": 6944.36,
+    "lowestSalaryGap": 1559.1
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Technology",
+    "name": "Accountant IV",
+    "highestSalaryGap": 18057.58,
+    "lowestSalaryGap": 2418.54
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Basic Industries",
+    "name": "Environmental Specialist",
+    "highestSalaryGap": 18033.94,
+    "lowestSalaryGap": 2130.15
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Miscellaneous",
+    "name": "Nurse",
+    "highestSalaryGap": 13699.13,
+    "lowestSalaryGap": 1582.25
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Quality Engineer",
+    "highestSalaryGap": 8670.05,
+    "lowestSalaryGap": 1442.34
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Librarian",
+    "highestSalaryGap": 11450.99,
+    "lowestSalaryGap": 1849.47
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Environmental Tech",
+    "highestSalaryGap": 17293.85,
+    "lowestSalaryGap": 2872.22
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Non-Durables",
+    "name": "Electrical Engineer",
+    "highestSalaryGap": 5344.61,
+    "lowestSalaryGap": 2379.19
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Energy",
+    "name": "Actuary",
+    "highestSalaryGap": 10549.35,
+    "lowestSalaryGap": 1678.62
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Physical Therapy Assistant",
+    "highestSalaryGap": 5212.08,
+    "lowestSalaryGap": 2262.49
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Energy",
+    "name": "Sales Associate",
+    "highestSalaryGap": 8241.85,
+    "lowestSalaryGap": 2116.7
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Technology",
+    "name": "Senior Financial Analyst",
+    "highestSalaryGap": 11307.51,
+    "lowestSalaryGap": 2236.82
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Sales Representative",
+    "highestSalaryGap": 15758.14,
+    "lowestSalaryGap": 1543.05
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Programmer Analyst II",
+    "highestSalaryGap": 13353.09,
+    "lowestSalaryGap": 1421.21
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "Editor",
+    "highestSalaryGap": 18399.53,
+    "lowestSalaryGap": 1783.23
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Statistician II",
+    "highestSalaryGap": 17289.87,
+    "lowestSalaryGap": 1947.56
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Software Consultant",
+    "highestSalaryGap": 5045.75,
+    "lowestSalaryGap": 2240.22
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Technology",
+    "name": "Senior Editor",
+    "highestSalaryGap": 7800.13,
+    "lowestSalaryGap": 2286.3
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Research Associate",
+    "highestSalaryGap": 6315.31,
+    "lowestSalaryGap": 1994.47
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Technology",
+    "name": "Actuary",
+    "highestSalaryGap": 17832.88,
+    "lowestSalaryGap": 2460.32
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Staff Accountant I",
+    "highestSalaryGap": 5181.18,
+    "lowestSalaryGap": 1978.34
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Sales Associate",
+    "highestSalaryGap": 12695.82,
+    "lowestSalaryGap": 2455.06
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Chemical Engineer",
+    "highestSalaryGap": 12178.56,
+    "lowestSalaryGap": 1337.17
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Public Utilities",
+    "name": "Account Representative IV",
+    "highestSalaryGap": 11463.38,
+    "lowestSalaryGap": 2514.93
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "Recruiting Manager",
+    "highestSalaryGap": 14090.37,
+    "lowestSalaryGap": 1614.7
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Non-Durables",
+    "name": "Mechanical Systems Engineer",
+    "highestSalaryGap": 9976.65,
+    "lowestSalaryGap": 2739.7
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Systems Administrator II",
+    "highestSalaryGap": 10448.99,
+    "lowestSalaryGap": 1754.49
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Capital Goods",
+    "name": "Social Worker",
+    "highestSalaryGap": 11917.95,
+    "lowestSalaryGap": 2385.36
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Librarian",
+    "highestSalaryGap": 6059.24,
+    "lowestSalaryGap": 2471.14
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "Librarian",
+    "highestSalaryGap": 5224.42,
+    "lowestSalaryGap": 2445.96
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Basic Industries",
+    "name": "Teacher",
+    "highestSalaryGap": 8220.87,
+    "lowestSalaryGap": 2024.85
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Office Assistant I",
+    "highestSalaryGap": 8951.35,
+    "lowestSalaryGap": 2028.73
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Capital Goods",
+    "name": "Biostatistician III",
+    "highestSalaryGap": 8874.26,
+    "lowestSalaryGap": 2100.25
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Food Chemist",
+    "highestSalaryGap": 17925.35,
+    "lowestSalaryGap": 2717.55
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Durables",
+    "name": "Internal Auditor",
+    "highestSalaryGap": 11347.85,
+    "lowestSalaryGap": 2484.08
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "VP Accounting",
+    "highestSalaryGap": 12262.59,
+    "lowestSalaryGap": 2390.45
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Administrative Officer",
+    "highestSalaryGap": 18826.2,
+    "lowestSalaryGap": 1954.04
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Pharmacist",
+    "highestSalaryGap": 19777.39,
+    "lowestSalaryGap": 2339.82
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Miscellaneous",
+    "name": "Structural Engineer",
+    "highestSalaryGap": 15315.15,
+    "lowestSalaryGap": 1846.98
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Human Resources Manager",
+    "highestSalaryGap": 6763.49,
+    "lowestSalaryGap": 1711.11
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Senior Editor",
+    "highestSalaryGap": 19391.44,
+    "lowestSalaryGap": 2013.88
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Nurse Practicioner",
+    "highestSalaryGap": 9603.07,
+    "lowestSalaryGap": 2081.54
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Services",
+    "name": "VP Accounting",
+    "highestSalaryGap": 19466.54,
+    "lowestSalaryGap": 2562.34
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Web Developer III",
+    "highestSalaryGap": 13585.54,
+    "lowestSalaryGap": 2291.31
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Associate Professor",
+    "highestSalaryGap": 18139.52,
+    "lowestSalaryGap": 1395.09
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Environmental Specialist",
+    "highestSalaryGap": 8231.93,
+    "lowestSalaryGap": 1664.15
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "Internal Auditor",
+    "highestSalaryGap": 11576.88,
+    "lowestSalaryGap": 2834.43
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Software Test Engineer II",
+    "highestSalaryGap": 6450.88,
+    "lowestSalaryGap": 2600.54
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Electrical Engineer",
+    "highestSalaryGap": 10235.71,
+    "lowestSalaryGap": 2463.34
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Technical Writer",
+    "highestSalaryGap": 15871.72,
+    "lowestSalaryGap": 1919.88
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Nurse",
+    "highestSalaryGap": 13785.3,
+    "lowestSalaryGap": 1414.8
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Technology",
+    "name": "Payment Adjustment Coordinator",
+    "highestSalaryGap": 8103.04,
+    "lowestSalaryGap": 2156.9
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Capital Goods",
+    "name": "Speech Pathologist",
+    "highestSalaryGap": 9045.92,
+    "lowestSalaryGap": 1311.69
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Assistant Manager",
+    "highestSalaryGap": 14143.26,
+    "lowestSalaryGap": 1892.73
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Senior Financial Analyst",
+    "highestSalaryGap": 5531.13,
+    "lowestSalaryGap": 2677.39
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Transportation",
+    "name": "VP Accounting",
+    "highestSalaryGap": 6020.77,
+    "lowestSalaryGap": 1955.21
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Payment Adjustment Coordinator",
+    "highestSalaryGap": 6222.77,
+    "lowestSalaryGap": 1720.25
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Durables",
+    "name": "Legal Assistant",
+    "highestSalaryGap": 19507.78,
+    "lowestSalaryGap": 1920.18
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Professor",
+    "highestSalaryGap": 12717.47,
+    "lowestSalaryGap": 1498.93
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Senior Sales Associate",
+    "highestSalaryGap": 9301.19,
+    "lowestSalaryGap": 2609.75
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Physical Therapy Assistant",
+    "highestSalaryGap": 11232.77,
+    "lowestSalaryGap": 2044.41
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Energy",
+    "name": "Quality Engineer",
+    "highestSalaryGap": 11704.35,
+    "lowestSalaryGap": 2513.32
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Executive Secretary",
+    "highestSalaryGap": 19126.83,
+    "lowestSalaryGap": 2885.26
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Computer Systems Analyst III",
+    "highestSalaryGap": 8927.3,
+    "lowestSalaryGap": 2311.22
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Technology",
+    "name": "Geological Engineer",
+    "highestSalaryGap": 14274.27,
+    "lowestSalaryGap": 1475.79
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Capital Goods",
+    "name": "VP Accounting",
+    "highestSalaryGap": 18832.4,
+    "lowestSalaryGap": 2394.22
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Dental Hygienist",
+    "highestSalaryGap": 13874.96,
+    "lowestSalaryGap": 2258.68
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Structural Analysis Engineer",
+    "highestSalaryGap": 15938.33,
+    "lowestSalaryGap": 2220.41
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Geologist IV",
+    "highestSalaryGap": 11696.54,
+    "lowestSalaryGap": 2071.1
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Biostatistician III",
+    "highestSalaryGap": 14577.38,
+    "lowestSalaryGap": 1797.53
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Staff Scientist",
+    "highestSalaryGap": 16327.8,
+    "lowestSalaryGap": 2149.37
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Capital Goods",
+    "name": "General Manager",
+    "highestSalaryGap": 17520.42,
+    "lowestSalaryGap": 2865.99
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Design Engineer",
+    "highestSalaryGap": 6485.08,
+    "lowestSalaryGap": 2500.25
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Junior Executive",
+    "highestSalaryGap": 15567.52,
+    "lowestSalaryGap": 2673.66
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Product Engineer",
+    "highestSalaryGap": 16572.61,
+    "lowestSalaryGap": 1961.17
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Non-Durables",
+    "name": "Legal Assistant",
+    "highestSalaryGap": 12202.24,
+    "lowestSalaryGap": 2807.31
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Financial Advisor",
+    "highestSalaryGap": 16140.37,
+    "lowestSalaryGap": 1633.04
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Durables",
+    "name": "Senior Editor",
+    "highestSalaryGap": 9402.89,
+    "lowestSalaryGap": 2608.99
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Programmer Analyst IV",
+    "highestSalaryGap": 5324.29,
+    "lowestSalaryGap": 1726.95
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Editor",
+    "highestSalaryGap": 9446.37,
+    "lowestSalaryGap": 1590.38
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Technology",
+    "name": "Marketing Assistant",
+    "highestSalaryGap": 5714.54,
+    "lowestSalaryGap": 2866.22
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "Graphic Designer",
+    "highestSalaryGap": 18492.6,
+    "lowestSalaryGap": 1969.89
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Technology",
+    "name": "Financial Analyst",
+    "highestSalaryGap": 8741.22,
+    "lowestSalaryGap": 2009.71
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Civil Engineer",
+    "highestSalaryGap": 11734.1,
+    "lowestSalaryGap": 2153.71
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Services",
+    "name": "Systems Administrator II",
+    "highestSalaryGap": 9181.47,
+    "lowestSalaryGap": 2521.73
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Computer Systems Analyst II",
+    "highestSalaryGap": 11195.6,
+    "lowestSalaryGap": 2237.67
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "Tax Accountant",
+    "highestSalaryGap": 16591.61,
+    "lowestSalaryGap": 1960.08
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Cost Accountant",
+    "highestSalaryGap": 14973.74,
+    "lowestSalaryGap": 1566.89
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Director of Sales",
+    "highestSalaryGap": 10105.85,
+    "lowestSalaryGap": 1945.08
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Research Associate",
+    "highestSalaryGap": 14989.54,
+    "lowestSalaryGap": 1834.5
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Financial Analyst",
+    "highestSalaryGap": 9353.49,
+    "lowestSalaryGap": 1481.91
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Public Utilities",
+    "name": "VP Product Management",
+    "highestSalaryGap": 7103.6,
+    "lowestSalaryGap": 2842.47
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Capital Goods",
+    "name": "Structural Analysis Engineer",
+    "highestSalaryGap": 5516.89,
+    "lowestSalaryGap": 2270.74
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Sales Representative",
+    "highestSalaryGap": 15067.34,
+    "lowestSalaryGap": 2359.66
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "Engineer II",
+    "highestSalaryGap": 5786.07,
+    "lowestSalaryGap": 2415.49
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Senior Cost Accountant",
+    "highestSalaryGap": 14735.94,
+    "lowestSalaryGap": 1494.73
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "VP Product Management",
+    "highestSalaryGap": 9886.0,
+    "lowestSalaryGap": 2707.04
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Capital Goods",
+    "name": "VP Accounting",
+    "highestSalaryGap": 15555.95,
+    "lowestSalaryGap": 2515.79
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Basic Industries",
+    "name": "Executive Secretary",
+    "highestSalaryGap": 6582.88,
+    "lowestSalaryGap": 2605.7
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Programmer Analyst III",
+    "highestSalaryGap": 14227.71,
+    "lowestSalaryGap": 1344.41
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Senior Quality Engineer",
+    "highestSalaryGap": 9127.52,
+    "lowestSalaryGap": 2470.06
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Research Assistant III",
+    "highestSalaryGap": 11022.66,
+    "lowestSalaryGap": 2782.48
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Assistant Professor",
+    "highestSalaryGap": 7727.42,
+    "lowestSalaryGap": 2293.9
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Services",
+    "name": "Speech Pathologist",
+    "highestSalaryGap": 8608.29,
+    "lowestSalaryGap": 1581.36
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Energy",
+    "name": "Health Coach III",
+    "highestSalaryGap": 16277.97,
+    "lowestSalaryGap": 1555.87
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Statistician IV",
+    "highestSalaryGap": 14905.19,
+    "lowestSalaryGap": 1634.93
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Desktop Support Technician",
+    "highestSalaryGap": 5212.63,
+    "lowestSalaryGap": 2200.84
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Electrical Engineer",
+    "highestSalaryGap": 14365.01,
+    "lowestSalaryGap": 1814.3
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Structural Analysis Engineer",
+    "highestSalaryGap": 11360.21,
+    "lowestSalaryGap": 2335.02
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Computer Systems Analyst II",
+    "highestSalaryGap": 15183.59,
+    "lowestSalaryGap": 1525.29
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Occupational Therapist",
+    "highestSalaryGap": 13024.91,
+    "lowestSalaryGap": 2600.53
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Biostatistician III",
+    "highestSalaryGap": 11959.38,
+    "lowestSalaryGap": 2743.08
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Automation Specialist I",
+    "highestSalaryGap": 13033.28,
+    "lowestSalaryGap": 1496.54
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Biostatistician II",
+    "highestSalaryGap": 13163.56,
+    "lowestSalaryGap": 2107.32
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Staff Accountant II",
+    "highestSalaryGap": 12970.43,
+    "lowestSalaryGap": 2457.93
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Legal Assistant",
+    "highestSalaryGap": 8529.24,
+    "lowestSalaryGap": 1413.6
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Administrative Officer",
+    "highestSalaryGap": 13650.01,
+    "lowestSalaryGap": 1707.15
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Staff Accountant I",
+    "highestSalaryGap": 11320.53,
+    "lowestSalaryGap": 2759.11
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Technology",
+    "name": "Recruiting Manager",
+    "highestSalaryGap": 14651.77,
+    "lowestSalaryGap": 2403.46
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Librarian",
+    "highestSalaryGap": 6892.11,
+    "lowestSalaryGap": 2278.59
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Services",
+    "name": "Systems Administrator I",
+    "highestSalaryGap": 19112.2,
+    "lowestSalaryGap": 1566.71
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Technology",
+    "name": "Administrative Officer",
+    "highestSalaryGap": 6321.48,
+    "lowestSalaryGap": 2500.7
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Staff Scientist",
+    "highestSalaryGap": 18225.82,
+    "lowestSalaryGap": 1889.93
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Database Administrator IV",
+    "highestSalaryGap": 14965.13,
+    "lowestSalaryGap": 1776.87
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Non-Durables",
+    "name": "Help Desk Technician",
+    "highestSalaryGap": 19718.07,
+    "lowestSalaryGap": 2273.87
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Recruiting Manager",
+    "highestSalaryGap": 13528.91,
+    "lowestSalaryGap": 1716.53
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Analog Circuit Design manager",
+    "highestSalaryGap": 13818.8,
+    "lowestSalaryGap": 1675.06
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Basic Industries",
+    "name": "VP Product Management",
+    "highestSalaryGap": 7109.34,
+    "lowestSalaryGap": 2019.77
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Safety Technician II",
+    "highestSalaryGap": 19822.04,
+    "lowestSalaryGap": 2335.34
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Energy",
+    "name": "Senior Developer",
+    "highestSalaryGap": 9804.89,
+    "lowestSalaryGap": 1464.81
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Occupational Therapist",
+    "highestSalaryGap": 11875.69,
+    "lowestSalaryGap": 2035.9
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Director of Sales",
+    "highestSalaryGap": 13675.98,
+    "lowestSalaryGap": 2606.77
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Energy",
+    "name": "Assistant Media Planner",
+    "highestSalaryGap": 9407.45,
+    "lowestSalaryGap": 2899.51
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Business Systems Development Analyst",
+    "highestSalaryGap": 7128.11,
+    "lowestSalaryGap": 2862.39
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Analyst Programmer",
+    "highestSalaryGap": 5108.16,
+    "lowestSalaryGap": 1388.03
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Capital Goods",
+    "name": "Speech Pathologist",
+    "highestSalaryGap": 15178.62,
+    "lowestSalaryGap": 2528.66
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Quality Control Specialist",
+    "highestSalaryGap": 7589.39,
+    "lowestSalaryGap": 2840.12
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "Financial Analyst",
+    "highestSalaryGap": 18907.76,
+    "lowestSalaryGap": 2583.9
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Basic Industries",
+    "name": "Software Consultant",
+    "highestSalaryGap": 8615.27,
+    "lowestSalaryGap": 2281.17
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Compensation Analyst",
+    "highestSalaryGap": 16993.87,
+    "lowestSalaryGap": 1933.7
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Media Manager III",
+    "highestSalaryGap": 14488.83,
+    "lowestSalaryGap": 1838.07
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Professor",
+    "highestSalaryGap": 14532.12,
+    "lowestSalaryGap": 2770.51
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Tax Accountant",
+    "highestSalaryGap": 15203.39,
+    "lowestSalaryGap": 1641.22
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Engineer IV",
+    "highestSalaryGap": 14574.43,
+    "lowestSalaryGap": 2561.84
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Energy",
+    "name": "Registered Nurse",
+    "highestSalaryGap": 11488.21,
+    "lowestSalaryGap": 2829.89
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Account Coordinator",
+    "highestSalaryGap": 18689.67,
+    "lowestSalaryGap": 1828.58
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Senior Financial Analyst",
+    "highestSalaryGap": 14701.16,
+    "lowestSalaryGap": 2273.09
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Public Utilities",
+    "name": "Sales Representative",
+    "highestSalaryGap": 5056.06,
+    "lowestSalaryGap": 2779.9
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Programmer Analyst III",
+    "highestSalaryGap": 14711.45,
+    "lowestSalaryGap": 2708.31
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Structural Analysis Engineer",
+    "highestSalaryGap": 12290.73,
+    "lowestSalaryGap": 1640.95
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Financial Analyst",
+    "highestSalaryGap": 10423.04,
+    "lowestSalaryGap": 2100.02
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Dental Hygienist",
+    "highestSalaryGap": 8684.63,
+    "lowestSalaryGap": 2014.09
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Executive Secretary",
+    "highestSalaryGap": 5013.18,
+    "lowestSalaryGap": 1442.97
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Registered Nurse",
+    "highestSalaryGap": 5236.65,
+    "lowestSalaryGap": 2088.34
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Clinical Specialist",
+    "highestSalaryGap": 6064.44,
+    "lowestSalaryGap": 2003.59
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Technology",
+    "name": "Programmer Analyst II",
+    "highestSalaryGap": 15470.19,
+    "lowestSalaryGap": 1467.95
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Technology",
+    "name": "VP Product Management",
+    "highestSalaryGap": 9448.31,
+    "lowestSalaryGap": 2176.9
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "GIS Technical Architect",
+    "highestSalaryGap": 6955.74,
+    "lowestSalaryGap": 1566.3
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Senior Quality Engineer",
+    "highestSalaryGap": 15647.5,
+    "lowestSalaryGap": 2054.61
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Capital Goods",
+    "name": "Professor",
+    "highestSalaryGap": 14645.77,
+    "lowestSalaryGap": 1884.95
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Energy",
+    "name": "VP Marketing",
+    "highestSalaryGap": 18507.02,
+    "lowestSalaryGap": 1624.92
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Business Systems Development Analyst",
+    "highestSalaryGap": 11610.11,
+    "lowestSalaryGap": 2400.03
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Pharmacist",
+    "highestSalaryGap": 17718.38,
+    "lowestSalaryGap": 2160.07
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Research Nurse",
+    "highestSalaryGap": 14161.95,
+    "lowestSalaryGap": 1930.63
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Executive Secretary",
+    "highestSalaryGap": 13630.23,
+    "lowestSalaryGap": 2035.07
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Durables",
+    "name": "Operator",
+    "highestSalaryGap": 9542.88,
+    "lowestSalaryGap": 2357.39
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Senior Quality Engineer",
+    "highestSalaryGap": 5545.12,
+    "lowestSalaryGap": 2591.76
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Technology",
+    "name": "Senior Financial Analyst",
+    "highestSalaryGap": 17648.97,
+    "lowestSalaryGap": 2780.65
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Automation Specialist IV",
+    "highestSalaryGap": 9927.98,
+    "lowestSalaryGap": 2289.67
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Project Manager",
+    "highestSalaryGap": 10774.43,
+    "lowestSalaryGap": 2106.44
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Non-Durables",
+    "name": "Electrical Engineer",
+    "highestSalaryGap": 15908.16,
+    "lowestSalaryGap": 2069.89
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Physical Therapy Assistant",
+    "highestSalaryGap": 17803.44,
+    "lowestSalaryGap": 2867.67
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Physical Therapy Assistant",
+    "highestSalaryGap": 7327.56,
+    "lowestSalaryGap": 2275.13
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Capital Goods",
+    "name": "Clinical Specialist",
+    "highestSalaryGap": 17598.26,
+    "lowestSalaryGap": 2864.12
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Accountant II",
+    "highestSalaryGap": 9771.48,
+    "lowestSalaryGap": 2153.12
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Durables",
+    "name": "Quality Control Specialist",
+    "highestSalaryGap": 13276.57,
+    "lowestSalaryGap": 1674.46
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Energy",
+    "name": "Biostatistician I",
+    "highestSalaryGap": 18208.67,
+    "lowestSalaryGap": 2164.54
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Operator",
+    "highestSalaryGap": 16789.45,
+    "lowestSalaryGap": 1631.69
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Non-Durables",
+    "name": "Human Resources Manager",
+    "highestSalaryGap": 9584.74,
+    "lowestSalaryGap": 1829.97
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Basic Industries",
+    "name": "Assistant Professor",
+    "highestSalaryGap": 6758.72,
+    "lowestSalaryGap": 1883.39
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Non-Durables",
+    "name": "Database Administrator II",
+    "highestSalaryGap": 9094.06,
+    "lowestSalaryGap": 1365.23
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Miscellaneous",
+    "name": "Analog Circuit Design manager",
+    "highestSalaryGap": 12415.77,
+    "lowestSalaryGap": 2022.56
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Services",
+    "name": "Business Systems Development Analyst",
+    "highestSalaryGap": 5492.04,
+    "lowestSalaryGap": 2757.22
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Miscellaneous",
+    "name": "Safety Technician IV",
+    "highestSalaryGap": 14859.65,
+    "lowestSalaryGap": 1630.01
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Services",
+    "name": "Clinical Specialist",
+    "highestSalaryGap": 11145.61,
+    "lowestSalaryGap": 2054.97
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Web Designer I",
+    "highestSalaryGap": 9061.92,
+    "lowestSalaryGap": 1693.83
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Technology",
+    "name": "Clinical Specialist",
+    "highestSalaryGap": 5911.34,
+    "lowestSalaryGap": 2593.47
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Capital Goods",
+    "name": "Community Outreach Specialist",
+    "highestSalaryGap": 5596.28,
+    "lowestSalaryGap": 2685.7
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Associate Professor",
+    "highestSalaryGap": 17630.4,
+    "lowestSalaryGap": 1829.38
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Developer I",
+    "highestSalaryGap": 9675.16,
+    "lowestSalaryGap": 2234.37
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Senior Editor",
+    "highestSalaryGap": 15625.48,
+    "lowestSalaryGap": 2182.02
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Durables",
+    "name": "Assistant Professor",
+    "highestSalaryGap": 11756.86,
+    "lowestSalaryGap": 1883.99
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Public Utilities",
+    "name": "Account Coordinator",
+    "highestSalaryGap": 14587.61,
+    "lowestSalaryGap": 2399.79
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Speech Pathologist",
+    "highestSalaryGap": 14320.92,
+    "lowestSalaryGap": 1321.31
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Analog Circuit Design manager",
+    "highestSalaryGap": 16855.94,
+    "lowestSalaryGap": 1980.57
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Technical Writer",
+    "highestSalaryGap": 14383.15,
+    "lowestSalaryGap": 2746.38
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Technology",
+    "name": "Assistant Professor",
+    "highestSalaryGap": 18856.8,
+    "lowestSalaryGap": 2470.32
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Nurse Practicioner",
+    "highestSalaryGap": 17999.22,
+    "lowestSalaryGap": 2605.97
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "VP Product Management",
+    "highestSalaryGap": 7866.79,
+    "lowestSalaryGap": 1771.98
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Design Engineer",
+    "highestSalaryGap": 11329.22,
+    "lowestSalaryGap": 1333.49
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Sales Associate",
+    "highestSalaryGap": 15578.11,
+    "lowestSalaryGap": 2469.46
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "Staff Accountant II",
+    "highestSalaryGap": 5307.61,
+    "lowestSalaryGap": 2891.27
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Structural Analysis Engineer",
+    "highestSalaryGap": 16842.12,
+    "lowestSalaryGap": 2113.11
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Project Manager",
+    "highestSalaryGap": 6267.53,
+    "lowestSalaryGap": 1337.63
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Senior Financial Analyst",
+    "highestSalaryGap": 10437.43,
+    "lowestSalaryGap": 2033.95
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Energy",
+    "name": "Research Assistant IV",
+    "highestSalaryGap": 11082.5,
+    "lowestSalaryGap": 2091.1
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Marketing Assistant",
+    "highestSalaryGap": 14631.04,
+    "lowestSalaryGap": 1903.45
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Engineer II",
+    "highestSalaryGap": 6132.58,
+    "lowestSalaryGap": 2820.32
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Help Desk Technician",
+    "highestSalaryGap": 6388.95,
+    "lowestSalaryGap": 2616.11
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Capital Goods",
+    "name": "Recruiting Manager",
+    "highestSalaryGap": 11584.78,
+    "lowestSalaryGap": 2386.6
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Services",
+    "name": "Nurse Practicioner",
+    "highestSalaryGap": 11561.16,
+    "lowestSalaryGap": 1581.33
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Physical Therapy Assistant",
+    "highestSalaryGap": 18371.2,
+    "lowestSalaryGap": 1411.61
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Statistician III",
+    "highestSalaryGap": 17175.14,
+    "lowestSalaryGap": 2768.13
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Structural Analysis Engineer",
+    "highestSalaryGap": 13373.06,
+    "lowestSalaryGap": 1661.75
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Durables",
+    "name": "Assistant Professor",
+    "highestSalaryGap": 6780.05,
+    "lowestSalaryGap": 2382.43
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Energy",
+    "name": "Tax Accountant",
+    "highestSalaryGap": 5388.25,
+    "lowestSalaryGap": 2052.33
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Operator",
+    "highestSalaryGap": 14322.85,
+    "lowestSalaryGap": 2000.62
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Payment Adjustment Coordinator",
+    "highestSalaryGap": 15897.81,
+    "lowestSalaryGap": 2371.79
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Recruiter",
+    "highestSalaryGap": 13702.59,
+    "lowestSalaryGap": 2875.41
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Dental Hygienist",
+    "highestSalaryGap": 10070.1,
+    "lowestSalaryGap": 1580.86
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Technical Writer",
+    "highestSalaryGap": 17142.1,
+    "lowestSalaryGap": 2885.3
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Miscellaneous",
+    "name": "Human Resources Manager",
+    "highestSalaryGap": 6095.37,
+    "lowestSalaryGap": 2249.88
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Capital Goods",
+    "name": "Cost Accountant",
+    "highestSalaryGap": 10108.49,
+    "lowestSalaryGap": 1458.79
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Environmental Tech",
+    "highestSalaryGap": 11135.75,
+    "lowestSalaryGap": 1635.83
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Capital Goods",
+    "name": "General Manager",
+    "highestSalaryGap": 17293.93,
+    "lowestSalaryGap": 2101.75
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Associate Professor",
+    "highestSalaryGap": 6897.01,
+    "lowestSalaryGap": 2484.06
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Human Resources Assistant III",
+    "highestSalaryGap": 15587.7,
+    "lowestSalaryGap": 1840.49
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Internal Auditor",
+    "highestSalaryGap": 12942.29,
+    "lowestSalaryGap": 2512.59
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Director of Sales",
+    "highestSalaryGap": 10567.76,
+    "lowestSalaryGap": 2276.34
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Programmer III",
+    "highestSalaryGap": 6181.92,
+    "lowestSalaryGap": 1726.91
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Energy",
+    "name": "Analyst Programmer",
+    "highestSalaryGap": 15447.44,
+    "lowestSalaryGap": 2120.42
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Senior Financial Analyst",
+    "highestSalaryGap": 14512.71,
+    "lowestSalaryGap": 1583.22
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Structural Analysis Engineer",
+    "highestSalaryGap": 11562.83,
+    "lowestSalaryGap": 2636.69
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Health Coach II",
+    "highestSalaryGap": 14733.03,
+    "lowestSalaryGap": 1880.45
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Energy",
+    "name": "Engineer II",
+    "highestSalaryGap": 13119.29,
+    "lowestSalaryGap": 2085.01
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Miscellaneous",
+    "name": "VP Sales",
+    "highestSalaryGap": 15300.46,
+    "lowestSalaryGap": 2599.96
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Energy",
+    "name": "Teacher",
+    "highestSalaryGap": 19009.74,
+    "lowestSalaryGap": 1341.2
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Technology",
+    "name": "Sales Representative",
+    "highestSalaryGap": 15690.76,
+    "lowestSalaryGap": 2399.55
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Graphic Designer",
+    "highestSalaryGap": 18713.62,
+    "lowestSalaryGap": 2288.5
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Help Desk Operator",
+    "highestSalaryGap": 17094.33,
+    "lowestSalaryGap": 2820.51
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "VP Quality Control",
+    "highestSalaryGap": 15983.29,
+    "lowestSalaryGap": 2570.49
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Staff Accountant IV",
+    "highestSalaryGap": 16350.78,
+    "lowestSalaryGap": 2892.12
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "VP Product Management",
+    "highestSalaryGap": 6751.79,
+    "lowestSalaryGap": 2249.43
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Capital Goods",
+    "name": "Nurse Practicioner",
+    "highestSalaryGap": 8916.47,
+    "lowestSalaryGap": 1306.56
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Internal Auditor",
+    "highestSalaryGap": 19139.53,
+    "lowestSalaryGap": 2673.5
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "Staff Scientist",
+    "highestSalaryGap": 16115.79,
+    "lowestSalaryGap": 2669.02
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Senior Financial Analyst",
+    "highestSalaryGap": 18810.4,
+    "lowestSalaryGap": 2363.68
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Miscellaneous",
+    "name": "Quality Control Specialist",
+    "highestSalaryGap": 5953.2,
+    "lowestSalaryGap": 1573.28
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Marketing Assistant",
+    "highestSalaryGap": 10352.9,
+    "lowestSalaryGap": 2665.99
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Public Utilities",
+    "name": "Marketing Manager",
+    "highestSalaryGap": 14780.89,
+    "lowestSalaryGap": 1983.18
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Marketing Assistant",
+    "highestSalaryGap": 8588.86,
+    "lowestSalaryGap": 2792.65
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Administrative Officer",
+    "highestSalaryGap": 7612.49,
+    "lowestSalaryGap": 2216.78
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Clinical Specialist",
+    "highestSalaryGap": 9168.2,
+    "lowestSalaryGap": 2125.57
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Research Associate",
+    "highestSalaryGap": 18811.66,
+    "lowestSalaryGap": 2315.46
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "Cost Accountant",
+    "highestSalaryGap": 10242.77,
+    "lowestSalaryGap": 2098.8
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Public Utilities",
+    "name": "Social Worker",
+    "highestSalaryGap": 12556.32,
+    "lowestSalaryGap": 1603.53
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Internal Auditor",
+    "highestSalaryGap": 15784.47,
+    "lowestSalaryGap": 1660.17
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Technology",
+    "name": "VP Sales",
+    "highestSalaryGap": 15928.59,
+    "lowestSalaryGap": 1520.48
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Pharmacist",
+    "highestSalaryGap": 15313.31,
+    "lowestSalaryGap": 2462.64
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Operator",
+    "highestSalaryGap": 8990.29,
+    "lowestSalaryGap": 1724.81
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Public Utilities",
+    "name": "Sales Associate",
+    "highestSalaryGap": 17515.99,
+    "lowestSalaryGap": 2712.1
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Health Coach III",
+    "highestSalaryGap": 8776.73,
+    "lowestSalaryGap": 1404.79
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Quality Control Specialist",
+    "highestSalaryGap": 7005.92,
+    "lowestSalaryGap": 1387.57
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Public Utilities",
+    "name": "Physical Therapy Assistant",
+    "highestSalaryGap": 14977.3,
+    "lowestSalaryGap": 2375.72
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Technical Writer",
+    "highestSalaryGap": 12535.09,
+    "lowestSalaryGap": 1920.87
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Teacher",
+    "highestSalaryGap": 5731.17,
+    "lowestSalaryGap": 1311.0
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "Human Resources Assistant I",
+    "highestSalaryGap": 8459.06,
+    "lowestSalaryGap": 1577.97
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Chemical Engineer",
+    "highestSalaryGap": 8258.47,
+    "lowestSalaryGap": 1768.36
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Automation Specialist II",
+    "highestSalaryGap": 16309.91,
+    "lowestSalaryGap": 1972.97
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Desktop Support Technician",
+    "highestSalaryGap": 12011.77,
+    "lowestSalaryGap": 2883.39
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Energy",
+    "name": "Programmer Analyst III",
+    "highestSalaryGap": 10292.75,
+    "lowestSalaryGap": 2290.7
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Durables",
+    "name": "Marketing Manager",
+    "highestSalaryGap": 7679.14,
+    "lowestSalaryGap": 1746.55
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Software Consultant",
+    "highestSalaryGap": 11957.27,
+    "lowestSalaryGap": 2845.6
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Financial Advisor",
+    "highestSalaryGap": 11655.56,
+    "lowestSalaryGap": 2478.18
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Automation Specialist III",
+    "highestSalaryGap": 9840.37,
+    "lowestSalaryGap": 1697.0
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Administrative Assistant III",
+    "highestSalaryGap": 9395.01,
+    "lowestSalaryGap": 1859.83
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Environmental Tech",
+    "highestSalaryGap": 14271.07,
+    "lowestSalaryGap": 2339.04
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Social Worker",
+    "highestSalaryGap": 5714.76,
+    "lowestSalaryGap": 1897.85
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Clinical Specialist",
+    "highestSalaryGap": 5854.31,
+    "lowestSalaryGap": 2889.07
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Editor",
+    "highestSalaryGap": 13981.63,
+    "lowestSalaryGap": 1659.29
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Social Worker",
+    "highestSalaryGap": 9741.85,
+    "lowestSalaryGap": 2241.8
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Public Utilities",
+    "name": "Account Executive",
+    "highestSalaryGap": 12704.04,
+    "lowestSalaryGap": 1444.13
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Durables",
+    "name": "Speech Pathologist",
+    "highestSalaryGap": 5619.34,
+    "lowestSalaryGap": 1922.98
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Basic Industries",
+    "name": "Engineer II",
+    "highestSalaryGap": 19975.32,
+    "lowestSalaryGap": 1947.41
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Programmer Analyst I",
+    "highestSalaryGap": 13489.21,
+    "lowestSalaryGap": 2351.06
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Durables",
+    "name": "Staff Scientist",
+    "highestSalaryGap": 9520.19,
+    "lowestSalaryGap": 2440.45
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Systems Administrator I",
+    "highestSalaryGap": 10691.95,
+    "lowestSalaryGap": 2228.8
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "Assistant Media Planner",
+    "highestSalaryGap": 12759.62,
+    "lowestSalaryGap": 1634.71
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Public Utilities",
+    "name": "Senior Editor",
+    "highestSalaryGap": 14888.36,
+    "lowestSalaryGap": 2146.74
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Design Engineer",
+    "highestSalaryGap": 9321.48,
+    "lowestSalaryGap": 2738.4
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "Mechanical Systems Engineer",
+    "highestSalaryGap": 18067.18,
+    "lowestSalaryGap": 1328.55
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "VP Quality Control",
+    "highestSalaryGap": 6890.83,
+    "lowestSalaryGap": 1905.68
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Dental Hygienist",
+    "highestSalaryGap": 18341.6,
+    "lowestSalaryGap": 2591.75
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Recruiter",
+    "highestSalaryGap": 17702.11,
+    "lowestSalaryGap": 2253.08
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Sales Associate",
+    "highestSalaryGap": 18475.39,
+    "lowestSalaryGap": 1394.89
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Services",
+    "name": "Cost Accountant",
+    "highestSalaryGap": 12674.02,
+    "lowestSalaryGap": 1823.4
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Systems Administrator III",
+    "highestSalaryGap": 15322.4,
+    "lowestSalaryGap": 2110.73
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Administrative Assistant II",
+    "highestSalaryGap": 11268.33,
+    "lowestSalaryGap": 1813.85
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Services",
+    "name": "Paralegal",
+    "highestSalaryGap": 5678.86,
+    "lowestSalaryGap": 2123.08
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Automation Specialist I",
+    "highestSalaryGap": 17007.64,
+    "lowestSalaryGap": 1588.69
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Chief Design Engineer",
+    "highestSalaryGap": 12628.62,
+    "lowestSalaryGap": 1809.05
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Speech Pathologist",
+    "highestSalaryGap": 19356.87,
+    "lowestSalaryGap": 2504.51
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Community Outreach Specialist",
+    "highestSalaryGap": 15113.17,
+    "lowestSalaryGap": 1574.82
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Assistant Media Planner",
+    "highestSalaryGap": 7865.85,
+    "lowestSalaryGap": 2004.41
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Librarian",
+    "highestSalaryGap": 18460.75,
+    "lowestSalaryGap": 1680.39
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Services",
+    "name": "Programmer IV",
+    "highestSalaryGap": 15080.04,
+    "lowestSalaryGap": 2449.03
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Basic Industries",
+    "name": "Payment Adjustment Coordinator",
+    "highestSalaryGap": 8678.8,
+    "lowestSalaryGap": 2816.77
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Pharmacist",
+    "highestSalaryGap": 10877.44,
+    "lowestSalaryGap": 1601.29
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "VP Marketing",
+    "highestSalaryGap": 12775.46,
+    "lowestSalaryGap": 2430.85
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Professor",
+    "highestSalaryGap": 15769.98,
+    "lowestSalaryGap": 2268.3
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Public Utilities",
+    "name": "Human Resources Assistant III",
+    "highestSalaryGap": 17086.92,
+    "lowestSalaryGap": 2155.81
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Capital Goods",
+    "name": "Sales Representative",
+    "highestSalaryGap": 15214.39,
+    "lowestSalaryGap": 2263.84
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Basic Industries",
+    "name": "Geological Engineer",
+    "highestSalaryGap": 19197.83,
+    "lowestSalaryGap": 1318.45
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Actuary",
+    "highestSalaryGap": 8211.42,
+    "lowestSalaryGap": 2667.44
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "Quality Engineer",
+    "highestSalaryGap": 8094.08,
+    "lowestSalaryGap": 2702.63
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Energy",
+    "name": "Staff Scientist",
+    "highestSalaryGap": 19276.91,
+    "lowestSalaryGap": 2087.71
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Media Manager IV",
+    "highestSalaryGap": 7322.5,
+    "lowestSalaryGap": 2293.11
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Durables",
+    "name": "Human Resources Manager",
+    "highestSalaryGap": 19554.91,
+    "lowestSalaryGap": 2785.29
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "General Manager",
+    "highestSalaryGap": 16630.01,
+    "lowestSalaryGap": 2643.4
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Basic Industries",
+    "name": "Food Chemist",
+    "highestSalaryGap": 10063.01,
+    "lowestSalaryGap": 2830.48
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Senior Quality Engineer",
+    "highestSalaryGap": 19137.9,
+    "lowestSalaryGap": 1334.62
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Capital Goods",
+    "name": "Geological Engineer",
+    "highestSalaryGap": 16964.01,
+    "lowestSalaryGap": 1515.6
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Senior Developer",
+    "highestSalaryGap": 7607.14,
+    "lowestSalaryGap": 2898.34
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Mechanical Systems Engineer",
+    "highestSalaryGap": 8836.17,
+    "lowestSalaryGap": 1957.25
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Services",
+    "name": "Social Worker",
+    "highestSalaryGap": 15564.03,
+    "lowestSalaryGap": 1931.22
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Marketing Manager",
+    "highestSalaryGap": 11116.44,
+    "lowestSalaryGap": 2505.33
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Basic Industries",
+    "name": "Food Chemist",
+    "highestSalaryGap": 7236.73,
+    "lowestSalaryGap": 2462.78
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Capital Goods",
+    "name": "Business Systems Development Analyst",
+    "highestSalaryGap": 5235.57,
+    "lowestSalaryGap": 2184.78
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Project Manager",
+    "highestSalaryGap": 8445.33,
+    "lowestSalaryGap": 2458.58
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Geologist III",
+    "highestSalaryGap": 17503.64,
+    "lowestSalaryGap": 1664.58
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Capital Goods",
+    "name": "Database Administrator II",
+    "highestSalaryGap": 19008.07,
+    "lowestSalaryGap": 1441.09
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Basic Industries",
+    "name": "Senior Sales Associate",
+    "highestSalaryGap": 9929.64,
+    "lowestSalaryGap": 1918.7
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Executive Secretary",
+    "highestSalaryGap": 11283.45,
+    "lowestSalaryGap": 2275.7
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Durables",
+    "name": "Product Engineer",
+    "highestSalaryGap": 19060.85,
+    "lowestSalaryGap": 1679.04
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Capital Goods",
+    "name": "Health Coach III",
+    "highestSalaryGap": 19081.84,
+    "lowestSalaryGap": 2843.21
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Programmer III",
+    "highestSalaryGap": 12582.37,
+    "lowestSalaryGap": 1756.19
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Technology",
+    "name": "Automation Specialist II",
+    "highestSalaryGap": 16222.75,
+    "lowestSalaryGap": 1412.3
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Environmental Tech",
+    "highestSalaryGap": 9822.63,
+    "lowestSalaryGap": 1724.75
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "VP Product Management",
+    "highestSalaryGap": 9550.35,
+    "lowestSalaryGap": 1326.4
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Chief Design Engineer",
+    "highestSalaryGap": 5708.79,
+    "lowestSalaryGap": 2469.41
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Miscellaneous",
+    "name": "Tax Accountant",
+    "highestSalaryGap": 13981.41,
+    "lowestSalaryGap": 2623.98
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Dental Hygienist",
+    "highestSalaryGap": 9496.92,
+    "lowestSalaryGap": 2860.74
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Basic Industries",
+    "name": "Media Manager III",
+    "highestSalaryGap": 12677.32,
+    "lowestSalaryGap": 2582.05
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Basic Industries",
+    "name": "Junior Executive",
+    "highestSalaryGap": 5593.91,
+    "lowestSalaryGap": 1878.15
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Health Care",
+    "name": "Marketing Manager",
+    "highestSalaryGap": 6389.52,
+    "lowestSalaryGap": 1324.5
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Professor",
+    "highestSalaryGap": 16970.12,
+    "lowestSalaryGap": 2733.12
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Capital Goods",
+    "name": "Account Executive",
+    "highestSalaryGap": 7358.68,
+    "lowestSalaryGap": 2893.82
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Chemical Engineer",
+    "highestSalaryGap": 6302.76,
+    "lowestSalaryGap": 2739.38
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Technical Writer",
+    "highestSalaryGap": 5180.48,
+    "lowestSalaryGap": 1543.95
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Services",
+    "name": "Food Chemist",
+    "highestSalaryGap": 12389.56,
+    "lowestSalaryGap": 1740.93
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Electrical Engineer",
+    "highestSalaryGap": 18054.08,
+    "lowestSalaryGap": 1746.76
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Senior Financial Analyst",
+    "highestSalaryGap": 10738.11,
+    "lowestSalaryGap": 2811.63
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Basic Industries",
+    "name": "Engineer III",
+    "highestSalaryGap": 10003.79,
+    "lowestSalaryGap": 1692.31
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Durables",
+    "name": "Office Assistant I",
+    "highestSalaryGap": 14437.42,
+    "lowestSalaryGap": 2386.15
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Services",
+    "name": "Product Engineer",
+    "highestSalaryGap": 13434.16,
+    "lowestSalaryGap": 1561.32
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Public Utilities",
+    "name": "Clinical Specialist",
+    "highestSalaryGap": 17389.54,
+    "lowestSalaryGap": 1675.3
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Help Desk Technician",
+    "highestSalaryGap": 18104.3,
+    "lowestSalaryGap": 2865.99
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Technology",
+    "name": "Teacher",
+    "highestSalaryGap": 10163.27,
+    "lowestSalaryGap": 2410.56
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "VP Accounting",
+    "highestSalaryGap": 8567.12,
+    "lowestSalaryGap": 2333.45
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Marketing Assistant",
+    "highestSalaryGap": 19833.5,
+    "lowestSalaryGap": 1929.37
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Technical Writer",
+    "highestSalaryGap": 13731.11,
+    "lowestSalaryGap": 2851.57
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Financial Advisor",
+    "highestSalaryGap": 13014.66,
+    "lowestSalaryGap": 1806.85
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Senior Editor",
+    "highestSalaryGap": 6740.43,
+    "lowestSalaryGap": 2870.61
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Geological Engineer",
+    "highestSalaryGap": 6614.87,
+    "lowestSalaryGap": 2805.41
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Physical Therapy Assistant",
+    "highestSalaryGap": 10002.1,
+    "lowestSalaryGap": 1658.2
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Technology",
+    "name": "Assistant Professor",
+    "highestSalaryGap": 14063.47,
+    "lowestSalaryGap": 2542.51
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Durables",
+    "name": "Internal Auditor",
+    "highestSalaryGap": 16943.35,
+    "lowestSalaryGap": 1366.81
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Capital Goods",
+    "name": "Electrical Engineer",
+    "highestSalaryGap": 14843.55,
+    "lowestSalaryGap": 2731.64
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Nurse Practicioner",
+    "highestSalaryGap": 14033.37,
+    "lowestSalaryGap": 2617.13
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Non-Durables",
+    "name": "Operator",
+    "highestSalaryGap": 18316.28,
+    "lowestSalaryGap": 2748.69
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Basic Industries",
+    "name": "Project Manager",
+    "highestSalaryGap": 6702.69,
+    "lowestSalaryGap": 2221.6
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Technical Writer",
+    "highestSalaryGap": 16343.79,
+    "lowestSalaryGap": 2427.98
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Computer Systems Analyst IV",
+    "highestSalaryGap": 8462.33,
+    "lowestSalaryGap": 2706.18
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Executive Secretary",
+    "highestSalaryGap": 6025.69,
+    "lowestSalaryGap": 1389.22
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Web Designer III",
+    "highestSalaryGap": 13831.74,
+    "lowestSalaryGap": 1619.15
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Administrative Assistant II",
+    "highestSalaryGap": 19551.88,
+    "lowestSalaryGap": 1542.94
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Desktop Support Technician",
+    "highestSalaryGap": 19615.47,
+    "lowestSalaryGap": 2849.47
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Technology",
+    "name": "Legal Assistant",
+    "highestSalaryGap": 17383.19,
+    "lowestSalaryGap": 1879.53
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Basic Industries",
+    "name": "Accountant I",
+    "highestSalaryGap": 15160.51,
+    "lowestSalaryGap": 1716.2
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Services",
+    "name": "Electrical Engineer",
+    "highestSalaryGap": 14913.8,
+    "lowestSalaryGap": 2718.45
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Help Desk Operator",
+    "highestSalaryGap": 12803.48,
+    "lowestSalaryGap": 2587.69
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Technology",
+    "name": "Research Assistant II",
+    "highestSalaryGap": 11266.61,
+    "lowestSalaryGap": 2442.38
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Physical Therapy Assistant",
+    "highestSalaryGap": 10326.59,
+    "lowestSalaryGap": 1303.3
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Biostatistician IV",
+    "highestSalaryGap": 16559.34,
+    "lowestSalaryGap": 2396.87
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Public Utilities",
+    "name": "Statistician IV",
+    "highestSalaryGap": 8800.11,
+    "lowestSalaryGap": 1711.83
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Clinical Specialist",
+    "highestSalaryGap": 9976.49,
+    "lowestSalaryGap": 2264.01
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Sales Associate",
+    "highestSalaryGap": 13167.9,
+    "lowestSalaryGap": 1619.2
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Technology",
+    "name": "Operator",
+    "highestSalaryGap": 14780.09,
+    "lowestSalaryGap": 2495.64
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Public Utilities",
+    "name": "VP Marketing",
+    "highestSalaryGap": 14615.17,
+    "lowestSalaryGap": 2518.27
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Technology",
+    "name": "Actuary",
+    "highestSalaryGap": 15629.43,
+    "lowestSalaryGap": 1332.06
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Geological Engineer",
+    "highestSalaryGap": 18806.21,
+    "lowestSalaryGap": 2411.76
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Transportation",
+    "name": "Teacher",
+    "highestSalaryGap": 19753.14,
+    "lowestSalaryGap": 1474.0
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Basic Industries",
+    "name": "Marketing Assistant",
+    "highestSalaryGap": 10249.35,
+    "lowestSalaryGap": 1940.42
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Legal Assistant",
+    "highestSalaryGap": 17568.47,
+    "lowestSalaryGap": 1410.4
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Senior Developer",
+    "highestSalaryGap": 6635.53,
+    "lowestSalaryGap": 1911.32
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Business Systems Development Analyst",
+    "highestSalaryGap": 9285.87,
+    "lowestSalaryGap": 2374.82
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Public Utilities",
+    "name": "Sales Associate",
+    "highestSalaryGap": 10036.03,
+    "lowestSalaryGap": 2484.16
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Occupational Therapist",
+    "highestSalaryGap": 10959.09,
+    "lowestSalaryGap": 2114.38
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Web Designer I",
+    "highestSalaryGap": 14851.18,
+    "lowestSalaryGap": 2595.5
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Basic Industries",
+    "name": "Registered Nurse",
+    "highestSalaryGap": 7752.05,
+    "lowestSalaryGap": 2336.63
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Transportation",
+    "name": "Electrical Engineer",
+    "highestSalaryGap": 11676.23,
+    "lowestSalaryGap": 1973.63
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Help Desk Operator",
+    "highestSalaryGap": 8409.18,
+    "lowestSalaryGap": 2821.11
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Nuclear Power Engineer",
+    "highestSalaryGap": 8116.5,
+    "lowestSalaryGap": 1571.12
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Operator",
+    "highestSalaryGap": 19946.89,
+    "lowestSalaryGap": 2451.57
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Computer Systems Analyst II",
+    "highestSalaryGap": 14727.47,
+    "lowestSalaryGap": 1717.73
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Basic Industries",
+    "name": "Technical Writer",
+    "highestSalaryGap": 11712.05,
+    "lowestSalaryGap": 1416.56
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Account Coordinator",
+    "highestSalaryGap": 12957.53,
+    "lowestSalaryGap": 2294.83
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Executive Secretary",
+    "highestSalaryGap": 11406.98,
+    "lowestSalaryGap": 2153.9
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Senior Editor",
+    "highestSalaryGap": 9821.22,
+    "lowestSalaryGap": 2677.26
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Director of Sales",
+    "highestSalaryGap": 15464.24,
+    "lowestSalaryGap": 2364.25
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Quality Control Specialist",
+    "highestSalaryGap": 16631.31,
+    "lowestSalaryGap": 2290.14
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Health Care",
+    "name": "Human Resources Manager",
+    "highestSalaryGap": 14578.24,
+    "lowestSalaryGap": 1658.95
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Basic Industries",
+    "name": "Analog Circuit Design manager",
+    "highestSalaryGap": 8001.7,
+    "lowestSalaryGap": 1909.33
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Health Care",
+    "name": "Community Outreach Specialist",
+    "highestSalaryGap": 12849.8,
+    "lowestSalaryGap": 1910.63
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Mechanical Systems Engineer",
+    "highestSalaryGap": 5801.14,
+    "lowestSalaryGap": 1377.77
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Basic Industries",
+    "name": "Financial Advisor",
+    "highestSalaryGap": 13549.67,
+    "lowestSalaryGap": 1317.66
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Capital Goods",
+    "name": "Data Coordiator",
+    "highestSalaryGap": 12246.34,
+    "lowestSalaryGap": 1576.27
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Systems Administrator I",
+    "highestSalaryGap": 5228.07,
+    "lowestSalaryGap": 2206.98
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Marketing Manager",
+    "highestSalaryGap": 13352.99,
+    "lowestSalaryGap": 1949.1
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Services",
+    "name": "Statistician II",
+    "highestSalaryGap": 18365.86,
+    "lowestSalaryGap": 2296.99
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Community Outreach Specialist",
+    "highestSalaryGap": 18164.5,
+    "lowestSalaryGap": 2884.55
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Clinical Specialist",
+    "highestSalaryGap": 11038.92,
+    "lowestSalaryGap": 2374.85
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Capital Goods",
+    "name": "Civil Engineer",
+    "highestSalaryGap": 19280.93,
+    "lowestSalaryGap": 2462.64
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Consumer Non-Durables",
+    "name": "Environmental Specialist",
+    "highestSalaryGap": 12762.13,
+    "lowestSalaryGap": 2086.94
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Technology",
+    "name": "Recruiter",
+    "highestSalaryGap": 14183.0,
+    "lowestSalaryGap": 2472.64
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "VP Accounting",
+    "highestSalaryGap": 6125.72,
+    "lowestSalaryGap": 1630.02
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Office Assistant I",
+    "highestSalaryGap": 12291.29,
+    "lowestSalaryGap": 1861.26
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Assistant Media Planner",
+    "highestSalaryGap": 13145.55,
+    "lowestSalaryGap": 2236.38
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Biostatistician II",
+    "highestSalaryGap": 7625.57,
+    "lowestSalaryGap": 2670.09
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Basic Industries",
+    "name": "Developer I",
+    "highestSalaryGap": 12199.63,
+    "lowestSalaryGap": 1897.39
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Consumer Services",
+    "name": "Desktop Support Technician",
+    "highestSalaryGap": 9203.32,
+    "lowestSalaryGap": 2417.07
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Account Coordinator",
+    "highestSalaryGap": 13399.79,
+    "lowestSalaryGap": 2132.06
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Finance",
+    "name": "Cost Accountant",
+    "highestSalaryGap": 11070.22,
+    "lowestSalaryGap": 2341.33
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "n/a",
+    "name": "Assistant Manager",
+    "highestSalaryGap": 13795.72,
+    "lowestSalaryGap": 2549.92
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Consumer Non-Durables",
+    "name": "Budget/Accounting Analyst IV",
+    "highestSalaryGap": 6224.93,
+    "lowestSalaryGap": 1756.53
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Finance",
+    "name": "Research Assistant I",
+    "highestSalaryGap": 8134.35,
+    "lowestSalaryGap": 1852.48
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Quality Control Specialist",
+    "highestSalaryGap": 14818.46,
+    "lowestSalaryGap": 1657.1
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Systems Administrator III",
+    "highestSalaryGap": 19950.51,
+    "lowestSalaryGap": 2705.92
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Web Developer IV",
+    "highestSalaryGap": 16001.2,
+    "lowestSalaryGap": 1920.67
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "Technology",
+    "name": "Analog Circuit Design manager",
+    "highestSalaryGap": 9361.27,
+    "lowestSalaryGap": 2261.33
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "VP Quality Control",
+    "highestSalaryGap": 6622.0,
+    "lowestSalaryGap": 2145.25
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "Technology",
+    "name": "Marketing Manager",
+    "highestSalaryGap": 5020.39,
+    "lowestSalaryGap": 2046.64
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Finance",
+    "name": "Executive Secretary",
+    "highestSalaryGap": 18546.7,
+    "lowestSalaryGap": 2755.14
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Technology",
+    "name": "Project Manager",
+    "highestSalaryGap": 10084.5,
+    "lowestSalaryGap": 1974.62
+  },
+  {
+    "levelOfAdvancement": 1,
+    "sectorName": "n/a",
+    "name": "Environmental Tech",
+    "highestSalaryGap": 7154.22,
+    "lowestSalaryGap": 2511.56
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Graphic Designer",
+    "highestSalaryGap": 5442.08,
+    "lowestSalaryGap": 1600.97
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Librarian",
+    "highestSalaryGap": 19989.13,
+    "lowestSalaryGap": 2572.74
+  },
+  {
+    "levelOfAdvancement": 3,
+    "sectorName": "n/a",
+    "name": "Budget/Accounting Analyst IV",
+    "highestSalaryGap": 8947.53,
+    "lowestSalaryGap": 2255.22
+  },
+  {
+    "levelOfAdvancement": 2,
+    "sectorName": "Public Utilities",
+    "name": "Research Associate",
+    "highestSalaryGap": 8800.25,
+    "lowestSalaryGap": 2863.6
+  }
+]

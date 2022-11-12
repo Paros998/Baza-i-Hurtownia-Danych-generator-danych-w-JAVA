@@ -3,13 +3,17 @@ package pg.table.people;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import pg.table.csv.CsvData;
 
 import java.util.UUID;
 
 @AllArgsConstructor
+@NoArgsConstructor(staticName = "dummy")
 @Data
 @Builder
-public class CompanyRepresentative {
+public class CompanyRepresentative implements CsvData {
     public static final String TABLE = "Reprezentant_firmy";
     public static final String COLUMNS = "reprezentant_id,nazwisko,imie,rola_w_firmie";
     private UUID id;
@@ -25,5 +29,15 @@ public class CompanyRepresentative {
                 lastName,
                 role
         );
+    }
+
+    @Override
+    public String getColumns() {
+        return COLUMNS;
+    }
+
+    @Override
+    public String getData() {
+        return this.toString();
     }
 }

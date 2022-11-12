@@ -3,57 +3,81 @@ package pg.utils;
 import lombok.Getter;
 
 import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import pg.types.Country;
+import pg.types.*;
 
-import java.io.File;
 import java.io.IOException;
-import java.lang.reflect.Field;
-import java.net.URISyntaxException;
-import java.net.URL;
 import java.util.Collections;
 import java.util.List;
 
 @Getter
 public class Data {
     public static final String SCHEMA = "dbo";
-    public static final String RESOURCE_DIRECTORY = "example-data/";
     public final ObjectMapper objectMapper = new ObjectMapper();
-    private List<Country> countries;
+
+    private final List<Address> addresses;
+    private final List<Name> names;
+    private final List<PersonalData> personalData;
+    private final List<Company> companies;
+    private final List<Course> courses;
+    private final List<Education> educations;
+    private final List<Experience> experiences;
+    private final List<JobRequirement> jobRequirements;
+    private final List<Test> tests;
+    private final List<Skill> skills;
+    private final List<Vacancy> vacancies;
+    private final List<Employment> employments;
+
+    private final List<String> emails;
+    private final List<String> benefits;
+    private final List<String> roles;
+    private final List<String> phoneNumbers;
+    private final List<String> requirements;
+    private final List<String> responsibilities;
+    private final List<String> jobSchedules;
+    private final List<String> workArrangements;
 
     public Data() {
-        readCountries();
+        addresses = readAndMapData(Address.class);
+        names = readAndMapData(Name.class);
+        personalData = readAndMapData(PersonalData.class);
+        companies = readAndMapData(Company.class);
+        courses = readAndMapData(Course.class);
+        educations = readAndMapData(Education.class);
+        experiences = readAndMapData(Experience.class);
+        jobRequirements = readAndMapData(JobRequirement.class);
+        tests = readAndMapData(Test.class);
+        skills = readAndMapData(Skill.class);
+        vacancies = readAndMapData(Vacancy.class);
+        employments = readAndMapData(Employment.class);
+
+        emails = readAndMapData("emails.json");
+        benefits = readAndMapData("benefits.json");
+        roles = readAndMapData("roles.json");
+        phoneNumbers = readAndMapData("phones.json");
+        requirements = readAndMapData("requirements.json");
+        responsibilities = readAndMapData("responsibilities.json");
+        jobSchedules = readAndMapData("job-schedules.json");
+        workArrangements = readAndMapData("work-arrangements.json");
     }
 
-    private void readCountries() {
+    private <T> List<T> readAndMapData(final Class<T> clazz) {
+        JavaType type = objectMapper.getTypeFactory().
+                constructCollectionType(List.class, clazz);
         try {
-            countries = objectMapper.readValue(getData(Country.class), new TypeReference<List<Country>>() {
+            return objectMapper.readValue(JsonLoader.getData(clazz), type);
+        } catch (IOException e) {
+            return Collections.emptyList();
+        }
+    }
+
+    private <T> List<T> readAndMapData(final String file) {
+        try {
+            return objectMapper.readValue(JsonLoader.getData(file), new TypeReference<>() {
             });
         } catch (IOException e) {
-            countries = Collections.emptyList();
-        }
-    }
-
-    @SuppressWarnings("unchecked")
-    private <T> File getData(Class<T> clazz) {
-        File file;
-        try {
-            Field field = clazz.getDeclaredField("FILE");
-            file = loadResources(RESOURCE_DIRECTORY + field.get(null));
-        } catch (NoSuchFieldException | IllegalAccessException e) {
-            throw new RuntimeException(e);
-        }
-        return file;
-    }
-
-    private File loadResources(final String fileLocation) {
-        URL resource = getClass().getClassLoader().getResource(fileLocation);
-        assert resource != null;
-
-        try {
-            return new File(resource.toURI());
-        } catch (URISyntaxException e) {
-            throw new RuntimeException(e);
+            return Collections.emptyList();
         }
     }
 }

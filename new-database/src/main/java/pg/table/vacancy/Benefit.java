@@ -3,13 +3,17 @@ package pg.table.vacancy;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import pg.table.csv.CsvData;
 
 import java.util.UUID;
 
 @AllArgsConstructor
 @Data
+@NoArgsConstructor(staticName = "dummy")
 @Builder
-public class Benefit {
+public class Benefit implements CsvData {
     public static final String TABLE = "Bonusy";
     public static final String COLUMNS = "bonus_id,stanowisko_id,opis,wartosc,nazwa";
     private UUID id;
@@ -27,5 +31,15 @@ public class Benefit {
                 amount,
                 name
         );
+    }
+
+    @Override
+    public String getColumns() {
+        return COLUMNS;
+    }
+
+    @Override
+    public String getData() {
+        return this.toString();
     }
 }

@@ -3,14 +3,18 @@ package pg.table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import pg.table.csv.CsvData;
 
 import java.util.List;
 import java.util.UUID;
 
 @AllArgsConstructor
+@NoArgsConstructor(staticName = "dummy")
 @Data
 @Builder
-public class Arrangement {
+public class Arrangement implements CsvData {
     public static final String TABLE = "Umowa";
     public static final String COLUMNS = "umowa_id,obowiazki,wymogi,typ_umowy";
 
@@ -27,5 +31,15 @@ public class Arrangement {
                 requirements,
                 typeOfArrangement
         );
+    }
+
+    @Override
+    public String getColumns() {
+        return COLUMNS;
+    }
+
+    @Override
+    public String getData() {
+        return this.toString();
     }
 }

@@ -3,14 +3,18 @@ package pg.table.cv;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import pg.table.csv.CsvData;
 
 import java.util.List;
 import java.util.UUID;
 
-@Data
+@NoArgsConstructor(staticName = "dummy")
 @AllArgsConstructor
+@Data
 @Builder
-public class CurriculumVitae {
+public class CurriculumVitae implements CsvData {
     public static final String TABLE = "CV";
     public static final String COLUMNS = "cv_id,miasto,wojewodztwo,kod_pocztowy,kraj,ulica";
     private UUID id;
@@ -27,7 +31,7 @@ public class CurriculumVitae {
 
     @Override
     public String toString() {
-        return "%s,%s,%s,%s,%s,%s".formatted(
+        return "%s,%s,%s,%s,%s,[%s]".formatted(
                 id,
                 city,
                 voivodeship,
@@ -35,5 +39,15 @@ public class CurriculumVitae {
                 country,
                 street
         );
+    }
+
+    @Override
+    public String getColumns() {
+        return COLUMNS;
+    }
+
+    @Override
+    public String getData() {
+        return this.toString();
     }
 }

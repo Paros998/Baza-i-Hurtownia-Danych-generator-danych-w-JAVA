@@ -3,7 +3,9 @@ package pg.table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
+import pg.table.csv.CsvData;
 import pg.table.cv.CurriculumVitae;
 import pg.table.people.Applicant;
 import pg.table.people.CompanyRepresentative;
@@ -15,8 +17,9 @@ import java.time.format.DateTimeFormatter;
 
 @Data
 @AllArgsConstructor
+@NoArgsConstructor(staticName = "dummy")
 @Builder
-public class Employment {
+public class Employment implements CsvData {
     public static final String TABLE = "Zatrudnienie";
     public static final String COLUMNS = "aplikant_id,cv_id,umowa_id,firma_id,stanowisko_id,rekruter_id"
             + ",reprezentant_id,test_id,ilosc_aplikacji_na_stan,data_zatrudnienia,rozmowa_kwal_przeprowadzona"
@@ -41,7 +44,7 @@ public class Employment {
 
     @Override
     public String toString() {
-        return "%s,%s,%s,%s,%s,%s,%s,%s,%d,%s,%s,%d,%s,%f,%s".formatted(
+        return "%s,%s,%s,%s,%s,%s,%s,%s,%d,%s,%s,%d,%s,%f.2,%s".formatted(
                 applicant.getId(),
                 cv.getId(),
                 arrangement.getId(),
@@ -60,5 +63,15 @@ public class Employment {
                 beginningSalary,
                 validTo.format(DateTimeFormatter.ISO_LOCAL_DATE)
         );
+    }
+
+    @Override
+    public String getColumns() {
+        return COLUMNS;
+    }
+
+    @Override
+    public String getData() {
+        return this.toString();
     }
 }
