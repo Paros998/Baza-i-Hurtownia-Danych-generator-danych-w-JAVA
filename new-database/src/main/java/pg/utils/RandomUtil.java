@@ -1,4 +1,4 @@
-package pg.generator;
+package pg.utils;
 
 import lombok.experimental.UtilityClass;
 

@@ -3,8 +3,7 @@ package pg.generator;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
-import com.thedeanda.lorem.Lorem;
-import com.thedeanda.lorem.LoremIpsum;
+import pg.Data;
 import pg.table.Arrangement;
 import pg.table.Company;
 import pg.table.Employment;
@@ -17,53 +16,15 @@ import pg.table.vacancy.Benefit;
 import pg.table.vacancy.JobRequirement;
 import pg.table.vacancy.Vacancy;
 import pg.utils.CsvWriter;
-import pg.utils.Data;
+import pg.utils.RandomUtil;
 
-import java.time.Clock;
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeParseException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
 import java.util.UUID;
-import java.util.function.Function;
 
 @Slf4j
 @AllArgsConstructor(staticName = "of")
-public class RecordsGenerator {
-    private static final Random rand = RandomUtil.random;
-    private static final Clock clock = RandomUtil.clock;
-    private static final DateTimeFormatter format1 = DateTimeFormatter.ofPattern("M/d/yyyy");
-    private static final DateTimeFormatter format2 = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+public class ProjectRecordsGenerator extends AbstractGenerator {
     private final Data data;
-    private final Lorem lorem = LoremIpsum.getInstance();
-
-    private static <T, R> List<R> applyFunction(final Function<T, R> function, final T argument, final Integer maxRandom) {
-        int numberOfExecutions = RandomUtil.intBetween(1, maxRandom);
-        int currentExecution = 1;
-
-        List<R> result = new ArrayList<>();
-
-        do {
-            result.add(function.apply(argument));
-            currentExecution++;
-        } while (currentExecution <= numberOfExecutions);
-
-        return result;
-    }
-
-    private static <T> T getRandomObject(final List<T> data) {
-        return data.get(rand.nextInt(data.size()));
-    }
-
-    private static LocalDate tryParse(final String date) {
-        try {
-            return LocalDate.parse(date, format1);
-        } catch (DateTimeParseException e) {
-            return LocalDate.parse(date, format2);
-        }
-    }
 
     public void generateFacts(final Integer numberOfFacts) {
         int currentFact = 1;
@@ -237,8 +198,8 @@ public class RecordsGenerator {
 
         final var result = Arrangement.builder()
                 .id(UUID.randomUUID())
-                .responsibilities(applyFunction(RecordsGenerator::getRandomObject, responsibilities, 12))
-                .requirements(applyFunction(RecordsGenerator::getRandomObject, requirements, 9))
+                .responsibilities(applyFunction(ProjectRecordsGenerator::getRandomObject, responsibilities, 12))
+                .requirements(applyFunction(ProjectRecordsGenerator::getRandomObject, requirements, 9))
                 .typeOfArrangement(type)
 
                 .build();
@@ -307,7 +268,7 @@ public class RecordsGenerator {
                 .cv(cv)
                 .since(tryParse(experience.getSince()))
                 .to(tryParse(experience.getTo()))
-                .responsibilities(applyFunction(RecordsGenerator::getRandomObject, responsibilities, 4))
+                .responsibilities(applyFunction(ProjectRecordsGenerator::getRandomObject, responsibilities, 4))
                 .vacancy(experience.getVacancy())
                 .companyName(experience.getCompanyName())
 

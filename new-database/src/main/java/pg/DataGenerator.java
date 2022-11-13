@@ -1,9 +1,8 @@
 package pg;
 
-import pg.generator.RecordsGenerator;
+import pg.generator.ProjectRecordsGenerator;
 import pg.table.csv.CsvData;
 import pg.utils.CsvWriter;
-import pg.utils.Data;
 
 public class DataGenerator {
 
@@ -12,7 +11,7 @@ public class DataGenerator {
 
         CsvWriter.createFiles(CsvData.tables);
 
-        final RecordsGenerator recordsGenerator = RecordsGenerator.of(data);
+        final ProjectRecordsGenerator recordsGenerator = ProjectRecordsGenerator.of(data);
 
         String numberOfFactsProperty = System.getProperty("records");
 

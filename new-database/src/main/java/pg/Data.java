@@ -1,4 +1,4 @@
-package pg.utils;
+package pg;
 
 import lombok.Getter;
 
@@ -6,6 +6,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import pg.types.*;
+import pg.utils.JsonLoader;
 
 import java.io.IOException;
 import java.util.Collections;
