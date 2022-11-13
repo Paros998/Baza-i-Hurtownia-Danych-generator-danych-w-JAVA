@@ -35,9 +35,4 @@ public class CompanyRepresentative implements CsvData {
     public String getColumns() {
         return COLUMNS;
     }
-
-    @Override
-    public String getData() {
-        return this.toString();
-    }
 }

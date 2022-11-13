@@ -76,16 +76,20 @@ public class RecordsGenerator {
                 log.info("Generated %d records - %f".formatted((currentFact - 1), (currentFact - 1) * 100.0f / numberOfFacts) + "%");
         } while (currentFact <= numberOfFacts);
 
-        log.info("Generating completed");
+        log.info("Generating records completed - 100%");
     }
 
     private Employment generateEmployment() {
         var employmentData = getRandomObject(data.getEmployments());
 
+        var arrangement = generateArrangement();
+
+        boolean isPeriodContract = arrangement.getTypeOfArrangement().equals("trial period contract");
+
         return Employment.builder()
                 .applicant(generateApplicant())
                 .cv(generateCurriculumVitae())
-                .arrangement(generateArrangement())
+                .arrangement(arrangement)
                 .company(generateCompany())
                 .vacancy(generateVacancy())
                 .recruiter(generateRecruiter())
@@ -93,14 +97,14 @@ public class RecordsGenerator {
                 .qualificationTest(generateQualificationTest())
 
                 .amountOfApplicationsForVacancy(employmentData.getAmountOfApplicationsForVacancy())
-                .dateOfEmployment(LocalDate.now(clock).minusMonths(RandomUtil.intBetween(2, 48)))
+                .dateOfEmployment(LocalDate.now(clock).minusMonths(isPeriodContract ? RandomUtil.intBetween(0, 6) :
+                        RandomUtil.intBetween(2, 48)))
                 .wasInterviewDone(RandomUtil.getBoolean())
                 .numberOfFirmEmployeesNow(employmentData.getNumberOfFirmEmployeesNow())
                 .isQualificationTestPassed(RandomUtil.getBoolean())
 
                 .beginningSalary(employmentData.getBeginningSalary())
-                .validTo(LocalDate.now(clock).plusMonths(employmentData.getArrangementMonths()))
-
+                .validTo(LocalDate.now(clock).plusMonths(isPeriodContract ? 3 : employmentData.getArrangementMonths()))
                 .build();
     }
 
@@ -133,7 +137,7 @@ public class RecordsGenerator {
                 .voivodeship(cvData.getVoivodeship())
                 .postalCode(cvData.getPostalCode())
                 .country(cvData.getCountry())
-                .street(cvData.getStreet())
+                .street(cvData.getStreet() + ";" + RandomUtil.intBetween(1, 60))
 
                 .build();
 

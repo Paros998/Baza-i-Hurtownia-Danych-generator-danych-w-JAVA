@@ -36,9 +36,4 @@ public class QualificationTest implements CsvData {
     public String getColumns() {
         return COLUMNS;
     }
-
-    @Override
-    public String getData() {
-        return this.toString();
-    }
 }

@@ -19,7 +19,6 @@ public class Skill implements CsvData {
     private UUID id;
     private CurriculumVitae cv;
     private String name;
-    // Between 1-5
     private Integer level;
 
     @Override
@@ -35,10 +34,5 @@ public class Skill implements CsvData {
     @Override
     public String getColumns() {
         return COLUMNS;
-    }
-
-    @Override
-    public String getData() {
-        return this.toString();
     }
 }

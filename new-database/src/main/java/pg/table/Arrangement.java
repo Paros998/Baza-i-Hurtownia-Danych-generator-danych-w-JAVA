@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import pg.table.csv.CsvData;
+import pg.utils.ListUtil;
 
 import java.util.List;
 import java.util.UUID;
@@ -27,8 +28,8 @@ public class Arrangement implements CsvData {
     public String toString() {
         return "%s,%s,%s,%s".formatted(
                 id,
-                responsibilities,
-                requirements,
+                ListUtil.getCsvArray(responsibilities),
+                ListUtil.getCsvArray(requirements),
                 typeOfArrangement
         );
     }
@@ -36,10 +37,5 @@ public class Arrangement implements CsvData {
     @Override
     public String getColumns() {
         return COLUMNS;
-    }
-
-    @Override
-    public String getData() {
-        return this.toString();
     }
 }

@@ -23,7 +23,6 @@ public class Vacancy implements CsvData {
     private String jobDescription;
     private Float lowestSalaryGap;
     private Float highestSalaryGap;
-    // 1-5
     private Integer levelOfAdvancement;
     private String workSchedule;
 
@@ -48,10 +47,5 @@ public class Vacancy implements CsvData {
     @Override
     public String getColumns() {
         return COLUMNS;
-    }
-
-    @Override
-    public String getData() {
-        return this.toString();
     }
 }

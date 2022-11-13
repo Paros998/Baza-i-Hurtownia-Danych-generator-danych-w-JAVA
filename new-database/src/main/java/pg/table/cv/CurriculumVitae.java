@@ -31,7 +31,7 @@ public class CurriculumVitae implements CsvData {
 
     @Override
     public String toString() {
-        return "%s,%s,%s,%s,%s,[%s]".formatted(
+        return "%s,%s,%s,%s,%s,%s".formatted(
                 id,
                 city,
                 voivodeship,
@@ -44,10 +44,5 @@ public class CurriculumVitae implements CsvData {
     @Override
     public String getColumns() {
         return COLUMNS;
-    }
-
-    @Override
-    public String getData() {
-        return this.toString();
     }
 }

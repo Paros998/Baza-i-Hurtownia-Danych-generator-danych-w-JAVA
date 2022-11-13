@@ -30,5 +30,7 @@ public interface CsvData {
 
     String getColumns();
 
-    String getData();
+    default String getData() {
+        return this.toString();
+    }
 }

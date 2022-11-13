@@ -23,9 +23,7 @@ public class JsonLoader {
         return file;
     }
 
-    public <T> File getData(final @NonNull String fileName) {
-        File file;
-        file = loadResourceFile(RESOURCE_DIRECTORY + fileName);
-        return file;
+    public File getData(final @NonNull String fileName) {
+        return loadResourceFile(RESOURCE_DIRECTORY + fileName);
     }
 }

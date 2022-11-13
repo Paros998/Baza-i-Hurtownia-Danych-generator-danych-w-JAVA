@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import pg.table.csv.CsvData;
+import pg.utils.ListUtil;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -23,7 +24,6 @@ public class Experience implements CsvData {
     private CurriculumVitae cv;
     private LocalDate since;
     private LocalDate to;
-    // TODO fix all Lists toString
     private List<String> responsibilities;
     private String vacancy;
     private String companyName;
@@ -35,7 +35,7 @@ public class Experience implements CsvData {
                 cv.getId(),
                 since.format(DateTimeFormatter.ISO_LOCAL_DATE),
                 to.format(DateTimeFormatter.ISO_LOCAL_DATE),
-                responsibilities,
+                ListUtil.getCsvArray(responsibilities),
                 vacancy,
                 companyName
         );
@@ -44,10 +44,5 @@ public class Experience implements CsvData {
     @Override
     public String getColumns() {
         return COLUMNS;
-    }
-
-    @Override
-    public String getData() {
-        return this.toString();
     }
 }

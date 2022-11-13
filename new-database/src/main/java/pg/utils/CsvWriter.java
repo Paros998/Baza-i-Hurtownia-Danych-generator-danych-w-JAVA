@@ -36,7 +36,7 @@ public class CsvWriter {
             File file = createFile(targetPath + csvData.getCsvFileName());
             try {
                 writer = new FileWriter(file, StandardCharsets.UTF_8, true);
-                writer.write(csvData.getColumns() + "\n");
+                writer.write(csvData.getColumns());
                 writer.close();
             } catch (IOException e) {
                 throw new RuntimeException(e);
@@ -52,7 +52,7 @@ public class CsvWriter {
 
         try {
             writer = new FileWriter(recordFile, StandardCharsets.UTF_8, true);
-            writer.write(csvData.getData() + "\n");
+            writer.write("\n" + csvData.getData());
             writer.close();
         } catch (IOException e) {
             throw new RuntimeException(e);
